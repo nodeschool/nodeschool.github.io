@@ -33,18 +33,24 @@ a:visited {
 .box {
   position: relative;
   vertical-align: top;
-  display: inline-block;
+  display: block;
   background-color: rgb(240,250,40);
   border-width: 0px;
-  width: 280px;
   height: 280px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
   color: white;
   font-family: monospace;
   text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.box.small {
   cursor: pointer;
+  display: inline-block;
+  width: 280px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .box .title {
@@ -64,20 +70,36 @@ a:visited {
 
 .box .screenshot img {
   width: 100%;
+  max-width: 270px;
   opacity: 0.6;
 }
 
 .box .desc {
   position: absolute;
-  top: 125px;
-  left: 32px;
-  right: 32px;
+  top: 145px;
+  left: 22px;
+  width: 230px;
   bottom: 0px;
   text-align: left;
   color: rgb(255,235,40);
   font-size: 1.3em;
+  text-shadow: 0px 0px 2px rgba(88,20,94,0.9);
+  font-weight: bold;
+}
+
+.box .expanded {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  right: 30px;
+  bottom: 20px;
+  text-align: left;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.5);
   font-weight: bold;
+}
+
+.box.small .expanded {
+  display: none;
 }
 
 .box:before {
@@ -111,13 +133,13 @@ a:visited {
 .box.orange:after {
   border-left-color: rgb(240,160,40);
 }
-.box.orange:hover {
+.box.small.orange:hover {
   background-color: rgb(250,200,40);
 }
-.box.orange:hover:before {
+.box.small.orange:hover:before {
   border-right-color: rgb(250,200,40);
 }
-.box.orange:hover:after {
+.box.small.orange:hover:after {
   border-left-color: rgb(250,200,40);
 }
 
@@ -131,13 +153,13 @@ a:visited {
   border-left-color: rgb(240,60,40);
 }
 
-.box.red:hover {
+.box.small.red:hover {
   background-color: rgb(250,80,40);
 }
-.box.red:hover:before {
+.box.small.red:hover:before {
   border-right-color: rgb(250,80,40);
 }
-.box.red:hover:after {
+.box.small.red:hover:after {
   border-left-color: rgb(250,80,40);
 }
 
@@ -151,13 +173,13 @@ a:visited {
   border-left-color: rgb(80,180,240);
 }
 
-.box.cyan:hover {
+.box.small.cyan:hover {
   background-color: rgb(80,200,250);
 }
-.box.cyan:hover:before {
+.box.small.cyan:hover:before {
   border-right-color: rgb(80,200,250);
 }
-.box.cyan:hover:after {
+.box.small.cyan:hover:after {
   border-left-color: rgb(80,200,250);
 }
 
@@ -207,4 +229,34 @@ a:link, a:visited {
 }
 .note:hover:after {
   border-left-color: rgb(155,20,144);
+}
+
+#back {
+  position: relative;
+  display: none;
+  margin-left: 12%;
+  margin-bottom: -100px;
+  margin-top: 40px;
+  z-index: 5;
+  padding: 18px;
+  width: 200px;
+  border-width: 0px;
+  background-color: rgba(135,20,124,0.2);
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#back:hover {
+  background-color: rgba(135,20,124,0.4);
+}
+
+#back.show {
+  display: block;
+}
+
+pre {
+  background-color: rgb(88,20,94);
+  padding: 10px;
 }
