@@ -2,23 +2,83 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>nodeschool.io</title>
   </head>
   <body>
-    <h1>nodeschool.io</h1>
-    <ul>
-      <li>
-        <a href="https://github.com/rvagg/learnyounode">Learn You The Node.js For Much Win!</a>
-      </li>
+    <div id="header">
+      <img src="images/nodeschool.png">
+      <div class="tagline">
+        LEARN NODE.JS WITH INTERACTIVE LESSONS
+      </div>
+    </div>
+ 
+    <button id="back">BACK</button>
+ 
+    <div id="boxes">
+      <div class="box small orange">
+        <div class="title">
+          Learn You The Node.js For Much Win!
+        </div>
+        <div class="screenshot">
+          <img src="images/learnyounode.png">
+        </div>
+        <div class="desc">
+          Learn the basics of node: asynchronous i/o, http
+        </div>
+        <div class="expanded">
+          Once you have <a href="http://nodejs.org">node</a> installed, run:
+          <pre>sudo npm install -g learnyounode</pre>
+          Now you have a <code>learnyounode</code> command. Just run:
+          <pre>learnyounode</pre>
+          to play!
+        </div>
+      </div>
 
-      <li>
-        <a href="https://github.com/substack/stream-adventure">stream adventure</a>
-      </li>
+      <div class="box small red">
+        <div class="title">
+          Stream Adventure
+        </div>
+        <div class="screenshot">
+          <img src="images/stream-adventure.png">
+        </div>
+        <div class="desc">
+          Learn how to compose streaming interfaces
+          with <code>.pipe()</code>
+        </div>
+        <div class="expanded">
+          Once you have <a href="http://nodejs.org">node</a> installed, run:
+          <pre>npm install -g stream-adventure</pre>
+          Now you have a <code>stream-adventure</code> command. Just run:
+          <pre>stream-adventure</pre>
+          to play!
+        </div>
+      </div>
 
-      <li>
-        <a href="https://github.com/rvagg/levelmeup">Level Me Up Scotty!</a>
-    </ul>
-
-    <a href="https://github.com/rvagg/workshopper">Make a workshop</a>
+      <div class="box small cyan">
+        <div class="title">
+          Level Me Up Scotty!
+        </div>
+        <div class="screenshot">
+          <img src="images/levelmeup.png"></a>
+        </div>
+        <div class="desc">
+          Learn to use leveldb, a simple key/value store with a vibrant package
+          ecosystem.
+        </div>
+        <div class="expanded">
+          Once you have <a href="http://nodejs.org">node</a> installed, run:
+          <pre>npm install -g levelmeup</pre>
+          Now you have a <code>levelmeup</code> command. Just run:
+          <pre>levelmeup</pre>
+          to play!
+        </div>
+      </div>
+    </div>
+ 
+    <a href="https://github.com/rvagg/workshopper"
+    ><button class="note">MAKE A WORKSHOP</button></a>
+ 
+    <script src="main.js"></script>
   </body>
 </html>
