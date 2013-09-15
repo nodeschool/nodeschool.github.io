@@ -2,23 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>nodeschool.io</title>
   </head>
   <body>
-    <h1>nodeschool.io</h1>
-    <ul>
-      <li>
-        <a href="https://github.com/rvagg/learnyounode">Learn You The Node.js For Much Win!</a>
-      </li>
+    <div id="header">
+      <img src="images/nodeschool.png">
+      <div class="tagline">
+        LEARN NODE.JS WITH INTERACTIVE LESSONS
+      </div>
+    </div>
+ 
+    <div id="boxes">
+      <button class="box orange">
+        <div class="title">
+          Learn You The Node.js For Much Win!
+        </div>
+        <div class="screenshot">
+          <img src="images/learnyounode.png">
+        </div>
+        <div class="desc">
+          Learn the basics of node: asynchronous i/o, http
+        </div>
+      </button>
 
-      <li>
-        <a href="https://github.com/substack/stream-adventure">stream adventure</a>
-      </li>
+      <button class="box red">
+        <div class="title">
+          Stream Adventure
+        </div>
+        <div class="screenshot">
+          <img>
+        </div>
+        <div class="desc">
+          Learn how to compose streaming interfaces
+          with <code>.pipe()</code>
+        </div>
+      </button>
 
-      <li>
-        <a href="https://github.com/rvagg/levelmeup">Level Me Up Scotty!</a>
-    </ul>
-
-    <a href="https://github.com/rvagg/workshopper">Make a workshop</a>
+      <button class="box cyan">
+        <div class="title">
+          Level Me Up Scotty!
+        </div>
+        <div class="screenshot">
+          <img src="images/levelmeup.png"></a>
+        </div>
+      </button>
+    </div>
+ 
+    <a href="https://github.com/rvagg/workshopper"
+    ><button class="note">MAKE A WORKSHOP</button></a>
   </body>
 </html>
