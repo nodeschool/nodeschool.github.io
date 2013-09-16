@@ -8,25 +8,25 @@ back.addEventListener('click', function (ev) {
 var boxContainer = document.getElementById('boxes');
 boxContainer.parentNode.insertBefore(back, boxContainer);
 
-var boxes = boxContainer.querySelectorAll('.box');
-for (var i = 0; i < boxes.length; i++) (function (box) {
+var boxes = [].slice.call(boxContainer.querySelectorAll('.box'));
+boxes.forEach(function (box) {
   box.addEventListener('click', function (ev) {
     window.location.hash = '#' + this.getAttribute('data-url');
   });
   box.classList.add('small');
-})(boxes[i]);
+});
 
 function hideAll() {
-  for (var i = 0; i < boxes.length; i++) (function (box) {
+  boxes.forEach(function (box) {
     box.style.display = 'none';
-  })(boxes[i])
+  });
 }
 
 function showAll() {
-  for (var i = 0; i < boxes.length; i++) (function (box) {
+  boxes.forEach(function (box) {
     box.style.display = 'inline-block';
     box.classList.add('small');
-  })(boxes[i]);
+  });
 }
 
 window.addEventListener('hashchange', handleHashChange);
