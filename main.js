@@ -46,14 +46,12 @@ function showIndex() {
 
 function showItemByUrl(frag) {
   var el = document.querySelector('*[data-url="'+frag+'"]');
-  if (el) {
-    if (el.classList.contains('small')) {
-      hideAll();
-      el.style.display = 'block';
-      el.classList.remove('small');
-      el.classList.add('show');
-      back.classList.add('show');
-    }
+  if (el && el.classList.contains('small')) {
+    hideAll();
+    el.style.display = 'block';
+    el.classList.remove('small');
+    el.classList.add('show');
+    back.classList.add('show');
   }
 }
 
