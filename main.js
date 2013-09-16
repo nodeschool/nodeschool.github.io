@@ -50,7 +50,6 @@ function showItemByUrl(frag) {
     hideAll();
     el.style.display = 'block';
     el.classList.remove('small');
-    el.classList.add('show');
     back.classList.add('show');
   }
 }
