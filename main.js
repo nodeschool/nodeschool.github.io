@@ -2,29 +2,17 @@ var back = document.createElement('button');
 back.appendChild(document.createTextNode('Back'));
 back.id = 'back';
 back.addEventListener('click', function (ev) {
-  showIndex();
-  changeHistory();
+  window.location.hash = '#';
 });
-
-function showIndex() {
-  showAll();
-  back.classList.remove('show');
-}
 
 var boxContainer = document.getElementById('boxes');
 boxContainer.parentNode.insertBefore(back, boxContainer);
 
-var boxes = boxContainer.querySelectorAll('.box')
+var boxes = boxContainer.querySelectorAll('.box');
 for (var i = 0; i < boxes.length; i++) (function (box) {
   box.addEventListener('click', function (ev) {
-    if (box.classList.contains('small')) {
-      hideAll();
-      box.style.display = 'block';
-      box.classList.remove('small');
-      back.classList.add('show');
-      changeHistory(box);
-    }
-  })
+    window.location.hash = '#' + this.getAttribute('data-url');
+  });
   box.classList.add('small');
 })(boxes[i]);
 
@@ -41,26 +29,32 @@ function showAll() {
   })(boxes[i]);
 }
 
-function changeHistory(item) {
-  var url = '#' + (item && item.dataset.url || '');
-  window.history.pushState({url: url}, '', url);
+window.addEventListener('hashchange', handleHashChange);
+
+function handleHashChange() {
+  var hash = window.location.hash.slice(1);
+
+  if (!hash)
+    return showIndex();
+  showItemByUrl(hash);
 }
 
-window.addEventListener('popstate', handlePopstate);
-
-function handlePopstate(ev) {
-  if (ev.state.url == '#')
-    return showIndex();
-  showItemByUrl(ev.state.url);
+function showIndex() {
+  showAll();
+  back.classList.remove('show');
 }
 
 function showItemByUrl(frag) {
-  var el;
-  frag = (frag || window.location.hash).slice(1);
-  if (frag) {
-    el = document.querySelector('*[data-url="'+frag+'"]');
-    if (el) { el.click(); }
+  var el = document.querySelector('*[data-url="'+frag+'"]');
+  if (el) {
+    if (el.classList.contains('small')) {
+      hideAll();
+      el.style.display = 'block';
+      el.classList.remove('small');
+      el.classList.add('show');
+      back.classList.add('show');
+    }
   }
 }
 
-showItemByUrl();
+handleHashChange();
