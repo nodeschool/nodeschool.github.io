@@ -7,9 +7,20 @@ body {
   text-align: center;
 }
 
+#header .title {
+  margin: 0 auto;
+  width: 551px;
+  height: 145px;
+  position: relative;
+  background: url(images/nodeschool.png) top center no-repeat;
+  text-align: left;
+  text-indent: -100%;
+}
+
 #header .tagline {
   font-size: 1.2em;
   font-family: Ubuntu, Helvectica, sans-serif;
+  text-transform: uppercase;
   background-color: rgb(135,20,124);
   color: rgb(240,80,240);
   padding: 5px;
@@ -21,6 +32,7 @@ body {
 #boxes {
   margin-top: 30px;
   text-align: center;
+  overflow: hidden;
 }
 
 a:link {
@@ -61,6 +73,7 @@ a:visited {
   font-size: 1.5em;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.5);
   font-weight: bold;
+  margin: 0;
 }
 
 .box .screenshot {
@@ -85,6 +98,7 @@ a:visited {
   font-size: 1.3em;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.9);
   font-weight: bold;
+  margin: 0;
 }
 
 .box .expanded {
@@ -96,6 +110,7 @@ a:visited {
   text-align: left;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.5);
   font-weight: bold;
+  margin: 0;
 }
 
 .box.small .expanded {
@@ -187,7 +202,9 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-.note {
+.note,
+.note:link,
+.note:visited {
   position: relative;
   display: block;
   margin: auto;
@@ -199,6 +216,12 @@ a:link, a:visited {
   font-size: 1.3em;
   color: rgb(240,80,240);
   cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .note:before {
@@ -246,6 +269,7 @@ a:link, a:visited {
   color: white;
   cursor: pointer;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 #back:hover {
