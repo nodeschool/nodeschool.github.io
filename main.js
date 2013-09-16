@@ -1,10 +1,15 @@
-var back = document.querySelector('#back');
+var back = document.createElement('button');
+back.appendChild(document.createTextNode('Back'));
+back.id = 'back';
 back.addEventListener('click', function (ev) {
     showAll();
     back.classList.remove('show');
 });
 
-var boxes = document.querySelectorAll('#boxes .box')
+var boxContainer = document.getElementById('boxes');
+boxContainer.parentNode.insertBefore(back, boxContainer);
+
+var boxes = boxContainer.querySelectorAll('.box')
 for (var i = 0; i < boxes.length; i++) (function (box) {
   box.addEventListener('click', function (ev) {
     if (box.classList.contains('small')) {
@@ -14,6 +19,7 @@ for (var i = 0; i < boxes.length; i++) (function (box) {
         back.classList.add('show');
     }
   })
+  box.classList.add('small');
 })(boxes[i])
 
 function hideAll () {
