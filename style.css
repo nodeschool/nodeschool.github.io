@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'CenturySchoolBookMono';
+  font-family: 'CenturySchoolBookMono', monospace;
   src: url(yanone.eot);
   src: local('CenturySchoolBookMono'), 
           url(centuryschoolbookmono.ttf) format('truetype');
@@ -118,6 +118,7 @@ a:visited {
   text-align: left;
   text-shadow: 0px 0px 2px rgba(88,20,94,0.5);
   font-weight: bold;
+  font-size: 1.1em;
   margin: 0;
 }
 
