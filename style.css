@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'CenturySchoolBookMono';
+  src: url(yanone.eot);
+  src: local('CenturySchoolBookMono'), 
+          url(centuryschoolbookmono.ttf) format('truetype');
+}
+
 body {
   background-color: rgb(88,20,94);
   color: rgb(240,230,120);
+  font-family: CenturySchoolBookMono, monospace;
 }
 
 #header {
@@ -8,18 +16,18 @@ body {
 }
 
 #header .title {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 551px;
   height: 145px;
   position: relative;
-  background: url(images/nodeschool.png) top center no-repeat;
+  background: url(images/nodeschool-straight.png) top center no-repeat;
   text-align: left;
   text-indent: -100%;
 }
 
 #header .tagline {
   font-size: 1.2em;
-  font-family: Ubuntu, Helvectica, sans-serif;
+  font-family: CenturySchoolBookMono, Ubuntu;
   text-transform: uppercase;
   background-color: rgb(135,20,124);
   color: rgb(240,80,240);
@@ -50,7 +58,7 @@ a:visited {
   border-width: 0px;
   height: 280px;
   color: white;
-  font-family: monospace;
+  font-size: 12px;
   text-align: center;
   width: 80%;
   margin: auto;
@@ -218,7 +226,6 @@ a:link, a:visited {
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  font-family: sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
