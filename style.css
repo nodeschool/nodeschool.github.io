@@ -27,7 +27,7 @@ body {
 
 #header .tagline {
   font-size: 1.2em;
-  font-family: CenturySchoolBookMono, Ubuntu;
+  font-family: CenturySchoolBookMono, Ubuntu, monospace;
   text-transform: uppercase;
   background-color: rgb(135,20,124);
   color: rgb(240,80,240);
@@ -35,6 +35,11 @@ body {
   width: 70%;
   margin: auto;
   margin-top: -10px;
+}
+
+#header .description {
+  margin: 15px auto;
+  width: 70%;
 }
 
 #boxes {
