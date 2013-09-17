@@ -89,6 +89,19 @@ a:visited {
   margin: 0;
 }
 
+.box .view-source {
+  display: block;
+  position: absolute;
+  top: -60px;
+  right: 50px;
+  padding: 5px;
+  background-color: white;
+  text-shadow: none;
+  color: rgb(88,20,94);
+  border: 2px solid rgb(88,20,94);
+  border-radius: 5px;
+}
+
 .box .screenshot {
   position: absolute;
   bottom: 20px;
