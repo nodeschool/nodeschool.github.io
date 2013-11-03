@@ -11,6 +11,13 @@ body {
   font-family: CenturySchoolBookMono, monospace;
 }
 
+.content { 
+  max-width: 700px;
+  margin: 20px auto 30px auto;
+}
+
+.content ul { text-align: left; }
+
 #header {
   text-align: center;
 }
