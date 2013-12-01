@@ -117,6 +117,7 @@ a:visited {
 .box .screenshot img {
   width: 100%;
   max-width: 270px;
+  min-height: 180px;
   opacity: 0.6;
 }
 
