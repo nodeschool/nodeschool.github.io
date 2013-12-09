@@ -5,10 +5,10 @@ back.addEventListener('click', function (ev) {
   window.location.hash = '#';
 });
 
-var boxContainer = document.getElementById('boxes');
+var boxContainer = document.querySelector('.boxes');
 boxContainer.parentNode.insertBefore(back, boxContainer);
 
-var boxes = [].slice.call(boxContainer.querySelectorAll('.box'));
+var boxes = [].slice.call(document.querySelectorAll('.box'));
 boxes.forEach(function (box) {
   box.addEventListener('click', function (ev) {
     window.location.hash = '#' + this.getAttribute('data-url');
@@ -16,9 +16,14 @@ boxes.forEach(function (box) {
   box.classList.add('small');
 });
 
+var sectionHeaders = [].slice.call(document.querySelectorAll('.section'));
+
 function hideAll() {
   boxes.forEach(function (box) {
     box.style.display = 'none';
+  });
+  sectionHeaders.forEach(function (header) {
+    header.style.display = 'none';
   });
 }
 
@@ -26,6 +31,9 @@ function showAll() {
   boxes.forEach(function (box) {
     box.style.display = 'inline-block';
     box.classList.add('small');
+  });
+  sectionHeaders.forEach(function (header) {
+    header.style.display = 'block';
   });
 }
 
