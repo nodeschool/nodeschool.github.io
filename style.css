@@ -22,15 +22,9 @@ body {
   text-align: center;
 }
 
-#header .title {
-  margin: 20px auto;
-  width: 551px;
-  height: 145px;
-  position: relative;
-  background: url(images/nodeschool.png) top center no-repeat;
-  text-align: left;
-  text-indent: -100%;
-}
+#logo { padding: 20px 20px 40px 20px; }
+
+.top-title { display: none; }
 
 #header .tagline {
   font-size: 1.2em;
