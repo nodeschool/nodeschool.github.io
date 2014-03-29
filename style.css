@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'CenturySchoolBookMono', monospace;
   src: url(yanone.eot);
-  src: local('CenturySchoolBookMono'), 
+  src: local('CenturySchoolBookMono'),
           url(centuryschoolbookmono.ttf) format('truetype');
 }
 
@@ -11,7 +11,7 @@ body {
   font-family: CenturySchoolBookMono, monospace;
 }
 
-.content { 
+.content {
   max-width: 700px;
   margin: 20px auto 30px auto;
 }
@@ -43,10 +43,10 @@ body {
   width: 75%;
 }
 
-h2.section { 
+h2.section {
   margin: 0 auto 25px auto;
-  text-transform: uppercase; 
-  background-color: rgb(135,20,124); 
+  text-transform: uppercase;
+  background-color: rgb(135,20,124);
   padding: 5px;
   width: 97%;
   font-weight: 300;
@@ -345,4 +345,122 @@ pre {
 }
 .desc.expressworks {
   top:130px;
+}
+
+/*calendar map events*/
+
+body {
+  background: #46004D;
+  color: #EDE55D;
+  font-family: CenturySchoolBookMono, Ubuntu, monospace;
+}
+
+h1 {
+  border: 0;
+}
+
+h2 {
+  background: black;
+  display: inline-block;
+  padding: 4px 120px;
+  background-color: #74006A;
+  color: #EC1BEF;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 30px auto;
+}
+
+a {
+  color: #FFF;
+  border: 0;
+}
+
+a:hover {
+  color: #EDE55D;
+}
+
+.month-table {
+  padding: 15px;
+  position: relative;
+  background: #EC2216;
+  border: 0;
+}
+
+.month-table:before, .month-table:after {
+  content: "";
+  border: 24px solid transparent;
+  position: absolute;
+  display: block;
+}
+
+.month-table:before {
+  border-top-color: #EC2216;
+  border-right-color: #EC2216;
+  top: 0;
+  right: 0;
+}
+
+.month-table:after {
+  border-left-color: #EC2216;
+  border-bottom-color: #EC2216;
+  bottom: 0;
+  left: 0;
+}
+
+.month-table td {
+  background: #6F140A;
+  border-color: #EC2216;
+}
+
+.event a {
+  color: #fff;
+  border: 0;
+}
+
+.month-menuitem {
+  background: #6F140A;
+  border: 0;
+  padding: 10px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.month-menuitem:before, .month-menuitem:after {
+  content: "";
+  border: 6px solid transparent;
+  position: absolute;
+  display: block;
+}
+
+.month-menuitem:before {
+  border-top-color: #46004D;
+  border-right-color: #46004D;
+  top: 0;
+  right: 0;
+}
+
+.month-menuitem:after {
+  border-bottom-color: #46004D;
+  border-left-color: #46004D;
+  bottom: 0;
+  left: 0;
+}
+
+.month-menuitem.active {
+  background: #EC2216;
+  color: #fff;
+  font-weight: bold;
+}
+
+.month-menuitem:hover {
+  color: #ffdada;
+}
+
+.today .day:before {
+  content: none;
+}
+
+.today .day {
+  background: purple;
 }
