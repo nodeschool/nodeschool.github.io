@@ -20,7 +20,7 @@
       </p>
       <div class="content" id="irl">
         <p>Here are upcoming in-person free (or almost free) NodeSchool events around the world:</p>
-        <div id="events"></div>
+        <div id="events">Loading events...</div>
         <p>See <a href="events.html">all events</a>. Anyone can host an event. <a href="host.html">Read this page to learn how!</a></p>
       </div>
 
@@ -256,43 +256,15 @@
     <script type="text/javascript" src='js/table.js'></script>
 
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
-        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
-      })
+      var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
+      Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
 
       function showNearEvents(data) {
-        console.log("raw", data)
-
         var html = Sheetsee.ich.events({
-  				  'rows': sortDates(data)
-  			  })
+            'rows': sortDates(data)
+          })
         $('#events').html(html)
       }
-
-      // function sortDates(data) {
-      //   var today = new Date()
-      //
-      //   // add formatted dates
-      //   data.forEach(function(event) {
-      //     event.startUTC = new Date(event.startdate)
-      //     if (event.enddate) event.endUTC = new Date(event.enddate)
-      //   })
-      //
-      //   // sort the dates
-      //   var sorted = data
-      //   sorted.sort(function(a,b) {
-      //     return a.startUTC - b.startUTC
-      //   })
-      //
-      //   // only upcoming events
-      //   var freshies = []
-      //   sorted.forEach(function(event) {
-      //     if (event.startUTC > today)
-      //       freshies.push(event)
-      //   })
-      //   return freshies
-      // }
     </script>
 
     <script>
