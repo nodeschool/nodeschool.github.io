@@ -601,6 +601,10 @@ a:hover {
   background-color: #777;
 }
 
+.leaflet-container .leaflet-control-attribution {
+  background-color: #EC1BEF;
+}
+
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background: #EC1BEF;
 }
