@@ -13,18 +13,14 @@
         Node School
       </h1>
 
-      <img id="logo" width="300" src="images/nodeschool-hex.png">
+      <img id="logo" width="300" src="images/nodeschool-straight.png">
 
       <p class="tagline">
         Upcoming Events
       </p>
       <div class="content" id="irl">
         <p>Here are upcoming in-person free (or almost free) NodeSchool events around the world:</p>
-        <ul>
-          <li><a href="http://www.meetup.com/sfdevs/events/168186132/" target="_blank">March 25th in Sioux Falls, SD</a></li>
-          <li><a href="https://ti.to/nodeschool-brighton/27-march-2014" target="_blank">March 27th in Brighton, UK</a></li>
-          <li><a href="http://hvnodeschool.awesomesauce.com/" target="_blank">April 1st, 2014 in State College, PA</a></li>
-        </ul>
+        <div id="events"></div>
         <p>Anyone can host an event. <a href="host.html">Read this page to learn how!</a></p>
       </div>
 
@@ -245,11 +241,59 @@
     <a href="host.html" class="note">Run a nodeschool event</a>
     <a target="_blank" href="https://twitter.com/nodeschool" class="note">Follow us on Twitter</a>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script id="events" type="text/html">
+      <ul>
+        {{#rows}}
+          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+        {{/rows}}
+      </ul>
+    </script>
+
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/tabletop.js"></script>
     <script type="text/javascript" src='js/sheetsee.js'></script>
     <script type="text/javascript" src='js/table.js'></script>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
+        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
+      })
+
+      function showNearEvents(data) {
+        console.log("raw", data)
+
+        var html = Sheetsee.ich.events({
+  				  'rows': sortDates(data)
+  			  })
+        $('#events').html(html)
+      }
+
+      function sortDates(data) {
+        var today = new Date()
+
+        // add formatted dates
+        data.forEach(function(event) {
+          event.startUTC = new Date(event.startdate)
+          if (event.enddate) event.endUTC = new Date(event.enddate)
+        })
+
+        // sort the dates
+        var sorted = data
+        sorted.sort(function(a,b) {
+          return a.startUTC - b.startUTC
+        })
+
+        // only upcoming events
+        var freshies = []
+        sorted.forEach(function(event) {
+          if (event.startUTC > today)
+            freshies.push(event)
+        })
+        return freshies
+      }
+    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
