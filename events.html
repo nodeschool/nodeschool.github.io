@@ -49,13 +49,14 @@
           }
         })
 
-
-
         function addHexcolor(data, color, color2) {
           data.forEach(function(event) {
+            event.past = true
             event.startUTC = new Date(event.startdate)
-            if (event.enddate) event.endUTC = new Date(event.enddate)
-            if (event.startUTC > new Date()) event.hexcolor = color
+            if (event.startUTC > new Date()) {
+              event.hexcolor = color
+              event.past = false
+            }
             else event.hecolor = color2
           })
           return data
