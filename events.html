@@ -37,14 +37,14 @@
             // build the calendar
             generateCalendar(data)
             // add hexcolor to color map markers
-            data = addHexcolor(data, "#EC2216")
+            data = addHexcolor(data, "#74006A")
             // make map
             var optionsJSON = ["name", "tickets", "startdate"]
             var template = "<p class='event'>{{startdate}} <a href='{{tickets}}'"
               + " target='_blank'>{{name}}</a><p>"
             var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
             var map = Sheetsee.loadMap("map")
-            Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
+            Sheetsee.addTileLayer(map, 'jllord.hl7d48ne')
             var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
           }
         })
