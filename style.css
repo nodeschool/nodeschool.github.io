@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'CenturySchoolBookMono', monospace;
   src: url(yanone.eot);
-  src: local('CenturySchoolBookMono'), 
+  src: local('CenturySchoolBookMono'),
           url(centuryschoolbookmono.ttf) format('truetype');
 }
 
@@ -11,7 +11,7 @@ body {
   font-family: CenturySchoolBookMono, monospace;
 }
 
-.content { 
+.content {
   max-width: 700px;
   margin: 20px auto 30px auto;
 }
@@ -43,10 +43,10 @@ body {
   width: 75%;
 }
 
-h2.section { 
+h2.section {
   margin: 0 auto 25px auto;
-  text-transform: uppercase; 
-  background-color: rgb(135,20,124); 
+  text-transform: uppercase;
+  background-color: rgb(135,20,124);
   padding: 5px;
   width: 97%;
   font-weight: 300;

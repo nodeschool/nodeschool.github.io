@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mapbox.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/nodeschool-icon.png">
+    <title>nodeschool.io</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="top-title">
+        Node School
+      </h1>
+
+      <a href="/"><img id="logo" width="300" src="images/nodeschool-straight.png"></a>
+
+      <p class="tagline">
+        Events All Over
+      </p><br>
+      <div id="map"></div>
+      <div id="calendar-goes-here"></div>
+      <small>Add your event <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0">here</a>.</small>
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/tabletop.js"></script>
+      <script type="text/javascript" src='js/sheetsee.js'></script>
+      <script type="text/javascript" src='js/table.js'></script>
+
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
+          Tabletop.init( { key: URL, callback: makeThings, simpleSheet: true } )
+
+          function makeThings(data) {
+            // build the calendar
+            generateCalendar(data)
+            // add hexcolor to color map markers
+            data = addHexcolor(data, "#74006A", "#A09C9C")
+            // make map
+            var optionsJSON = ["name", "tickets", "startdate", "state"]
+            var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
+              + " target='_blank'>{{name}}</a><p>"
+            var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+            var map = Sheetsee.loadMap("map")
+            Sheetsee.addTileLayer(map, 'jllord.hl7d48ne')
+            var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+          }
+        })
+
+        function addHexcolor(data, color, color2) {
+          data.forEach(function(event) {
+            event.state = "past"
+            event.startUTC = new Date(event.startdate)
+            if (event.startUTC > new Date()) {
+              event.hexcolor = color
+              event.state = "future"
+            }
+            else event.hecolor = color2
+          })
+          return data
+        }
+    </script>
+  </body>
+</html>
