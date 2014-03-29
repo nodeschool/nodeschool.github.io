@@ -37,7 +37,7 @@
             // build the calendar
             generateCalendar(data)
             // add hexcolor to color map markers
-            data = addHexcolor(data, "#74006A")
+            data = addHexcolor(data, "#74006A", "#A09C9C")
             // make map
             var optionsJSON = ["name", "tickets", "startdate"]
             var template = "<p class='event'>{{startdate}} <a href='{{tickets}}'"
@@ -49,9 +49,14 @@
           }
         })
 
-        function addHexcolor(data, color) {
-          data.forEach(function(row) {
-            row.hexcolor = color
+
+
+        function addHexcolor(data, color, color2) {
+          data.forEach(function(event) {
+            event.startUTC = new Date(event.startdate)
+            if (event.enddate) event.endUTC = new Date(event.enddate)
+            if (event.startUTC > new Date()) event.hexcolor = color
+            else event.hecolor = color2
           })
           return data
         }
