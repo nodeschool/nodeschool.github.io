@@ -1,66 +1,109 @@
 /*calendar map events*/
 * { -webkit-box-sizing: border-box; }
+body { background: rgb(88,20,94); }
 
 .month-table {
   margin: 0 auto 100px;
-  border: 1px solid #ccefff;
-  padding: 10px;
   width: 75%;
-
+  padding: 5px;
+  background-color: #992216;
+  position: relative;
 }
 
-h1 { font-size: 40px; border-bottom: 1px solid #999; display: inline-block; }
-h2 { font-size: 30px; }
-
-.month-menuitem {
-  font-size: 14px;
-  padding: 6px;
-  display: inline-block;
-  border: 0;
-  text-transform: uppercase;
-  margin: 0 10px;
-  border: 2px solid #ccf4ff;
+.month-table:before, .month-table:after {
+  content: "";
+  border: 10px solid transparent;
+  position: absolute;
+  display: block;
 }
 
-.month-menuitem.active {
-  background: #ccf4ff;
-  color: #000;
+.month-table:before {
+  border-top-color: rgb(88,20,94);
+  border-right-color: rgb(88,20,94);
+  top: 0;
+  right: 0;
 }
 
-a {
-  color: #333333;
-  text-decoration: none;
-  padding-bottom: 0px;
-  border-bottom: 2px #CCF4FF solid;
+.month-table:after {
+  border-left-color: rgb(88,20,94);
+  border-bottom-color: rgb(88,20,94);
+  bottom: 0;
+  left: 0;
 }
 
-a:hover {
-  color: #47CCFC;
-}
-
-td {
+.month-table td {
   width: 160px;
   vertical-align: top;
 }
 
 .header td {
   padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ff6454;
 }
 
 .days td {
   padding-top: 2px;
   height: 100px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #ff6454;
 }
 
 .days:last-child td {
   border-bottom: 0;
 }
 
-.empty {
-  background: repeating-linear-gradient(0, #eee 0, #eee 1px, white 1px, white 5px);
+.month-table .empty {
+  background: repeating-linear-gradient(0, #f96d69 0, #f96d69 1px, transparent 1px, transparent 5px);
   background-size: 1px 5px;
+}
+
+h1 { font-size: 40px; display: inline-block; }
+
+h2 {
+  font-size: 30px;
+  background: black;
+  display: inline-block;
+  padding: 4px 120px;
+  background-color: #74006A;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 30px auto;
+}
+
+.month-menuitem {
+  font-size: 14px;
+  display: inline-block;
+  border: 0;
+  text-transform: uppercase;
+  margin: 0 10px;
+  background: #f03c37;
+  padding: 7px 15px;
+  color: #fff;
+  position: relative;
+}
+
+.month-menuitem:hover {
+  color: #ffdada;
+}
+
+.month-menuitem.active {
+  background: #fcf3db  ;
+  color: #ef3c36;
+  font-weight: bold;
+}
+
+a {
+  color: #FFF;
+}
+
+a:hover {
+  color: #EDE55D;
+}
+
+.today .day {
+  background: #f96d69;
+  color: #fff;
 }
 
 .event {
@@ -77,164 +120,18 @@ td {
   position: relative;
 }
 
-.today .day:before {
-  z-index: -1;
-  display: block;
-  content: "";
-  width: 24px; height: 24px;
-  background: #36FFA3;
-  border-radius: 24px;
-  position: absolute;
-  left: 50%;
-  margin-left: -12px;
-  top: 0;
-  border: 0 !important;
-}
-
-.days td:hover .day:before {
-  z-index: -1;
-  display: block;
-  content: "";
-  width: 24px; height: 24px;
-  border: 1px solid #36FFA3;
-  border-radius: 24px;
-  position: absolute;
-  left: 50%;
-  margin-left: -12px;
-  top: 0;
-}
-
 .following-days a { font-size: 0; }
 
 .multi-days {
-  background: #f9f9f9;
+  background: #000;
   margin-left: -2px;
   margin-right: -2px;
-  border-bottom: 2px #CCF4FF solid;
 }
 
-.multi-days a { border: 0; }
-.multi-days a:hover { color: #000; }
+.no-event { color: #ff9687; }
 
-.no-event { color: #aaa; }
-
-/*nodeschool css*/
-
-body {
-  background: #46004D;
-  color: #EDE55D;
-  font-family: CenturySchoolBookMono, Ubuntu, monospace;
-}
-
-h1 {
-  border: 0;
-}
-
-h2 {
-  background: black;
-  display: inline-block;
-  padding: 4px 120px;
-  background-color: #74006A;
-  color: #EC1BEF;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin: 30px auto;
-}
-
-a {
-  color: #FFF;
-  border: 0;
-}
-
-a:hover {
-  color: #EDE55D;
-}
-
-.month-table {
-  padding: 15px;
-  position: relative;
-  background: #EC2216;
-  border: 0;
-}
-
-.month-table:before, .month-table:after {
-  content: "";
-  border: 24px solid transparent;
-  position: absolute;
-  display: block;
-}
-
-.month-table:before {
-  border-top-color: #EC2216;
-  border-right-color: #EC2216;
-  top: 0;
-  right: 0;
-}
-
-.month-table:after {
-  border-left-color: #EC2216;
-  border-bottom-color: #EC2216;
-  bottom: 0;
-  left: 0;
-}
-
-.month-table td {
-  background: #6F140A;
-  border-color: #EC2216;
-}
-
-.event a {
-  color: #fff;
-  border: 0;
-}
-
-.month-menuitem {
-  background: #6F140A;
-  border: 0;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-
-.month-menuitem:before, .month-menuitem:after {
-  content: "";
-  border: 6px solid transparent;
-  position: absolute;
-  display: block;
-}
-
-.month-menuitem:before {
-  border-top-color: #46004D;
-  border-right-color: #46004D;
-  top: 0;
-  right: 0;
-}
-
-.month-menuitem:after {
-  border-bottom-color: #46004D;
-  border-left-color: #46004D;
-  bottom: 0;
-  left: 0;
-}
-
-.month-menuitem.active {
-  background: #EC2216;
-  color: #fff;
-  font-weight: bold;
-}
-
-.month-menuitem:hover {
-  color: #ffdada;
-}
-
-.today .day:before {
-  content: none;
-}
-
-.today .day {
-  background: purple;
-}
+.event a { color: #fff; }
+.past .event a { color: #ffcdc9; }
 
 /* Map */
 
@@ -242,7 +139,7 @@ a:hover {
   margin: 20px auto;
   height: 350px;
   width: 75%;
-  background-color: #777;
+  background-color: #46004D;
 }
 
 .leaflet-container .leaflet-control-attribution {
