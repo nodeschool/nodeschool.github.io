@@ -38,6 +38,7 @@ function addMonthMenu() {
 }
 
 function appendEvent( event ) {
+  today          = new Date()
   eventStartDate = new Date(event.startdate)
   eventEndDate   = new Date(event.enddate)
   eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
@@ -68,6 +69,7 @@ function appendEvent( event ) {
     }
   }
 
+  if(today > eventStartDate){ eventElement.addClass('past-event') }
   $('#' + formattedDate(eventStartDate)).removeClass('no-event').append(eventElement)
 }
 

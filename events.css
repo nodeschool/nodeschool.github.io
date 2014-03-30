@@ -128,7 +128,10 @@ a:hover {
   margin-right: -2px;
 }
 
-.no-event { color: #eee; }
+.no-event { color: #888844; }
+
+.event a { color: #ffff00; }
+.past-event a { color: #888800; }
 
 /* Map */
 
