@@ -6,7 +6,7 @@ body { background: rgb(88,20,94); }
   margin: 0 auto 100px;
   width: 75%;
   padding: 5px;
-  background-color: #36003D;
+  background-color: #ee3b37;
   position: relative;
 }
 
@@ -37,8 +37,23 @@ body { background: rgb(88,20,94); }
   vertical-align: top;
 }
 
+.header td {
+  padding: 10px;
+  border-bottom: 1px solid #992216;
+}
+
+.days td {
+  padding-top: 2px;
+  height: 100px;
+  border-bottom: 1px solid #ff6454;
+}
+
+.days:last-child td {
+  border-bottom: 0;
+}
+
 .month-table .empty {
-  background: repeating-linear-gradient(0, #74006A 0, #74006A 1px, transparent 1px, transparent 5px);
+  background: repeating-linear-gradient(0, #f96d69 0, #f96d69 1px, transparent 1px, transparent 5px);
   background-size: 1px 5px;
 }
 
@@ -63,7 +78,7 @@ h2 {
   border: 0;
   text-transform: uppercase;
   margin: 0 10px;
-  background: #6F140A;
+  background: #f03c37;
   padding: 7px 15px;
   color: #fff;
   position: relative;
@@ -74,8 +89,8 @@ h2 {
 }
 
 .month-menuitem.active {
-  background: #9C2216;
-  color: #fff;
+  background: #fcf3db  ;
+  color: #ef3c36;
   font-weight: bold;
 }
 
@@ -88,22 +103,8 @@ a:hover {
 }
 
 .today .day {
-  background: purple;
-}
-
-.header td {
-  padding: 10px;
-  border-bottom: 1px solid #992216;
-}
-
-.days td {
-  padding-top: 2px;
-  height: 100px;
-  border-bottom: 1px solid #74006A;
-}
-
-.days:last-child td {
-  border-bottom: 0;
+  background: #f96d69;
+  color: #fff;
 }
 
 .event {
@@ -128,10 +129,10 @@ a:hover {
   margin-right: -2px;
 }
 
-.no-event { color: #888844; }
+.no-event { color: #ff9687; }
 
-.event a { color: #ffff00; }
-.past-event a { color: #888800; }
+.event a { color: #fff; }
+.past .event a { color: #ffcdc9; }
 
 /* Map */
 
