@@ -6,7 +6,7 @@ body { background: rgb(88,20,94); }
   margin: 0 auto 100px;
   width: 75%;
   padding: 5px;
-  background-color: #ee3b37;
+  background-color: #992216;
   position: relative;
 }
 
@@ -32,14 +32,13 @@ body { background: rgb(88,20,94); }
 }
 
 .month-table td {
-  border-color: #36003D;
   width: 160px;
   vertical-align: top;
 }
 
 .header td {
   padding: 10px;
-  border-bottom: 1px solid #992216;
+  border-bottom: 1px solid #ff6454;
 }
 
 .days td {
