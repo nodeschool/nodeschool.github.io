@@ -85,7 +85,6 @@ function sortDates(data) {
   todayBuffer.setHours(today.getHours() - 24)
 
   sorted.forEach(function(event) {
-    console.log(event.startUTC, todayBuffer)
     if (event.startUTC >= todayBuffer)
       freshies.push(event)
   })
