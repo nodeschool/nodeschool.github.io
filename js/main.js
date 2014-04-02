@@ -94,7 +94,7 @@ function sortDates(data) {
     return freshies
   }
   else return {
-    "name": "No upcoming events. Checkout past events!",
+    "name": "No upcoming events. Check out past events!",
     "tickets": "events.html"
   }
   return freshies
