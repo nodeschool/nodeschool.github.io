@@ -81,9 +81,19 @@ function sortDates(data) {
 
   // only upcoming events
   var freshies = []
+  var todayBuffer = new Date()
+  todayBuffer.setHours(today.getHours() - 24)
+
   sorted.forEach(function(event) {
-    if (event.startUTC > today)
+    if (event.startUTC >= todayBuffer)
       freshies.push(event)
   })
+
+  if (freshies.length !== 0) {
+    return freshies
+  } else return {
+    "name": "No upcoming events. Check out past events!",
+    "tickets": "events.html"
+  }
   return freshies
 }
