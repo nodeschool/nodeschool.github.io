@@ -108,9 +108,13 @@ a:hover {
 
 .event {
   white-space: nowrap;
-  padding: 3px;
+  padding: 2px 6px;
   height: 23px;
   margin-bottom: 1px;
+  max-width: 184px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .day {
@@ -130,7 +134,10 @@ a:hover {
 
 .no-event { color: #ff9687; }
 
-.event a { color: #fff; }
+.event a {
+  color: #fff;
+
+}
 .past .event a { color: #ffcdc9; }
 
 /* Map */
