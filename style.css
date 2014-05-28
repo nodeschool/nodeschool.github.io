@@ -258,6 +258,33 @@ a:visited {
   border-left-color: rgb(33,221,130);
 }
 
+.box.yellow {
+  background-color: #F3DF49;
+}
+.box.yellow:before {
+  border-right-color: #F3DF49;
+}
+.box.yellow:after {
+  border-left-color: #F3DF49;
+}
+
+.box.small.yellow:hover {
+  background-color: #f3f349;
+}
+.box.small.yellow:hover:before {
+  border-right-color: #f3f349;
+}
+.box.small.yellow:hover:after {
+  border-left-color: #f3f349;
+}
+
+.box.yellow .title,
+.box.yellow .desc,
+.box.yellow .expanded {
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
 a:link, a:visited {
   text-decoration: none;
 }
