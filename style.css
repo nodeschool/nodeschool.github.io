@@ -260,6 +260,12 @@ a:visited {
 
 a:link, a:visited {
   text-decoration: none;
+  border-bottom: dashed 1px rgb(180,180,170);
+  border-bottom: dashed 1px rgba(200,250,120, .7);
+}
+
+a:link:hover, a:visited:hover {
+  border-bottom: dashed 1px rgb(200,250,120);
 }
 
 .note,
@@ -303,6 +309,10 @@ a:link, a:visited {
   border-left: 20px solid rgb(135,20,124);
 }
 
+.note:link:hover,
+.note:visited:hover {
+  border: none;
+}
 .note:hover {
   background-color: rgb(155,20,144);
 }
