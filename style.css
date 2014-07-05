@@ -305,6 +305,25 @@ a:visited {
   text-shadow: 0 0 2px #000;
 }
 
+.box.gray {
+  background-color: rgb(180,180,180);
+}
+.box.gray:before {
+  border-right-color: rgb(180,180,180);
+}
+.box.gray:after {
+  border-left-color: rgb(180,180,180);
+}
+.box.small.gray:hover {
+  background-color: rgb(210,210,210);
+}
+.box.small.gray:hover:before {
+  border-right-color: rgb(210,210,210);
+}
+.box.small.gray:hover:after {
+  border-left-color: rgb(210,210,210);
+}
+
 a:link, a:visited {
   text-decoration: none;
   border-bottom: dashed 1px rgb(180,180,170);
