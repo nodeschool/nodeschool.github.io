@@ -22,9 +22,30 @@ body {
   text-align: center;
 }
 
-#logo { padding: 20px 20px 40px 20px; }
+#logo {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 34px;
+  padding-top: 20px;
+}
 
-.top-title { display: none; }
+#logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#logo:link, 
+#logo:visited,
+#logo:hover {
+  border-bottom: 0 none;
+}
+
+.top-title { 
+  display: none; 
+}
 
 #header .tagline {
   font-size: 1.2em;
@@ -34,8 +55,7 @@ body {
   color: rgb(240,80,240);
   padding: 5px;
   width: 75%;
-  margin: auto;
-  margin-top: -10px;
+  margin: 0 auto;
 }
 
 #header .description {
