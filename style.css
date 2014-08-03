@@ -1,1 +1,19 @@
-body {padding: 10px; border: 7px solid #ee3c30; overflow: auto;}
+body {padding: 20px 20px 20px 20px; margin-top: 100px;border: 7px solid #ee3c30; overflow: auto; font-family: Source Sans Pro;}
+
+h1 {font-size: 250%; margin: 10px 0;}
+
+header {}
+header h1 {font-size: 500%; color: #ee3c30; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
+header img  {width: 200px; float: left; padding-right: 60px; position: relative; top: -84px;}
+
+.container {width: 100%; background: pink; clear: both;}
+
+ul.nav {list-style: none;}
+ul.nav li {display: inline;}
+
+#map {height: 350px; background: #777;}
+
+.half {width: 45%; display: inline-block; vertical-align: top;}
+.half + .half {padding: 0 20px;}
+
+#upcoming-workshops ul { margin: 0;}
