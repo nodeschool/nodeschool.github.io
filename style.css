@@ -1,12 +1,15 @@
 body {padding: 20px 20px 20px 20px; margin-top: 100px;border: 7px solid #ee3c30; overflow: auto; font-family: Source Sans Pro;}
 
 h1 {font-size: 250%; margin: 10px 0;}
+code {font-family: Source Code Pro; font-size: 11px;}
 
 header {}
 header h1 {font-size: 500%; color: #ee3c30; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
 header img  {width: 200px; float: left; padding-right: 60px; position: relative; top: -84px;}
 
-.container {width: 100%; background: pink; clear: both;}
+.container {width: 100%; clear: both;}
+/*.container + .container {margin-top: 60px;}*/
+.container {margin-top: 60px;}
 
 ul.nav {list-style: none;}
 ul.nav li {display: inline;}
@@ -16,4 +19,17 @@ ul.nav li {display: inline;}
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
 
+.third {width: 30%; display: inline-block; vertical-align: top;}
+.third + .third {padding-left: 30px;}
+
+/*.core-workshoppers, .elective-workshoppers {border-bottom: 2px solid red; padding-bottom: 20px;}*/
+
+.workshopper {padding-bottom: 20px;}
+.workshopper + .workshopper {border-top: 1px solid red; }
+
 #upcoming-workshops ul { margin: 0;}
+
+footer {border-top: 3px solid #ee3c30; margin-top: 60px; color: #ee3c30;}
+.footer-item {display: inline-block; padding-right: 60px; vertical-align: top;}
+footer ul {list-style: none;}
+footer strong {line-height: 2em;}
