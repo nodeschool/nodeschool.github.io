@@ -54,3 +54,15 @@ footer ul {list-style: none;}
 footer strong {line-height: 2em;}
 footer a {font-family: Source Code Pro; font-size: 11px;}
 footer p {margin: 0; padding: 0;}
+
+@media (min-width: 550px) {
+  .third, .two-thirds {width: 100%; padding-left: 0;}
+  .third + .third {padding-left: 0;}
+  header h1 {font-size: 250%;}
+  footer ul {width: 100%; padding-left: 0; padding-top: 20px;}
+  footer ul + ul {padding-left: 0;}
+  #get-going, .upcoming-workshopers {padding-top: 20px;}
+  ul.nav li {display: block;}
+  ul.nav li + li {padding-left: 0; padding-top: 20px;}
+  header img {padding-right: 0;}
+}
