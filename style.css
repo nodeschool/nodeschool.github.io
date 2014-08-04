@@ -1,12 +1,14 @@
-body {padding: 20px 40px; margin-top: 100px;border: 7px solid #ee3c30; overflow: auto; font-family: Source Sans Pro;}
+body {padding: 20px 40px; margin-top: 100px;border: 7px solid #ee3c30; overflow: auto; font-family: Source Sans Pro; color: #333;}
+
+#ee3c30
 
 h1 {font-size: 250%; margin: 10px 0;}
-code {font-family: Source Code Pro; font-size: 11px;}
+code {font-family: Source Code Pro; font-size: 12px;}
 img {width: 100%;}
 
 p, li {line-height: 1.4em;}
 
-a {color: #777; text-decoration: none; border-bottom: 1px dashed #777;}
+a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
 a:hover {color: #ee3c30; border-color: #ee3c30;}
 
 header {padding-bottom: 40px;}
@@ -36,14 +38,16 @@ ul.nav li + li {padding-left: 20px;}
 .two-thirds {width: 60%; display: inline-block; vertical-align: top; padding-left: 30px;}
 
 .core-workshoppers h1,
+.elective-workshoppers h1 {font-weight: 500;}
+
 .core-workshoppers h2,
-.elective-workshoppers h1,
-.elective-workshoppers h2 {font-weight: 500;}
+.elective-workshoppers h2 {background: #333; font-size: 20px; color: #fff; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
+.elective-workshoppers h2 {background: #777;}
 
 /*.core-workshoppers, .elective-workshoppers {color: #777;}*/
 
 .workshopper {padding-bottom: 20px;}
-.workshopper + .workshopper {border-top: 2px solid #ee3c30; }
+/*.workshopper + .workshopper {border-top: 2px solid #ee3c30; }*/
 
 #upcoming-workshops ul { margin: 0;}
 
@@ -54,6 +58,14 @@ footer ul {list-style: none;}
 footer strong {line-height: 2em;}
 footer a {font-family: Source Code Pro; font-size: 11px;}
 footer p {margin: 0; padding: 0;}
+
+#gitit h2 {border-bottom: 2px solid #0066FF;}
+#learnyounode h2 {border-bottom: 2px solid #FFE100;}
+#streamadventure h2 {border-bottom: 2px solid #00FF1E;}
+#bytewiser h2 {border-bottom: 2px solid #D500FF;}
+#functionaljavascript h2 {border-bottom: 2px solid #00CCFF;}
+
+
 
 @media (max-width: 550px) {
   p, li, code {font-size: 30px;}
