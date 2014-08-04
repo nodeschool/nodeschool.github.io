@@ -3,48 +3,69 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" href="/images/nodeschool-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
     <title>nodeschool.io</title>
   </head>
   <body>
-    <header>
-      <img src="logo.png">
-      <h1>NODESCHOOL</h1>
-      <h3>Open source workshoppers for learning Node.js that run in your terminal. Do them on your own or at a workshop nearby.</h3>
-      <ul class="nav">
-        <li>Opt</li>
-        <li>Opt</li>
-        <li>Opt</li>
-      </ul>
+    <header class="">
+      <div class="third logo">
+        <img src="logo.png">
+      </div>
+      <div class="two-thirds">
+        <h1>NODESCHOOL</h1>
+        <h3>Open source workshoppers for learning Node.js that run in your terminal. Do them on your own or at a workshop nearby.</h3>
+        <ul class="nav">
+          <li>Workshops</li>
+          <li>Workshoppers</li>
+          <li>About</li>
+          <li>Contribute</li>
+        </ul>
+      </div>
     </header>
 
     <div class="container workshops">
-      <h1>WORKSHOPS</h1>
-      <p>Attend a workshop to mentor or complete a workshopper.</p>
-      <div id="map" class="half">Loading...</div>
-      <div id="upcoming-workshops" class="half">
+      <div class="third">
+        <h1>WORKSHOPS</h1>
+        <p>Attend a workshop to mentor or complete a workshopper.</p>
+      </div>
+
+      <div class="third">
+        <div id="map" class="half">Loading...</div>
+      </div>
+
+      <div class="third">
         <h3>Upcoming Workshops</h3>
-        <ul>
-          <li>8/5/2014 <a href="http://www.meetup.com/BayNode/events/175079372">NodeSchool @ BayNode</a></li>
-          <li>8/14/2014 <a href="http://www.meetup.com/AtlantaJavaScript/events/198281762/">NodeSchool @ ATL.JS</a></li>
-          <li>9/2/2014 <a href="http://summeroftechnology.eu/register.php?id=69">NodeSchool @ Contribute, Belgium</a></li>
-        </ul>
+        <div id="upcoming-workshops">
+          <ul>
+            <li>8/5/2014 <a href="http://www.meetup.com/BayNode/events/175079372">NodeSchool @ BayNode</a></li>
+            <li>8/14/2014 <a href="http://www.meetup.com/AtlantaJavaScript/events/198281762/">NodeSchool @ ATL.JS</a></li>
+            <li>9/2/2014 <a href="http://summeroftechnology.eu/register.php?id=69">NodeSchool @ Contribute, Belgium</a></li>
+          </ul>
+        </div>
         <p>See all events.</p>
         <p>Want to host an event? Resources and tips for how.</p>
       </div>
     </div>
 
     <div class="container workshoppers">
-      <h1>WORKSHOPPERS</h1>
-      <div id="map" class="half">Image</div>
-      <div id="upcoming-workshops" class="half">
-        <h3>Get Going —</h3>
-        <p>You’ll need Node.js on your computer to get started
-with each of these. Then use npm to install each
-module with the command below it. Once installed,
-simple type the workshopper’s name to launch.</p>
+      <div class="third">
+        <h1>WORKSHOPPERS</h1>
+      </div>
+
+      <div class="third">
+        <img src="screenshot.png">
+      </div>
+
+      <div class="third">
+        <div id="upcoming-workshops" class="half">
+          <h3>Get Going —</h3>
+          <p>You’ll need Node.js on your computer to get started
+  with each of these. Then use npm to install each
+  module with the command below it. Once installed,
+  simple type the workshopper’s name to launch.</p>
+        </div>
       </div>
     </div>
 
@@ -111,22 +132,26 @@ simple type the workshopper’s name to launch.</p>
   </div>
 
   <footer>
-    <p class="footer-item"><strong>nodeschoo.io</strong></p>
-    <ul class="footer-item">
-      <li><strong>Contact</strong></li>
-      <li>t/@nodeschool</li>
-      <li>gh/nodeschool</li>
-    </ul>
-    <ul class="footer-item">
-      <li><strong>Contact</strong></li>
-      <li>t/@nodeschool</li>
-      <li>gh/nodeschool</li>
-    </ul>
-    <ul class="footer-item">
-      <li><strong>Contact</strong></li>
-      <li>t/@nodeschool</li>
-      <li>gh/nodeschool</li>
-    </ul>
+    <div class="third">
+      <p><strong>nodeschoo.io</strong></p>
+    </div>
+    <div class="two-thirds">
+      <ul>
+        <li><strong>Contact</strong></li>
+        <li>t/@nodeschool</li>
+        <li>gh/nodeschool</li>
+      </ul>
+      <ul>
+        <li><strong>Contact</strong></li>
+        <li>t/@nodeschool</li>
+        <li>gh/nodeschool</li>
+      </ul>
+      <ul>
+        <li><strong>Contact</strong></li>
+        <li>t/@nodeschool</li>
+        <li>gh/nodeschool</li>
+      </ul>
+    </div>
   </footer>
 
 
@@ -152,7 +177,7 @@ simple type the workshopper’s name to launch.</p>
         var html = Sheetsee.ich.events({
             'rows': sortDates(data)
           })
-        $('#events').html(html)
+        $('#upcoming-workshops').html(html)
       }
     </script>
 
@@ -166,5 +191,38 @@ simple type the workshopper’s name to launch.</p>
       ga('send', 'pageview');
 
     </script>
+
+    <script type="text/javascript">
+      var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
+      // Tabletop.init( { key: URL, callback: makeThings, simpleSheet: true } )
+
+      function makeThings(data) {
+        // build the calendar
+        generateCalendar(data)
+        // add hexcolor to color map markers
+        data = addHexcolor(data, "#74006A", "#A09C9C")
+        // make map
+        var optionsJSON = ["name", "tickets", "startdate", "state"]
+        var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
+          + " target='_blank'>{{name}}</a><p>"
+        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+        var map = Sheetsee.loadMap("map")
+        Sheetsee.addTileLayer(map, 'jllord.hl7d48ne')
+        var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+      }
+
+      function addHexcolor(data, color, color2) {
+        data.forEach(function(event) {
+          event.state = "past"
+          event.startUTC = new Date(event.startdate)
+          if (event.startUTC > new Date()) {
+            event.hexcolor = color
+            event.state = "future"
+          }
+          else event.hecolor = color2
+        })
+        return data
+      }
+  </script>
   </body>
 </html>
