@@ -9,7 +9,7 @@ p, li {line-height: 1.4em;}
 a {color: #777; text-decoration: none; border-bottom: 1px dashed #777;}
 a:hover {color: #ee3c30; border-color: #ee3c30;}
 
-header {}
+header {padding-bottom: 40px;}
 header h1 {font-size: 500%; color: #ee3c30; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
 header img  {width: 200px; padding-right: 60px; position: relative; top: -84px;}
 
@@ -17,9 +17,10 @@ header img  {width: 200px; padding-right: 60px; position: relative; top: -84px;}
 /*.container + .container {margin-top: 60px;}*/
 .container {margin-top: 60px;}
 
-ul.nav {list-style: none; color: #ee3c30; text-transform: uppercase; letter-spacing: .1em; padding-left: 0;}
-ul.nav li {display: inline;}
+ul.nav {list-style: none; color: #ee3c30; /*text-transform: uppercase;*/ letter-spacing: .1em; padding-left: 0;}
+ul.nav li {display: inline; font-family: Source Code Pro; font-size: 12px;}
 ul.nav li + li {padding-left: 20px;}
+/*ul.nav a:hover {background: red; color: #fff;}*/
 
 #map {width: 100%; height: 350px; background: #eaeaea;}
 
@@ -51,3 +52,5 @@ footer ul {display: inline-block; padding-right: 60px; vertical-align: top; marg
 footer ul + ul {padding-left: 80px;}
 footer ul {list-style: none;}
 footer strong {line-height: 2em;}
+footer a {font-family: Source Code Pro; font-size: 11px;}
+footer p {margin: 0; padding: 0;}
