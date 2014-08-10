@@ -33,7 +33,7 @@
 
     <div class="container workshops">
       <div class="two-thirds">
-        <div id="map">Map</div>
+        <div id="map"></div>
       </div>
 
       <div class="third upcoming-workshopers">
@@ -42,7 +42,7 @@
         <div id="upcoming-workshops">
           Loading...
         </div>
-        <h3>Anyone can host!</h3>
+        <h3>Anyone can host</h3>
         <p>NodeSchool is decentralized, open source and volunteer run. Want to host an event? <a href="">Resources and tips</a> for how.</p>
       </div>
     </div>
@@ -222,7 +222,6 @@
     </div>
   </footer>
 
-
     <script id="events" type="text/html">
       <ul>
         {{#rows}}
@@ -239,8 +238,17 @@
     <script type="text/javascript" src='js/main.js'></script>
 
     <script type="text/javascript">
-      var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
-      Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
+      try {
+        loadEvents()
+      } catch(e) {
+        $('#upcoming-workshops').html('Could not load events, sorry!')
+        $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
+      }
+      
+      function loadEvents() {
+        var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
+        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
+      }
 
       function showNearEvents(data) {
         makeMap(data)
@@ -262,18 +270,18 @@
         var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
       }
 
-    function addHexcolor(data, color, color2) {
-      data.forEach(function(event) {
-        event.state = "past"
-        event.startUTC = new Date(event.startdate)
-        if (event.startUTC > new Date()) {
-          event.hexcolor = color
-          event.state = "future"
-        }
-        else event.hecolor = color2
-      })
-      return data
-    }
+      function addHexcolor(data, color, color2) {
+        data.forEach(function(event) {
+          event.state = "past"
+          event.startUTC = new Date(event.startdate)
+          if (event.startUTC > new Date()) {
+            event.hexcolor = color
+            event.state = "future"
+          }
+          else event.hecolor = color2
+        })
+        return data
+      }
     </script>
 
     <script>
