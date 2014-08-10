@@ -60,6 +60,7 @@ ul.nav li a {border: none;}
 #workshoppers {background-color: #F8F8F8;}
 /*.workshopper + .workshopper {border-top: 2px solid #ee3c30; }*/
 
+#upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
 
 footer {border-top: 3px solid #ee3c30; margin-top: 60px; margin-bottom: 40px; color: #ee3c30; padding-top: 20px;}
