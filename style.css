@@ -1,6 +1,6 @@
-body {padding: 20px 40px; margin-top: 100px;border: 7px solid #ee3c30; overflow: auto; font-family: Source Sans Pro; color: #333;}
+body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color: #333;}
 
-#ee3c30
+/*#ee3c30 rgb(238, 60, 48)*/
 
 h1 {font-size: 250%; margin: 10px 0;}
 code {font-family: Source Code Pro; font-size: 12px;}
@@ -11,20 +11,25 @@ p, li {line-height: 1.4em;}
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
 a:hover {color: #ee3c30; border-color: #ee3c30;}
 
-header {padding-bottom: 40px;}
-header h1 {font-size: 500%; color: #ee3c30; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
-header img  {width: 200px; padding-right: 60px; position: relative; top: -84px;}
+/*background-color: rgb(238, 60, 48); background-blend-mode: multiply*/
+.hero-img {background-image: url('images/hero2.jpg'); ;  background-size: 100%; background-position: 0 31%; color: #fff;}
+header {}
+.mask {background-color: rgba(212, 75, 75, 0.5); width: 100%; height: 100%;}
+header h1 {font-size: 500%; color: #fff; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
+header a {color: #fff; border-color: #fff;}
+header img  {width: 200px; padding-right: 60px; position: relative;}
+header .container {padding: 80px 40px;}
 
 .container {width: 100%; clear: both;}
 /*.container + .container {margin-top: 60px;}*/
-.container {margin-top: 60px;}
+.container {padding: 60px 40px;}
 
 ul.nav {list-style: none; color: #ee3c30; /*text-transform: uppercase;*/ letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-family: Source Code Pro; font-size: 12px;}
 ul.nav li + li {padding-left: 20px;}
 /*ul.nav a:hover {background: red; color: #fff;}*/
 
-#map {width: 100%; height: 350px; background: #eaeaea;}
+#map {width: 100%; min-height: 375px; background: #eaeaea;}
 
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
@@ -35,7 +40,9 @@ ul.nav li + li {padding-left: 20px;}
 
 .logo {text-align: center;}
 
-.two-thirds {width: 60%; display: inline-block; vertical-align: top; padding-left: 30px;}
+.two-thirds {width: 60%; display: inline-block; vertical-align: top;}
+.two-thirds + .third {padding-left: 30px;}
+.third + .two-thirds {padding-left: 30px;}
 
 .core-workshoppers h1,
 .elective-workshoppers h1 {font-weight: 500;}
@@ -47,6 +54,7 @@ ul.nav li + li {padding-left: 20px;}
 /*.core-workshoppers, .elective-workshoppers {color: #777;}*/
 
 .workshopper {padding-bottom: 20px;}
+#workshoppers {background-color: #F8F8F8;}
 /*.workshopper + .workshopper {border-top: 2px solid #ee3c30; }*/
 
 #upcoming-workshops ul { margin: 0;}
@@ -58,6 +66,7 @@ footer ul {list-style: none;}
 footer strong {line-height: 2em;}
 footer a {font-family: Source Code Pro; font-size: 11px;}
 footer p {margin: 0; padding: 0;}
+footer .container {padding: 0 40px;}
 
 #gitit h2 {border-bottom: 2px solid #0066FF;}
 #learnyounode h2 {border-bottom: 2px solid #FFE100;}
