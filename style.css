@@ -25,8 +25,11 @@ header .container {padding: 80px 40px;}
 .container {padding: 60px 40px;}
 
 ul.nav {list-style: none; color: #ee3c30; /*text-transform: uppercase;*/ letter-spacing: .1em; padding-left: 0;}
-ul.nav li {display: inline; font-family: Source Code Pro; font-size: 12px;}
-ul.nav li + li {padding-left: 20px;}
+ul.nav li {display: inline; font-size: 12px;}
+/*ul.nav li + li {padding-left: 20px;}*/
+ul.nav li {padding: 4px 8px; border: 1px solid #fff; margin-right: 10px;}
+ul.nav li:hover {background: #fff; color: red;}
+ul.nav li a {border: none;}
 /*ul.nav a:hover {background: red; color: #fff;}*/
 
 #map {width: 100%; min-height: 375px; background: #eaeaea;}
@@ -34,9 +37,9 @@ ul.nav li + li {padding-left: 20px;}
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
 
-.third {width: 30%; display: inline-block; vertical-align: top;}
+.third {width: 30%; display: inline-block; vertical-align: top; }
 .third + .third {padding-left: 30px;}
-.third h3, .third h1 {margin-top: 0;}
+.third h3, .third h1 {margin-top: 0; line-height: 28px;}
 
 .logo {text-align: center;}
 
