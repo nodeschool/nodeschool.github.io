@@ -80,7 +80,7 @@ header .full {}
 #upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
 
-footer {border-top: 3px solid #ee3c30; padding-top: 60px; padding-bottom: 40px; color: #ee3c30; padding-top: 20px;}
+footer {border-top: 3px solid #333; padding-top: 60px; padding-bottom: 40px; color: #333; padding-top: 20px;}
 footer ul {display: inline-block; padding-right: 60px; vertical-align: top; margin: 0; padding: 0;}
 footer ul + ul {padding-left: 80px;}
 footer ul {list-style: none;}
