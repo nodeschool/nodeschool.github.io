@@ -37,6 +37,11 @@
       <div class="full">
         <h2>Workshops</h2>
         <p>These are in-person hosted workshops, usally free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
+        <ul class="inner-nav">
+          <li><a href="">Host Your Own</a></li>
+          <li><a href="">See All Events</a></li>
+          <li><a href="">Writeups of Past Events</a></li>
+        </ul>
       </div>
     </div>
     <div class="container workshops" style='background-color: #fff;'>
@@ -46,7 +51,7 @@
 
       <div class="third upcoming-workshopers">
         <h1>Upcoming Workshops</h1>
-
+        <br>
         <div id="upcoming-workshops">
           Loading...
         </div>
@@ -60,6 +65,11 @@
         <div class="full">
           <h2>Workshoppers</h2>
           <p>Workshoppers are the open source lessons themselves. All our self guided (you don't need to attend a workshop to do one) and most work offline.</p>
+          <ul class="inner-nav">
+            <li><a href="">Ask Questions if Stuck</a></li>
+            <li><a href="">Answer Questions</a></li>
+            <li><a href="">Writeups of Past Events</a></li>
+          </ul>
         </div>
       </div>
       <div class="container">
@@ -254,6 +264,15 @@
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
 
+      var el = $('h1:first')
+
+      el.hover(function(e){
+          el.html('NODES&nbsp;&nbsp;&nbsp;COOL')
+        }, function(e){
+          el.text('NODESCHOOL')
+        }
+      )
+
       function loadEvents() {
         var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
         Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
@@ -268,7 +287,7 @@
       }
 
       function makeMap(data) {
-        data = addHexcolor(data, "#ee3c30", "#A09C9C")
+        data = addHexcolor(data, "#D21FFF", "#A09C9C")
         // make map
         var optionsJSON = ["name", "tickets", "startdate", "state"]
         var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
