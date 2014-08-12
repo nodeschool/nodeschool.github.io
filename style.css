@@ -40,16 +40,17 @@ header .container {padding: 100px 40px;}
 
 ul.inner-nav {list-style: none;}
 ul.inner-nav li {padding-right: 30px; display: inline;}
-.inner-nav a {color: #FFE51F; border-color: #FFE51F;}
+.inner-nav a {color: #F7DA03; border-color: #F7DA03;}
 .inner-nav a:hover {color: #333; border-color: #333;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 12px;}
 /*ul.nav li + li {padding-left: 20px;}*/
 ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-radius: 3px;}
-ul.nav li:hover {background: #fff;}
+ul.nav li:hover {background: #fff; color: #333; cursor: pointer;}
+ul.nav li:hover a { color: #333;}
 ul.nav li a {border: none; color: #fff;}
-ul.nav li a:hover {color: #333;}
+/*ul.nav li a:hover {color: #333;}*/
 /*ul.nav a:hover {background: red; color: #fff;}*/
 
 #map {width: 100%; min-height: 375px; background: #eaeaea; margin-left: -40px; padding-right: 40px;}
