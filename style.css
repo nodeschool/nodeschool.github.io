@@ -4,20 +4,20 @@ body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color
 
 h1 {font-size: 2em; margin: 10px 0;}
 h2 {font-size: 3em;}
-code {font-family: Source Code Pro; font-size: 12px;}
+code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px;}
 img {width: 100%;}
 
 p, li {line-height: 1.4em;}
 
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
-a:hover {color: #D21FFF; border-color: #D21FFF;}
+a:hover {color: #FFE51F; border-color: #FFE51F;}
 
 /*background-color: rgb(238, 60, 48); background-blend-mode: multiply
 text-shadow: 0 0 10px rgba(255,255,255,0.75);
 rgba(177, 95, 95, 0.5);
 rgba(212, 75, 75, 0.5);
 rgba(255, 244, 244, 0.5);*/
-.first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #D21FFF; background-blend-mode: multiply; }
+.first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 /*.hero-img {background-image: url('images/hero2.jpg'); background-size: 100%; background-position: 0 26%; color: #fff;}*/
 header {color: #fff;}
 /*.mask {background-color: rgba(255, 244, 244, 0.5); width: 100%; height: 100%;}*/
@@ -26,7 +26,7 @@ header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
 header a {color: #fff; border-color: #fff;}
-header img  {width: 200px; padding-right: 60px; position: relative;}
+header img  {width: 300px; padding-right: 60px; position: relative;}
 header .container {padding: 100px 40px;}
 
 .container {clear: both;}
@@ -40,13 +40,13 @@ header .container {padding: 100px 40px;}
 
 ul.inner-nav {list-style: none;}
 ul.inner-nav li {padding-right: 30px; display: inline;}
-.inner-nav a {color: #D21FFF; border-color: #D21FFF;}
+.inner-nav a {color: #FFE51F; border-color: #FFE51F;}
 .inner-nav a:hover {color: #333; border-color: #333;}
 
-ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ letter-spacing: .1em; padding-left: 0;}
+ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 12px;}
 /*ul.nav li + li {padding-left: 20px;}*/
-ul.nav li {padding: 4px 8px; margin-right: 10px; border: 1px solid #fff;}
+ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-radius: 3px;}
 ul.nav li:hover {background: #fff;}
 ul.nav li a {border: none; color: #fff;}
 ul.nav li a:hover {color: #333;}
@@ -73,9 +73,9 @@ header .full {}
 .core-workshoppers h1,
 .elective-workshoppers h1 {font-weight: 500;}
 
-.core-workshoppers h2,
-.elective-workshoppers h2 {background: #333; font-size: 20px; color: #fff; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
-.elective-workshoppers h2 {background: #777;}
+.core-workshoppers h2 {background: #FFE51F; border-radius: 3px; font-size: 20px; color: #333; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
+.elective-workshoppers h2 {border: 2px solid #333; border-radius: 3px; font-size: 20px; color: #333; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
+.elective-workshoppers h2 {background: #fff;}
 
 /*.core-workshoppers, .elective-workshoppers {color: #777;}*/
 
@@ -91,7 +91,8 @@ footer ul {display: inline-block; padding-right: 60px; vertical-align: top; marg
 footer ul + ul {padding-left: 80px;}
 footer ul {list-style: none;}
 footer strong {line-height: 2em;}
-footer a {font-size: 11px;}
+footer li a {font-size: 11px; text-decoration: none; border: none;}
+footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
