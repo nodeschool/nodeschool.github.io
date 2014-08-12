@@ -33,8 +33,7 @@ header .container {padding: 100px 40px;}
 /*.container + .container {margin-top: 60px;}*/
 .container {padding: 60px 40px;}
 
-.window-pane {height: 400px; width: 100%;}
-.window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -140px; background-size: 100%; background-repeat: no-repeat;}
+.window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -200px; background-size: 100%; background-repeat: no-repeat;}
 
 .other-photo {background-image: url('images/hero.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 600px; z-index: -1; display: block; height: 200%; width: 100%; }
 
