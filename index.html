@@ -11,13 +11,15 @@
     <title>nodeschool.io</title>
   </head>
   <body>
+    <div class="first-photo"></div>
+    <!-- <div class="other-photo"></div> -->
+
+
+
     <header class="hero-img">
       <div class="mask">
         <div class="container">
-          <div class="third logo">
-            <img src="onecolorlogo.png">
-          </div>
-          <div class="two-thirds">
+          <div class="full">
             <h1>NODESCHOOL</h1>
             <h3>Open source workshops built with Node that run in your terminal. Do them on your own or at a workshop nearby.</h3>
             <ul class="nav">
@@ -31,14 +33,20 @@
       </div>
     </header>
 
-    <div class="container workshops">
+    <div class="container" style='background-color: #fff;'>
+      <div class="full">
+        <h2>Workshops</h2>
+        <p>These are in-person hosted workshops, usally free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
+      </div>
+    </div>
+    <div class="container workshops" style='background-color: #fff;'>
       <div class="two-thirds">
         <div id="map"></div>
       </div>
 
       <div class="third upcoming-workshopers">
         <h1>Upcoming Workshops</h1>
-        <p>These are in-person hosted workshops, usally free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
+
         <div id="upcoming-workshops">
           Loading...
         </div>
@@ -49,11 +57,9 @@
 
     <div id="workshoppers">
       <div class="container">
-        <div class="third">
-          <h1>Workshoppers</h1>
-        </div>
-        <div class="two-thirds">
-          <p>This is about workshopers</p>
+        <div class="full">
+          <h2>Workshoppers</h2>
+          <p>Workshoppers are the open source lessons themselves. All our self guided (you don't need to attend a workshop to do one) and most work offline.</p>
         </div>
       </div>
       <div class="container">
@@ -75,8 +81,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container core-workshoppers">
+    <div class="window-pane"></div>
+
+      <div class="container core-workshoppers" style='background-color: #fff;'>
         <div class="third">
           <h1>Core</h1>
           <p>These workshoppers focus on essential skills for working with Node.js.</p>
@@ -112,7 +121,7 @@
         </div>
       </div>
 
-    <div class="container elective-workshoppers">
+    <div class="container elective-workshoppers" style='background-color: #fff;'>
       <div class="third">
         <h1>Electives</h1>
         <p>Workshoppers on popular libraries or styles of writing Node.js.</p>
@@ -194,9 +203,8 @@
 
       </div>
     </div>
-  </div>
 
-  <footer>
+  <footer style='background-color: #fff;'>
     <div class="container">
       <div class="third">
         <p><strong>nodeschool.io</strong></p>
@@ -244,7 +252,7 @@
         $('#upcoming-workshops').html('Could not load events, sorry!')
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
-      
+
       function loadEvents() {
         var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
         Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
