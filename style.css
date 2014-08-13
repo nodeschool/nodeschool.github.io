@@ -26,7 +26,7 @@ header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
 header a {color: #fff; border-color: #fff;}
-header img  {width: 300px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
+header img  {width: 350px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
 
 .container {clear: both;}
@@ -43,7 +43,7 @@ ul.inner-nav li {padding-right: 30px; display: inline;}
 .inner-nav a:hover {color: #333; border-color: #333;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
-ul.nav li {display: inline; font-size: 12px;}
+ul.nav li {display: inline; font-size: 16px;}
 /*ul.nav li + li {padding-left: 20px;}*/
 ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-radius: 3px;}
 ul.nav li:hover {background: #fff; color: #333; cursor: pointer;}
