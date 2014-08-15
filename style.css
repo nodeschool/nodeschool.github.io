@@ -106,7 +106,7 @@ footer .container {padding: 0 40px;}
 
 
 @media (max-width: 550px) {
-  p, li, code {font-size: 30px;}
+  /*p, li, code {font-size: 30px;}
   h2, h3 {font-size: 3em;}
   h1 {font-size: 4em;}
   .third, .two-thirds {width: 100%; padding-left: 0;}
@@ -117,5 +117,22 @@ footer .container {padding: 0 40px;}
   #get-going, .upcoming-workshopers {padding-top: 20px;}
   ul.nav li {display: block; font-size: 30px;}
   ul.nav li + li {padding-left: 0; padding-top: 20px;}
-  header img {padding: 30px 0 50px 0; width: 50%; top: 0; }
+  header img {padding: 30px 0 50px 0; width: 50%; top: 0; }*/
+  .container {padding: 20px;}
+  .first-photo {background-image: none;}
+  p {font-size: 1em;}
+  h1, h2, h3 {font-size: 2em; padding-top: 40px;}
+  .third, .two-thirds, .full {width: 100%;}
+  .two-thirds + .third, .third + .third, .third + .two-thirds {padding-left: 0;}
+  header .container {padding: 40px 20px;}
+  header img {width: 100%; padding: 0;}
+  header h1 {font-size: 2.5em;}
+  header h3 {font-size: 1em;}
+  ul.nav li {line-height: 3em;}
+  ul.inner-nav li {display: block; line-height: 2em;}
+  #map {margin: 0; padding: 0; width: 100%;}
+  .window-pane {background-position: 0 0; height: 200px;}
+  footer ul {width: 100%;}
+  footer ul + ul {padding-left: 0;}
+  footer li a {font-size: 14px;}
 }
