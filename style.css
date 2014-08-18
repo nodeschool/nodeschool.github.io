@@ -40,8 +40,8 @@ header .container {padding: 100px 40px;}
 
 ul.inner-nav {list-style: none;}
 ul.inner-nav li {padding-right: 30px; display: inline;}
-.inner-nav a {color: #F7DA03; border-color: #F7DA03;}
-.inner-nav a:hover {color: #333; border-color: #333;}
+.inner-nav a {border-color: #F7DA03; color: #333; border-color: #F7DA03; padding: 0 10px 3px 10px; border-bottom-width: 2px;}
+.inner-nav a:hover {color: #F7DA03; border-color: #F7DA03;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 16px;}
