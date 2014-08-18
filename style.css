@@ -29,6 +29,8 @@ header a {color: #fff; border-color: #fff;}
 header img  {width: 350px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
 
+.events header .container {padding: 20px;}
+
 .container {clear: both;}
 /*.container + .container {margin-top: 60px;}*/
 .container {padding: 60px 40px;}
@@ -54,6 +56,18 @@ ul.nav li a {border: none; color: #fff;}
 /*ul.nav a:hover {background: red; color: #fff;}*/
 
 #map {width: 100%; min-height: 375px; background: #eaeaea; margin-left: -40px; padding-right: 40px;}
+.events #map {margin: 0; padding: 0;}
+.leaflet-container .leaflet-control-attribution {
+  background-color: #333;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #333;
+}
+
+.leaflet-popup-content {
+  font-family: Source Sans Pro;
+}
 
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
@@ -64,6 +78,7 @@ ul.nav li a {border: none; color: #fff;}
 
 .full {width: 63%; text-align: center; margin: 0 auto;}
 .full p {font-size: 26px;}
+.events .full {width: 100%;}
 header .full {}
 .logo {text-align: center;}
 
