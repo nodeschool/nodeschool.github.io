@@ -53,6 +53,8 @@ ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-
 ul.nav li:hover {background: #fff; color: #333; cursor: pointer;}
 ul.nav li:hover a {color: #333;}
 ul.nav li a {border: none; color: #fff;}
+ul.nav li.current-page {background: #fff; color: #333;}
+ul.nav li.current-page a {color: #333;}
 /*ul.nav li a:hover {color: #333;}*/
 /*ul.nav a:hover {background: red; color: #fff;}*/
 
