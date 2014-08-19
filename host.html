@@ -19,10 +19,12 @@
           <div class="full">
             <h1>NODESCHOOL</h1>
             <ul class="nav">
-              <li><a href="">Workshops</a></li>
-              <li><a href="">Workshoppers</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contribute</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="index.html#workshoppers">Workshoppers</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="building-workshops.html">Build</a></li>
+              <li><a href="host.html">Host</a></li>
             </ul>
           </div>
         </div>
@@ -36,11 +38,9 @@
       </div>
 
       <div class="container">
-        <div class="third">
-          <!-- <h3>It all started when...</h3> -->
-        </div>
+        <div class="third"></div>
         <div class="two-thirds">
-          <p>This page is based loosely on the <a target="_blank" href="https://github.com/nodeschool/discussions/issues/93">Want to run an event?</a> discussion.</p>
+          <p><em>This page is based loosely on the <a target="_blank" href="https://github.com/nodeschool/discussions/issues/93">Want to run an event?</a> discussion.</em></p>
         </div>
       </div>
 
@@ -98,99 +98,27 @@
       <footer>
         <div class="third">
           <p><strong>nodeschool.io</strong></p>
-          <small>Photos by <a href="">Matthew Bergman</a></small>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
         </div>
         <div class="two-thirds">
           <ul>
             <li><strong>Contact</strong></li>
-            <li><a href="">t/@nodeschool</a></li>
-            <li><a href="">gh/nodeschool</a></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
           </ul>
           <ul>
             <li><strong>Contribute</strong></li>
-            <li><a href="">Open an Issue</li>
-            <li><a href="">Answer a Question</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
           </ul>
           <ul>
             <li><strong>About</strong></li>
-            <li><a href="">Build a workshopper</a></li>
-            <li><a href="">Host a workshop</a></li>
+            <li><a href="building-workshops.html">Build a workshopper</a></li>
+            <li><a href="host.html">Host a workshop</a></li>
           </ul>
         </div>
       </footer>
     </div>
-
-    <script id="events" type="text/html">
-      <ul>
-        {{#rows}}
-          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
-        {{/rows}}
-          <li><a href="events.html">See all events</a></li>
-      </ul>
-    </script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tabletop.js"></script>
-    <script type="text/javascript" src='js/sheetsee.js'></script>
-    <script type="text/javascript" src='js/table.js'></script>
-    <script type="text/javascript" src='js/main.js'></script>
-
-    <script type="text/javascript">
-      try {
-        loadEvents()
-      } catch(e) {
-        $('#upcoming-workshops').html('Could not load events, sorry!')
-        $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
-      }
-
-      var el = $('h1:first')
-
-      el.hover(function(e){
-          el.html('NODES&nbsp;&nbsp;&nbsp;COOL')
-        }, function(e){
-          el.text('NODESCHOOL')
-        }
-      )
-
-      function loadEvents() {
-        var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
-        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
-      }
-
-      function showNearEvents(data) {
-        generateCalendar(data)
-        makeMap(data)
-        var html = Sheetsee.ich.events({
-            'rows': sortDates(data)
-          })
-        $('#upcoming-workshops').html(html)
-      }
-
-      function makeMap(data) {
-        data = addHexcolor(data, "#F7DA03", "#A09C9C")
-        // make map
-        var optionsJSON = ["name", "tickets", "startdate", "state"]
-        var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
-          + " target='_blank'>{{name}}</a><p>"
-        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-        var map = Sheetsee.loadMap("map")
-        Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
-        var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
-      }
-
-      function addHexcolor(data, color, color2) {
-        data.forEach(function(event) {
-          event.state = "past"
-          event.startUTC = new Date(event.startdate)
-          if (event.startUTC > new Date()) {
-            event.hexcolor = color
-            event.state = "future"
-          }
-          else event.hecolor = color2
-        })
-        return data
-      }
-    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

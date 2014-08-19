@@ -30,7 +30,10 @@ header a {color: #fff; border-color: #fff;}
 header img  {width: 350px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
 
-.events header .container {padding: 20px;}
+.events header .container,
+.about header .container,
+.host header .container,
+.building-workshops header .container {padding: 20px;}
 
 .container {clear: both;}
 /*.container + .container {margin-top: 60px;}*/
