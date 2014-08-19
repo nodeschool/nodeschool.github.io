@@ -8,7 +8,7 @@ code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border
 img {width: 100%;}
 
 p, li {line-height: 1.4em;}
-
+p:first-child {padding-top: 0; margin-top: 0;}
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
 a:hover {color: #FFE51F; border-color: #FFE51F;}
 
@@ -35,6 +35,7 @@ header .container {padding: 100px 40px;}
 .container {clear: both;}
 /*.container + .container {margin-top: 60px;}*/
 .container {padding: 60px 40px;}
+.host .container {padding: 20px 40px;}
 
 .window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -200px; background-size: 100%; background-repeat: no-repeat;}
 .caption {color: #fff; font-size: 11px; padding: 40px; display: inline-block; opacity: .5;}
