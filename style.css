@@ -90,9 +90,12 @@ header .full {}
 .core-workshoppers h1,
 .elective-workshoppers h1 {font-weight: 500;}
 
-.core-workshoppers h2 {background: #FFE51F; border-radius: 3px; font-size: 20px; color: #333; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
-.elective-workshoppers h2 {border: 2px solid #333; border-radius: 3px; font-size: 20px; color: #fff; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
-.elective-workshoppers h2 {background: #333;}
+.core-workshoppers h2 a,
+.elective-workshoppers h2 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
+.elective-workshoppers h2 a {background: #333; color: #fff;}
+.core-workshoppers h2 a {background: #FFE51F; color: #333; }
+.elective-workshoppers h2 a:hover {background: #000; }
+.core-workshoppers h2 a:hover {background: #F7DA03;}
 
 /*.core-workshoppers, .elective-workshoppers {color: #777;}*/
 
