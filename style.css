@@ -2,8 +2,8 @@ body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color
 
 /*#ee3c30 rgb(238, 60, 48)*/
 
-h1 {font-size: 2em; margin: 10px 0;}
-h2 {font-size: 3em;}
+h1 {font-size: 3em; margin: 10px 0;}
+h2 {font-size: 2em;}
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px;}
 img {width: 100%;}
 
@@ -20,6 +20,7 @@ rgba(255, 244, 244, 0.5);*/
 .first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 /*.hero-img {background-image: url('images/hero2.jpg'); background-size: 100%; background-position: 0 26%; color: #fff;}*/
 header {color: #fff;}
+hr {border: 2px solid #333; margin: 0;}
 /*.mask {background-color: rgba(255, 244, 244, 0.5); width: 100%; height: 100%;}*/
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
@@ -74,7 +75,7 @@ ul.nav li a {border: none; color: #fff;}
 
 .third {width: 30%; display: inline-block; vertical-align: top; }
 .third + .third {padding-left: 30px;}
-.third h3, .third h1 {margin-top: 0; line-height: 28px;}
+.third h3, .third h2, .third h1 {margin-top: 0; line-height: 28px;}
 
 .full {width: 63%; text-align: center; margin: 0 auto;}
 .full p {font-size: 26px;}
@@ -90,8 +91,8 @@ header .full {}
 .elective-workshoppers h1 {font-weight: 500;}
 
 .core-workshoppers h2 {background: #FFE51F; border-radius: 3px; font-size: 20px; color: #333; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
-.elective-workshoppers h2 {border: 2px solid #333; border-radius: 3px; font-size: 20px; color: #333; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
-.elective-workshoppers h2 {background: #fff;}
+.elective-workshoppers h2 {border: 2px solid #333; border-radius: 3px; font-size: 20px; color: #fff; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500;}
+.elective-workshoppers h2 {background: #333;}
 
 /*.core-workshoppers, .elective-workshoppers {color: #777;}*/
 

@@ -47,7 +47,7 @@ body { background: rgb(88,20,94); }
 }
 
 .days:last-child td {
-  border-bottom: 0;
+  /*border-bottom: 0;*/
 }
 
 .month-table .empty {
@@ -55,18 +55,8 @@ body { background: rgb(88,20,94); }
   background-size: 1px 5px;
 }
 
-h1 { font-size: 40px; display: inline-block; }
-
-h2 {
-  /*font-size: 30px;
-  display: inline-block;*/
-  padding: 4px 120px;
-  color: #333;
-  font-weight: normal;
-}
-
 .month-menuitem {
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
   border: 0;
   font-weight: bold;
@@ -81,7 +71,8 @@ h2 {
 }
 
 .month-menuitem:hover {
-  color: #F7DA03;
+  color: #333;
+  background-color: #F7DA03;
 }
 
 .month-menuitem.active {
