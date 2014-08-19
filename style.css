@@ -26,7 +26,7 @@ header h1 {font-size: 500%; font-weight: 900; margin-bottom: 20px; margin-top: 2
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
-header a {color: #fff; border-color: #fff;}
+header a {color: #fff; border-color: #fff; border: none;}
 header img  {width: 350px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
 
