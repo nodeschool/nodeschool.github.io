@@ -1,27 +1,24 @@
 body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color: #333;}
 
 /*#ee3c30 rgb(238, 60, 48)*/
+/*#AAA688*/
 
 h1 {font-size: 3em; margin: 10px 0;}
 h2 {font-size: 2em;}
+
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px;}
+
 img {width: 100%;}
 
 p, li {line-height: 1.4em;}
 p:first-child {padding-top: 0; margin-top: 0;}
+
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
 a:hover {color: #FFE51F; border-color: #FFE51F;}
 
-/*background-color: rgb(238, 60, 48); background-blend-mode: multiply
-text-shadow: 0 0 10px rgba(255,255,255,0.75);
-rgba(177, 95, 95, 0.5);
-rgba(212, 75, 75, 0.5);
-rgba(255, 244, 244, 0.5);*/
-.first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
-/*.hero-img {background-image: url('images/hero2.jpg'); background-size: 100%; background-position: 0 26%; color: #fff;}*/
-header {color: #fff;}
 hr {border: 2px solid #333; margin: 0;}
-/*.mask {background-color: rgba(255, 244, 244, 0.5); width: 100%; height: 100%;}*/
+
+header {color: #fff;}
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
@@ -36,16 +33,23 @@ header .container {padding: 100px 40px;}
 .building-workshops header .container,
 .chapters .container {padding: 20px;}
 
-.events header .logo,
-.about header .logo,
-.host header .logo,
+.events .logo,
+.about .logo,
+.host .logo,
 .building-workshops .logo,
 .chapters .logo {padding: 15px 0;}
 
+.events .first-photo,
+.about .first-photo,
+.host .first-photo,
+.building-workshops .first-photo,
+.chapters .first-photo {background-color: #CFB914;}
+
 .container {clear: both;}
-/*.container + .container {margin-top: 60px;}*/
 .container {padding: 60px 40px;}
 .host .container {padding: 20px 40px;}
+
+.first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 
 .window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -200px; background-size: 100%; background-repeat: no-repeat;}
 .caption {color: #fff; font-size: 11px; padding: 40px; display: inline-block; opacity: .5;}
@@ -59,29 +63,20 @@ ul.inner-nav li {padding-right: 30px; display: inline;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 16px;}
-/*ul.nav li + li {padding-left: 20px;}*/
 ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-radius: 3px;}
 ul.nav li:hover {background: #fff; color: #333; cursor: pointer;}
 ul.nav li:hover a {color: #333;}
 ul.nav li a {border: none; color: #fff;}
 ul.nav li.current-page {background: #fff; color: #333;}
 ul.nav li.current-page a {color: #333;}
-/*ul.nav li a:hover {color: #333;}*/
-/*ul.nav a:hover {background: red; color: #fff;}*/
 
 #map {width: 100%; min-height: 375px; background: #eaeaea; margin-left: -40px; padding-right: 40px;}
 .events #map {margin: 0; padding: 0;}
-.leaflet-container .leaflet-control-attribution {
-  background-color: #333;
-}
+.leaflet-container .leaflet-control-attribution {background-color: #333;}
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background: #333;
-}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {background: #333;}
 
-.leaflet-popup-content {
-  font-family: Source Sans Pro;
-}
+.leaflet-popup-content {font-family: Source Sans Pro;}
 
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
@@ -93,7 +88,6 @@ ul.nav li.current-page a {color: #333;}
 .full {width: 63%; text-align: center; margin: 0 auto;}
 .full p {font-size: 26px;}
 .events .full {width: 100%;}
-header .full {}
 .logo {text-align: center;}
 
 .two-thirds {width: 60%; display: inline-block; vertical-align: top;}
@@ -110,11 +104,8 @@ header .full {}
 .elective-workshoppers h2 a:hover {background: #000; }
 .core-workshoppers h2 a:hover {background: #F7DA03;}
 
-/*.core-workshoppers, .elective-workshoppers {color: #777;}*/
-
 .workshopper {padding-bottom: 20px;}
 #workshoppers {background-color: #F8F8F8; z-index: 99;}
-/*.workshopper + .workshopper {border-top: 2px solid #ee3c30; }*/
 
 #upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
@@ -128,14 +119,6 @@ footer li a {font-size: 11px; text-decoration: none; border: none;}
 footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
-
-/*#gitit h2 {border-bottom: 2px solid #0066FF;}
-#learnyounode h2 {border-bottom: 2px solid #FFE100;}
-#streamadventure h2 {border-bottom: 2px solid #00FF1E;}
-#bytewiser h2 {border-bottom: 2px solid #D500FF;}
-#functionaljavascript h2 {border-bottom: 2px solid #00CCFF;}*/
-
-
 
 @media (max-width: 550px) {
   /*p, li, code {font-size: 30px;}
