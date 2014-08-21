@@ -33,7 +33,14 @@ header .container {padding: 100px 40px;}
 .events header .container,
 .about header .container,
 .host header .container,
-.building-workshops header .container {padding: 20px;}
+.building-workshops header .container,
+.chapters .container {padding: 20px;}
+
+.events header .logo,
+.about header .logo,
+.host header .logo,
+.building-workshops .logo,
+.chapters .logo {padding: 15px 0;}
 
 .container {clear: both;}
 /*.container + .container {margin-top: 60px;}*/
