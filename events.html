@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="mapbox.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="events.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="mapbox.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
@@ -32,6 +32,10 @@
       <div class="full">
         <h1>Past and Future NodeSchool Events</h1><br><br>
         <div id="map"></div>
+        <div class="key">
+          <span class="key-past">Past</span>
+          <span class="key-future">Future</span>
+        </div>
       </div>
       <br><br>
       <div class="third">
@@ -119,7 +123,7 @@
         data = addHexcolor(data, "#F7DA03", "#A09C9C")
         // make map
         var optionsJSON = ["name", "tickets", "startdate", "state"]
-        var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
+        var template = "<p class='event'><strong>{{startdate}}</strong> <a class='{{state}}' href='{{tickets}}'"
           + " target='_blank'>{{name}}</a><p>"
         var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
         var map = Sheetsee.loadMap("map")
