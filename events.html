@@ -40,7 +40,7 @@
         <h3>Add your Event!</h3>
       </div>
       <div class="two-thirds">
-        <p>NodeSchool events are kept in <a href="">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.</p>
+        <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="_blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.</p>
       </div>
     </div>
 
@@ -102,15 +102,6 @@
         $('#upcoming-workshops').html('Could not load events, sorry!')
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
-
-      var el = $('h1:first')
-
-      el.hover(function(e){
-          el.html('NODES&nbsp;&nbsp;&nbsp;COOL')
-        }, function(e){
-          el.text('NODESCHOOL')
-        }
-      )
 
       function loadEvents() {
         var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
