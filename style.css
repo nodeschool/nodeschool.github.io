@@ -51,6 +51,9 @@ header .container {padding: 100px 40px;}
 .building-workshops .logo,
 .chapters .logo {padding: 15px 0;}
 
+.name:hover .h { display: none; }
+.name:hover .c:before { content: "H"; color: transparent; }
+
 .events .first-photo,
 .about .first-photo,
 .host .first-photo,
