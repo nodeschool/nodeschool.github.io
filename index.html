@@ -16,7 +16,7 @@
       <div class="container">
         <div class="full">
           <img src="images/schoollines.png" width="500">
-          <h1 class="name">NODESCHOOL</h1>
+          <h1 class="name">NODES<span class="c">C<span class="h">H</span></span>OOL</h1>
           <h3>Open source workshops built with Node that run in your terminal. Do them on your own or at a workshop nearby.</h3>
           <ul class="nav">
             <a href="events.html"><li>Events</li></a>
@@ -269,15 +269,6 @@
         $('#upcoming-workshops').html('Could not load events, sorry!')
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
-
-      var el = $('h1:first')
-
-      el.hover(function(e){
-          el.html('NODES&nbsp;&nbsp;&nbsp;COOL')
-        }, function(e){
-          el.text('NODESCHOOL')
-        }
-      )
 
       function loadEvents() {
         var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
