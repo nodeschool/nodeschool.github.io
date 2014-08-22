@@ -19,8 +19,20 @@ a:hover {color: #FFE51F; border-color: #FFE51F;}
 hr {border: 2px solid #333; margin: 0;}
 
 header {color: #fff;}
-header h1 {font-size: 500%; font-weight: 900; margin-bottom: 20px; margin-top: 20px; display: inline;}
+header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
+header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
+
+header h1 span.apostrophe { max-width: 0px; opacity: 0;}
+header h1 span.c { }
+header h1 span.h { max-width: 100px; transition-duration: 0.4s; }
+
+@media (min-width: 550px) {
+  header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
+  header h1:hover span.c { padding-left: 44px; margin-right: -12px; }
+  header h1:hover span.h { max-width: 0px; opacity: 0;}
+}
+
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
 header a {color: #fff; border-color: #fff; border: none;}
@@ -149,6 +161,9 @@ footer .container {padding: 0 40px;}
   header .container {padding: 40px 20px;}
   header img {width: 100%; padding: 0;}
   header h1 {font-size: 2.5em;}
+
+  header h1 span {margin: 0 -3.8px;}
+
   header h3 {font-size: 1em;}
   ul.nav li {line-height: 3em;}
   ul.inner-nav li {display: block; line-height: 2em;}
