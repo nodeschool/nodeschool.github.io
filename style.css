@@ -31,7 +31,7 @@ header .container {padding: 100px 40px;}
 .about header .container,
 .host header .container,
 .building-workshops header .container,
-.chapters .container {padding: 20px;}
+.chapters header .container {padding: 20px;}
 
 .events .logo,
 .about .logo,
@@ -47,7 +47,7 @@ header .container {padding: 100px 40px;}
 
 .container {clear: both;}
 .container {padding: 60px 40px;}
-.host .container {padding: 20px 40px;}
+
 
 .first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 
