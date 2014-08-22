@@ -70,15 +70,14 @@ ul.nav li a {border: none; color: #fff;}
 ul.nav li.current-page {background: #fff; color: #333;}
 ul.nav li.current-page a {color: #333;}
 
-#map {width: 100%; min-height: 375px; background: #eaeaea; margin-left: -40px; padding-right: 40px;}
+#map {width: 100%; min-height: 375px; background: #eaeaea;}
 .key {padding: 8px 0;}
 .key span {padding-right: 12px;}
 .key-past::before {content: ""; width: 12px; height: 12px; background: #A09C9C; display: inline-block; border-radius: 3px; margin-right: 8px;}
 .key-future::before {content: ""; width: 12px; height: 12px; background: #F7DA03; display: inline-block; border-radius: 3px; margin-right: 8px;}
 .events #map {margin: 0; padding: 0;}
 
-/*.leaflet-container .leaflet-control-attribution {background-color: #333;}*/
-/*.leaflet-popup-content-wrapper, .leaflet-popup-tip {background: #333;}*/
+.leaflet-container .leaflet-control-attribution a {border: none;}
 .leaflet-container a {font-family: Source Sans Pro; color: #333;}
 
 .half {width: 45%; display: inline-block; vertical-align: top;}

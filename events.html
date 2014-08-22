@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="events.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
@@ -42,6 +42,7 @@
         <h3>Add your Event!</h3>
       </div>
       <div class="two-thirds">
+        <p>There have been <strong><span id="event-count">many</span></strong> events!</p>
         <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="_blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.</p>
       </div>
     </div>
@@ -111,6 +112,7 @@
       }
 
       function showNearEvents(data) {
+        writeCount(data.length)
         generateCalendar(data)
         makeMap(data)
         var html = Sheetsee.ich.events({
@@ -142,6 +144,10 @@
           else event.hecolor = color2
         })
         return data
+      }
+
+      function writeCount(count) {
+        $('#event-count').html(count)
       }
     </script>
 
