@@ -19,9 +19,9 @@ a:hover {color: #FFE51F; border-color: #FFE51F;}
 hr {border: 2px solid #333; margin: 0;}
 
 header {color: #fff;}
-header h1 {font-size: 500%; font-weight: 900; margin-bottom: 20px; margin-top: 20px}
+header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
-header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
 
 header h1 span.apostrophe { max-width: 0px; opacity: 0;}
 header h1 span.c { }
