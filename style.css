@@ -56,10 +56,15 @@ header .container {padding: 100px 40px;}
 
 .other-photo {background-image: url('images/hero.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 600px; z-index: -1; display: block; height: 200%; width: 100%; }
 
-ul.inner-nav {list-style: none;}
+/*ul.inner-nav {list-style: none;}
 ul.inner-nav li {padding-right: 30px; display: inline;}
 .inner-nav a {border-color: #F7DA03; color: #333; border-color: #F7DA03; padding: 0 10px 3px 10px; border-bottom-width: 2px;}
-.inner-nav a:hover {color: #F7DA03; border-color: #F7DA03;}
+.inner-nav a:hover {color: #F7DA03; border-color: #F7DA03;}*/
+
+ul.inner-nav {list-style: none;}
+ul.inner-nav li { margin-right: 12px; display: inline;}
+.inner-nav a {background-color: #F7DA03; color: #333; border: none; padding: 8px 12px; border-radius: 3px;}
+.inner-nav a:hover {color: #fff; background-color: #333;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 16px;}

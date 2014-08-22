@@ -4,7 +4,7 @@ body { background: rgb(88,20,94); }
 
 .month-table {
   margin: 0 auto 100px;
-  width: 75%;
+  width: 100%;
   padding: 5px;
   position: relative;
 }
