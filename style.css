@@ -60,6 +60,8 @@ header .container {padding: 100px 40px;}
 
 .first-photo {background-image: url('images/test-bg.png'); position: fixed; background-size: 25%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 
+.get-started code {font-size: 24px; background: #fff;}
+.get-started h2 {margin-top: 0;}
 
 .window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -200px; background-size: 100%; background-repeat: no-repeat;}
 .caption {color: #fff; font-size: 11px; padding: 40px; display: inline-block; opacity: .5;}
@@ -165,6 +167,7 @@ footer .container {padding: 0 40px;}
 }
 
 @media only screen and (max-width : 1023px) {
+  .get-started code { font-size: 12px; }
   body { font-size: 12px; }
   header img { height: 75px; }
   header h1 { font-size: 40px; }
