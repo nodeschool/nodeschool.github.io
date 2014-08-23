@@ -6,7 +6,7 @@ body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color
 h1 {font-size: 3em; margin: 10px 0;}
 h2 {font-size: 2em;}
 
-code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px;}
+code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px; line-height: 20px;}
 
 img {width: 100%;}
 
@@ -21,11 +21,11 @@ hr {border: 2px solid #333; margin: 0;}
 header {color: #333;}
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
-header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
+header h1 span { display: inline-block; margin: 0 -0.1em; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
 
 header h1 span.apostrophe { max-width: 0px; opacity: 0;}
 header h1 span.c { }
-header h1 span.h { max-width: 100px; transition-duration: 0.4s; }
+header h1 span.h { transition-duration: 0.4s; }
 
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
@@ -137,17 +137,16 @@ footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
-@media (min-width: 550px) {
+@media (min-width: 1024px) {
   header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
   header h1:hover span.c { padding-left: 44px; margin-right: -12px; }
   header h1:hover span.h { max-width: 0px; opacity: 0;}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .container {padding: 20px;}
   .first-photo {background-image: none;}
   p {font-size: 1em;}
-  h1, h2, h3 {font-size: 2em; padding-top: 40px;}
   .third, .two-thirds, .full {width: 100%;}
   .two-thirds + .third, .third + .third, .third + .two-thirds {padding-left: 0;}
   header .container {padding: 40px 20px;}
@@ -158,7 +157,6 @@ footer .container {padding: 0 40px;}
 
   header h3 {font-size: 1em;}
   ul.nav li {line-height: 3em;}
-  ul.inner-nav li {display: block; line-height: 2em;}
   #map {margin: 0; padding: 0; width: 100%;}
   .window-pane {background-position: 0 0; height: 200px;}
   footer ul {width: 100%;}
@@ -168,9 +166,15 @@ footer .container {padding: 0 40px;}
 
 @media only screen and (max-width : 1023px) {
   body { font-size: 12px; }
+  header img { height: 75px; }
+  header h1 { font-size: 40px; }
   .full p { font-size: 14px; }
   h1 { font-size: 18px; }
   h2 { font-size: 16px; }
   .container { padding: 20px; }
+  header .container { padding: 20px; }
+  .full { width: 95%; }
   .core-workshoppers h2 a, .elective-workshoppers h2 a { font-size: 16px; }
+  ul.inner-nav li {display: inline-block; line-height: 3em;}
+  .window-pane { display: none; }
 }
