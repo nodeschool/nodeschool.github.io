@@ -18,7 +18,7 @@ a:hover {color: #FFE51F; border-color: #FFE51F;}
 
 hr {border: 2px solid #333; margin: 0;}
 
-header {color: #333;}
+header {color: #333; background-image: url('images/test-bg.png'); background-size: 25%; background-position: 0 -100px; z-index: -1; display: block; background-color: #FFE51F; background-blend-mode: multiply; }
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h1 span { display: inline-block; margin: 0 -0.1em; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
@@ -57,8 +57,6 @@ header .container {padding: 100px 40px;}
 .container {clear: both;}
 .container {padding: 60px 40px;}
 
-
-.first-photo {background-image: url('images/test-bg.png'); position: fixed; background-size: 25%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
 
 .get-started code {font-size: 24px; background: #fff;}
 .get-started h2 {margin-top: 0;}
