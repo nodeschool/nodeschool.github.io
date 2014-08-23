@@ -18,7 +18,7 @@ a:hover {color: #FFE51F; border-color: #FFE51F;}
 
 hr {border: 2px solid #333; margin: 0;}
 
-header {color: #fff;}
+header {color: #333;}
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
@@ -35,8 +35,8 @@ header h1 span.h { max-width: 100px; transition-duration: 0.4s; }
 
 header h3 {margin-top: 2px; letter-spacing: .05em; font-size: 1.5em;
 font-weight: 500;}
-header a {color: #fff; border-color: #fff; border: none;}
-header img  {width: 350px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
+header a {color: #333; border-color: #fff; border: none;}
+header img  {width: 400px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
 
 .events header .container,
@@ -54,17 +54,18 @@ header .container {padding: 100px 40px;}
 .name:hover .h { display: none; }
 .name:hover .c:before { content: "H"; color: transparent; }
 
-.events .first-photo,
+/*.events .first-photo,
 .about .first-photo,
 .host .first-photo,
 .building-workshops .first-photo,
-.chapters .first-photo {background-color: #CFB914;}
+.chapters .first-photo {background-color: #CFB914;}*/
 
 .container {clear: both;}
 .container {padding: 60px 40px;}
 
 
-.first-photo {background-image: url('images/hero2.jpg'); background-repeat: no-repeat; position: fixed; background-size: 100%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
+.first-photo {background-image: url('images/test-bg.png'); position: fixed; background-size: 25%; background-position: 0 -100px; z-index: -1; display: block; height: 200%; width: 100%;  background-color: #FFE51F; background-blend-mode: multiply; }
+
 
 .window-pane {height: 400px; width: 100%; background-image: url('images/hero3.jpg'); background-position: 0 -200px; background-size: 100%; background-repeat: no-repeat;}
 .caption {color: #fff; font-size: 11px; padding: 40px; display: inline-block; opacity: .5;}
@@ -83,10 +84,10 @@ ul.inner-nav li { margin-right: 12px; display: inline;}
 
 ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 16px;}
-ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #fff; border-radius: 3px;}
-ul.nav li:hover {background: #fff; color: #333; cursor: pointer;}
+ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #333; border-radius: 3px;}
+ul.nav li:hover {background: #333; color: #F7DA03; cursor: pointer;}
 ul.nav li:hover a {color: #333;}
-ul.nav li a {border: none; color: #fff;}
+ul.nav li a {border: none; color: #333;}
 ul.nav li.current-page {background: #fff; color: #333;}
 ul.nav li.current-page a {color: #333;}
 
