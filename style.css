@@ -153,11 +153,9 @@ footer .container {padding: 0 40px;}
   .two-thirds + .third, .third + .third, .third + .two-thirds {padding-left: 0;}
   header .container {padding: 40px 20px;}
   header img {width: 100%; padding: 0;}
-  header h1 {font-size: 2.5em;}
-
+  header h1 { font-size: 2.5em; margin-top: 0; }
   header h1 span {margin: 0 -3.8px;}
-
-  header h3 {font-size: 1em;}
+  header h3 {font-size: 1em; }
   ul.nav li {line-height: 3em;}
   #map {margin: 0; padding: 0; width: 100%;}
   .window-pane {background-position: 0 0; height: 200px;}
@@ -170,7 +168,8 @@ footer .container {padding: 0 40px;}
   .get-started code { font-size: 12px; }
   body { font-size: 12px; }
   header img { height: 75px; }
-  header h1 { font-size: 40px; }
+  header h1 { font-size: 40px; margin-top: 0; }
+  header h3 { margin: 0 auto 20px; width: 75%; }
   .full p { font-size: 14px; }
   h1 { font-size: 18px; }
   h2 { font-size: 16px; }
