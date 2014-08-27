@@ -114,6 +114,8 @@ ul.nav li.current-page a {color: #333;}
 .core-workshoppers h1,
 .elective-workshoppers h1 {font-weight: 500;}
 
+h2 a { color: black; }
+
 .core-workshoppers h2 a,
 .elective-workshoppers h2 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
 .elective-workshoppers h2 a {background: #333; color: #fff;}
