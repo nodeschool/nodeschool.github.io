@@ -11,6 +11,7 @@ code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border
 img {width: 100%;}
 
 p, li {line-height: 1.4em;}
+li {padding-bottom: 4px;}
 p:first-child {padding-top: 0; margin-top: 0;}
 
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
