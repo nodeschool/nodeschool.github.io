@@ -5,63 +5,162 @@
     <link rel="stylesheet" href="mapbox.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="events.css">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" href="/images/nodeschool-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
-  <body>
-    <div id="header">
-      <h1 class="top-title">
-        Node School
-      </h1>
+  <body class="events">
+    <div class="first-photo"></div>
+    <header>
+      <div class="container">
+        <div class="full">
+          <a href="index.html"><img class="logo" src="images/schoolhouse.svg" alt="nodeschoolhouse"></a>
+          <ul class="nav">
+            <a href="index.html"><li>Home</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="chapters.html"><li>Chapters</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="building-workshops.html"><li>Build</li></a>
+            <a href="host.html"><li>Host</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-      <a id="logo" href="/" title="Nodeschool.io Home">
-        <img width="300" src="images/nodeschool-straight.png">
-      </a>
+    <div class="container workshops" style='background-color: #fff;'>
+      <div class="full">
+        <h1>Past and Future NodeSchool Events</h1><br><br>
+        <div id="map"></div>
+        <div class="key">
+          <span class="key-past">Past</span>
+          <span class="key-future">Future</span>
+        </div>
+      </div>
+      <br><br>
+      <div class="third">
+        <h3>Add your Event!</h3>
+      </div>
+      <div class="two-thirds">
+        <p>There have been <strong><span id="event-count">many</span></strong> events!</p>
+        <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="_blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.</p>
+      </div>
+    </div>
 
-      <p class="tagline">
-        Events All Over
-      </p><br>
-      <div id="map"></div>
-      <div id="calendar-goes-here"></div>
-      <h3>Add Your Event!</h3>
-      <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <script type="text/javascript" src="js/tabletop.js"></script>
-      <script type="text/javascript" src='js/sheetsee.js'></script>
-      <script type="text/javascript" src='js/table.js'></script>
+    <div id="calendar">
+      <div class="container" style="background-color: #fff;">
+        <div class="full">
+          <h1>Calendar</h1>
+          <br><br>
+          <div id="calendar-goes-here"></div>
+        </div>
+      </div>
+    </div>
 
-      <script type="text/javascript">
+    <div class="container" style='background-color: #fff;'>
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong>Contact</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong>Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong>About</strong></li>
+            <li><a href="building-workshops.html">Build a workshopper</a></li>
+            <li><a href="host.html">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      <ul>
+        {{#rows}}
+          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+        {{/rows}}
+          <li><a href="events.html">See all events</a></li>
+      </ul>
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+    <script type="text/javascript" src='js/table.js'></script>
+    <script type="text/javascript" src='js/main.js'></script>
+
+    <script type="text/javascript">
+      try {
+        loadEvents()
+      } catch(e) {
+        $('#upcoming-workshops').html('Could not load events, sorry!')
+        $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
+      }
+
+      function loadEvents() {
         var URL = "0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE"
-        Tabletop.init( { key: URL, callback: makeThings, simpleSheet: true } )
+        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
+      }
 
-        function makeThings(data) {
-          // build the calendar
-          generateCalendar(data)
-          // add hexcolor to color map markers
-          data = addHexcolor(data, "#74006A", "#A09C9C")
-          // make map
-          var optionsJSON = ["name", "tickets", "startdate", "state"]
-          var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
-            + " target='_blank'>{{name}}</a><p>"
-          var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-          var map = Sheetsee.loadMap("map")
-          Sheetsee.addTileLayer(map, 'jllord.hl7d48ne')
-          var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
-        }
-
-        function addHexcolor(data, color, color2) {
-          data.forEach(function(event) {
-            event.state = "past"
-            event.startUTC = new Date(event.startdate)
-            if (event.startUTC > new Date()) {
-              event.hexcolor = color
-              event.state = "future"
-            }
-            else event.hecolor = color2
+      function showNearEvents(data) {
+        writeCount(data.length)
+        generateCalendar(data)
+        makeMap(data)
+        var html = Sheetsee.ich.events({
+            'rows': sortDates(data)
           })
-          return data
-        }
+        $('#upcoming-workshops').html(html)
+      }
+
+      function makeMap(data) {
+        data = addHexcolor(data, "#F7DA03", "#A09C9C")
+        // make map
+        var optionsJSON = ["name", "tickets", "startdate", "state"]
+        var template = "<p class='event'><strong>{{startdate}}</strong> <a class='{{state}}' href='{{tickets}}'"
+          + " target='_blank'>{{name}}</a><p>"
+        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+        var map = Sheetsee.loadMap("map")
+        Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
+        var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+      }
+
+      function addHexcolor(data, color, color2) {
+        data.forEach(function(event) {
+          event.state = "past"
+          event.startUTC = new Date(event.startdate)
+          if (event.startUTC > new Date()) {
+            event.hexcolor = color
+            event.state = "future"
+          }
+          else event.hecolor = color2
+        })
+        return data
+      }
+
+      function writeCount(count) {
+        $('#event-count').html(count)
+      }
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+
     </script>
   </body>
 </html>

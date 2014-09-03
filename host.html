@@ -3,25 +3,58 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" href="/images/nodeschool-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="mapbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
-  <body>
+  <body class="host">
+    <div class="first-photo"></div>
+    <header>
+      <div class="container">
+        <div class="full">
+          <a href="index.html"><img class="logo" src="images/schoolhouse.svg" alt="nodeschoolhouse"></a>
+          <ul class="nav">
+            <a href="index.html"><li>Home</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="chapters.html"><li>Chapters</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="building-workshops.html"><li>Build</li></a>
+            <a href="host.html"><li>Host</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-    <div id="header">
-      <a href="/" title="Nodeschool.io Home">
-        <h1 class="title">
-          Node School
-        </h1>
-      </a>
+    <div class="container" style='background-color: #fff;'>
+      <div class="full">
+        <h1>Hosting a NodeSchool Event</h1>
+          <p>NodeSchool is a fully community driven effort and is 100% open source. This means that anyone can use the NodeSchool materials and/or host an event.</p>
+      </div>
 
-      <div class="content" id="irl">
-        <p>NodeSchool is a fully community driven effort and is 100% open source. This means that anyone can use the NodeSchool materials and/or host an event.</p>
-        <p>This page is based loosely on the <a target="_blank" href="https://github.com/nodeschool/discussions/issues/93">Want to run an event?</a> discussion.</p>
-        <h3>Previous Event Writeups</h3>
-        <p>Here are some in-depth post-mortems of previous NodeSchool events to give you an idea of the format and how things go</p>
-        <ul>
+      <div class="full">
+
+      </div>
+
+      <div class="container">
+        <div class="third">
+          <h3>First, create a chapter</h3>
+        </div>
+        <div class="two-thirds">
+          <p><strong>First you should <a href="https://github.com/nodeschool/organizers/blob/master/README.md#how-to-start-a-new-nodeschool-chapter">get a new NodeSchool Chapter set up</a>. Once that is done see below for resources about hosting your first event.</strong></p>
+          <p>This page is based loosely on the <a target="_blank" href="https://github.com/nodeschool/discussions/issues/93">Want to run an event?</a> discussion.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="third">
+          <h3>Previous Event Writeups</h3>
+        </div>
+        <div class="two-thirds">
+          <p>Here are some in-depth post-mortems of previous NodeSchool events to give you an idea of the format and how things go</p>
+          <ul>
           <li><a href="http://blog.hood.ie/2013/11/nodeschool-london/" target="_blank">NodeSchool London</a></li>
           <li><a href="http://hackygolucky.com/pdxnode-presents-nodeschool-io/" target="_blank">NodeSchool PDX</a></li>
           <li><a href="https://github.com/nodeschool/discussions/issues/93#issuecomment-36090956" target="_blank">NodeSchool Medellin</a></li>
@@ -33,23 +66,73 @@
           <li><a href="https://github.com/nodeschool/nodeschool.github.io/issues/15" target="_blank">NodeSchool Hosting Tips and Tricks</a></li>
 
         </ul>
-        <h3>Hosting Suggestions</h3>
-        <p>As you can see from the above writeups there is a lot of flexiblity in the specifics of running an event, but we have found some of the following suggestions to be universally helpful:</p>
-        <ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="third">
+          <h3>Hosting Suggestions</h3>
+        </div>
+        <div class="two-thirds">
+          <p>As you can see from the above writeups there is a lot of flexiblity in the specifics of running an event, but we have found some of the following suggestions to be universally helpful:</p>
+          <ul>
           <li>Try and get a mentor:student ratio of around 1:5 or more</li>
           <li>Send attendees a reminder email the day/night before to increase turnout</li>
           <li>Reach out to a wider group of potential attendees to encourage a more diverse turnout</li>
           <li>Adopt a code of conduct for the event to help create a safe space and to minimize potential harassment scenarios</li>
           <li>If you are unsure if your venue has adequate WiFi capacity then have an offline plan (e.g. thumbdrives)</li>
           <li>If needed reach out to local software companies etc and ask for donations of space, wifi, food and drinks</li>
-
         </ul>
-
-        <h3>Add Your Event!</h3>
-        <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.
+        </div>
       </div>
+
+      <div class="container">
+        <div class="third">
+          <h3>Add Your Event!</h3>
+        </div>
+        <div class="two-thirds">
+          <p>NodeSchool events are kept in <a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=0AuOjlXjUrSbAdE1XRFJkeEJZQ1NSelhILUR0NXdBWUE#gid=0" target="blank">this Google Spreadsheet</a>. Add your event details on the next row of the spreadsheet. See the comments on the 'Start Date' and 'Location' columns for more formatting details.
+      </p>
+        </div>
+      </div>
+
     </div>
 
-    <script src="main.js"></script>
+    <div class="container" style='background-color: #fff;'>
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong>Contact</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong>Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong>About</strong></li>
+            <li><a href="building-workshops.html">Build a workshopper</a></li>
+            <li><a href="host.html">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
