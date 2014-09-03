@@ -139,7 +139,7 @@ footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
-@media (min-width: 1024px) {
+@media (min-width: 1366px) {
   header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
   header h1:hover span.c { padding-left: 44px; margin-right: -12px; }
   header h1:hover span.h { max-width: 0px; opacity: 0;}
@@ -164,7 +164,7 @@ footer .container {padding: 0 40px;}
   footer li a {font-size: 14px;}
 }
 
-@media only screen and (max-width : 1023px) {
+@media only screen and (max-width : 1366px) {
   .get-started code { font-size: 12px; }
   body { font-size: 12px; }
   header img { height: 75px; }
