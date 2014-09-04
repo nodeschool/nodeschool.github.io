@@ -308,7 +308,9 @@
         Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
         var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
         map.setZoom(1)
-        map.dragging.disable()
+        // disable dragging on mobile/tablet because it makes it hard
+        // to scroll the page on full width-ish maps
+        if (window.innerWidth <= 768 ) map.dragging.disable()
       }
 
       function addHexcolor(data, color, color2) {
