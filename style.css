@@ -5,6 +5,7 @@ body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color
 
 h1 {font-size: 3em; margin: 10px 0;}
 h2 {font-size: 2em;}
+h2 a { color: black; }
 
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px; line-height: 20px;}
 
@@ -115,10 +116,7 @@ ul.nav li.current-page a {color: #333;}
 .core-workshoppers h1,
 .elective-workshoppers h1 {font-weight: 500;}
 
-h2 a { color: black; }
-
-.core-workshoppers h2 a,
-.elective-workshoppers h2 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
+.workshopper h2 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
 .elective-workshoppers h2 a {background: #333; color: #fff;}
 .core-workshoppers h2 a {background: #FFE51F; color: #333; }
 .elective-workshoppers h2 a:hover {background: #000; }
@@ -129,6 +127,27 @@ h2 a { color: black; }
 
 #upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
+
+.term,
+.term .chrome,
+.term .chrome .btn{ border:solid 2px #777;}
+.term{ display: block; border-radius: 4px; margin-bottom:10px; text-align: left; }
+.term .shell{ min-height:130px; overflow:hidden; }
+.term .chrome{ height:34px; padding-left:4px; border-top:0 none; border-right:0 none; border-left:0 none; }
+.term .chrome:before{ content:" "; display:inline-block; height:100%; vertical-align:middle; }
+.term .chrome .btn{ display:inline-block; vertical-align:middle; width:8px; height:8px; border-radius:100%; }
+.term .shell{ padding:10px; color:#777; }
+.term .workshopper{ background: #F8F0BD; padding:2px; }
+.term .workshopper code{ border:0 none; }
+.term code{ display:block; margin:12px 0; padding: 4px 10px; border-left: 8px solid #F7DA03; border-radius: 0; background:none; }
+.term .chrome .btn:hover{ border-color:#404040;}
+.term .chrome .btn.close:hover{ background:red; }
+.term .chrome .btn.max:hover{ background:green; }
+.term .chrome .btn.min:hover{ background:#F7DA03; }
+.term.max{ top:0; left:0; position:absolute; width:100%; height:100%; max-width:none; }
+.term.min{ position:absolute; bottom:0; }
+.term.min .shell{ min-height:0; height:0; padding:0; }
+.term.min .chrome{ border:0 none; }
 
 footer {border-top: 3px solid #333; padding-top: 60px; padding-bottom: 40px; color: #333; padding-top: 20px;}
 footer ul {display: inline-block; padding-right: 60px; vertical-align: top; margin: 0; padding: 0;}
