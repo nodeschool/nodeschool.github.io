@@ -106,7 +106,7 @@ ul.nav li.current-page a {color: #333;}
 
 .full {width: 63%; text-align: center; margin: 0 auto;}
 .full p {font-size: 26px;}
-.events .full {width: 100%;}
+#calendar .full, .events .workshops .full {width: 100%;}
 .logo {text-align: center;}
 
 .two-thirds {width: 60%; display: inline-block; vertical-align: top;}
@@ -123,6 +123,7 @@ ul.nav li.current-page a {color: #333;}
 .core-workshoppers h2 a:hover {background: #F7DA03;}
 
 .workshopper {padding-bottom: 20px;}
+.workshopper p{ min-height: 2.8em;}
 #workshoppers {background-color: #F8F8F8; z-index: 99;}
 
 #upcoming-workshops { margin-bottom: 15px;}
@@ -186,11 +187,10 @@ footer .container {padding: 0 40px;}
 
 @media only screen and (max-width : 1366px) {
   .get-started code { font-size: 12px; }
-  body { font-size: 12px; }
   header img { height: 75px; }
   header h1 { font-size: 40px; margin-top: 0; }
   header h3 { margin: 0 auto 20px; width: 75%; }
-  .full p { font-size: 14px; }
+  .full p { font-size: 16px; }
   h1 { font-size: 18px; }
   h2 { font-size: 16px; }
   .container { padding: 20px; }
