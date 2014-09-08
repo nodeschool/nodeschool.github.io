@@ -1,6 +1,5 @@
 /*calendar map events*/
-* { -webkit-box-sizing: border-box; }
-body { background: rgb(88,20,94); }
+#calendar * { -webkit-box-sizing: border-box; }
 
 .month-table {
   margin: 0 auto 100px;
