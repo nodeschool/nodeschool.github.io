@@ -24,6 +24,7 @@ header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h1 span { display: inline-block; margin: 0 -7px; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
 
 header h1 span.apostrophe { max-width: 0px; opacity: 0;}
+header h1 span.apostrophe:before { content: "\2019";}
 header h1 span.c { }
 header h1 span.h { max-width: 100px; transition-duration: 0.4s; }
 
