@@ -10,6 +10,8 @@
   padding-bottom: 0px;
   display: inline-block;
   border: 2px solid #333;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .chapter-list a {
@@ -18,14 +20,9 @@
   display: block;
   border-bottom: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-
-.chapter-list a:hover {
-  background-color: #FFE51F;
 }
 
 .chapter-list li:hover {
+  background-color: #FFE51F;
   border: 2px solid #FFE51F;
 }
