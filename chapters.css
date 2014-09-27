@@ -23,6 +23,9 @@
 }
 
 .chapter-list a:hover {
-  font-weight: 600;
   background-color: #FFE51F;
+}
+
+.chapter-list li:hover {
+  border: 2px solid #FFE51F;
 }
