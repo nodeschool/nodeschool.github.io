@@ -67,7 +67,7 @@
 
       <div class="third anyone-can-host">
         <h2>Anyone can host</h2>
-        <p><span id="event-count"></span></p>
+        <p id="event-count"><span>There have been a total of</span> <strong class="cnt">?</strong> <span>events!</span></p>
         <p><span>NodeSchool is decentralized, open source and volunteer run. Want to host an event?</span> <a href="host.html">Resources and tips</a> <span>for how.</span></p>
       </div>
     </div>
@@ -349,7 +349,7 @@
       }
 
       function writeCount(count) {
-        $('#event-count').html("There have been a total of <strong>" + count + "</strong> events!")
+        $('#event-count .cnt').text(count)
       }
     </script>
 
