@@ -57,11 +57,23 @@
         <div id="map"></div>
       </div>
 
-      <div class="third upcoming-workshopers">
+      <div class="third upcoming-workshoppers">
         <h2>Upcoming Workshops</h2>
         <br>
         <div id="upcoming-workshops">
-          Loading...
+          <div class="loading">
+            Loading...
+          </div>
+          <div class="empty">
+            <span>No upcoming events. Check out</span> <a href="events.html">past events</a><span>!</span>
+          </div>
+          <div class="success">
+            <ul></ul>
+            <a href="events.html" class="all-events">See all events</a>
+          </div>
+          <div class="error">
+            Could not load events, sorry!
+          </div>
         </div>
       </div>
 
@@ -283,12 +295,9 @@
     </div>
 
     <script id="events" type="text/html">
-      <ul>
-        {{#rows}}
-          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
-        {{/rows}}
-          <li><a href="events.html">See all events</a></li>
-      </ul>
+      {{#rows}}
+        <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+      {{/rows}}
     </script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -301,7 +310,7 @@
       try {
         loadEvents()
       } catch(e) {
-        $('#upcoming-workshops').html('Could not load events, sorry!')
+        $('#upcoming-workshops').addClass("error")
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
 
@@ -313,10 +322,16 @@
       function showNearEvents(data) {
         writeCount(data.length)
         makeMap(data)
-        var html = Sheetsee.ich.events({
-            'rows': sortDates(data)
-          })
-        $('#upcoming-workshops').html(html)
+        var list = sortDates(data)
+        if (list.length == 0) {
+          $('#upcoming-workshops').addClass("empty")
+        } else {
+          var html = Sheetsee.ich.events({
+              'rows': list
+            })
+          $('#upcoming-workshops').addClass("success")
+          $('#upcoming-workshops>.success>ul').html(html)
+        }
       }
 
       function makeMap(data) {

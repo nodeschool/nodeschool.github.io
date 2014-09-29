@@ -127,6 +127,14 @@ header .full:after {content: ''; display: block; clear: both;}
 
 #upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
+#upcoming-workshops>div { display: none; }
+#upcoming-workshops>div.loading { display: block; }
+#upcoming-workshops.success>div.loading,
+#upcoming-workshops.empty>div.loading,
+#upcoming-workshops.error>div.loading { display: none; }
+#upcoming-workshops.success>div.success { display: block; }
+#upcoming-workshops.error>div.error { display: block; }
+#upcoming-workshops.empty>div.empty { display: block; }
 
 .term,
 .term .chrome,
