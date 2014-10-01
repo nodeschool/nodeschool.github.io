@@ -125,6 +125,9 @@ a:hover {
   border-color: #F7DA03;
   border-bottom-width: 2px;
 }
+.multi-days a {
+  color: #EEE;
+}
 .event a:hover {
   color: #F7DA03;
 }
