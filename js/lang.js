@@ -5,7 +5,7 @@ jQuery(function () {
           "index": "ホーム",
           "events": "イベント",
           "chapters": "チャプター",
-          "about": "NodeSchoolについて",
+          "about": "概要",
           "building-workshops": "ビルド",
           "host": "ホスト"
         },
@@ -28,15 +28,11 @@ jQuery(function () {
           }
         },
         ".index $@": {
-          "header h3": '<span class="no-break">ターミナル</span>をつかってできる<span class="no-break">ノード</span>の
-          	<span class="no-break">オープンソース</span><span class="no-break">ワークショップ。</span>
-          	<span class="no-break">一人で頑張って</span><span class="no-break">または近い</span>
-          	<span class="no-break">ワークショップ</span>で<span class="no-break">ほかの人と勉強して下さい。</span>',
+          "header h3": '<span class="no-break">ターミナル</span>をつかってできる<span class="no-break">ノード</span>の<span class="no-break">オープンソース</span><span class="no-break">ワークショップ。</span><span class="no-break">一人で頑張って</span><span class="no-break">または近い</span><span class="no-break">ワークショップ</span>で<span class="no-break">仲間と勉強して下さい。</span>',
           ".get-started h2": "はじめてなら「<a href=\"#learnyounode\">Learn You Node</a>」<br/>というワークショッパーがあります:",
           ".workshop-header $@": {
             "h1": "ワークショップ",
-            "p": "nodeshoolはグループのマンツーマンワークショップ（通常は無料）。
-            	<br/>ワークショッパーというアプリをカリキュラムとして使っています。参加しやすいよう、メンターがいます。",
+            "p": "NodeSchoolはグループのマンツーマンワークショップ（通常は無料）。<br/>ワークショッパーというアプリをカリキュラムとして使っています。参加しやすいよう、メンターがいます。",
             "ul a[href='$@']": {
               "host.html": "ホストになる",
               "events.html": "すべてのイベント",
@@ -69,11 +65,10 @@ jQuery(function () {
           "#workshoppers>.container:nth-child$@": {
             "(1) $@": {
               "h1": "ワークショッパー",
-              "p": "ワークショッパーはNodeSchoolと関係あるオープンソースモジュールです。
-              	すべてのワークショッパーは自動誘導式です（ワークショップ参加しなくても勉強できます！）。ほとんどはオフラインでも動いてます。",
+              "p": "ワークショッパーはNodeSchoolと関係あるオープンソースモジュールです。すべてのワークショッパーは自動誘導式です（ワークショップに参加しなくても勉強できます！）。ほとんどはオフラインでも動いてます。",
               "ul $@": {
                 "li:first-child>a": "困ったことがあれば、質問して下さい",
-                "li:nth-child(2)>a": "一般的な質問の",
+                "li:nth-child(2)>a": "一般的な質問",
                 "li:last-child>a": "ワークショップを作る"
               } 
             },
@@ -130,7 +125,7 @@ jQuery(function () {
           "#introtowebgl p": "WebGLやthree.jsのイントロダクション。",
           "#count-to-6 p": "JavaScriptの次のバーション:EcmaScript6を勉強する。",
           "#kick-off-koa p": "KOA/次世代のwebフレームワークを始める。",
-          "#lololodash p": "Lo-Dash (underscoreのフォーク)を使ったArrayやObjectをもっと簡単使う。"
+          "#lololodash p": "Lo-Dash (underscoreのフォーク)を使ったArrayやObjectをもっと簡単に使う。"
         }
       }
     }
