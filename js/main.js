@@ -89,11 +89,5 @@ function sortDates(data) {
       freshies.push(event)
   })
 
-  if (freshies.length !== 0) {
-    return freshies
-  } else return {
-    "name": "No upcoming events. Check out past events!",
-    "tickets": "events.html"
-  }
   return freshies
 }
