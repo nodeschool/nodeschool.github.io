@@ -126,30 +126,30 @@ jQuery(function () {
         "#count-to-6 p": "JavaScriptの次のバーション:EcmaScript6を勉強する。",
         "#kick-off-koa p": "KOA/次世代のwebフレームワークを始める。",
         "#lololodash p": "Lo-Dash (underscoreのフォーク)を使ったArrayやObjectをもっと簡単に使う。"
-      }
-    },
-    ".events $@": {
-      ".workshops div.full:eq$@": {
-        "(0) $@": {
-          "h1": "NodeSchool Events <br>（これから開催されるイベントや終了されたイベント情報）",
-          ".key $@": {
-            ".key-past": "開催終了",
-            ".key-future": "開催予定"
+      },
+      ".events $@": {
+        ".workshops div.full:eq$@": {
+          "(0) $@": {
+            "h1": "NodeSchool Events <br>（これから開催されるイベントや終了されたイベント情報）",
+            ".key $@": {
+              ".key-past": "開催終了",
+              ".key-future": "開催予定"
+            }
+          },
+          "(1) $@":{
+            "h2": "<span id=\"event-count\">たくさん</span>のイベントが開催!!",
+            "h3": "イベントを開催される方は<a target=\"_blank\" href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\">こちら</a>で登録お願いします。"
           }
-        },
-        "(1) $@":{
-          "h2": "<span id=\"event-count\">たくさん</span>のイベントが開催!!",
-          "h3": "イベントを開催される方は<a target=\"_blank\" href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\">こちら</a>で登録お願いします。"
         }
-      }
-    },
-    ".chapters $@": {
-      ".container div.full p": "定期的にNodeScoolのイベントの開催している都市の一覧です。"
-    },
-    ".about $@": {
-      ".container:eq$@": {
-        "(1) $@": {
-          "div.full p": "NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。"
+      },
+      ".chapters $@": {
+        ".container div.full p": "定期的にNodeScoolのイベントの開催している都市の一覧です。"
+      },
+      ".about $@": {
+        ".container:eq$@": {
+          "(1) $@": {
+            "div.full p": "NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。"
+          }
         }
       }
     }
