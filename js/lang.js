@@ -141,7 +141,19 @@ jQuery(function () {
                         "h3": "イベントを開催される方は<a target=\"_blank\" href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\">こちら</a>で登録お願いします。"
                     }
                 }
+            },
+            ".chapters $@": {
+                ".container div.full p": "定期的にNodeScoolのイベントの開催している都市の一覧です。"
+            },
+            ".about $@": {
+                ".container:eq$@": {
+                    "(1) $@": {
+                        "div.full p": "NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。"
+                    }
+                }
+
             }
+
         }
     }
 
