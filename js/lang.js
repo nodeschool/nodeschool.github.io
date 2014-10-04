@@ -149,6 +149,55 @@ jQuery(function () {
         ".container:eq$@": {
           "(1) $@": {
             "div.full p": "NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。"
+          },
+          "(2) $@": {
+            "div:nth-child$@": {
+              "(2) $@": {
+                "p:nth-child$@": {
+                  "(1) ": "\"ワークショッパー\"のフォーマットは、2013年の夏、<a href=\"http://substack.net/\">Substack</a>が<a href=\"https://www.npmjs.org/package/stream-adventure\">stream-adventure</a>のnpmパッケージで作成しました。",
+                  "(2) ": "ワークショッパーの特徴は、双方向と自動化です。<br/>ワークショッパーには数種類の難易度があり、学習者は段階的にチャレンジしていくことができます。<br/>各課題は最初にコンセプトを説明してあり、課題の回答に必要な要件をリストアップして提示します。<br/>学習者は各段階の課題にチャレンジするプログラムコードを書いてください。",
+                  "(3) ": "課題ができあがったら、提出しましょう。<br/>提出された課題は自動でチェックされます。<br/>間違いやミスがあった場合、フィードバックが来るので、再度トライすることができます。<br/>プログラムコードが基準を満たした場合、次の段階へ進むことができます。",
+                  "(4) ": "上記はすべて自動化されています。<br/>ワークショッパーは、学習者がユニットテストスイートのように正しいコードを書く必要があると考えています。"
+                }
+              }
+            }
+          },
+          "(3) $@": {
+            "div:nth-child$@": {
+              "(2) $@": {
+                "p:nth-child$@": {
+                  "(1) ": "すべてのNodeSchoolのワークショップはNodeで書かれていますが、ワークショップの対象は、必ずしもNodeについてである必要はありません。例えば、<a href=\"https://www.npmjs.org/package/shader-school\">shader-school</a>ワークショップでは、コンピュータグラフィックスの概念を教えており、JavaScriptを書く必要がありません。",
+                  "(2) ": "NodeSchoolコミュニティは新しいワークショップをオーサリングするためのいくつかの本当に素晴らしいツールを開発しました。<br/>あなたがワークショップのアイデアを持っている場合、<a href=\"building-workshops.html\">ビルド</a>ページをチェックすることをおすすめします。"
+                }
+              }
+            }
+          },
+          "(4) $@": {
+            "div:nth-child$@": {
+              "(2) $@": {
+                "p:nth-child$@": {
+                  "(1) ": "NodeSchoolは、南極大陸を除くすべての大陸でコミュニティイベントがあります。<br>誰もがイベントを開催することができ、コミュニティとして、みんなのために楽しいイベントを作り、有用な情報、ガイドラインやtipsをコンパイルしましょう。<br/>詳しくは、<a href=\"host.html\">イベント</a>ページを参照してください。"
+                }
+              }
+            }
+          },
+          "(5) $@": {
+            "div:nth-child$@": {
+              "(2) $@": {
+                "p:nth-child$@": {
+                  "(1) ": "NodeSchoolは、GitHubを使用しています。NodeSchool関係者に連絡を取るのに最適な場所は<a href=\"https://github.com/nodeschool/organizers/issues\">organizers repository</a>です。<br/>誰でもこのリポジトリ上で新しいIssueを作成することができます。organizersは、通知を得て対応することができます。<br/>この方法は、直接orgnizersへEメールを送信よりもずっと優れています。"
+                }
+              }
+            }
+          },
+          "(6) $@": {
+            "div:nth-child$@": {
+              "(2) $@": {
+                "p:nth-child$@": {
+                  "(1) ": "the NodeUp podcast Mikeal Rogersの<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">episode 55</a>では、Max Ogdenおよびその他のコミュニティメンバーがNodeSchoolsについて話しています。<br/>ボルティモアで開催されたAt Cascadia JS 2014ではJason Rhodesが、<a href=\"https://www.youtube.com/watch?v=XsmvTnOLwhk\" target=\"_blank\">NodeSchoolsについて語っています。</a>"
+                }
+              }
+            }
           }
         }
       }
