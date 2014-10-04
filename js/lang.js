@@ -172,32 +172,10 @@ jQuery(function () {
               }
             }
           },
-          "(4) $@": {
-            "div:nth-child$@": {
-              "(2) $@": {
-                "p:nth-child$@": {
-                  "(1) ": "NodeSchoolは、南極大陸を除くすべての大陸でコミュニティイベントがあります。<br>誰もがイベントを開催することができ、コミュニティとして、みんなのために楽しいイベントを作り、有用な情報、ガイドラインやtipsをコンパイルしましょう。<br/>詳しくは、<a href=\"host.html\">イベント</a>ページを参照してください。"
-                }
-              }
-            }
-          },
-          "(5) $@": {
-            "div:nth-child$@": {
-              "(2) $@": {
-                "p:nth-child$@": {
-                  "(1) ": "NodeSchoolは、GitHubを使用しています。NodeSchool関係者に連絡を取るのに最適な場所は<a href=\"https://github.com/nodeschool/organizers/issues\">organizers repository</a>です。<br/>誰でもこのリポジトリ上で新しいIssueを作成することができます。organizersは、通知を得て対応することができます。<br/>この方法は、直接orgnizersへEメールを送信よりもずっと優れています。"
-                }
-              }
-            }
-          },
-          "(6) $@": {
-            "div:nth-child$@": {
-              "(2) $@": {
-                "p:nth-child$@": {
-                  "(1) ": "the NodeUp podcast Mikeal Rogersの<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">episode 55</a>では、Max Ogdenおよびその他のコミュニティメンバーがNodeSchoolsについて話しています。<br/>ボルティモアで開催されたAt Cascadia JS 2014ではJason Rhodesが、<a href=\"https://www.youtube.com/watch?v=XsmvTnOLwhk\" target=\"_blank\">NodeSchoolsについて語っています。</a>"
-                }
-              }
-            }
+          "$@ div:nth-child(2) p:nth-child(1)": {
+            "(4)": "NodeSchoolは、南極大陸を除くすべての大陸でコミュニティイベントがあります。<br>誰もがイベントを開催することができ、コミュニティとして、みんなのために楽しいイベントを作り、有用な情報、ガイドラインやtipsをコンパイルしましょう。<br/>詳しくは、<a href=\"host.html\">イベント</a>ページを参照してください。",
+            "(5)": "NodeSchoolは、GitHubを使用しています。NodeSchool関係者に連絡を取るのに最適な場所は<a href=\"https://github.com/nodeschool/organizers/issues\">organizers repository</a>です。<br/>誰でもこのリポジトリ上で新しいIssueを作成することができます。organizersは、通知を得て対応することができます。<br/>この方法は、直接orgnizersへEメールを送信よりもずっと優れています。",
+            "(6)": "the NodeUp podcast Mikeal Rogersの<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">episode 55</a>では、Max Ogdenおよびその他のコミュニティメンバーがNodeSchoolsについて話しています。<br/>ボルティモアで開催されたAt Cascadia JS 2014ではJason Rhodesが、<a href=\"https://www.youtube.com/watch?v=XsmvTnOLwhk\" target=\"_blank\">NodeSchoolsについて語っています。</a>"
           }
         }
       },
