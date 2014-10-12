@@ -1,238 +1,235 @@
-jQuery(function () {
-  var translations = {
-    ja: {
+// CSV method from https://github.com/knrz/CSV.js Copyright (c) 2014 Kash Nouroozi
+!function(){"use strict";function t(t){var n=typeof t;return"function"===n||"object"===n&&!!t}function n(t){return"[object Array]"==toString.call(t)}function e(t){return"[object String]"===toString.call(t)}function i(t){return!isNaN(Number(t))}function r(t){return 0==t||1==t}function o(t){return null==t}function c(t){return null!=t}function u(t,n){return c(t)?t:n}function l(t,n){for(var e=0,i=t.length;i>e&&n(t[e],e)!==!1;)e++;return t}function a(t){return"attrs["+t+"]"}function s(t,n){return i(t)?"Number("+a(n)+")":r(t)?"Boolean("+a(n)+" == true)":"String("+a(n)+")"}function f(t,e,i){var r=[];return 2==arguments.length?(t?n(t)?l(e,function(n,e){r.push(t[e]+"("+a(e)+")")}):l(e,function(t,n){r.push(s(t,n))}):l(e,function(t,n){r.push(a(n))}),r="return ["+r.join(",")+"]"):(t?n(t)?l(e,function(n,e){r.push('"'+i[e]+'": '+t[e]+"("+a(e)+")")}):l(e,function(t,n){r.push('"'+i[n]+'": '+s(t,n))}):l(e,function(t,n){r.push('"'+i[n]+'": '+a(n))}),r="return {"+r.join(",")+"}"),new Function("attrs",r)}function h(t,n){var e,i=0;return l(n,function(n){var r,o=n;-1!=p.indexOf(n)&&(o="\\"+o),r=t.match(new RegExp(o,"g")),r&&r.length>i&&(i=r.length,e=n)}),e||n[0]}var p=["|","^"],d=[",",";"," ","|","^"],m=["\r\n","\r","\n"],g=function(){function i(t,i){if(i||(i={}),n(t))this.mode="encode";else{if(!e(t))throw new Error("Incompatible format!");this.mode="parse"}this.data=t,this.options={header:u(i.header,!1),cast:u(i.cast,!0)};var r=i.lineDelimiter||i.line,o=i.cellDelimiter||i.delimiter;this.isParser()?(this.options.lineDelimiter=r||h(this.data,m),this.options.cellDelimiter=o||h(this.data,d),this.data=c(this.data,this.options.lineDelimiter)):this.isEncoder()&&(this.options.lineDelimiter=r||"\r\n",this.options.cellDelimiter=o||",")}function r(t,n,e){t(new n(e))}function c(t,n){return t.slice(-n.length)!=n&&(t+=n),t}function a(i){return n(i)?"array":t(i)?"object":e(i)?"string":o(i)?"null":"primitive"}return i.prototype.set=function(t,n){return this.options[t]=n},i.prototype.isParser=function(){return"parse"==this.mode},i.prototype.isEncoder=function(){return"encode"==this.mode},i.prototype.parse=function(t){function e(){a={escaped:!1,quote:!1,cell:!0}}function i(){g.cell=""}function o(){g.line=[]}function c(t){g.line.push(a.escaped?t.slice(1,-1).replace(/""/g,'"'):t),i(),e()}function u(t){c(t.slice(0,1-d.lineDelimiter.length))}function l(){m?n(m)?(s=f(d.cast,g.line,m),(l=function(){r(t,s,g.line)})()):m=g.line:(s||(s=f(d.cast,g.line)),(l=function(){r(t,s,g.line)})())}if("parse"==this.mode){if(0===this.data.trim().length)return[];var a,s,h,p=this.data,d=this.options,m=d.header,g={cell:"",line:[]};t||(h=[],t=function(t){h.push(t)}),e(),1==d.lineDelimiter.length&&(u=c);var y,v,j,w=p.length,D=d.cellDelimiter.charCodeAt(0),b=d.lineDelimiter.charCodeAt(d.lineDelimiter.length-1);for(y=0,v=0;w>y;y++)j=p.charCodeAt(y),a.cell&&(a.cell=!1,34==j)?a.escaped=!0:a.escaped&&34==j?a.quote=!a.quote:(a.escaped&&a.quote||!a.escaped)&&(j==D?(c(g.cell+p.slice(v,y)),v=y+1):j==b&&(u(g.cell+p.slice(v,y)),v=y+1,l(),o()));return h?h:this}},i.prototype.serialize={object:function(t){var n=this,e=Object.keys(t),i=Array(e.length);return l(e,function(e,r){i[r]=n[a(t[e])](t[e])}),i},array:function(t){var n=this,e=Array(t.length);return l(t,function(t,i){e[i]=n[a(t)](t)}),e},string:function(t){return'"'+String(t).replace(/"/g,'""')+'"'},"null":function(){return""},primitive:function(t){return t}},i.prototype.encode=function(t){function e(t){return t.join(c.cellDelimiter)}if("encode"==this.mode){if(0==this.data.length)return"";var i,r,o=this.data,c=this.options,u=c.header,s=o[0],f=this.serialize,h=0;t||(r=Array(o.length),t=function(t,n){r[n+h]=t}),u&&(n(u)||(i=Object.keys(s),u=i),t(e(f.array(u)),0),h=1);var p,d=a(s);return"array"==d?(n(c.cast)?(p=Array(c.cast.length),l(c.cast,function(t,n){p[n]=t.toLowerCase()})):(p=Array(s.length),l(s,function(t,n){p[n]=a(t)})),l(o,function(n,i){var r=Array(p.length);l(n,function(t,n){r[n]=f[p[n]](t)}),t(e(r),i)})):"object"==d&&(i=Object.keys(s),n(c.cast)?(p=Array(c.cast.length),l(c.cast,function(t,n){p[n]=t.toLowerCase()})):(p=Array(i.length),l(i,function(t,n){p[n]=a(s[t])})),l(o,function(n,r){var o=Array(i.length);l(i,function(t,e){o[e]=f[p[e]](n[t])}),t(e(o),r)})),r?r.join(c.lineDelimiter):this}},i.prototype.forEach=function(t){return this[this.mode](t)},i}();g.parse=function(t,n){return new g(t,n).parse()},g.encode=function(t,n){return new g(t,n).encode()},g.forEach=function(t,n,e){return 2==arguments.length&&(e=n),new g(t,n).forEach(e)},"function"==typeof define&&define.amd?define("CSV",[],function(){return g}):"object"==typeof module&&module.exports?module.exports=g:window&&(window.CSV=g)}();
+
+!function () {
+  var cssMap = {
       ".nav>li>a[href='$@.html']": {
-        "index": "ホーム",
-        "events": "イベント",
-        "chapters": "チャプター",
-        "about": "概要",
-        "building-workshops": "ビルド",
-        "host": "ホスト"
+        "index": "menu-index",
+        "events": "menu-events",
+        "chapters": "menu-chapters",
+        "about": "menu-about",
+        "building-workshops": "menu-building-workshops",
+        "host": "menu-host"
       },
       "footer>div:nth-child$@": {
         "(2) ul:nth-child$@": {
           "(1) $@": {
-            "li:first-child strong": "連絡方法"
+            "li:first-child strong": "footer-contact-header"
           },
           "(2) li:nth-child$@": {
-            "(1) strong": "貢献",
-            "(2) a": "質問する",
-            "(3) a": "質問に答える"
+            "(1) strong": "footer-contribute-header",
+            "(2) a": "footer-contribute-question",
+            "(3) a": "footer-contribute-answer"
           },
           "(3) li:nth-child$@": {
-            "(1) strong": "NodeSchoolついて",
-            "(2) a": "ワークショッパーを作る",
-            "(3) a": "ワークショップをホストする"
+            "(1) strong": "footer-about-header",
+            "(2) a": "footer-about-build",
+            "(3) a": "footer-about-host"
           }
         }
       },
       ".index $@": {
-        "header h3": '<span class="no-break">ターミナル</span>をつかってできる<span class="no-break">ノード</span>の<span class="no-break">オープンソース</span><span class="no-break">ワークショップ。</span><span class="no-break">一人で頑張って</span><span class="no-break">または近い</span><span class="no-break">ワークショップ</span>で<span class="no-break">仲間と勉強して下さい。</span>',
-        ".get-started h2": "はじめてなら「<a href=\"#learnyounode\">Learn You Node</a>」<br/>というワークショッパーがあります:",
+        "header h3": 'index-header',
+        ".get-started h2": 'index-get-started',
         ".workshop-header $@": {
-          "h1": "ワークショップ",
-          "p": "NodeSchoolはグループのマンツーマンワークショップ（通常は無料）。<br/>ワークショッパーというアプリをカリキュラムとして使っています。参加しやすいよう、メンターがいます。",
+          "h1": "index-workshop-header",
+          "p": "index-workshop-info",
           "ul a[href='$@']": {
-            "host.html": "ホストになる",
-            "events.html": "すべてのイベント",
-            "host.html#writeups": "今までのイベント"
+            "host.html": "index-workshop-links-host",
+            "events.html": "index-workshop-links-events",
+            "host.html#writeups": "index-workshop-links-writeups"
           }
         },
         ".upcoming-workshoppers $@": {
-          "h2": "ワークショップイベント",
-          ".loading": "ローディング...",
-          ".error": "イベントリストをロードできませんでした",
-          "a.all-events": "すべてのイベント",
+          "h2": "index-upcoming-header",
+          ".loading": "index-upcoming-loading",
+          ".error": "index-upcoming-error",
+          "a.all-events": "index-upcoming-all-events",
           ".empty $@": {
-            "span:first-child": "今の所はイベントがありません。",
-            "a": "過去のイベント",
-            "span:last-child": "をチェックしてください。"
+            "span:first-child": "index-upcoming-no-events",
+            "a": "index-upcoming-past-events",
+            "span:last-child": "index-upcoming-past-events2"
           }
         },
         ".anyone-can-host $@": {
-          "h2": "誰でもホストになれます",
+          "h2": "index-host-header",
           "#event-count $@": {
-            "span:first-child": "今まで",
-            "span:last-child": "のイベントがありました。",
+            "span:first-child": "index-host-past",
+            "span:last-child": "index-host-past2",
           },
           "p:last-child $@": {
-            "span:first-child": "NodeSchoolは分権的に動いています。オーペンソースベースやボランティアシステムです。イベントホストに興味がありますか？",
-            "a": "リソースやヒント",
-            "span:last-child": "を使ってください。"
+            "span:first-child": "index-host-want-to-host",
+            "a": "index-host-want-to-host3",
+            "span:last-child": "index-host-want-to-host3"
           }
         },
         "#workshoppers>.container:nth-child$@": {
           "(1) $@": {
-            "h1": "ワークショッパー",
-            "p": "ワークショッパーはNodeSchoolと関係あるオープンソースモジュールです。すべてのワークショッパーは自動誘導式です（ワークショップに参加しなくても勉強できます！）。ほとんどはオフラインでも動いてます。",
+            "h1": "index-workshopper-header",
+            "p": "index-workshopper-info",
             "ul $@": {
-              "li:first-child>a": "困ったことがあれば、質問して下さい",
-              "li:nth-child(2)>a": "一般的な質問",
-              "li:last-child>a": "ワークショップを作る"
+              "li:first-child>a": "index-workshopper-list-problem",
+              "li:nth-child(2)>a": "index-workshopper-list-faq",
+              "li:last-child>a": "index-workshopper-list-host"
             }
           },
           "(2) #get-going $@": {
-            "h2": "ファーストステップ",
+            "h2": "index-get-going-header",
             "span:nth-child$@": {
-              "(1)": "まずは",
-              "(3)": "が必要です。その後は",
-              "(5)": "（Node.jsと一緒にインストールされている）を使ってモジュールの下に書いてあるコマンドでインストールしてください。一度インストールしたらワークショッパーの名前を使ってスタートできます。"
+              "(1)": "index-get-going-info",
+              "(3)": "index-get-going-info2",
+              "(5)": "index-get-going-info3"
             }
           }
         },
         ".core-workshoppers>div:first-child $@": {
-          "h1": "Core/基本",
-          "p:nth-child(2)": "このワークショッパーは基本的なNode.jsスキルが勉強できます。",
+          "h1": "index-workshoppers-core-header",
+          "p:nth-child(2)": "index-workshoppers-core-info",
           "p:nth-child(3) $@": {
             "span:nth-child$@":  {
-              "(1)": "困っているなら",
-              "(3)": "。"
+              "(1)": "index-workshoppers-core-link-pre",
+              "(3)": "index-workshoppers-core-link-post"
             },
-            "a": "質問してください"
+            "a": "index-workshoppers-core-link-post"
           }
         },
         ".elective-workshoppers>div:first-child $@": {
-          "h1": "選択科目",
-          "p:nth-child(2)": "人気のライブラリや開発スタイルのワークショッパー",
+          "h1": "index-workshoppers-elective-header",
+          "p:nth-child(2)": "index-workshoppers-elective-info",
           "p:nth-child(3) $@": {
             "span:nth-child$@":  {
-              "(1)": "困っているなら",
-              "(3)": "。"
+              "(1)": "index-workshoppers-elective-link-pre",
+              "(3)": "index-workshoppers-elective-link-post"
             },
-            "a": "質問してください"
+            "a": "index-workshoppers-elective-link-text"
           }
         },
-        "#learnyounode p": "Node.jsの基本: 非同期 I/Oやhttp。",
-        "#gitit p": "GitやGithubの基本。",
+        "#learnyounode p": "workshopper-learnyounode",
+        "#gitit p": "workshopper-gitit",
         "#streamadventure p span:$@": {
-          "first-child": "ストリームのインタフェースを",
-          "last-child": "を使っての構成を勉強する。"
+          "first-child": "workshopper-streamadventure",
+          "last-child": "workshopper-streamadventure2"
         },
-        "#functionaljavascript p": "EcmaScript 5の基本的な関数型プログラミングを勉強。",
-        "#levelmeup p": "格好いいパッケージのkey/valueストレージのleveldbを勉強する。",
-        "#expressworks p": "Express.jsフレームワークのベーシックを勉強する。",
-        "#makemehapi p": "チャレンジを頑張りながらhapiを勉強できます。",
-        "#promise-it-wont-hurt p": "Promiseを使って非同期な開発を勉強する。",
-        "#async-you p": "Asyncパッケージを勉強する。",
-        "#nodebot-workshop p": "johnny-fiveのAPIを使ってロボットを作る。",
-        "#goingnative p": "Node.jsの裏側の探査:C++のネイティブアドオン。",
-        "#planetproto p": "JavaScriptのPrototypeをわかるように。",
-        "#shader-school p": "GLSLのシェーダを使って基本のグラフィックスプログラミングを勉強する。",
-        "#bytewiser p": "Node.jsまたはブラウザを使ってバイナリデータ操作。",
-        "#bug-clinic p": "デバッギングのツールを勉強しながらデバッギングスキルレベルアップ。",
-        "#browserify-adventure p": "npmモジュールやノードスタイルのrequire()をブラウザーでも使えるように。",
-        "#introtowebgl p": "WebGLやthree.jsのイントロダクション。",
-        "#count-to-6 p": "JavaScriptの次のバーション:EcmaScript6を勉強する。",
-        "#kick-off-koa p": "KOA/次世代のwebフレームワークを始める。",
-        "#lololodash p": "Lo-Dash (underscoreのフォーク)を使ったArrayやObjectをもっと簡単に使う。"
+        "#functionaljavascript p": "workshopper-functionaljavascript",
+        "#levelmeup p": "workshopper-levelmeup",
+        "#expressworks p": "workshopper-expressworks",
+        "#makemehapi p": "workshopper-makemehapi",
+        "#promise-it-wont-hurt p": "workshopper-promise-it-wont-hurt",
+        "#async-you p": "workshopper-async-you",
+        "#nodebot-workshop p": "workshopper-nodebot-workshop",
+        "#goingnative p": "workshopper-goingnative",
+        "#planetproto p": "workshopper-planetproto",
+        "#shader-school p": "workshopper-shader-school",
+        "#bytewiser p": "workshopper-bytewiser",
+        "#bug-clinic p": "workshopper-bug-clinic",
+        "#browserify-adventure p": "workshopper-browserify-adventure",
+        "#introtowebgl p": "workshopper-introtowebgl",
+        "#count-to-6 p": "workshopper-count-to-6",
+        "#kick-off-koa p": "workshopper-kick-off-koa",
+        "#lololodash p": "workshopper-lololodash"
       },
       ".events $@": {
         ".workshops div.full:eq$@": {
           "(0) $@": {
-            "h1": "NodeSchool Events <br>（これから開催されるイベントや終了されたイベント情報）",
+            "h1": "events-header",
             ".key $@": {
-              ".key-past": "開催終了",
-              ".key-future": "開催予定"
+              ".key-past": "events-past",
+              ".key-future": "events-future"
             }
           },
           "(1) $@":{
-            "h2": "<span id=\"event-count\">たくさん</span>のイベントが開催!!",
-            "h3": "イベントを開催される方は<a target=\"_blank\" href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\">こちら</a>で登録お願いします。"
+            "h2": "events-header2",
+            "h3": "events-header3"
           }
         }
       },
-      ".chapters .container div.full p": "定期的にNodeScoolのイベントの開催している都市の一覧です。",
+      ".chapters .container div.full p": "chapters-header",
       ".about $@": {
         ".container:eq$@": {
-          "(1) div.full p": "NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。",
+          "(1) div.full p":"about-header",
           "(2) div:nth-child(2) p:nth-child$@": {
-            "(1)": "\"ワークショッパー\"のフォーマットは、2013年の夏、<a href=\"http://substack.net/\">Substack</a>が<a href=\"https://www.npmjs.org/package/stream-adventure\">stream-adventure</a>のnpmパッケージで作成しました。",
-            "(2)": "ワークショッパーの特徴は、双方向と自動化です。<br/>ワークショッパーには数種類の難易度があり、学習者は段階的にチャレンジしていくことができます。<br/>各課題は最初にコンセプトを説明してあり、課題の回答に必要な要件をリストアップして提示します。<br/>学習者は各段階の課題にチャレンジするプログラムコードを書いてください。",
-            "(3)": "課題ができあがったら、提出しましょう。<br/>提出された課題は自動でチェックされます。<br/>間違いやミスがあった場合、フィードバックが来るので、再度トライすることができます。<br/>プログラムコードが基準を満たした場合、次の段階へ進むことができます。",
-            "(4)": "上記はすべて自動化されています。<br/>ワークショッパーは、学習者がユニットテストスイートのように正しいコードを書く必要があると考えています。"
+            "(1)": "about-history",
+            "(2)": "about-history2",
+            "(3)": "about-history3",
+            "(4)": "about-history4"
           },
           "(3) div:nth-child(2) p:nth-child$@": {
-            "(1)": "すべてのNodeSchoolのワークショップはNodeで書かれていますが、ワークショップの対象は、必ずしもNodeについてである必要はありません。例えば、<a href=\"https://www.npmjs.org/package/shader-school\">shader-school</a>ワークショップでは、コンピュータグラフィックスの概念を教えており、JavaScriptを書く必要がありません。",
-            "(2)": "NodeSchoolコミュニティは新しいワークショップをオーサリングするためのいくつかの本当に素晴らしいツールを開発しました。<br/>あなたがワークショップのアイデアを持っている場合、<a href=\"building-workshops.html\">ビルド</a>ページをチェックすることをおすすめします。"
+            "(1)": "about-philosophy",
+            "(2)": "about-philosophy2"
           },
           "$@ div:nth-child(2) p:nth-child(1)": {
-            "(4)": "NodeSchoolは、南極大陸を除くすべての大陸でコミュニティイベントがあります。<br>誰もがイベントを開催することができ、コミュニティとして、みんなのために楽しいイベントを作り、有用な情報、ガイドラインやtipsをコンパイルしましょう。<br/>詳しくは、<a href=\"host.html\">イベント</a>ページを参照してください。",
-            "(5)": "NodeSchoolは、GitHubを使用しています。NodeSchool関係者に連絡を取るのに最適な場所は<a href=\"https://github.com/nodeschool/organizers/issues\">organizers repository</a>です。<br/>誰でもこのリポジトリ上で新しいIssueを作成することができます。organizersは、通知を得て対応することができます。<br/>この方法は、直接orgnizersへEメールを送信よりもずっと優れています。",
-            "(6)": "the NodeUp podcast Mikeal Rogersの<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">episode 55</a>では、Max Ogdenおよびその他のコミュニティメンバーがNodeSchoolsについて話しています。<br/>ボルティモアで開催されたAt Cascadia JS 2014ではJason Rhodesが、<a href=\"https://www.youtube.com/watch?v=XsmvTnOLwhk\" target=\"_blank\">NodeSchoolsについて語っています。</a>"
+            "(4)": "about-info",
+            "(5)": "about-info2",
+            "(6)": "about-info3"
           }
         }
       },
       ".building-workshops body>div:eq(0)>div:eq$@": {
         "(0) $@": {
-          "h1": "NodeSchoolのワークショッパーを作る",
-          "p": "ワークショッパーのためによく使われているツール。"
+          "h1": "building-workshops-header",
+          "p": "building-workshops-subtitle"
         },
-        "(1)>div:eq(1) span": "は何でもできるワークショッパーのためです。",
-        "(2)>div:eq(1) span": "は軽いワークショッパーのためです。",
+        "(1)>div:eq(1) span": "building-workshops-info",
+        "(2)>div:eq(1) span": "building-workshops-info2",
         "(3)$@": {
-          " h3": "自分で作る",
+          " h3": "building-workshops-info3",
           ">div:eq(1)>p>span:eq$@": {
-            "(0)": "新しいワークショッパーの形を作っても大丈夫ですよ。例えばCSSを教えるために新しいワークショッパーフォーマットを作るのは必須がこしれません。１つの新しいフォーマットの例は",
-            "(1)": "です。",
-            "(2)": "のワークショップのために開発されました。"
+            "(0)": "building-workshops-info3A",
+            "(1)": "building-workshops-info3B",
+            "(2)": "building-workshops-info3C"
           }
         }
       },
       ".host body>div:eq(1)>div:eq$@": {
         "(0) $@": {
-          "h1": "NodeSchoolのイベントをホストする",
-          "p": "NodeSchoolのすべてはコッミュにティーエッフォートです。100%オーペンソースです。だからだれでもがNodeSchoolの材料を使うやイベントをホストすることができます。"
+          "h1": "host-header",
+          "p": "host-info"
         },
         "(1) $@": {
-          "h3": "まず、チャプターで初めて",
+          "h3": "host-chapter-header",
           "p $@": {
             "span:eq$@": {
-              "(0)":"まずは",
-              "(1)":"。それできてからは下にリソースやヒント書いてあります。",
-              "(2)":"このページは元々",
-              "(3)":"の議論からできています。"
+              "(0)":"host-chapter-info",
+              "(1)":"host-chapter-info2",
+              "(2)":"host-chapter-info3",
+              "(3)":"host-chapter-info4"
             },
             "a:eq$@": {
-              "(0)": "NodeSchoolチャプターを作って下さい（英語）",
-              "(1)": "「イベントをホストしたがっていますか？」(英語:Want to run an event?)"
+              "(0)": "host-chapter-link",
+              "(1)": "host-chapter-link2"
             }
           }
         },
         "(2) $@": {
-          "h3": "イベントを追加してください",
+          "h3": "host-attend-header",
           "p $@": {
             "span:eq$@": {
-              "(0)":"イベントをホストつもりの場合",
-              "(1)":"を記入するしてください。",
+              "(0)":"host-attend-info",
+              "(1)":"host-attend-info2",
             },
             "a:eq$@": {
-              "(0)": "このフォーム（英語）"
+              "(0)": "host-attend-link"
             }
           }
         },
         "(3) $@": {
-          "h3": "ホストについてのオススメ",
-          "p": "下にリンクしてある過去記事を読んでならわかりやすいです。イベントをホストするためにルールが緩いです。私たちはホストしながらこの勉強できましたから押す背できます。",
+          "h3": "host-recommendation-header",
+          "p": "host-recommendation-info",
           "li:eq$@": {
-            "(0)": "メンターと学生の比率は1:5以上だと教えるのが簡単になります。",
-            "(1)": "イベントの前の日に参加者にリマインダーを送ると参加者が増えます。",
-            "(2)": "いつもより広いグループに到達しようとしたらもっとさまざまなグループになります。（いいことでしょうか）",
-            "(3)": "行動規範みたいな紙をよいしたほうがいいです。それなら悩ますことや悪いマナーの問題がすくなくなる。",
-            "(4)": "会場のWifiやネットワークが足りるかどうかを悩んだらオフライン策もう用意したほうがいいです。",
-            "(5)": "現地の開発会社をWifi、飲み物、食べ物、会場などについてサッポートお願いするのが有用がありました。"
+            "(0)": "host-recommendation-list-1",
+            "(1)": "host-recommendation-list-2",
+            "(2)": "host-recommendation-list-3",
+            "(3)": "host-recommendation-list-4",
+            "(4)": "host-recommendation-list-5",
+            "(5)": "host-recommendation-list-6"
           }
         },
         "(4) $@": {
-          "h3": "前のイベントの過去記事",
-          "p": "このリストは前のイベントの後の深さな過去記事です。どのように動いているの感情のためです。"
+          "h3": "host-reports-header",
+          "p": "host-reports-info"
         }
       }
-    }
-  }
-  var langNames　= {
-    en: "English",
-    ja: "日本語"
-  }
+    };
 
   function translateHTML(parent, translation) {
     for (section in translation) {
@@ -275,11 +272,12 @@ jQuery(function () {
     return $('<li class="nav-lang-' + lang + '">').toggleClass("selected", lang === selectedLang).html(lang === selectedLang ? langName : '<a href="' + origin + query + hash + '"">' + langName + '</a>')
   }
 
-  function addTranslationNav(selectedLang) {
+  function addTranslationNav(selectedLang, csv) {
     $(document.body).addClass("lang-" + selectedLang)
     var nav = $('<ul class="nav-lang"></ul>')
-    for (var lang in langNames) {
-      createLangButton(lang, langNames[lang], selectedLang).appendTo(nav)
+    createLangButton("en", "English", selectedLang).appendTo(nav)
+    for (var lang in csv) {
+      createLangButton(lang, csv[lang].language, selectedLang).appendTo(nav)
     }
     nav.insertBefore("header>*:first-child")
   }
@@ -303,25 +301,106 @@ jQuery(function () {
     })
   }
 
-  function translate(lang) {
-    if (lang) {
-      lang = lang.toLowerCase()
-      var translation = translations[lang]
-      if (!translation)
-        lang = null
-    }
+  function parseCSV(raw) {
+    var levels = []
+    var csv = {}
 
-    if (!lang)
-      lang = "en"
+    new CSV(raw, {
+      cast: false,
+      header: true,
+      cellDelimiter: "\t"
+    }).parse().filter(function (line) {
+      // Ignoring empty lines and comments #
+      return line.key != "" && line.key.charAt(0) != "#"        
+    }).forEach(function (line) {
+      // Transforming "_" notation to combined - notation
+      var parts = /^(_*)(.*)/.exec(line.key)
+      var depth = parts[1].length
+      var name = parts[2]
+      while (depth < levels.length && levels.length > 0) {
+        levels.pop()
+      }
+      levels.push(name)
+      var key = levels.join("-")
+      // Pollute all languages
+      for (var lang in line) {
+        if (lang != "key" && lang != "") {
+          var langObj = csv[lang]
+          if (!langObj) {
+            langObj = {}
+            csv[lang] = langObj
+          }
+          if (line[lang] != "") {
+            langObj[key] = line[lang]
+          }
+        }
+      }
+    })
 
-    addTranslationNav(lang)
-
-    if (translation)
-      translateHTML("$@", translation)
-
-    if (lang !== "en")
-      modifyLinks(lang)
+    return csv;
   }
 
-  translate(getQuery("lang"))
-})
+  function mapKeys(keys, map) {
+    if (!map)
+      map = cssMap
+
+    var result = {};
+    for (var field in map) {
+      var value = map[field]
+      if (typeof value === "object") {
+        result[field] = mapKeys(keys, value)
+      } else if(typeof value === "string") {
+        var newValue = keys[value]
+        if (typeof newValue !== "string") {
+          console.log("Warning: Translation missing: " + value)
+        } else {
+          result[field] = newValue 
+        }
+      } else {
+        console.log("Warning: Why is there: " + value + "in the translation map?")
+      }
+    }
+    return result;
+  }
+
+  var csv = null;
+  var domLoaded = false;
+
+  function translate() {
+    if (domLoaded && csv) {
+
+      var lang = getQuery("lang")
+
+      // Map 
+      if (lang) {
+        lang = lang.toLowerCase()
+        var keys = csv[lang]
+        if (!keys)
+          lang = null
+      }
+
+      if (!lang)
+        lang = "en"
+
+      addTranslationNav(lang, csv)
+
+      if (keys) {
+        var translation = mapKeys(keys)
+        translateHTML("$@", translation)
+      }
+
+      if (lang !== "en")
+        modifyLinks(lang)
+    }
+  }
+
+  jQuery.get("lang.csv", function (raw) {
+    csv = parseCSV(raw)
+    translate()
+  })
+
+  jQuery(function () {
+    domLoaded = true
+    translate()
+  })
+}()
