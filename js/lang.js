@@ -10,7 +10,6 @@ jQuery(function () {
         "host": "ホスト"
       },
       "footer>div:nth-child$@": {
-//        "(1) small span:first-child": "写真",
         "(2) ul:nth-child$@": {
           "(1) $@": {
             "li:first-child strong": "連絡方法"
