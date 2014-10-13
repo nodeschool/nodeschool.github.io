@@ -1,0 +1,172 @@
+key	ja
+	
+# Note: excel on mac can not deal with Unicode characters!	
+	
+language	日本語
+	
+menu	
+_index	ホーム
+_events	イベント
+_chapters	チャプター
+_about	概要
+_building-workshops	ビルド
+_host	ホスト
+	
+footer	
+_contact-header	連絡方法
+_contribute	
+__header	貢献
+__question	質問する
+__answer	質問に答える
+	
+_about	
+__header	NodeSchoolついて
+__build	ワークショッパーを作る
+__host	ワークショップをホストする
+	
+index	
+_header	"<span class=""no-break"">ターミナル</span>をつかってできる<span class=""no-break"">ノード</span>の<span class=""no-break"">オープンソース</span><span class=""no-break"">ワークショップ。</span><span class=""no-break"">一人で頑張って</span><span class=""no-break"">または近い</span><span class=""no-break"">ワークショップ</span>で<span class=""no-break"">仲間と勉強して下さい。</span>"
+_get-started	"はじめてなら「<a href=""#learnyounode"">Learn You Node</a>」<br/>というワークショッパーがあります:"
+_workshop	
+__header	 ワークショップ
+__info	NodeSchoolはグループのマンツーマンワークショップ（通常は無料）。<br/>ワークショッパーというアプリをカリキュラムとして使っています。参加しやすいよう、メンターがいます。
+__links	
+___host	ホストになる
+___events	すべてのイベント
+___writeups	今までのイベント
+	
+_upcoming	
+__header	ワークショップイベント
+__loading	ローディング...
+__error	イベントリストをロードできませんでした
+__all-events	すべてのイベント
+__no-events	今の所はイベントがありません。
+__past-events	過去のイベント
+__past-events2	をチェックしてください。
+	
+_host	
+__header	誰でもホストになれます
+__past	今まで
+__past2	のイベントがありました。
+__want-to-host	NodeSchoolは分権的に動いています。オーペンソースベースやボランティアシステムです。イベントホストに興味がありますか？
+__want-to-host2	リソースやヒント
+__want-to-host3	を使ってください。
+	
+_workshopper	
+__header	ワークショッパー
+__info	ワークショッパーはNodeSchoolと関係あるオープンソースモジュールです。すべてのワークショッパーは自動誘導式です（ワークショップに参加しなくても勉強できます！）。ほとんどはオフラインでも動いてます。
+__list	
+___problem	困ったことがあれば、質問して下さい
+___faq	一般的な質問
+___host	ワークショップを作る
+	
+_get-going	
+__header	ファーストステップ
+__info	まずは
+__info2	が必要です。その後は
+__info3	（Node.jsと一緒にインストールされている）を使ってモジュールの下に書いてあるコマンドでインストールしてください。一度インストールしたらワークショッパーの名前を使ってスタートできます。
+	
+_workshoppers	
+__core	
+___header	Core/基本
+___info	このワークショッパーは基本的なNode.jsスキルが勉強できます。
+___link	
+____pre	困っているなら
+____text	質問してください
+____post	。
+	
+__elective	
+___header	選択科目
+___info	人気のライブラリや開発スタイルのワークショッパー
+___link	
+____pre	困っているなら
+____text	質問してください
+____post	。
+	
+workshopper	
+_learnyounode	Node.jsの基本: 非同期 I/Oやhttp。
+_gitit	GitやGithubの基本。
+_streamadventure	ストリームのインタフェースを
+_streamadventure2	を使っての構成を勉強する。
+_functionaljavascript	EcmaScript 5の基本的な関数型プログラミングを勉強。
+_levelmeup	格好いいパッケージのkey/valueストレージのleveldbを勉強する。
+_expressworks	Express.jsフレームワークのベーシックを勉強する。
+_makemehapi	チャレンジを頑張りながらhapiを勉強できます。
+_promise-it-wont-hurt	Promiseを使って非同期な開発を勉強する。
+_async-you	Asyncパッケージを勉強する。
+_nodebot-workshop	johnny-fiveのAPIを使ってロボットを作る。
+_goingnative	Node.jsの裏側の探査:C++のネイティブアドオン。
+_planetproto	JavaScriptのPrototypeをわかるように。
+_shader-school	GLSLのシェーダを使って基本のグラフィックスプログラミングを勉強する。
+_bytewiser	Node.jsまたはブラウザを使ってバイナリデータ操作。
+_bug-clinic	デバッギングのツールを勉強しながらデバッギングスキルレベルアップ。
+_browserify-adventure	npmモジュールやノードスタイルのrequire()をブラウザーでも使えるように。
+_introtowebgl	WebGLやthree.jsのイントロダクション。
+_count-to-6	JavaScriptの次のバーション:EcmaScript6を勉強する。
+_kick-off-koa	KOA/次世代のwebフレームワークを始める。
+_lololodash	Lo-Dash (underscoreのフォーク)を使ったArrayやObjectをもっと簡単に使う。
+	
+events	
+_header	NodeSchool Events <br>（これから開催されるイベントや終了されたイベント情報）
+_past	開催終了
+_future	開催予定
+_header2	"<span id=\""event-count\"">たくさん</span>のイベントが開催!!"
+_header3	"イベントを開催される方は<a target=""_blank"" href=""https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm"">こちら</a>で登録お願いします。"
+	
+chapters	
+_header	定期的にNodeSchoolのイベントの開催している都市の一覧です。
+	
+about	
+_header	NodeSchoolは、ハイクオリティなプログラミングカリキュラムの作成と、コミュニティ学習イベントの開催、<br>その２つを目標に、ボランティアによって運営するオープンソースプロジェクトです。
+_history	"""ワークショッパー""のフォーマットは、2013年の夏、<a href=""http://substack.net/"">Substack</a>が<a href=""https://www.npmjs.org/package/stream-adventure"">stream-adventure</a>のnpmパッケージで作成しました。"
+_history2	ワークショッパーの特徴は、双方向と自動化です。<br/>ワークショッパーには数種類の難易度があり、学習者は段階的にチャレンジしていくことができます。<br/>各課題は最初にコンセプトを説明してあり、課題の回答に必要な要件をリストアップして提示します。<br/>学習者は各段階の課題にチャレンジするプログラムコードを書いてください。
+_history3	課題ができあがったら、提出しましょう。<br/>提出された課題は自動でチェックされます。<br/>間違いやミスがあった場合、フィードバックが来るので、再度トライすることができます。<br/>プログラムコードが基準を満たした場合、次の段階へ進むことができます。
+_history4	上記はすべて自動化されています。<br/>ワークショッパーは、学習者がユニットテストスイートのように正しいコードを書く必要があると考えています。
+_philosophy	"すべてのNodeSchoolのワークショップはNodeで書かれていますが、ワークショップの対象は、必ずしもNodeについてである必要はありません。例えば、<a href=""https://www.npmjs.org/package/shader-school"">shader-school</a>ワークショップでは、コンピュータグラフィックスの概念を教えており、JavaScriptを書く必要がありません。"
+_philosophy2	"NodeSchoolコミュニティは新しいワークショップをオーサリングするためのいくつかの本当に素晴らしいツールを開発しました。<br/>あなたがワークショップのアイデアを持っている場合、<a href=""building-workshops.html"">ビルド</a>ページをチェックすることをおすすめします。"
+_info	"NodeSchoolは、南極大陸を除くすべての大陸でコミュニティイベントがあります。<br>誰もがイベントを開催することができ、コミュニティとして、みんなのために楽しいイベントを作り、有用な情報、ガイドラインやtipsをコンパイルしましょう。<br/>詳しくは、<a href=""host.html"">イベント</a>ページを参照してください。"
+_info2	"NodeSchoolは、GitHubを使用しています。NodeSchool関係者に連絡を取るのに最適な場所は<a href=""https://github.com/nodeschool/organizers/issues"">organizers repository</a>です。<br/>誰でもこのリポジトリ上で新しいIssueを作成することができます。organizersは、通知を得て対応することができます。<br/>この方法は、直接orgnizersへEメールを送信よりもずっと優れています。"
+_info3	"the NodeUp podcast Mikeal Rogersの<a href=""https://archive.org/details/NodeUp55"" target=""_blank"">episode 55</a>では、Max Ogdenおよびその他のコミュニティメンバーがNodeSchoolsについて話しています。<br/>ボルティモアで開催されたAt Cascadia JS 2014ではJason Rhodesが、<a href=""https://www.youtube.com/watch?v=XsmvTnOLwhk"" target=""_blank"">NodeSchoolsについて語っています。</a>"
+	
+building-workshops	
+_header	NodeSchoolのワークショッパーを作る
+_subtitle	ワークショッパーのためによく使われているツール。
+_info	は何でもできるワークショッパーのためです。
+_info2	は軽いワークショッパーのためです。
+_info3	自分で作る
+_info3A	新しいワークショッパーの形を作っても大丈夫ですよ。例えばCSSを教えるために新しいワークショッパーフォーマットを作るのは必須がこしれません。１つの新しいフォーマットの例は
+_info3B	です。
+_info3C	のワークショップのために開発されました。
+	
+host	
+_header	NodeSchoolのイベントをホストする
+_info	NodeSchoolのすべてはコッミュにティーエッフォートです。100%オーペンソースです。だからだれでもがNodeSchoolの材料を使うやイベントをホストすることができます。
+_chapter	
+__header	まず、チャプターで初めて
+__info	まずは
+__info2	。それできてからは下にリソースやヒント書いてあります。
+__info3	このページは元々
+__info4	の議論からできています。
+__link	NodeSchoolチャプターを作って下さい（英語）
+__link2	「イベントをホストしたがっていますか？」(英語:Want to run an event?)
+	
+_attend	
+__header	イベントを追加してください
+__info	イベントをホストつもりの場合
+__info2	を記入するしてください。
+__link	このフォーム（英語）
+	
+_recommendation	
+__header	ホストについてのオススメ
+__info	下にリンクしてある過去記事を読んでならわかりやすいです。イベントをホストするためにルールが緩いです。私たちはホストしながらこの勉強できましたから押す背できます。
+__list	
+___1	メンターと学生の比率は1:5以上だと教えるのが簡単になります。
+___2	イベントの前の日に参加者にリマインダーを送ると参加者が増えます。
+___3	いつもより広いグループに到達しようとしたらもっとさまざまなグループになります。（いいことでしょうか）
+___4	行動規範みたいな紙をよいしたほうがいいです。それなら悩ますことや悪いマナーの問題がすくなくなる。
+___5	会場のWifiやネットワークが足りるかどうかを悩んだらオフライン策もう用意したほうがいいです。
+___6	現地の開発会社をWifi、飲み物、食べ物、会場などについてサッポートお願いするのが有用がありました。
+	
+_reports	
+__header	前のイベントの過去記事
+__info	このリストは前のイベントの後の深さな過去記事です。どのように動いているの感情のためです。

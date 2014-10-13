@@ -24,11 +24,11 @@
           </h1>
           <h3>Open source workshops built with Node that run in your terminal. Do them on your own or at a workshop nearby.</h3>
           <ul class="nav">
-            <a href="events.html"><li>Events</li></a>
-            <a href="chapters.html"><li>Chapters</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="building-workshops.html"><li>Build</li></a>
-            <a href="host.html"><li>Host</li></a>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="chapters.html">Chapters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="building-workshops.html">Build</a></li>
+            <li><a href="host.html">Host</a></li>
           </ul>
         </div>
       </div>
@@ -41,14 +41,14 @@
       </div>
     </div>
 
-    <div class="container" style='background-color: #fff;'>
+    <div class="container workshop-header" style='background-color: #fff;'>
       <div class="full">
         <h1>Workshops</h1>
         <p>These are in-person hosted workshops, usally free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
         <ul class="inner-nav">
           <li><a href="host.html">Host Your Own</a></li>
           <li><a href="events.html">See All Events</a></li>
-          <li><a href="host.html">Writeups of Past Events</a></li>
+          <li><a href="host.html#writeups">Writeups of Past Events</a></li>
         </ul>
       </div>
     </div>
@@ -57,18 +57,30 @@
         <div id="map"></div>
       </div>
 
-      <div class="third upcoming-workshopers">
+      <div class="third upcoming-workshoppers">
         <h2>Upcoming Workshops</h2>
         <br>
         <div id="upcoming-workshops">
-          Loading...
+          <div class="loading">
+            Loading...
+          </div>
+          <div class="empty">
+            <span>No upcoming events. Check out</span> <a href="events.html">past events</a><span>!</span>
+          </div>
+          <div class="success">
+            <ul></ul>
+            <a href="events.html" class="all-events">See all events</a>
+          </div>
+          <div class="error">
+            Could not load events, sorry!
+          </div>
         </div>
       </div>
 
-      <div class="third">
+      <div class="third anyone-can-host">
         <h2>Anyone can host</h2>
-        <p><span id="event-count"></span></p>
-        <p>NodeSchool is decentralized, open source and volunteer run. Want to host an event? <a href="">Resources and tips</a> for how.</p>
+        <p id="event-count"><span>There have been a total of</span> <strong class="cnt">?</strong> <span>events!</span></p>
+        <p><span>NodeSchool is decentralized, open source and volunteer run. Want to host an event?</span> <a href="host.html">Resources and tips</a> <span>for how.</span></p>
       </div>
     </div>
 
@@ -119,10 +131,10 @@
         <div class="third">
           <div id="get-going">
             <h2>Get Going —</h2>
-            <p>You’ll need <a href="http://nodejs.org">Node.js</a> on your computer to get started
-    with each of these. Then use <a href="http://npmjs.org">npm</a> (it comes with Node) to install each
+            <p><span>You’ll need </span><a href="http://nodejs.org">Node.js</a> <span>on your computer to get started
+    with each of these. Then use</span> <a href="http://npmjs.org">npm</a> <span>(it comes with Node) to install each
     module with the command below it. Once installed,
-    simply type the workshopper’s name to launch.</p>
+    simply type the workshopper’s name to launch.</span></p>
           </div>
         </div>
       </div>
@@ -134,7 +146,7 @@
         <div class="third">
           <h1>Core</h1>
           <p>These workshoppers focus on essential skills for working with Node.js.</p>
-          <p>Stuck? Ask a question in the <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">discussion</a>.<p>
+          <p><span>Stuck? Ask a question in the</span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">discussion</a><span>.</span></p>
         </div>
         <div class="third">
           <div id="learnyounode" class="workshopper">
@@ -151,7 +163,7 @@
         <div class="third">
           <div id="streamadventure" class="workshopper">
             <h2><a href="https://www.github.com/substack/stream-adventure" target="_blank">stream-adventure</a></h2>
-            <p>Learn to compose streaming interfaces with <code>.pipe()</code></p>
+            <p><span>Learn to compose streaming interfaces with </span><code>.pipe()</code><span>.</span></p>
             <code>npm install -g stream-adventure</code>
           </div>
         </div>
@@ -161,7 +173,7 @@
       <div class="third">
         <h1>Electives</h1>
         <p>Workshoppers on popular libraries or styles of writing Node.js.</p>
-        <p>Stuck? Ask a question in the <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">discussion</a>.<p>
+        <p><span>Stuck? Ask a question in the </span><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">discussion</a><span>.</span></p>
       </div>
       <div class="third">
         <div id="functionaljavascript" class="workshopper">
@@ -184,17 +196,17 @@
           <p>Learn all about hapi through a series of challenges.</p>
           <code>npm install -g makemehapi</code>
         </div>
-        <div id="promiseitwonthurt" class="workshopper">
+        <div id="promise-it-wont-hurt" class="workshopper">
           <h2><a href="https://github.com/stevekane/promise-it-wont-hurt" target="_blank">Promise It Won't Hurt</a></h2>
           <p>Learn to use promises in JavaScript to handle async operations.</p>
           <code>npm install -g promise-it-wont-hurt</code>
         </div>
-        <div id="asyncyou" class="workshopper">
+        <div id="async-you" class="workshopper">
           <h2><a href="https://github.com/bulkan/async-you" target="_blank">Async You</a></h2>
           <p>Learn to use the async package.</p>
           <code>npm install -g async-you</code>
         </div>
-        <div id="nodebot" class="workshopper">
+        <div id="nodebot-workshop" class="workshopper">
           <h2><a href="https://github.com/tableflip/nodebot-workshop" target="_blank">NodeBot Workshop</a></h2>
           <p>Make robots with the johnny-five api.</p>
           <code>npm install -g nodebot-workshop</code>
@@ -232,7 +244,7 @@
           <p>Use npm modules and node-style require() in the browser with browserify.</p>
           <code>npm install -g browserify-adventure</code>
         </div>
-        <div id="intro-to-webgl" class="workshopper">
+        <div id="introtowebgl" class="workshopper">
           <h2><a href="https://github.com/alexmackey/IntroToWebGLWithThreeJS" target="_blank">Intro to WebGL</a></h2>
           <p>Get started with three.js and WebGL.</p>
           <code>npm install -g introtowebgl</code>
@@ -253,14 +265,14 @@
           <code>npm install -g lololodash</code>
         </div>
 
+        </div>
       </div>
-    </div>
 
     <div class="container" style='background-color: #fff;'>
       <footer>
         <div class="third">
           <p><strong>nodeschool.io</strong></p>
-          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+          <small><span>Photos by</span> <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a><span></span></small>
         </div>
         <div class="two-thirds">
           <ul>
@@ -270,7 +282,7 @@
           </ul>
           <ul>
             <li><strong>Contribute</strong></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</a></li>
             <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
           </ul>
           <ul>
@@ -283,12 +295,9 @@
     </div>
 
     <script id="events" type="text/html">
-      <ul>
-        {{#rows}}
-          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
-        {{/rows}}
-          <li><a href="events.html">See all events</a></li>
-      </ul>
+      {{#rows}}
+        <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+      {{/rows}}
     </script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -301,7 +310,7 @@
       try {
         loadEvents()
       } catch(e) {
-        $('#upcoming-workshops').html('Could not load events, sorry!')
+        $('#upcoming-workshops').addClass("error")
         $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
       }
 
@@ -313,10 +322,16 @@
       function showNearEvents(data) {
         writeCount(data.length)
         makeMap(data)
-        var html = Sheetsee.ich.events({
-            'rows': sortDates(data)
-          })
-        $('#upcoming-workshops').html(html)
+        var list = sortDates(data)
+        if (list.length == 0) {
+          $('#upcoming-workshops').addClass("empty")
+        } else {
+          var html = Sheetsee.ich.events({
+              'rows': list
+            })
+          $('#upcoming-workshops').addClass("success")
+          $('#upcoming-workshops>.success>ul').html(html)
+        }
       }
 
       function makeMap(data) {
@@ -349,9 +364,10 @@
       }
 
       function writeCount(count) {
-        $('#event-count').html("There have been a total of <strong>" + count + "</strong> events!")
+        $('#event-count .cnt').text(count)
       }
     </script>
+    <script type="text/javascript" src="js/lang.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

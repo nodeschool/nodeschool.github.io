@@ -78,15 +78,22 @@ ul.inner-nav {list-style: none;}
 ul.inner-nav li { margin-right: 12px; display: inline;}
 .inner-nav a {background-color: #F7DA03; color: #333; border: none; padding: 8px 12px; border-radius: 3px;}
 .inner-nav a:hover {color: #fff; background-color: #333;}
+span.no-break {display:inline-block;}
 
-ul.nav {list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
-ul.nav li {display: inline; font-size: 16px;}
-ul.nav li {padding: 6px 8px; margin-right: 10px; border: 2px solid #333; border-radius: 3px;}
-ul.nav li:hover {background: #333; color: #F7DA03; cursor: pointer;}
-ul.nav li:hover a {color: #333;}
-ul.nav li a {border: none; color: #333;}
-ul.nav li.current-page {background: #fff; color: #333;}
-ul.nav li.current-page a {color: #333;}
+ul.nav {display: inline; list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
+ul.nav li {display: inline; font-size: 16px; margin-right: 10px;}
+ul.nav li a {display: inline-block; padding: 6px 8px; border: 2px solid #333; border-radius: 3px; margin-bottom: 10px;}
+ul.nav li:hover a {color: #F7DA03; background: #333; cursor: pointer;}
+ul.nav li.current-page a {background: #fff; color: #333; color: #333;}
+header .full:after {content: ''; display: block; clear: both;}
+
+ul.nav-lang {list-style: none; margin: 0; padding: 5px 20px; text-align: right}
+ul.nav-lang li {border: none; margin-right: none; display: inline;}
+ul.nav-lang li a {color: #333; text-decoration: underline;}
+ul.nav-lang li a:hover {color: #333}
+ul.nav-lang li:after {content: "|"; margin-right: 5px; margin-left: 5px;}
+ul.nav-lang li:last-child:after {content: none; color: #333;}
+ul.nav-lang li.selected {text-decoration: none; color: #666;}
 
 #map {width: 100%; min-height: 375px; background: #eaeaea;}
 .key {padding: 8px 0;}
@@ -129,6 +136,14 @@ ul.nav li.current-page a {color: #333;}
 
 #upcoming-workshops { margin-bottom: 15px;}
 #upcoming-workshops ul { margin: 0;}
+#upcoming-workshops>div { display: none; }
+#upcoming-workshops>div.loading { display: block; }
+#upcoming-workshops.success>div.loading,
+#upcoming-workshops.empty>div.loading,
+#upcoming-workshops.error>div.loading { display: none; }
+#upcoming-workshops.success>div.success { display: block; }
+#upcoming-workshops.error>div.error { display: block; }
+#upcoming-workshops.empty>div.empty { display: block; }
 
 .term,
 .term .chrome,
@@ -178,7 +193,6 @@ footer .container {padding: 0 40px;}
   header h1 { font-size: 2.5em; margin-top: 0; }
   header h1 span {margin: 0 -3.8px;}
   header h3 {font-size: 1em; }
-  ul.nav li {line-height: 3em;}
   #map {margin: 0; padding: 0; width: 100%;}
   .window-pane {background-position: 0 0; height: 200px;}
   footer ul {width: 100%;}
