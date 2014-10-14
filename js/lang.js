@@ -1,7 +1,7 @@
 var xhr = require('xhr')
 var runParallel = require('run-parallel')
 var locale = require('browser-locale')() || 'en-US'
-var userLang = locale.toLowerCase().substring(0, 2)
+var userLang = locale.toLowerCase()
 
 // fetch translation data files
 runParallel([
@@ -37,6 +37,7 @@ function translate(languages, selectors) {
   var lang = localStorage.getItem('lang') || userLang
   
   var supported = languages[lang]
+  if (!supported) supported = languages[lang.substr(0, 2)]
   if (!supported) lang = null
 
   if (!lang) {
