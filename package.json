@@ -4,7 +4,8 @@
   "description": "nodeschool.io webpage",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -r xhr -r browser-locale -r run-parallel > js/dependencies.js"
+    "build": "browserify -r xhr -r browser-locale -r run-parallel > js/dependencies.js",
+    "language": "node scripts/generate_lang.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
     "browser-locale": "^1.0.0",
     "run-parallel": "^1.0.0",
     "xhr": "^1.16.1"
+  },
+  "devDependencies": {
+    "after-all": "^2.0.1",
+    "cheerio": "^0.17.0"
   }
 }
