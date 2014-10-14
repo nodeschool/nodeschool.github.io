@@ -13,11 +13,14 @@ These are in the `/images` directory, feel free to use for your events. In `imag
 
 If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`.
 
-To get you started, run the following command:
+To generate a new language file template automatically, run the following commands inside a clone of this repository:
 
 ```
+npm install
 npm run language <language code>
 ```
+
+e.g. `npm run language es` to create a Spanish placeholder file or `npm run en-ca` to create a Canadian English one
 
 This will generate your language file in the `languages/` folder with English placeholder text. Now just translate each line. You should also add your language to the `languages/languages.json` list.
 
