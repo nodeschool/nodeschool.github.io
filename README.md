@@ -11,11 +11,11 @@ These are in the `/images` directory, feel free to use for your events. In `imag
 
 ## Translations
 
-If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`. You can use the japanese translation file, `languages/js.json` as a template. You should also add your language to the `languages/languages.json` list.
+If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`. You can use the japanese translation file, `languages/ja.json` as a template. You should also add your language to the `languages/languages.json` list.
 
 When picking your language code, please use the correct code from the first column of this spreadsheet: http://en.wikiversity.org/wiki/ISO_639-1_language_matrix
 
-The way translations are implemented is using 100% client-side javascript. When the page is loaded the users browser locale is detected (using [browser-locale](http://npmjs.org/browser-locale)) and a XHR request is made to the `languages` folder to try and fetch a JSON translation file for that locale. 
+The way translations are implemented is using 100% client-side javascript. When the page is loaded the users browser locale is detected (using [browser-locale](http://npmjs.org/browser-locale)) and a XHR request is made to the `languages` folder to try and fetch a JSON translation file for that locale. First we check for the full 5 character locale file (e.g. `en-us`) and if that doesn't exist we fallback to the 2 character version (`en`) and if that doesn't exist we just do nothing and show the default English version.
 
 Translation files are a mapping of translations IDs to the translated strings. There is a separate file called `languages/selectors.json` which maps CSS selectors in markup to the translation IDs.
 
