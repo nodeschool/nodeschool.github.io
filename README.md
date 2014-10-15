@@ -11,7 +11,18 @@ These are in the `/images` directory, feel free to use for your events. In `imag
 
 ## Translations
 
-If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`. You can use the japanese translation file, `languages/ja.json` as a template. You should also add your language to the `languages/languages.json` list.
+If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`.
+
+To generate a new language file template automatically, run the following commands inside a clone of this repository:
+
+```
+npm install
+npm run language <language code>
+```
+
+e.g. `npm run language es` to create a Spanish placeholder file or `npm run en-ca` to create a Canadian English one
+
+This will generate your language file in the `languages/` folder with English placeholder text. Now just translate each line. You should also add your language to the `languages/languages.json` list.
 
 When picking your language code, please use the correct code from the first column of this spreadsheet: http://en.wikiversity.org/wiki/ISO_639-1_language_matrix
 
