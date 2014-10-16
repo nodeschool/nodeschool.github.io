@@ -91,6 +91,7 @@
   ".chapters #region-us": "chapters-us",
   ".chapters #region-latin-america": "chapters-latin-america",
   ".chapters #region-australia": "chapters-australia",
+  ".chapters #region-asia": "chapters-asia",
   ".chapters #region-other": "chapters-other",
   ".chapters div.other span:eq(0)": "chapters-start",
   ".chapters div.other a:eq(0)": "chapters-start2",
