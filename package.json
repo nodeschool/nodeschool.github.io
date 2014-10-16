@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "after-all": "^2.0.1",
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.17.0",
+    "cheerio-eq": "^1.0.0"
   }
 }
