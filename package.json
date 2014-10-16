@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify -r xhr -r browser-locale -r run-parallel > js/dependencies.js",
-    "language": "node scripts/generate_lang.js"
+    "language": "./scripts/generate_lang.js"
   },
   "repository": {
     "type": "git",
