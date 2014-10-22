@@ -114,7 +114,7 @@
   "about-header-talk-title": "Escucha y mira a las personas hablar",
   "about-info3": "En el episodio 55 del podcast NodeUp Mikeal Rogers, Max Ogden y otros miembros de la comunidad charlan acerca de NodeSchool. En Cascadia JS 2014 Jason Rhodes, de Baltimore, charla acerca de organizar NodeSchools.",
   "building-workshops-header": "Creando un Workshop NodeSchool",
-  "building-workshops-subtitle": "Aqui hay algunas de las herramientas comunmente utilizadas para crear workshops NodeSchool.",
+  "building-workshops-subtitle": "Aquí hay algunas de las herramientas comunmente utilizadas para crear workshops NodeSchool.",
   "building-workshops-info": "para obtener un framework de workshop con todas las características de una herramienta CLI.",
   "building-workshops-info2": null,
   "building-workshops-info3": null,
@@ -142,6 +142,6 @@
   "host-recommendation-list-4": null,
   "host-recommendation-list-5": null,
   "host-recommendation-list-6": null,
-  "host-reports-header": "Agrega tu evento!",
+  "host-reports-header": "¡Agrega tu evento!",
   "host-reports-info": "Si estás organizando un evento NodeSchool, agrégalo a este sitio completando este formulario."
 }
