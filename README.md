@@ -5,6 +5,10 @@ http://nodeschool.io/ internet web page
 
 please fork it and send us improvements!
 
+**If you are an owner on the nodeschool/Owners team** please do not edit this repo directly but instead send your contributions as pull requests.
+
+We ask that you make pull requests because changes to this repository will get deployed onto the live production site immediately and it's best if you get feedback on your pull request first before it goes live.
+
 ## Stickers, Badges and whatnots
 
 These are in the `/images` directory, feel free to use for your events. In `images/make-a-sticker` there is a template for making a sticker too. Woop.
