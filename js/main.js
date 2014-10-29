@@ -100,32 +100,53 @@ function upcomingEvents(data) {
 }
 
 function makeMap(data) {
+
   var sorted = sortDates(data)
-  sorted = addHexcolor(sorted.reverse(), "#F7DA03", "#A09C9C")
-  
-  // make map
+                .map(setState)
+                // not sure this is needed, given past events are done using image
+                .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
+                .reverse()
+
+  var upcoming = sorted.filter(isFuture)
+  var past     = sorted.filter(function (event) { return !isFuture(event) })
+
   var optionsJSON = ["name", "tickets", "startdate", "state"]
   var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
     + " target='_blank'>{{name}}</a><p>"
-  var geoJSON = Sheetsee.createGeoJSON(sorted.reverse(), optionsJSON)
+
   var map = Sheetsee.loadMap("map")
   Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
-  var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+
+  function addMarkers(data) {
+    var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+    return Sheetsee.addMarkerLayer(geoJSON, map, template)
+  }
+
+  addMarkers(upcoming, optionsJSON)
+  // known issue: sheetsee will throw "Invalid name: popup." because we addMakerLayer
+  // twice and set the template for popup
+  // should be revisited given template for past & future events should be different
+  var past = addMarkers(past, optionsJSON)
+  past.eachLayer(function (marker) {
+    marker.setIcon(L.icon({iconUrl: "images/map-markers/past.png", iconSize: [20, 20], iconAnchor: [10, 10]}))
+  })
+
   map.setZoom(1)
   // disable dragging on mobile/tablet because it makes it hard
   // to scroll the page on full width-ish maps
   if (window.innerWidth <= 768 ) map.dragging.disable()
 }
 
-function addHexcolor(data, color, color2) {
-  data.forEach(function(event) {
-    event.state = "past"
-    event.startUTC = new Date(event.startdate)
-    if (event.startUTC > new Date()) {
-      event.hexcolor = color
-      event.state = "future"
-    }
-    else event.hecolor = color2
-  })
-  return data
+function isFuture(event) {
+  return (event.startUTC > new Date())
+}
+
+function setState(event) {
+  // event should have future state if it starts later that now (duh!)
+  event.state = isFuture(event) ? "future" : "past"
+  return event
+}
+function addHexColor(futureColor, pastColor, event) {
+  event.hexcolor = isFuture(event) ? futureColor : pastColor
+  return event
 }
