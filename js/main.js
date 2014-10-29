@@ -79,6 +79,13 @@ function sortDates(data) {
     return a.startUTC - b.startUTC
   })
 
+  return sorted
+}
+
+function upcomingEvents(data) {
+  var today = new Date()
+  var sorted = sortDates(data)
+
   // only upcoming events
   var freshies = []
   var todayBuffer = new Date()
@@ -93,12 +100,14 @@ function sortDates(data) {
 }
 
 function makeMap(data) {
-  data = addHexcolor(data, "#F7DA03", "#A09C9C")
+  var sorted = sortDates(data)
+  sorted = addHexcolor(sorted.reverse(), "#F7DA03", "#A09C9C")
+  
   // make map
   var optionsJSON = ["name", "tickets", "startdate", "state"]
   var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
     + " target='_blank'>{{name}}</a><p>"
-  var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+  var geoJSON = Sheetsee.createGeoJSON(sorted.reverse(), optionsJSON)
   var map = Sheetsee.loadMap("map")
   Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
   var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
