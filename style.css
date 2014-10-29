@@ -34,7 +34,7 @@ header h1 span.h { transition-duration: 0.4s; }
 
 header h3 { font-size: 1.5em; font-weight: 500; margin: 10px 0 0 0; }
 header .full { width: 47%; }
-header .subtitle { margin-bottom: 20px; letter-spacing: .05em; } 
+header .subtitle { margin-bottom: 20px; letter-spacing: .05em; }
 header .nav a {color: #333; border-color: #fff; border: none;}
 header img  {width: 400px; padding-right: 60px; position: relative; display: block; margin: 0 auto; padding-right: 20px; }
 header .container {padding: 100px 40px;}
@@ -91,8 +91,8 @@ header .full:after {content: ''; display: block; clear: both;}
 
 ul.nav-lang {list-style: none; margin: 0; padding: 5px 20px; text-align: right}
 ul.nav-lang li {border: none; margin-right: none; display: inline;}
-ul.nav-lang li a {color: #333; text-decoration: underline;}
-ul.nav-lang li a:hover {color: #333}
+ul.nav-lang li a {color: #333; text-decoration: none; border-color: #333;}
+ul.nav-lang li a:hover {color: #666; border-color: #666;}
 ul.nav-lang li:after {content: "|"; margin-right: 5px; margin-left: 5px;}
 ul.nav-lang li:last-child:after {content: none; color: #333;}
 ul.nav-lang li.selected {text-decoration: none; color: #666;}
