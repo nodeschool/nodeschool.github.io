@@ -103,12 +103,8 @@ function makeMap(data) {
 
   var sorted = sortDates(data)
                 .map(setState)
-                // not sure this is needed, given past events are done using image
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
                 .reverse()
-
-  var upcoming = sorted.filter(isFuture)
-  var past     = sorted.filter(function (event) { return !isFuture(event) })
 
   var optionsJSON = ["name", "tickets", "startdate", "state"]
   var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
@@ -117,23 +113,18 @@ function makeMap(data) {
   var map = Sheetsee.loadMap("map")
   Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
 
-  function addMarkers(data) {
-    var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-    return Sheetsee.addMarkerLayer(geoJSON, map, template)
-  }
+  var geoJSON = Sheetsee.createGeoJSON(sorted, optionsJSON)
+  var markers = Sheetsee.addMarkerLayer(geoJSON, map, template)
 
-  addMarkers(upcoming, optionsJSON)
-  // known issue: sheetsee will throw "Invalid name: popup." because we addMakerLayer
-  // twice and set the template for popup
-  // should be revisited given template for past & future events should be different
-  var past = addMarkers(past, optionsJSON)
-  past.eachLayer(function (marker) {
-    marker.setIcon(L.divIcon({
-            // Specify a class name we can refer to in CSS.
-            className: 'past-event',
-            // Set a markers width and height.
-            iconSize: [10, 10]
-        }))
+  markers.eachLayer(function (marker) {
+    if(marker.feature.opts.state === 'past') {
+      marker.setIcon(L.divIcon({
+              // Specify a class name we can refer to in CSS.
+              className: 'past-event',
+              // Set a markers width and height.
+              iconSize: [7, 7]
+          }))
+    }
   })
 
   map.setZoom(1)
