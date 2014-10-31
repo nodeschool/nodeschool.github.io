@@ -45,7 +45,7 @@
     <div class="container workshop-header" style='background-color: #fff;'>
       <div class="full">
         <h1>Workshops</h1>
-        <p>These are in-person hosted workshops, usally free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
+        <p>These are in-person hosted workshops, usually free, in which workshoppers are used as curriculum and mentors help attendees work through the challenges.</p>
         <ul class="inner-nav">
           <li><a href="host.html">Host Your Own</a></li>
           <li><a href="events.html">See All Events</a></li>
@@ -263,13 +263,18 @@
         </div>
         <div id="kick-off-koa" class="workshopper">
           <h2><a href="https://github.com/koajs/kick-off-koa" target="_blank">Kick off Koa</a></h2>
-          <p>Getting start with Koa, the next generation web framework for Node.js.</p>
+          <p>Getting started with Koa, the next generation web framework for Node.js.</p>
           <code>npm install -g kick-off-koa</code>
         </div>
         <div id="lololodash" class="workshopper">
           <h2><a href="https://github.com/mdunisch/lololodash" target="_blank">LololoDash</a></h2>
           <p>Learn Lo-Dash (fork of underscore) to handle your arrays and objects simple!</p>
           <code>npm install -g lololodash</code>
+        </div>
+        <div id="learnyoucouchdb" class="workshopper">
+          <h2><a href="https://github.com/robertkowalski/learnyoucouchdb" target="_blank">learnyoucouchdb</a></h2>
+          <p>Learn about CouchDB - the database that completely embraces the web</p>
+          <code>npm install -g learnyoucouchdb</code>
         </div>
 
         </div>
@@ -312,68 +317,7 @@
     <script type="text/javascript" src='js/sheetsee.js'></script>
     <script type="text/javascript" src='js/table.js'></script>
     <script type="text/javascript" src='js/main.js'></script>
-
-    <script type="text/javascript">
-      try {
-        loadEvents()
-      } catch(e) {
-        $('#upcoming-workshops').addClass("error")
-        $('#map').css({"background-size": "100%", "background-image": "url(images/hero.jpg)"})
-      }
-
-      function loadEvents() {
-        var URL = "https://docs.google.com/spreadsheets/d/1swvC909BzbpToZLePM6whDvmXavaxEG6eT257dVf-bY/pubhtml"
-        Tabletop.init({key: URL, callback: showNearEvents, simpleSheet: true})
-      }
-
-      function showNearEvents(data) {
-        writeCount(data.length)
-        makeMap(data)
-        var list = sortDates(data)
-        if (list.length == 0) {
-          $('#upcoming-workshops').addClass("empty")
-        } else {
-          var html = Sheetsee.ich.events({
-              'rows': list
-            })
-          $('#upcoming-workshops').addClass("success")
-          $('#upcoming-workshops>.success>ul').html(html)
-        }
-      }
-
-      function makeMap(data) {
-        data = addHexcolor(data, "#F7DA03", "#A09C9C")
-        // make map
-        var optionsJSON = ["name", "tickets", "startdate", "state"]
-        var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
-          + " target='_blank'>{{name}}</a><p>"
-        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-        var map = Sheetsee.loadMap("map")
-        Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
-        var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
-        map.setZoom(1)
-        // disable dragging on mobile/tablet because it makes it hard
-        // to scroll the page on full width-ish maps
-        if (window.innerWidth <= 768 ) map.dragging.disable()
-      }
-
-      function addHexcolor(data, color, color2) {
-        data.forEach(function(event) {
-          event.state = "past"
-          event.startUTC = new Date(event.startdate)
-          if (event.startUTC > new Date()) {
-            event.hexcolor = color
-            event.state = "future"
-          }
-          else event.hecolor = color2
-        })
-        return data
-      }
-
-      function writeCount(count) {
-        $('#event-count .cnt').text(count)
-      }
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/dependencies.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
 
