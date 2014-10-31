@@ -98,6 +98,7 @@ ul.nav-lang li:last-child:after {content: none; color: #333;}
 ul.nav-lang li.selected {text-decoration: none; color: #666;}
 
 #map {width: 100%; min-height: 375px; background: #eaeaea;}
+#map .past-event { border-radius: 50%; background: #9f9b9b; border: 2px solid #c6c4c4;}
 .key {padding: 8px 0;}
 .key span {padding-right: 12px;}
 .key-past::before {content: ""; width: 12px; height: 12px; background: #A09C9C; display: inline-block; border-radius: 3px; margin-right: 8px;}
