@@ -23,24 +23,19 @@
             <span class="h">H</span>
             <span>OOL</span>
           </h1>
-          <h3>Open source workshops built with Node that run in your terminal. Do them on your own or at a workshop nearby.</h3>
+          <h3 class="subtitle">Open source workshops that teach web software skills. Do them on your own or at a workshop nearby.</h3>
           <ul class="nav">
+            <li><a href="#workshoppers">Tutorials</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="chapters.html">Chapters</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="building-workshops.html">Build</a></li>
             <li><a href="host.html">Host</a></li>
           </ul>
+          <h3>Get started by installing one of our <a class="big-link" href="#workshopper-list">core workshops</a> or subscribe to our free <a class="big-link" href="https://tinyletter.com/nodeschool" target="_blank">email newsletter</a>.</h3>
         </div>
       </div>
     </header>
-
-    <div class="container get-started" style='background-color: #F8F8F8;'>
-      <div class="full">
-        <h2>Get started with the <a href="#learnyounode">Learn You Node</a> workshopper:</h2>
-        <code>npm install -g learnyounode</code>
-      </div>
-    </div>
 
     <div class="container workshop-header" style='background-color: #fff;'>
       <div class="full">
@@ -60,7 +55,6 @@
 
       <div class="third upcoming-workshoppers">
         <h2>Upcoming Workshops</h2>
-        <br>
         <div id="upcoming-workshops">
           <div class="loading">
             Loading...
@@ -70,7 +64,7 @@
           </div>
           <div class="success">
             <ul></ul>
-            <a href="events.html" class="all-events">See all events</a>
+            <p><a href="events.html" class="all-events">See all events</a>.</p>
           </div>
           <div class="error">
             Could not load events, sorry!
@@ -91,6 +85,7 @@
           <h1>Workshoppers</h1>
           <p>Workshopper is the name used for the open source lesson modules associated with NodeSchool. All are self guided (you don't need to attend a workshop to do one) and most work offline.</p>
           <ul class="inner-nav">
+            <li><a href="#workshopper-list">View Workshopper List</a></li>
             <li><a href="https://github.com/nodeschool/discussions/issues/new">Ask Questions if Stuck</a></li>
             <li><a href="https://github.com/nodeschool/discussions">Answer Questions</a></li>
             <li><a href="building-workshops.html">Build a Workshop</a></li>
@@ -144,7 +139,7 @@
 
     <div class="window-pane"><span class="caption">NodeConf, 2014</span></div>
 
-      <div class="container core-workshoppers" style='background-color: #fff;'>
+      <div id="workshopper-list" class="container core-workshoppers" style='background-color: #fff;'>
         <div class="third">
           <h1>Core</h1>
           <p>These workshoppers focus on essential skills for working with Node.js.</p>
