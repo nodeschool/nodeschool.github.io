@@ -6,6 +6,7 @@
   "scripts": {
     "build": "browserify -r xhr -r browser-locale > js/dependencies.js",
     "language": "node ./scripts/generate_lang.js",
+    "validate-html": "node ./scripts/validate_html",
     "start": "http-server"
   },
   "repository": {
