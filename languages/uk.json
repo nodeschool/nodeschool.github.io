@@ -59,7 +59,7 @@
   "index-workshoppers-elective-info": "Workshoppers on popular libraries or styles of writing Node.js.",
   "index-workshoppers-elective-link-pre": "Виникли труднощі? Запитати в",
   "index-workshoppers-elective-link-post": ".",
-  "index-workshoppers-elective-link-text": "обговорення
+  "index-workshoppers-elective-link-text": "обговорення",
   "workshopper-javascripting": "Вивчити основи JavaScript. Попередній досвід в програмуванні не обов’язковий.",
   "workshopper-learnyounode": "Вивчити основи node: асинхронний i/o, http.",
   "workshopper-learnyounode-command": "npm install -g learnyounode",
