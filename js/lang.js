@@ -1,39 +1,25 @@
 var xhr = require('xhr')
-var runParallel = require('run-parallel')
 var locale = require('browser-locale')() || 'en-US'
 var userLang = locale.toLowerCase()
 
-// fetch translation data files
-runParallel([
-  function(done) {
-    xhr({url: 'languages/languages.json', json: true}, function(err, resp, languages) {
-      if (err) console.error('could not fetch languages.json', err)
-      done(err, languages)
-    })
-  },
-  function(done) {
-    xhr({url: 'languages/selectors.json', json: true}, function(err, resp, selectors) {
-      if (err) console.error('could not fetch languages/selectors.json', err)
-      done(err, selectors)
-    })
-  }],
-  function(errors, results) {
-    if (errors) return
-    var languages = results[0]
-    var selectors = results[1]
-
-    translate(languages, selectors)
-    
-    $(document.body).on( "click", "a.switch-lang", function(e) {
-      e.preventDefault()
-      var lang = $(e.target).attr('data-lang')
-      translateToLang(lang, languages, selectors)
-      return false
-    })
-  }
-)
-
-function translate(languages, selectors) {
+xhr({url: 'languages/languages.json', json: true}, function (error, response, result) {
+  if (error) console.error('could not fetch languages.json', error)
+  var languages = result
+  // colelct all data-i18n attributes values on page
+  var i18nSpecifiers = $('[data-i18n]').toArray().map(function (node) {
+    return $(node).attr('data-i18n')
+  })
+  translate(languages, i18nSpecifiers)
+  
+  $(document.body).on( "click", "a.switch-lang", function(e) {
+    e.preventDefault()
+    var lang = $(e.target).attr('data-lang')
+    translateToLang(lang, languages, i18nSpecifiers)
+    return false
+  })
+})
+  
+function translate(languages, i18nSpecifiers) {
   var lang = localStorage.getItem('lang') || userLang
   
   var supported = languages[lang]
@@ -45,7 +31,7 @@ function translate(languages, selectors) {
     $(document.body).attr("data-lang", 'en')
   }
   
-  translateToLang(lang, languages, selectors)
+  translateToLang(lang, languages, i18nSpecifiers)
 }
 
 function resetLang() {
@@ -53,7 +39,7 @@ function resetLang() {
   window.location.reload()
 }
 
-function translateToLang(lang, languages, selectors) {
+function translateToLang(lang, languages, i18nSpecifiers) {
   addTranslationNav(lang, languages)
 
   if (lang === $(document.body).attr("data-lang")) return
@@ -63,15 +49,19 @@ function translateToLang(lang, languages, selectors) {
     if (err) return console.error('Could not fetch translation json for', lang)
     $(document.body).attr("data-lang", lang)
     localStorage.setItem('lang', lang)  
-    translateHTML(lang, keys, selectors)
+    translateHTML(lang, keys, i18nSpecifiers)
   })
 }
 
-function translateHTML(lang, translation, selectors) {
-  Object.keys(selectors).forEach(function(selector) {
-    var value = translation[selectors[selector]]
-    if (!value) return console.log("Warning: Translation missing: " + selector, lang)
-    $(selector).html(value)
+function selectorFor(i18nSpecifier) {
+  return '[data-i18n="' + i18nSpecifier + '"]'
+}
+
+function translateHTML(lang, translation, i18nSpecifiers) {
+  i18nSpecifiers.forEach(function(i18nSpecifier) {
+    var value = translation[i18nSpecifier]
+    if (!value) return console.log("Warning: Translation missing: " + i18nSpecifier, lang)
+    $(selectorFor(i18nSpecifier)).html(value)
   })
 }
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="chapters.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="mapbox.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
@@ -17,12 +17,12 @@
         <div class="full">
           <a href="index.html"><img class="logo" src="images/schoolhouse.svg" alt="nodeschoolhouse"></a>
           <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li class="current-page"><a href="chapters.html">Chapters</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="building-workshops.html">Build</a></li>
-            <li><a href="host.html">Host</a></li>
+            <li><a href="index.html" data-i18n="menu-index">Home</a></li>
+            <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li class="current-page"><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+            <li><a href="about.html" data-i18n="menu-about">About</a></li>
+            <li><a href="building-workshops.html" data-i18n="menu-building-workshops">Build</a></li>
+            <li><a href="host.html" data-i18n="menu-host">Host</a></li>
           </ul>
         </div>
       </div>
@@ -31,8 +31,8 @@
     <div class="container" style="background-color: #fff;">
       <div class="full">
         <h1>NodeSchool Chapters</h1>
-        <p>Cities all over have started to host NodeSchool events reguarly. Here's a list of chapters.</p>
-        <h2 id="region-europe">Europe</h2>
+        <p data-i18n="chapters-header">Cities all over have started to host NodeSchool events reguarly. Here&apos;s a list of chapters.</p>
+        <h2 id="region-europe" data-i18n="chapters-europe">Europe</h2>
         <div class="chapter-list">
           <ul>
             <li><a href="https://github.com/nodeschool/amsterdam" target="_blank">Amsterdam, NL</a></li>
@@ -45,7 +45,7 @@
             <li><a href="https://github.com/nodeschool/stavanger" target="_blank">Stavanger, NO</a></li>
           </ul>
         </div>
-        <h2 id="region-us">US</h2>
+        <h2 id="region-us" data-i18n="chapters-us">US</h2>
         <div class="chapter-list">
           <ul>
             <li><a href="https://github.com/nodeschool/baltimore" target="_blank">Baltimore, MD</a></li>
@@ -55,7 +55,7 @@
             <li><a href="https://github.com/nodeschool/tampa" target="_blank">Tampa, FL</a></li>
           </ul>
         </div>
-        <h2 id="region-latin-america">Latin America</h2>
+        <h2 id="region-latin-america" data-i18n="chapters-latin-america">Latin America</h2>
         <div class="chapter-list">
           <ul>
             <li><a href="https://github.com/nodeschool/buenosaires" target="_blank">Buenos Aires, AR</a></li>
@@ -64,7 +64,7 @@
             <li><a href="https://github.com/nodeschool/puertorico" target="_blank">Puerto Rico</a></li>
           </ul>
         </div>
-        <h2 id="region-australia">Australia</h2>
+        <h2 id="region-australia" data-i18n="chapters-australia">Australia</h2>
         <div class="chapter-list">
           <ul>
             <li><a href="https://github.com/nodeschool/brisbane" target="_blank">Brisbane, AU</a></li>
@@ -73,16 +73,16 @@
             <li><a href="https://github.com/nodeschool/sydney" target="_blank">Sydney, AU</a></li>
         </ul>
         </div>
-        <h2 id="region-asia">Asia</h2>
+        <h2 id="region-asia" data-i18n="chapters-asia">Asia</h2>
         <div class="chapter-list">
           <ul>
             <li><a href="https://github.com/nodeschool/taiwan" target="_blank">Taiwan, TW</a></li>
         </ul>
         </div>
-        <h2 id="region-other">Other region?</h2>
+        <h2 id="region-other" data-i18n="chapters-other">Other region?</h2>
         <div class="other">
-          <span>You can not find a NodeSchool in your region? Maybe there are other people around you, who would 
-            like to start one, too. Open an issue on the</span> <a href="https://github.com/nodeschool/discussions">discussions board</a> <span>to find other people around you. Then you can start your chapter by following the instructions on how to</span> <a href="host.html">host an event</a><span>.</span>
+          <span data-i18n="chapters-start">You can not find a NodeSchool in your region? Maybe there are other people around you, who would 
+            like to start one, too. Open an issue on the</span> <a href="https://github.com/nodeschool/discussions" data-i18n="chapters-start2">discussions board</a> <span data-i18n="chapters-start3">to find other people around you. Then you can start your chapter by following the instructions on how to</span> <a href="host.html" data-i18n="chapters-start4">host an event</a><span data-i18n="chapters-start5">.</span>
           </div>
         </div>
       </div>
@@ -95,19 +95,19 @@
         </div>
         <div class="two-thirds">
           <ul>
-            <li><strong>Contact</strong></li>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
             <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
             <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
           </ul>
           <ul>
-            <li><strong>Contribute</strong></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</a></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
           </ul>
           <ul>
-            <li><strong>About</strong></li>
-            <li><a href="building-workshops.html">Build a workshopper</a></li>
-            <li><a href="host.html">Host a workshop</a></li>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
           </ul>
         </div>
       </footer>
