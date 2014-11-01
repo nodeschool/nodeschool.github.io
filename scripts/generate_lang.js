@@ -38,7 +38,7 @@ var processFile = function (lang, filename, callback) {
     if (err) return callback(err);
     var $ = cheerio.load(data);
     Object.keys(selectors).forEach(function (selector) {
-      var text = find($, selector).text().trim();
+      var text = (find($, selector).html() || find($, selector).text()).trim();
       var key = selectors[selector];
       if (!(key in lang)) lang[key] = null;
       if (!text) return; // maybe this selector doesn't match the current file
