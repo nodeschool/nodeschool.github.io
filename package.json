@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify -r xhr -r browser-locale -r run-parallel > js/dependencies.js",
-    "language": "node ./scripts/generate_lang.js"
+    "language": "node ./scripts/generate_lang.js",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,7 @@
     "after-all": "^2.0.1",
     "cheerio": "^0.17.0",
     "cheerio-eq": "^1.0.0",
+    "http-server": "^0.7.2",
     "read": "^1.0.5"
   }
 }
-

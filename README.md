@@ -9,6 +9,17 @@ Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING
 
 We ask that you make pull requests because changes to this repository will get deployed onto the live production site immediately and it's best if you get feedback on your pull request first before it goes live.
 
+## Running the app locally
+
+This is a static site, simply open `index.html` or use your favorite static file server to run local server.
+
+You can also use the included development static server by running the following commands:
+
+```
+npm install
+npm start
+```
+
 ## Stickers, Badges and whatnots
 
 These are in the `/images` directory, feel free to use for your events. In `images/make-a-sticker` there is a template for making a sticker too. Woop.
