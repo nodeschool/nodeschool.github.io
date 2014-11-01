@@ -12,7 +12,7 @@
   "footer-about-header": "About",
   "footer-about-build": "워크쇼퍼 만들기",
   "footer-about-host": "워크샵 주최하기",
-  "index-header": "여러분의 터미널에서 실행할 수 있는 노드(Node)로 <br>공부하실 수 있는 오픈소스 워크샵입니다. <br>여러분 스스로 공부하시거나 가까운 워크샵을 방문하세요.",
+  "index-header-top": "여러분의 터미널에서 실행할 수 있는 노드(Node)로 <br>공부하실 수 있는 오픈소스 워크샵입니다. <br>여러분 스스로 공부하시거나 가까운 워크샵을 방문하세요.",
   "index-get-started": "Learn You Node 워크쇼퍼와 함께 시작하세요:",
   "index-workshop-header": "워크샵",
   "index-workshop-info": "직접 멘토가 워크샵을 운영하는 곳입니다. (보통 무료) 워크쇼퍼들은 배우시는 분들을 위한 멘토와 커리큘럼을 보유하고 있습니다.",
