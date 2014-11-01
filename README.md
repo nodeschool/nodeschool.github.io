@@ -3,7 +3,7 @@ nodeschool.github.io
 
 http://nodeschool.io/ internet web page
 
-please fork it and send us improvements!
+Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for more details on how to send a great PR.
 
 **If you are an owner on the nodeschool/Owners team** please do not edit this repo directly but instead send your contributions as pull requests.
 
