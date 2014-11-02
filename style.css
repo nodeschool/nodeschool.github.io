@@ -30,7 +30,7 @@ header .big-link:hover { border-bottom: 1px solid #777; color: #999; }
 header h1 span.apostrophe { max-width: 0px; opacity: 0;}
 header h1 span.apostrophe:before { content: "\2019";}
 header h1 span.c { }
-header h1 span.h { transition-duration: 0.4s; }
+header h1 span.h { transition-duration: 0.2s; max-width: 100px; }
 
 header h3 { font-size: 1.5em; font-weight: 500; margin: 10px 0 0 0; }
 header .full { width: 47%; }
@@ -50,9 +50,6 @@ header .container {padding: 100px 40px;}
 .host .logo,
 .building-workshops .logo,
 .chapters .logo {padding: 15px 0;}
-
-.name:hover .h { display: none; }
-.name:hover .c:before { content: "H"; color: transparent; }
 
 /*.events .first-photo,
 .about .first-photo,
