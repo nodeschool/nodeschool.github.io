@@ -4,8 +4,10 @@
   "description": "nodeschool.io webpage",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -r xhr -r browser-locale -r run-parallel > js/dependencies.js",
-    "language": "node ./scripts/generate_lang.js"
+    "build": "browserify -r xhr -r browser-locale > js/dependencies.js",
+    "language": "node ./scripts/generate_lang.js",
+    "validate-html": "node ./scripts/validate_html",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,14 @@
   "homepage": "https://github.com/nodeschool/nodeschool.github.io",
   "dependencies": {
     "browser-locale": "^1.0.0",
-    "run-parallel": "^1.0.0",
     "xhr": "^1.16.1"
   },
   "devDependencies": {
     "after-all": "^2.0.1",
+    "browserify": "^6.2.0",
     "cheerio": "^0.17.0",
     "cheerio-eq": "^1.0.0",
+    "http-server": "^0.7.2",
     "read": "^1.0.5"
   }
 }

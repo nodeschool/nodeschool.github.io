@@ -3,11 +3,22 @@ nodeschool.github.io
 
 http://nodeschool.io/ internet web page
 
-please fork it and send us improvements!
+Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for more details on how to send a great PR.
 
 **If you are an owner on the nodeschool/Owners team** please do not edit this repo directly but instead send your contributions as pull requests.
 
 We ask that you make pull requests because changes to this repository will get deployed onto the live production site immediately and it's best if you get feedback on your pull request first before it goes live.
+
+## Running the app locally
+
+This is a static site, simply open `index.html` or use your favorite static file server to run local server.
+
+You can also use the included development static server by running the following commands:
+
+```
+npm install
+npm start
+```
 
 ## Stickers, Badges and whatnots
 

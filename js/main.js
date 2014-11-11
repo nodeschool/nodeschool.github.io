@@ -79,6 +79,13 @@ function sortDates(data) {
     return a.startUTC - b.startUTC
   })
 
+  return sorted
+}
+
+function upcomingEvents(data) {
+  var today = new Date()
+  var sorted = sortDates(data)
+
   // only upcoming events
   var freshies = []
   var todayBuffer = new Date()
@@ -93,30 +100,49 @@ function sortDates(data) {
 }
 
 function makeMap(data) {
-  data = addHexcolor(data, "#F7DA03", "#A09C9C")
-  // make map
+
+  var sorted = sortDates(data)
+                .map(setState)
+                .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
+                .reverse()
+
   var optionsJSON = ["name", "tickets", "startdate", "state"]
   var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
     + " target='_blank'>{{name}}</a><p>"
-  var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+
   var map = Sheetsee.loadMap("map")
   Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
-  var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+
+  var geoJSON = Sheetsee.createGeoJSON(sorted, optionsJSON)
+  var markers = Sheetsee.addMarkerLayer(geoJSON, map, template)
+
+  markers.eachLayer(function (marker) {
+    if(marker.feature.opts.state === 'past') {
+      marker.setIcon(L.divIcon({
+              // Specify a class name we can refer to in CSS.
+              className: 'past-event',
+              // Set a markers width and height.
+              iconSize: [7, 7]
+          }))
+    }
+  })
+
   map.setZoom(1)
   // disable dragging on mobile/tablet because it makes it hard
   // to scroll the page on full width-ish maps
   if (window.innerWidth <= 768 ) map.dragging.disable()
 }
 
-function addHexcolor(data, color, color2) {
-  data.forEach(function(event) {
-    event.state = "past"
-    event.startUTC = new Date(event.startdate)
-    if (event.startUTC > new Date()) {
-      event.hexcolor = color
-      event.state = "future"
-    }
-    else event.hecolor = color2
-  })
-  return data
+function isFuture(event) {
+  return (event.startUTC > new Date())
+}
+
+function setState(event) {
+  // event should have future state if it starts later that now (duh!)
+  event.state = isFuture(event) ? "future" : "past"
+  return event
+}
+function addHexColor(futureColor, pastColor, event) {
+  event.hexcolor = isFuture(event) ? futureColor : pastColor
+  return event
 }

@@ -13,7 +13,7 @@ function loadEvents() {
 function showNearEvents(data) {
   writeCount(data.length)
   makeMap(data)
-  var list = sortDates(data)
+  var list = upcomingEvents(data)
   if (list.length == 0) {
     $('#upcoming-workshops').addClass("empty")
   } else {

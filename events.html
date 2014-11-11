@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="events.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
@@ -17,31 +17,31 @@
         <div class="full">
           <a href="index.html"><img class="logo" src="images/schoolhouse.svg" alt="nodeschoolhouse"></a>
           <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="current-page"><a href="events.html">Events</a></li>
-            <li><a href="chapters.html">Chapters</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="building-workshops.html">Build</a></li>
-            <li><a href="host.html">Host</a></li>
+            <li><a href="index.html" data-i18n="menu-index">Home</a></li>
+            <li class="current-page"><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+            <li><a href="about.html" data-i18n="menu-about">About</a></li>
+            <li><a href="building-workshops.html" data-i18n="menu-building-workshops">Build</a></li>
+            <li><a href="host.html" data-i18n="menu-host">Host</a></li>
           </ul>
         </div>
       </div>
     </header>
 
-    <div class="container workshops" style='background-color: #fff;'>
+    <div class="container workshops" style="background-color: #fff;">
       <div class="full">
-        <h1>Past and Future NodeSchool Events</h1><br><br>
+        <h1 data-i18n="events-header">Past and Future NodeSchool Events</h1><br><br>
         <div id="map"></div>
         <div class="key">
-          <span class="key-past">Past</span>
-          <span class="key-future">Future</span>
+          <span class="key-past" data-i18n="events-past">Past</span>
+          <span class="key-future" data-i18n="events-future">Future</span>
         </div>
       </div>
       <br><br>
       <div class="full">
-        <h2>There have been <strong><span id="event-count">many</span></strong> events!</h2>
-        <h3>If you're organizing a NodeSchool event, add it to this site by filling out <a href="https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm" target="_blank">this form</a>.</h3>
-        <small>If you need to edit an event you've submitted, <a href="https://github.com/nodeschool/organizers/issues/new">file an issue on nodeschool/organizers.</small>
+        <h2 data-i18n="events-header2">There have been <strong><span id="event-count">many</span></strong> events!</h2>
+        <h3 data-i18n="events-header3">If you&apos;re organizing a NodeSchool event, add it to this site by filling out <a href="https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm" target="_blank">this form</a>.</h3>
+        <small data-i18n="events-small">If you need to edit an event you&apos;ve submitted, <a href="https://github.com/nodeschool/organizers/issues/new">file an issue on nodeschool/organizers.</a></small>
       </div>
     </div>
 
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <div class="container" style='background-color: #fff;'>
+    <div class="container" style="background-color: #fff;">
       <footer>
         <div class="third">
           <p><strong>nodeschool.io</strong></p>
@@ -63,19 +63,19 @@
         </div>
         <div class="two-thirds">
           <ul>
-            <li><strong>Contact</strong></li>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
             <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
             <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
           </ul>
           <ul>
-            <li><strong>Contribute</strong></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</a></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
           </ul>
           <ul>
-            <li><strong>About</strong></li>
-            <li><a href="building-workshops.html">Build a workshopper</a></li>
-            <li><a href="host.html">Host a workshop</a></li>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
           </ul>
         </div>
       </footer>
@@ -92,9 +92,9 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/tabletop.js"></script>
-    <script type="text/javascript" src='js/sheetsee.js'></script>
-    <script type="text/javascript" src='js/table.js'></script>
-    <script type="text/javascript" src='js/main.js'></script>
+    <script type="text/javascript" src="js/sheetsee.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/events.js"></script>
 
     <script type="text/javascript" src="js/dependencies.js"></script>

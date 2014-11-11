@@ -1,9 +1,11 @@
 {
   "es": "Español",
-  "ja": "日本語",
-  "zh-tw": "正體中文",
-  "zh-cn": "简体中文",
+  "ru": "Русский",
   "pt-br": "Português (Brasil)",
   "pt-pt": "Português (Europeu)",
-  "sv": "Svenska"
+  "sv": "Svenska",
+  "ko": "한국어",
+  "ja": "日本語",
+  "zh-tw": "正體中文",
+  "zh-cn": "简体中文"
 }
