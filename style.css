@@ -176,6 +176,8 @@ footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
+.hexdex img.hex {width: 380px; padding: 10px;}
+
 @media (min-width: 1366px) {
   header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
   header h1:hover span.c { padding-left: 44px; margin-right: -12px; }
