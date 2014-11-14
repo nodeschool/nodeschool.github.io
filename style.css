@@ -17,6 +17,7 @@ p:first-child {padding-top: 0; margin-top: 0;}
 
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
 a:hover {color: #FFE51F; border-color: #FFE51F;}
+a.imglink {border: none; outline: none;}
 
 hr {border: 2px solid #333; margin: 0;}
 
@@ -176,7 +177,7 @@ footer a {border: none;}
 footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
-.hexdex img.hex {width: 380px; padding: 10px;}
+.hexdex img.hex {width: 240px; padding: 10px;}
 
 @media (min-width: 1366px) {
   header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
