@@ -1,5 +1,6 @@
 {
   "language": "正體中文",
+  "menu-tutorials": "課程",
   "menu-index": "首頁",
   "menu-events": "活動",
   "menu-chapters": "各地籌辦單位",
@@ -14,7 +15,7 @@
   "footer-about-build": "建立一個課程",
   "footer-about-host": "籌辦一個活動",
   "index-header-top": "以 Node.js 打造、跑在終端機上的<span class=\"no-break\">開放原始碼教學工作坊</span>。<span class=\"no-break\">開始學習吧！無論是自學還是和大家一起！</span>",
-  "index-header-bottom": null,
+  "index-header-bottom": "即刻安裝一個<a class=\"big-link\" href=\"#workshopper-list\">核心基礎課程（Core）</a>吧！或免費訂閱我們的<a class=\"big-link\" href=\"https://tinyletter.com/nodeschool\" target=\"_blank\">郵件清單</a>。",
   "index-get-started": "立即安裝「<a href=\"#learnyounode\">Learn You Node</a>」工作坊教材，開始你的學習之路：",
   "index-get-started-command": "npm install -g learnyounode-zh-tw",
   "index-workshop-header": "面對面教學工作坊",
