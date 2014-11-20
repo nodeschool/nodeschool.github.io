@@ -16,7 +16,7 @@ li {padding-bottom: 4px;}
 p:first-child {padding-top: 0; margin-top: 0;}
 
 a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
-a:hover {color: #FFE51F; border-color: #FFE51F;}
+a:hover {color: #333; border-color: #333;}
 a.imglink {border: none; outline: none;}
 
 hr {border: 2px solid #333; margin: 0;}
@@ -26,8 +26,8 @@ header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20
 header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
 header h1 span { display: inline-block; margin: 0 -0.1em; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
 
-header .big-link { color: black; font-weight: bold; }
-header .big-link:hover { border-bottom: 1px solid #777; color: #999; }
+header .big-link { color: #333; font-weight: bold; border-color: #333;}
+header .big-link:hover { border-color: #777; color: #777; }
 header h1 span.apostrophe { max-width: 0px; opacity: 0;}
 header h1 span.apostrophe:before { content: "\2019";}
 header h1 span.c { }
@@ -84,7 +84,7 @@ ul.nav {display: inline; list-style: none; color: #333; /*text-transform: upperc
 ul.nav li {display: inline; font-size: 16px; margin-right: 10px;}
 ul.nav li a {display: inline-block; padding: 6px 8px; border: 2px solid #333; border-radius: 3px; margin-bottom: 10px;}
 ul.nav li:hover a {color: #F7DA03; background: #333; cursor: pointer;}
-ul.nav li.current-page a {background: #fff; color: #333; color: #333;}
+ul.nav li.current-page a {background: #333; color: #FFE51F;}
 header .full:after {content: ''; display: block; clear: both;}
 
 ul.nav-lang {list-style: none; margin: 0; padding: 5px 20px; text-align: right}
