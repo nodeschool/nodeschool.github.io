@@ -1,0 +1,10 @@
+{
+  "name": "Baltimore NodeSchool",
+  "location": "Baltimore, MD",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["jasonrhodes"],
+  "website": "http://nodeschool.io/baltimore",
+  "twitter": "bmorenodeschool",
+  "repo": "http://github.com/nodeschool/baltimore"
+}
