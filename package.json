@@ -7,7 +7,8 @@
     "build": "node ./scripts/compile-chapters.js && browserify -r xhr -r browser-locale > js/dependencies.js",
     "language": "node ./scripts/generate_lang.js",
     "validate-html": "node ./scripts/validate_html",
-    "start": "http-server"
+    "start": "http-server",
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",
