@@ -40,7 +40,11 @@ glob('./chapters/!(list).json', function (err, files) {
         return console.error(err);
       }
       var data = buf.toString();
-      var chapter = JSON.parse(data);
+      try {
+        var chapter = JSON.parse(data);
+      } catch (e) {
+        console.error("JSON parse error: " + f, e);
+      }
       chapters.push(chapter);
 
       if (chapters.length === files.length) {
