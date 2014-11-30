@@ -4,7 +4,7 @@
   "description": "nodeschool.io webpage",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -r xhr -r browser-locale > js/dependencies.js",
+    "build": "node ./scripts/compile-chapters.js && browserify -r xhr -r browser-locale > js/dependencies.js",
     "language": "node ./scripts/generate_lang.js",
     "validate-html": "node ./scripts/validate_html",
     "start": "http-server"
