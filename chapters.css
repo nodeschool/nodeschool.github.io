@@ -5,13 +5,13 @@
 
 .chapter-list li {
   margin: 5px;
-  width: 170px;
+  width: 250px;
   border-radius: 3px;
   padding-bottom: 0px;
   display: inline-block;
   border: 2px solid #333;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
+  -webkit-transition: background-color 300ms, border 500ms;
+  transition: background-color 300ms, border 500ms;
 }
 
 .chapter-list a {

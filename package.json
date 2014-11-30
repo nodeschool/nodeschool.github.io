@@ -21,7 +21,8 @@
   "homepage": "https://github.com/nodeschool/nodeschool.github.io",
   "dependencies": {
     "browser-locale": "^1.0.0",
-    "xhr": "^1.16.1"
+    "xhr": "^1.16.1",
+    "mustache": "^0.8.2"
   },
   "devDependencies": {
     "after-all": "^2.0.1",
@@ -29,6 +30,7 @@
     "cheerio": "^0.17.0",
     "cheerio-eq": "^1.0.0",
     "http-server": "^0.7.2",
-    "read": "^1.0.5"
+    "read": "^1.0.5",
+    "glob": "^4.0.6"
   }
 }

@@ -32,6 +32,13 @@
       <div class="full">
         <h1>NodeSchool Chapters</h1>
         <p data-i18n="chapters-header">Cities all over have started to host NodeSchool events reguarly. Here&apos;s a list of chapters. See the <a href="hexdex.html">hexdex</a> for an index of chapter ⬢ hexagon logos.</p>
+        
+        <div id="chapter-list">
+          <div class="loading" data-i18n="index-chapter-list-loading">
+            Loading...
+          </div>
+        </div>
+
         <h2 id="region-europe" data-i18n="chapters-europe">Europe</h2>
         <div class="chapter-list">
           <ul>
@@ -118,9 +125,31 @@
       </footer>
     </div>
 
+    <script id="tmpl-chapter-list" type="text/html">
+    {{#regions}}
+      <div class="chapter-list {{region}}">
+      <h2>{{region}}</h2>
+      <ul>
+      {{#chapters}}
+        <li class="chapter">
+        {{#website}}
+        <a target="_blank" href="{{website}}">{{location}}, {{country}}</a>
+        {{/website}}
+        {{^website}}
+        <a target="_blank" href="{{repo}}">{{location}}, {{country}}</a>
+        {{/website}}
+        </li>
+      {{/chapters}}
+      </ul>
+      </div>
+    {{/regions}}
+    </script>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/dependencies.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="node_modules/mustache/mustache.js"></script>
+    <script type="text/javascript" src="js/chapters.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
