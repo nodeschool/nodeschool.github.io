@@ -1,0 +1,10 @@
+{
+  "name": "Honolulu NodeSchool",
+  "location": "Honolulu, HI",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["keokilee", "taesup", "mrbarbasa", "jaywon", "thgaskell"],
+  "website": "http://nodeschool.io/honolulu",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/honolulu"
+}

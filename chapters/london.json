@@ -1,0 +1,10 @@
+{
+  "name": "London NodeSchool",
+  "location": "London",
+  "country": "UK",
+  "region": "Europe",
+  "organizers": ["iancrowther", "olizilla", "simonmcmanus", "orliesaurus"],
+  "website": "http://nodeschool.io/london",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/london"
+}

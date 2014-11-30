@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool OC",
+  "location": "Orange County, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["markhuge"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/oc"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Kyiv",
+  "location": "Kyiv",
+  "country": "UA",
+  "region": "Europe",
+  "organizers": ["sudodoki"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/kyiv"
+}

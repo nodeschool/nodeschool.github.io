@@ -1,0 +1,10 @@
+{
+  "name": "Orlando NodeSchool",
+  "location": "Orlando, FL",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["lancehudson", "bradplank", "calebrosario"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/orlando"
+}

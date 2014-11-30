@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Lahore",
+  "location": "Lahore",
+  "country": "PK",
+  "region": "Asia",
+  "organizers": ["usmantahirr", "sheharyarn"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/lahore"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Dhaka NodeSchool",
+  "location": "Dhaka",
+  "country": "BD",
+  "region": "Asia",
+  "organizers": ["az7arul", "nc-rasel", "ishtiaque23"],
+  "website": "http://nodeschool.io/dhaka",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/dhaka"
+}
