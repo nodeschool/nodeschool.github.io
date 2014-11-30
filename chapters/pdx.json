@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool PDX",
+  "location": "Portland, OR",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["nrn", "dlmanning", "wraithan", "meandavejustice", "justinabrahms", "nvcexploder", "ngoldman"],
+  "website": "http://nodeschool.io/pdx/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/pdx"
+}
