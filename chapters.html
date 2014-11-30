@@ -39,62 +39,9 @@
           </div>
         </div>
 
-        <h2 id="region-europe" data-i18n="chapters-europe">Europe</h2>
-        <div class="chapter-list">
-          <ul>
-            <li><a href="https://github.com/nodeschool/amsterdam" target="_blank">Amsterdam, NL</a></li>
-            <li><a href="https://github.com/nodeschool/berlin" target="_blank">Berlin, DE</a></li>
-            <li><a href="https://github.com/nodeschool/hamburg" target="_blank">Hamburg, DE</a></li>
-            <li><a href="https://github.com/nodeschool/hradec-kralove" target="_blank">Hradec Králové, CZ</a></li>
-            <li><a href="https://github.com/nodeschool/london" target="_blank">London, UK</a></li>
-            <li><a href="https://github.com/nodeschool/oxford" target="_blank">Oxford, UK</a></li>
-            <li><a href="https://github.com/nodeschool/oslo" target="_blank">Oslo, NO</a></li>
-            <li><a href="https://github.com/nodeschool/paris" target="_blank">Paris, FR</a></li>
-            <li><a href="https://github.com/nodeschool/stavanger" target="_blank">Stavanger, NO</a></li>
-          </ul>
-        </div>
-        <h2 id="region-us" data-i18n="chapters-us">US</h2>
-        <div class="chapter-list">
-          <ul>
-            <li><a href="https://github.com/nodeschool/baltimore" target="_blank">Baltimore, MD</a></li>
-            <li><a href="https://github.com/nodeschool/nyc" target="_blank">New York, NY</a></li>
-            <li><a href="https://github.com/nodeschool/oakland" target="_blank">Oakland, CA</a></li>
-            <li><a href="https://github.com/nodeschool/pdx" target="_blank">Portland, OR</a></li>
-            <li><a href="https://github.com/nodeschool/tampa" target="_blank">Tampa, FL</a></li>
-            <li><a href="https://github.com/nodeschool/dallas" target="_blank">Dallas, TX</a></li>
-            <li><a href="https://github.com/nodeschool/austin" target="_blank">Austin, TX</a></li>
-            <li><a href="https://github.com/nodeschool/seattle" target="_blank">Seattle, WA</a></li>
-          </ul>
-        </div>
-        <h2 id="region-latin-america" data-i18n="chapters-latin-america">Latin America</h2>
-        <div class="chapter-list">
-          <ul>
-            <li><a href="https://github.com/nodeschool/buenosaires" target="_blank">Buenos Aires, AR</a></li>
-            <li><a href="https://github.com/nodeschool/costarica" target="_blank">Costa Rica</a></li>
-            <li><a href="https://github.com/nodeschool/medellin" target="_blank">Medellin, CO</a></li>
-            <li><a href="https://github.com/nodeschool/puertorico" target="_blank">Puerto Rico</a></li>
-          </ul>
-        </div>
-        <h2 id="region-australia" data-i18n="chapters-australia">Australia</h2>
-        <div class="chapter-list">
-          <ul>
-            <li><a href="https://github.com/nodeschool/brisbane" target="_blank">Brisbane, AU</a></li>
-            <li><a href="https://github.com/nodeschool/hobart" target="_blank">Hobart, AU</a></li>
-            <li><a href="https://github.com/nodeschool/melbourne" target="_blank">Melbourne, AU</a></li>
-            <li><a href="https://github.com/nodeschool/sydney" target="_blank">Sydney, AU</a></li>
-        </ul>
-        </div>
-        <h2 id="region-asia" data-i18n="chapters-asia">Asia</h2>
-        <div class="chapter-list">
-          <ul>
-            <li><a href="https://github.com/nodeschool/Delhi-NCR" target="_blank">Delhi-NCR, IN</a></li>
-            <li><a href="https://github.com/nodeschool/taiwan" target="_blank">Taiwan, TW</a></li>
-          </ul>
-        </div>
         <h2 id="region-other" data-i18n="chapters-other">Other region?</h2>
         <div class="other">
-          <span data-i18n="chapters-start">You can not find a NodeSchool in your region? Maybe there are other people around you, who would
-            like to start one, too. Open an issue on the</span> <a href="https://github.com/nodeschool/discussions" data-i18n="chapters-start2">discussions board</a> <span data-i18n="chapters-start3">to find other people around you. Then you can start your chapter by following the instructions on how to</span> <a href="host.html" data-i18n="chapters-start4">host an event</a><span data-i18n="chapters-start5">.</span>
+          <span data-i18n="chapters-start">Can't find a NodeSchool chapter in your region?</span> <a href="https://github.com/nodeschool/discussions" data-i18n="chapters-start2">Open an issue on the discussions board</a> <span data-i18n="chapters-start3">to find other people around you. If there isn't an existing chapter nearby, start your own! Follow these instructions on</span> <a href="host.html" data-i18n="chapters-start4">how to host an event</a><span data-i18n="chapters-start5">.</span>
           </div>
         </div>
       </div>
@@ -126,9 +73,10 @@
     </div>
 
     <script id="tmpl-chapter-list" type="text/html">
+    <p style="font-size: 100%"><em>Chapter count: {{total}}</em></p>
     {{#regions}}
       <div class="chapter-list {{region}}">
-      <h2>{{region}}</h2>
+      <h2>{{region}} ({{count}})</h2>
       <ul>
       {{#chapters}}
         <li class="chapter">
