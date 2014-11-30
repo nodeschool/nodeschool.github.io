@@ -1,0 +1,10 @@
+{
+  "name": "Brisbane NodeSchool",
+  "location": "Brisbane",
+  "country": "AU",
+  "region": "South Pacific",
+  "organizers": ["rvagg", "garrows"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/brisbane"
+}

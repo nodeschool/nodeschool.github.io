@@ -1,0 +1,203 @@
+{
+  "regions": [
+    {
+      "region": "Africa",
+      "chapters": [
+        {
+          "name": "NodeSchool Cairo",
+          "location": "Cairo",
+          "country": "EG",
+          "region": "Africa",
+          "organizers": [
+            "ahmdrefat",
+            "Azzurrio"
+          ],
+          "website": "http://nodeschool.io/cairo",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/cairo"
+        }
+      ]
+    },
+    {
+      "region": "Asia",
+      "chapters": [
+        {
+          "name": "Amman NodeSchool",
+          "location": "Amman",
+          "country": "JO",
+          "region": "Asia",
+          "organizers": [
+            "samuraik",
+            "rashad612"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/amman"
+        }
+      ]
+    },
+    {
+      "region": "Europe",
+      "chapters": [
+        {
+          "name": "Amsterdam NodeSchool",
+          "location": "Amsterdam",
+          "country": "NL",
+          "region": "Europe",
+          "organizers": [
+            "hughsk",
+            "yoshuawuyts",
+            "mmalecki",
+            "hatchan"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/amsterdam"
+        },
+        {
+          "name": "NodeSchool Berlin",
+          "location": "Berlin",
+          "country": "DE",
+          "region": "Europe",
+          "organizers": [
+            "finnp"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/berlin"
+        },
+        {
+          "name": "Bristol NodeSchool",
+          "location": "Bristol",
+          "country": "UK",
+          "region": "Europe",
+          "organizers": [
+            "permadesign",
+            "fiznool",
+            "katjad"
+          ],
+          "website": "http://nodeschool.io/bristol",
+          "twitter": "",
+          "gitter": "https://gitter.im/nodeschool/bristol",
+          "repo": "http://github.com/nodeschool/bristol"
+        },
+        {
+          "name": "Faro NodeSchool",
+          "location": "Faro",
+          "country": "PT",
+          "region": "Europe",
+          "organizers": [
+            "mcoquet",
+            "nneves",
+            "rsoares"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/faro"
+        }
+      ]
+    },
+    {
+      "region": "North America",
+      "chapters": [
+        {
+          "name": "Bainbridge Island NodeSchool",
+          "location": "Bainbridge Island, WA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "awaterma",
+            "crtr0",
+            "twleung"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/bainbridge"
+        },
+        {
+          "name": "Baltimore NodeSchool",
+          "location": "Baltimore, MD",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "jasonrhodes"
+          ],
+          "website": "http://nodeschool.io/baltimore",
+          "twitter": "bmorenodeschool",
+          "repo": "http://github.com/nodeschool/baltimore"
+        },
+        {
+          "name": "Austin NodeSchool",
+          "location": "Austin, TX",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "stefanmve"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/austin"
+        },
+        {
+          "name": "BayNode",
+          "location": "Mountain View, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "tonypujals",
+            "rosskukulinski",
+            "CrabDude"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/baynode"
+        },
+        {
+          "name": "NodeSchool Dallas",
+          "location": "Dallas, TX",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "prochafilho",
+            "gangstead",
+            "leongaban"
+          ],
+          "website": "http://nodeschool.io/dallas",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/dallas"
+        },
+        {
+          "name": "NodeSchool Vancouver",
+          "location": "Vancouver, BC",
+          "country": "CA",
+          "region": "North America",
+          "organizers": [
+            "sintaxi",
+            "notmatt",
+            "afabbro"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/vancouver"
+        }
+      ]
+    },
+    {
+      "region": "South Pacific",
+      "chapters": [
+        {
+          "name": "Auckland NodeSchool",
+          "location": "Auckland",
+          "country": "NZ",
+          "region": "South Pacific",
+          "organizers": [
+            "ram-manthry"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/auckland"
+        }
+      ]
+    }
+  ]
+}

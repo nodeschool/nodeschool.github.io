@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Christchurch",
+  "location": "Christchurch",
+  "country": "NZ",
+  "region": "South Pacific",
+  "organizers": ["digitalsadhu", "coder_stu", "gmwills", "gingermusketeer"],
+  "website": "http://nodeschool.io/christchurch/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/christchurch"
+}
