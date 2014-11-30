@@ -14,6 +14,7 @@ function groupByValue(list, grouper, groupName) {
   return Object.keys(grouped).map(function (group) {
     var formatted = {}
     formatted[grouper] = group
+    formatted.count = grouped[group].length
     formatted[groupName] = grouped[group]
     return formatted
   });
@@ -51,8 +52,11 @@ glob('./chapters/!(list).json', function (err, files) {
 });
 
 function writeChapters(chapters) {
-  regions = { regions: sortedGroupByValue(chapters, 'region', 'chapters') };
-  fs.writeFile('./chapters/list.json', JSON.stringify(regions, null, 2), function (err) {
+  data = { 
+    total: chapters.length,
+    regions: sortedGroupByValue(chapters, 'region', 'chapters') 
+  };
+  fs.writeFile('./chapters/list.json', JSON.stringify(data, null, 2), function (err) {
     if (err) console.error(err);
   });
 }
