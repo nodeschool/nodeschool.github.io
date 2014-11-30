@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Tokyo",
+  "location": "Tokyo",
+  "country": "JP",
+  "region": "Asia",
+  "organizers": ["sota0805", "tgfjt", "martinheidegger"],
+  "website": "http://nodeschool.io/tokyo/",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/tokyo",
+  "gitter": "https://gitter.im/nodeschool/nodeschool-japan"
+}

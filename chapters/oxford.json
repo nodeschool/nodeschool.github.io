@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Oxford",
+  "location": "Oxford",
+  "country": "UK",
+  "region": "Europe",
+  "organizers": ["roylines", "benfoxall", "ivanbokii", "nileshkale", "peterjwest", "lazywithclass"],
+  "website": "http://jsoxford.com/",
+  "twitter": "https://twitter.com/JSOxford",
+  "repo": "http://github.com/nodeschool/oxford"
+}

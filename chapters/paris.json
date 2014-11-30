@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Paris",
+  "location": "Paris",
+  "country": "FR",
+  "region": "Europe",
+  "organizers": ["tdd"],
+  "website": "http://nodeschool.io/paris/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/paris"
+}

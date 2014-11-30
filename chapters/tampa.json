@@ -1,0 +1,10 @@
+{
+  "name": "Tampa Nodeschool",
+  "location": "Tampa, FL",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["eliwheaton"],
+  "website": "",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/tampa"
+}
