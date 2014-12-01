@@ -1,5 +1,5 @@
 {
-  "total": 56,
+  "total": 57,
   "regions": [
     {
       "region": "Africa",
@@ -494,18 +494,6 @@
           "repo": "http://github.com/nodeschool/bainbridge"
         },
         {
-          "name": "Baltimore NodeSchool",
-          "location": "Baltimore, MD",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "jasonrhodes"
-          ],
-          "website": "http://nodeschool.io/baltimore",
-          "twitter": "bmorenodeschool",
-          "repo": "http://github.com/nodeschool/baltimore"
-        },
-        {
           "name": "BayNode",
           "location": "Mountain View, CA",
           "country": "US",
@@ -532,6 +520,18 @@
           "website": "http://nodeschool.io/dallas",
           "twitter": "",
           "repo": "http://github.com/nodeschool/dallas"
+        },
+        {
+          "name": "Baltimore NodeSchool",
+          "location": "Baltimore, MD",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "jasonrhodes"
+          ],
+          "website": "http://nodeschool.io/baltimore",
+          "twitter": "bmorenodeschool",
+          "repo": "http://github.com/nodeschool/baltimore"
         },
         {
           "name": "Honolulu NodeSchool",
@@ -810,6 +810,23 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/wellington"
+        }
+      ]
+    },
+    {
+      "region": "undefined",
+      "count": 1,
+      "chapters": [
+        {
+          "name": "IRN NodeSchool",
+          "location": "babol, mazandaran",
+          "country": "IR",
+          "organizers": [
+            "NIT"
+          ],
+          "website": "http://nodeschool.io/irn",
+          "twitter": "@Hrayatnia",
+          "repo": "http://github.com/nodeschool/iran"
         }
       ]
     }
