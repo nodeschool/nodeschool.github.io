@@ -75,7 +75,7 @@ ul.inner-nav li {padding-right: 30px; display: inline;}
 .inner-nav a:hover {color: #F7DA03; border-color: #F7DA03;}*/
 
 ul.inner-nav {list-style: none;}
-ul.inner-nav li { margin-right: 12px; display: inline;}
+ul.inner-nav li { margin-right: 12px; display: inline-block; line-height: 3em;}
 .inner-nav a {background-color: #F7DA03; color: #333; border: none; padding: 8px 12px; border-radius: 3px;}
 .inner-nav a:hover {color: #fff; background-color: #333;}
 span.no-break {display:inline-block;}
