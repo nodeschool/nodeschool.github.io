@@ -15,6 +15,3 @@ npm run build
 git add chapters
 git commit -m "Compiled chapter list"
 git push origin master
-git checkout gh-pages && git merge --no-ff master
-git push origin gh-pages
-git checkout master
