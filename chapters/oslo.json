@@ -1,0 +1,11 @@
+{
+  "name": "Oslo NodeSchool",
+  "location": "Oslo",
+  "country": "NO",
+  "region": "Europe",
+  "organizers": ["Andersos"],
+  "website": "http://nodeschool.io/oslo",
+  "twitter": "",
+  "gitter": "https://gitter.im/nodeschool/oslo",
+  "repo": "http://github.com/nodeschool/oslo"
+}

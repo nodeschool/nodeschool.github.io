@@ -1,0 +1,10 @@
+{
+  "name": "Osaka NodeSchool",
+  "location": "Osaka",
+  "country": "JP",
+  "region": "Asia",
+  "organizers": ["martinheidegger", "vanx2", "kumatch", "kamiyam"],
+  "website": "http://nodeschool.io/osaka",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/osaka"
+}

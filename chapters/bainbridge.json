@@ -1,0 +1,10 @@
+{
+  "name": "Bainbridge Island NodeSchool",
+  "location": "Bainbridge Island, WA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["awaterma", "crtr0", "twleung"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/bainbridge"
+}

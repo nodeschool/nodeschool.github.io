@@ -1,0 +1,10 @@
+{
+  "name": "Puerto Rico NodeSchool",
+  "location": "Puerto Rico",
+  "country": "PR",
+  "region": "Latin America",
+  "organizers": ["gcollazo", "jpadilla", "elving", "jomajoma", "froi"],
+  "website": "http://nodeschool.io/puertorico/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/puertorico"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Saint Petersburg NodeSchool",
+  "location": "Saint Petersburg",
+  "country": "RU",
+  "region": "Asia",
+  "organizers": ["marinintim"],
+  "website": "",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/spb"
+}

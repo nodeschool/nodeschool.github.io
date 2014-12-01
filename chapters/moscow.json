@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Moscow",
+  "location": "Moscow",
+  "country": "RU",
+  "region": "Asia",
+  "organizers": ["AVVS", "freele"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/moscow"
+}

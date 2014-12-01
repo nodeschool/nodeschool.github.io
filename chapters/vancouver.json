@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Vancouver",
+  "location": "Vancouver, BC",
+  "country": "CA",
+  "region": "North America",
+  "organizers": ["sintaxi", "notmatt", "afabbro"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/vancouver"
+}

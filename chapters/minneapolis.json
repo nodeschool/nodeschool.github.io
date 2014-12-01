@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Minneapolis",
+  "location": "Minneapolis, MN",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["mikefrey"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/minneapolis"
+}

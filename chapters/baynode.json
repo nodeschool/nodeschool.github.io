@@ -1,0 +1,10 @@
+{
+  "name": "BayNode",
+  "location": "Mountain View, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["tonypujals", "rosskukulinski", "CrabDude"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/baynode"
+}

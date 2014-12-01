@@ -1,0 +1,10 @@
+{
+  "name": "Buenos Aires NodeSchool",
+  "location": "Buenos Aires",
+  "country": "AR",
+  "region": "Latin America",
+  "organizers": ["a0viedo"],
+  "website": "http://nodeschool.io/buenosaires",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/buenosaires"
+}

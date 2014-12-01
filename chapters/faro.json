@@ -1,0 +1,10 @@
+{
+  "name": "Faro NodeSchool",
+  "location": "Faro",
+  "country": "PT",
+  "region": "Europe",
+  "organizers": ["mcoquet", "nneves", "rsoares"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/faro"
+}

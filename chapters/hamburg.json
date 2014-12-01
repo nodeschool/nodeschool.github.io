@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hamburg",
+  "location": "Hamburg",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["greelgorke"],
+  "website": "http://nodeschool.io/hamburg",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/hamburg"
+}

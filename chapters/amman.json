@@ -1,0 +1,10 @@
+{
+  "name": "Amman NodeSchool",
+  "location": "Amman",
+  "country": "JO",
+  "region": "Asia",
+  "organizers": ["samuraik", "rashad612"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/amman"
+}
