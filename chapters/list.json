@@ -35,7 +35,7 @@
     },
     {
       "region": "Asia",
-      "count": 11,
+      "count": 12,
       "chapters": [
         {
           "name": "Amman NodeSchool",
@@ -93,6 +93,18 @@
           "website": "http://nodeschool.io/dhaka",
           "twitter": "",
           "repo": "http://github.com/nodeschool/dhaka"
+        },
+        {
+          "name": "IRN NodeSchool",
+          "location": "Babol / Mazandaran",
+          "country": "IR",
+          "region": "Asia",
+          "organizers": [
+            "NIT"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/iran"
         },
         {
           "name": "NodeSchool Lahore",
@@ -810,23 +822,6 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/wellington"
-        }
-      ]
-    },
-    {
-      "region": "undefined",
-      "count": 1,
-      "chapters": [
-        {
-          "name": "IRN NodeSchool",
-          "location": "babol, mazandaran",
-          "country": "IR",
-          "organizers": [
-            "NIT"
-          ],
-          "website": "http://nodeschool.io/irn",
-          "twitter": "@Hrayatnia",
-          "repo": "http://github.com/nodeschool/iran"
         }
       ]
     }

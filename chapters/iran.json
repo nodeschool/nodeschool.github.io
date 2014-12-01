@@ -1,9 +1,10 @@
 {
   "name": "IRN NodeSchool",
-  "location": "babol, mazandaran",
+  "location": "Babol / Mazandaran",
   "country": "IR",
+  "region": "Asia",
   "organizers": ["NIT"],
-  "website": "http://nodeschool.io/irn",
-  "twitter": "@Hrayatnia",
+  "website": "",
+  "twitter": "",
   "repo": "http://github.com/nodeschool/iran"
 }
