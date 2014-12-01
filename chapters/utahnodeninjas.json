@@ -4,7 +4,7 @@
   "country": "US",
   "region": "North America",
   "organizers": ["therebelrobot"],
-  "website": "",
+  "website": "http://www.meetup.com/Node-Ninjas/",
   "twitter": "",
-  "repo": "http"
+  "repo": "https://github.com/Utah-Node-Ninjas"
 }

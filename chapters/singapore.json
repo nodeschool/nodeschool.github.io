@@ -1,10 +1,9 @@
 {
   "name": "Singapore NodeSchool",
   "location": "Singapore",
-  "country": "SG",
   "region": "Asia",
   "organizers": ["renettarenula", "hongkheng", "soareschen", "vissree", "apraditya", "shioju", "danielmahadi", "eihan", "yzdong", "andrewabogado"],
-  "website": "",
+  "website": "http://www.meetup.com/Singapore-JS",
   "twitter": "",
   "repo": ""
 }

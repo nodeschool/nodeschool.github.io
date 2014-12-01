@@ -150,7 +150,6 @@
         {
           "name": "Singapore NodeSchool",
           "location": "Singapore",
-          "country": "SG",
           "region": "Asia",
           "organizers": [
             "renettarenula",
@@ -164,7 +163,7 @@
             "yzdong",
             "andrewabogado"
           ],
-          "website": "",
+          "website": "http://www.meetup.com/Singapore-JS",
           "twitter": "",
           "repo": ""
         },
@@ -183,7 +182,6 @@
         {
           "name": "Taiwan Nodeschool",
           "location": "Taiwan",
-          "country": "TW",
           "region": "Asia",
           "organizers": [
             "leonlin14",
@@ -628,18 +626,6 @@
           "repo": "http://github.com/nodeschool/oakland"
         },
         {
-          "name": "NodeSchool OC",
-          "location": "Orange County, CA",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "markhuge"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/oc"
-        },
-        {
           "name": "Orlando NodeSchool",
           "location": "Orlando, FL",
           "country": "US",
@@ -652,6 +638,18 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/orlando"
+        },
+        {
+          "name": "NodeSchool OC",
+          "location": "Orange County, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "markhuge"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/oc"
         },
         {
           "name": "NodeSchool PDX",
@@ -718,9 +716,9 @@
           "organizers": [
             "therebelrobot"
           ],
-          "website": "",
+          "website": "http://www.meetup.com/Node-Ninjas/",
           "twitter": "",
-          "repo": "http"
+          "repo": "https://github.com/Utah-Node-Ninjas"
         },
         {
           "name": "NodeSchool Vancouver",
