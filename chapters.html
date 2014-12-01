@@ -81,10 +81,10 @@
       {{#chapters}}
         <li class="chapter">
         {{#website}}
-        <a target="_blank" href="{{website}}">{{location}}, {{country}}</a>
+        <a target="_blank" href="{{website}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         {{^website}}
-        <a target="_blank" href="{{repo}}">{{location}}, {{country}}</a>
+        <a target="_blank" href="{{repo}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         </li>
       {{/chapters}}
