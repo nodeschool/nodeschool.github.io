@@ -6,8 +6,6 @@ try {
   $('#chapter-list').addClass('error')
 }
 
-
-
 function loadChapters() {
   xhr('/chapters/list.json', function (err, resp, body) {
     if (err) return console.log(err);
