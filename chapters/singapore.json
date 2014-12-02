@@ -1,7 +1,7 @@
 {
   "name": "Singapore NodeSchool",
   "location": "Singapore",
-  "country": "SG",
+  "country-removed": "country left blank because location is a country",
   "region": "Asia",
   "organizers": ["timoxley", "weilu", "renettarenula", "hongkheng", "soareschen", "vissree", "apraditya", "shioju", "danielmahadi", "eihan", "yzdong", "andrewabogado", "sayanee"],
   "website": "http://nodeschool.io/singapore",
