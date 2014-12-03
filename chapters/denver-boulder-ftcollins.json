@@ -1,0 +1,10 @@
+{
+  "name": "Denver-Boulder-Ft. Collins NodeSchool",
+  "location": "Denver, CO",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["ralucas", "patrick-steele-idem", "legittalon", "mjhea0"],
+  "website": "",
+  "twitter": "@nodejscolorado",
+  "repo": "http://github.com/nodeschool/denver-boulder"
+}
