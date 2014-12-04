@@ -75,13 +75,15 @@ ul.inner-nav li {padding-right: 30px; display: inline;}
 .inner-nav a:hover {color: #F7DA03; border-color: #F7DA03;}*/
 
 ul.inner-nav {list-style: none;}
-ul.inner-nav li { margin-right: 12px; display: inline;}
+ul.inner-nav li {margin-right: 12px; display: inline-block; line-height: 3em;}
+ul.inner-nav li:last-of-type {margin-right: 0;}
 .inner-nav a {background-color: #F7DA03; color: #333; border: none; padding: 8px 12px; border-radius: 3px;}
 .inner-nav a:hover {color: #fff; background-color: #333;}
 span.no-break {display:inline-block;}
 
 ul.nav {display: inline; list-style: none; color: #333; /*text-transform: uppercase;*/ font-weight: 700; letter-spacing: .1em; padding-left: 0;}
 ul.nav li {display: inline; font-size: 16px; margin-right: 10px;}
+ul.nav li:last-of-type {margin-right: 0;}
 ul.nav li a {display: inline-block; padding: 6px 8px; border: 2px solid #333; border-radius: 3px; margin-bottom: 10px;}
 ul.nav li:hover a {color: #F7DA03; background: #333; cursor: pointer;}
 ul.nav li.current-page a {background: #333; color: #FFE51F;}
