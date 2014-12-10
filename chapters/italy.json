@@ -1,7 +1,6 @@
 {
   "name": "NodeSchool Italy",
-  "location": "Bologna, Rome, Florence, Milan",
-  "country": "Italy",
+  "location": "Italy",
   "region": "Europe",
   "organizers": ["matteocollina", "MarcoPiraccini"],
   "website": "http://nodeschool.io/italy",
