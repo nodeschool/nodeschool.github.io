@@ -5,7 +5,7 @@
   "menu-about": "À propos",
   "menu-building-workshops": "Création",
   "menu-host": "Hébergement",
-  "about-header": "NodeSchool est un projet open source créé par des volontaires dans deux buts: créer un parcours d'apprentissage de la programmation de grande qualité  et accueillier des évènements d'apprentissage au sein de la communauté.",
+  "about-header": "NodeSchool est un projet open source créé par des volontaires dans deux buts: fournir un enseignement de qualité autour de la programmation et accueillir des évènements d'apprentissage au sein de la communauté.",
   "about-header-history-title": "Tutoriels interactifs",
   "about-history": "Le format des &quot;atelier&quot; <i>(workshopper)</i> a été créé par <a href=\"http://substack.net/\">Substack d'Internet</a> au cours de l'été 2013 quand il écrivit le <a href=\"https://www.npmjs.org/package/stream-adventure\">stream-adventure</a>.",
   "about-history2": "La caractéristique principale des ateliers est l'interactivité et l'automatisme. Les ateliers sont composés d'épreuves de complexité croissante. Chaque épreuve commence par l'explication du concept, puis présente une liste de conditions pour résoudre l'épreuve. L'apprenti essaye et écrit un programme informatique qui remplit les critères demandés.",
