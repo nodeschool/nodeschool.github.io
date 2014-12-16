@@ -1,10 +1,10 @@
 {
   "name": "Pune Nodeschool",
-  "location": "Pune, IN",
-  "country": "INDIA",
-  "region": "ASIA",
+  "location": "Pune",
+  "country": "IN",
+  "region": "Asia",
   "organizers": ["adroittech"],
   "website": "http://nodeschool.io/Pune",
-  "twitter": "@niravfaldu",
+  "twitter": "niravfaldu",
   "repo": "http://github.com/nodeschool/India"
 }
