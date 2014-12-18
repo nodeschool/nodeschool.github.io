@@ -106,8 +106,8 @@ function makeMap(data) {
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
                 .reverse()
 
-  var optionsJSON = ["name", "tickets", "startdate", "state"]
-  var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
+  var optionsJSON = ["name", "website", "startdate", "state"]
+  var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{website}}'"
     + " target='_blank'>{{name}}</a><p>"
 
   var map = Sheetsee.loadMap("map")
