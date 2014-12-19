@@ -1,0 +1,10 @@
+{
+    "name": "Malang NodeSchool",
+    "location": "Malang",
+    "country": "ID",
+    "region": "Asia",
+    "organizers": ["krahman"],
+    "website": "http://nodeschool.io/malang",
+    "twitter": "mlgnodeschool",
+    "repo": "http://github.com/nodeschool/malang"
+}
