@@ -3,7 +3,7 @@
 
 # Exit if trying to deploy from non-master branch
 
-if [ "$(git branch | grep master)" != "* master" ]
+if [ "$(git branch | grep "*")" != "* master" ]
 then
 	echo "Must deploy from master branch, please merge to master then try again"
 	exit 1
