@@ -1,0 +1,10 @@
+{
+  "name": "Campinas NodeSchool",
+  "location": "Campinas, SP",
+  "country": "BR",
+  "region": "Latin America",
+  "organizers": ["fmoliveira", "MiattoRocha"],
+  "website": "http://nodeschool.io/campinas",
+  "twitter": "nodeschoolcps",
+  "repo": "http://github.com/nodeschool/campinas"
+}
