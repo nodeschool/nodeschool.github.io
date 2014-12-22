@@ -1,0 +1,10 @@
+{
+  "name": "Jakarta NodeSchool",
+  "location": "Jakarta",
+  "country": "ID",
+  "region": "Asia",
+  "organizers": ["aredo", "giosakti", "hafizbadrie", "rbudiharso"],
+  "website": "http://nodeschool.io/jakarta",
+  "twitter": "https://twitter.com/jakartajs",
+  "repo": "http://github.com/nodeschool/jakarta"
+}
