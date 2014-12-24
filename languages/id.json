@@ -5,6 +5,7 @@
   "menu-about": "About",
   "menu-building-workshops": "Membangun",
   "menu-host": "Penyelenggara",
+  "about-h1": "Tentang NodeSchool",
   "about-header": "NodeSchool adalah sebuah project open-source yang diprakarsai para volunteer dengan dua tujuan: untuk menciptakan kurikulum yang berkualitas dan untuk menyelenggarakan event-event pembelajaran untuk komunitas.",
   "about-header-history-title": "Tutorial yang interaktif",
   "about-history": "Format materi &quot;workshopper&quot; pertama di ciptakan oleh <a href=\"http://substack.net/\">Substack of the Internet</a> pada musim panas 2013 ketika dia menulit tentang <a href=\"https://www.npmjs.org/package/stream-adventure\">stream-adventure</a> workshopper.",
@@ -37,6 +38,7 @@
   "building-workshops-info3": "<span>Jangan takut untuk memperbaiki format yang ada! Misalnya jika anda ingin menulis sebuah workshop untuk mengajar CSS anda mungkin harus menemukan format workshop sendiri. Misalnya </span> <a href=\"https://www.npmjs.org/package/browser-menu\">browser menu</a> <span>modul ditulis untuk module </span> <a href=\"https://www.npmjs.org/package/browser-menu\">browser-menu</a> <span>yang telah dibuat untuk</span> <a href=\"https://www.npmjs.org/package/shader-school\">shader-school</a> <span>workshop.</span>",
   "chapters-header": "Berbagai kota di seluruh dunia telah memulai menyelenggarakan acara NodeSchool secara reguler. Berikut ini daftar cabang. Lebih lanjut, lihat <a href=\"hexdex.html\"> hexdex </a> untuk daftar chabang &#x2B22; heksagon logo. ",
   "index-chapter-list-loading": "Memproses...",
+  "chapters-h1": "Cabang NodeSchool",
   "chapters-other": "Wilayah lain?",
   "chapters-start": "Cabang NodeSchool belum ada di wilayah anda?",
   "chapters-start2": "Buka isu di grup diskusi",
@@ -144,5 +146,6 @@
   "workshopper-lololodash": "Belajar Lo-Dash (fork of underscore) untuk menangani array and object dengan mudah!",
   "workshopper-learnyoucouchdb": "Belajar tentang CouchDB - database yang sepenuhnya telah disesuakan dengan teknologi web",
   "workshopper-learnuv": "Belajar uv untuk bersenang-senang dan mendapat keuntungan, yaitu workshop tentang library-library pendukung Node.js secara mandiri dan terpadu.",
+  "calendar-h1": "Kalender",
   "": "Index hexagons untuk <a href=\"chapters.html\">Daftar cabang NodeSchool</a>."
 }
