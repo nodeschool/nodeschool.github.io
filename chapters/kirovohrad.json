@@ -1,0 +1,10 @@
+{
+  "name": "Kirovohrad NodeSchool",
+  "location": "Kirovohrad",
+  "country": "UA",
+  "region": "Europe",
+  "organizers": ["ghaiklor"],
+  "website": "http://nodeschool.io/kirovohrad",
+  "twitter": "ghaiklor",
+  "repo": "http://github.com/nodeschool/kirovohrad"
+}
