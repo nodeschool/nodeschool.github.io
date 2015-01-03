@@ -1,0 +1,9 @@
+{
+  "name": "NodeSchool Stuttgart",
+  "location": "Stuttgart",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["kwakayama"],
+  "website": "http://nodeschool.io/stuttgart",
+  "repo": "http://github.com/nodeschool/stuttgart"
+}
