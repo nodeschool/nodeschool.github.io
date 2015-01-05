@@ -1,0 +1,10 @@
+{
+  "name": "Mombasa NodeSchool",
+  "location": "Mombasa",
+  "country": "KE",
+  "region": "Africa",
+  "organizers": ["huzeifa"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/mombasa"
+}
