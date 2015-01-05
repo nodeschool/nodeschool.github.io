@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Silesia",
+  "location": "Silesia",
+  "country": "PL",
+  "region": "Europe",
+  "organizers": [ "afronski", "rspective" ],
+  "website": "http://nodeschool.io/silesia",
+  "twitter": "nodeschoolpl",
+  "gitter": "https://gitter.im/nodeschool/silesia",
+  "repo": "https://github.com/nodeschool/silesia"
+}
