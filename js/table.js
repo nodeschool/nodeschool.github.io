@@ -78,7 +78,6 @@ function generateAllTheMonths( eventData ) {
   dates  = dates.sort(function (a, b) { return a - b })
   months = []
   $.each( dates, function(_, date) {
-    date = new Date(date)
     if( months.indexOf(date.getMonth()) < 0 ) {
       months.push(date.getMonth())
       generateMonthTable(date)
