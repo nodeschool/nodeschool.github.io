@@ -74,9 +74,10 @@ function appendEvent( event ) {
 function generateAllTheMonths( eventData ) {
   dates  = eventData.map(function(e) { return [e.startdate, e.enddate] })
   dates  = [].concat.apply([], dates).filter(function(n) { return n })
+  dates  = dates.map(function (n) { return new Date(n) })
+  dates  = dates.sort(function (a, b) { return a - b })
   months = []
   $.each( dates, function(_, date) {
-    date = new Date(date)
     if( months.indexOf(date.getMonth()) < 0 ) {
       months.push(date.getMonth())
       generateMonthTable(date)
