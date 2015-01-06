@@ -1,0 +1,10 @@
+{
+  "name": "Chennai NodeSchool",
+  "location": "Chennai",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["vikene"],
+  "website": "http://nodeschool.io/chennai",
+  "twitter": "chn_nodeschool",
+  "repo": "http://github.com/nodeschool/chennai"
+}
