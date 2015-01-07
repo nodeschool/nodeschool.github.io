@@ -72,10 +72,14 @@ function appendEvent( event ) {
 }
 
 function generateAllTheMonths( eventData ) {
+  today  = new Date()
+  min    = new Date(today.getFullYear(), today.getMonth() - 5, today.getDate())
+  max    = new Date(today.getFullYear(), today.getMonth() + 6, today.getDate())
   dates  = eventData.map(function(e) { return [e.startdate, e.enddate] })
   dates  = [].concat.apply([], dates).filter(function(n) { return n })
   dates  = dates.map(function (n) { return new Date(n) })
   dates  = dates.sort(function (a, b) { return a - b })
+  dates  = dates.filter(function (n) { return n > min && n < max })
   months = []
   $.each( dates, function(_, date) {
     if( months.indexOf(date.getMonth()) < 0 ) {
