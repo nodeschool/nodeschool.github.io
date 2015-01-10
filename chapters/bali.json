@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Bali",
+  "location": "Bali",
+  "country": "ID",
+  "region": "Asia",
+  "organizers": ["LaughingSun"],
+  "website": "http://nodeschool.io/bali",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/bali"
+}
