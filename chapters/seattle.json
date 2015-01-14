@@ -3,7 +3,7 @@
   "location": "Seattle, WA",
   "country": "US",
   "region": "North America",
-  "organizers":["sethvincent", "YonasBerhe"],
+  "organizers":["sethvincent", "YonasBerhe", "blakmatrix"],
   "website": "http://nodeschool.io/seattle",
   "twitter": "",
   "repo": "http://github.com/nodeschool/seattle"
