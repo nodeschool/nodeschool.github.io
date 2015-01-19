@@ -64,7 +64,7 @@
   "index-workshoppers-elective-link-post": "提问。",
   "workshopper-javascripting": "学习 JavaScript 语言的基础，无需任何编程经验",
   "workshopper-learnyounode": "学习 Node.js 的基础：如异步 I/O、http 等。",
-  "workshopper-learnyounode-command": "npm install -g learnyounode-zh-cn",
+  "workshopper-learnyounode-command": "npm install -g learnyounode",
   "workshopper-gitit": "学习 Git 和 Github 的基本操作。",
   "workshopper-streamadventure": "学习使用",
   "workshopper-streamadventure2": "流（Streaming）的相关接口。",
