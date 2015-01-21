@@ -1,5 +1,7 @@
 body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color: #333;}
 
+[data-lang="ar"] { direction: rtl; }
+
 /*#ee3c30 rgb(238, 60, 48)*/
 /*#AAA688*/
 
