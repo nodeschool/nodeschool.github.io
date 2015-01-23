@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool SF",
+  "location": "San Francisco, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["duquet", "llkats", "jedireza"],
+  "website": "http://nodeschool.io/sanfrancisco/",
+  "twitter": "nodeschoolsf",
+  "repo": "http://github.com/nodeschool/sanfrancisco"
+}
