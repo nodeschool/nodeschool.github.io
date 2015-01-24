@@ -1,5 +1,5 @@
 {
-  "total": 73,
+  "total": 74,
   "regions": [
     {
       "region": "Africa",
@@ -632,7 +632,7 @@
     },
     {
       "region": "North America",
-      "count": 23,
+      "count": 24,
       "chapters": [
         {
           "name": "NodeSchool ATL",
@@ -697,6 +697,18 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/baynode"
+        },
+        {
+          "name": "Chicago NodeSchool",
+          "location": "Chicago, IL",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "azizali"
+          ],
+          "website": "http://nodeschool.io/chicago",
+          "twitter": "@heyaziz",
+          "repo": "http://github.com/nodeschool/chicago"
         },
         {
           "name": "NodeSchool Dallas",
@@ -798,6 +810,18 @@
           "repo": "http://github.com/nodeschool/nyc"
         },
         {
+          "name": "Oakland NodeSchool",
+          "location": "Oakland, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "maxogden"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/oakland"
+        },
+        {
           "name": "NodeSchool OC",
           "location": "Orange County, CA",
           "country": "US",
@@ -822,18 +846,6 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/orlando"
-        },
-        {
-          "name": "Oakland NodeSchool",
-          "location": "Oakland, CA",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "maxogden"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/oakland"
         },
         {
           "name": "NodeSchool PDX",
