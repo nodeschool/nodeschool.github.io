@@ -28,7 +28,7 @@ function translate(languages, i18nSpecifiers) {
 
   if (!lang) {
     lang = "en"
-    $(document.body).attr("data-lang", 'en')
+    $('html').attr("lang", 'en')
   }
   
   translateToLang(lang, languages, i18nSpecifiers)
@@ -42,12 +42,12 @@ function resetLang() {
 function translateToLang(lang, languages, i18nSpecifiers) {
   addTranslationNav(lang, languages)
 
-  if (lang === $(document.body).attr("data-lang")) return
+  if (lang === $('html').attr("lang")) return
   if (lang === 'en') return resetLang()
   
   xhr({url: 'languages/' + lang + '.json', json: true}, function(err, resp, keys) {
     if (err) return console.error('Could not fetch translation json for', lang)
-    $(document.body).attr("data-lang", lang)
+    $('html').attr("lang", lang)
     localStorage.setItem('lang', lang)  
     translateHTML(lang, keys, i18nSpecifiers)
   })
