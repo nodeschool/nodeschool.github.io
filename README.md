@@ -1,8 +1,8 @@
 nodeschool.github.io
 ====================
 
-http://nodeschool.io/ internet web page
-https://gitter.im/rk08/node-school Gitter chat is available for node-school at here. You can join at anytime.
+http://nodeschool.io/ internet web page.
+https://gitter.im/nodeschool/nodeschool.github.io Gitter chat is available for node-school at here. You can join at anytime.
 
 Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for more details on how to send a great PR.
 
