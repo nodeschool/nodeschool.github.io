@@ -1,5 +1,5 @@
 {
-  "total": 74,
+  "total": 75,
   "regions": [
     {
       "region": "Africa",
@@ -49,18 +49,6 @@
       "region": "Asia",
       "count": 16,
       "chapters": [
-        {
-          "name": "Pune Nodeschool",
-          "location": "Pune",
-          "country": "IN",
-          "region": "Asia",
-          "organizers": [
-            "adroittech"
-          ],
-          "website": "http://github.com/nodeschool/pune",
-          "twitter": "niravfaldu",
-          "repo": "http://github.com/nodeschool/pune"
-        },
         {
           "name": "Amman NodeSchool",
           "location": "Amman",
@@ -211,6 +199,18 @@
           "repo": "http://github.com/nodeschool/osaka"
         },
         {
+          "name": "Pune Nodeschool",
+          "location": "Pune",
+          "country": "IN",
+          "region": "Asia",
+          "organizers": [
+            "adroittech"
+          ],
+          "website": "http://github.com/nodeschool/pune",
+          "twitter": "niravfaldu",
+          "repo": "http://github.com/nodeschool/pune"
+        },
+        {
           "name": "Singapore NodeSchool",
           "location": "Singapore",
           "country": "SG",
@@ -278,7 +278,7 @@
     },
     {
       "region": "Europe",
-      "count": 18,
+      "count": 19,
       "chapters": [
         {
           "name": "Amsterdam NodeSchool",
@@ -424,6 +424,20 @@
           "website": "http://nodeschool.io/london",
           "twitter": "",
           "repo": "http://github.com/nodeschool/london"
+        },
+        {
+          "name": "NodeSchool Madrid",
+          "location": "Madrid",
+          "country": "ES",
+          "region": "Europe",
+          "organizers": [
+            "alexfernandez",
+            "gootyfer",
+            "javiervelezreyes"
+          ],
+          "website": "http://nodeschool.io/madrid",
+          "twitter": "@NodeJsMadrid",
+          "repo": "http://github.com/nodeschool/madrid"
         },
         {
           "name": "NodeSchool Moscow",

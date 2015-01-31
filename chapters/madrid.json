@@ -1,7 +1,7 @@
 {
 	"name": "NodeSchool Madrid",
-	"location": "Madrid, Madrid",
-	"country": "Spain",
+	"location": "Madrid",
+	"country": "ES",
 	"region": "Europe",
 	"organizers": ["alexfernandez","gootyfer", "javiervelezreyes"],
 	"website": "http://nodeschool.io/madrid",
