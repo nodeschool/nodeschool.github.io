@@ -1,0 +1,10 @@
+{
+	"name": "NodeSchool Madrid",
+	"location": "Madrid, Madrid",
+	"country": "Spain",
+	"region": "Europe",
+	"organizers": ["alexfernandez","gootyfer", "javiervelezreyes"],
+	"website": "http://nodeschool.io/madrid",
+	"twitter": "@NodeJsMadrid",
+	"repo": "http://github.com/nodeschool/madrid"
+}
