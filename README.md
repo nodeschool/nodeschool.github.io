@@ -2,7 +2,7 @@ nodeschool.github.io
 ====================
 
 - On the web: http://nodeschool.io/
-- On Gitter: [nodeschool/discussions](https://gitter.im/nodeschool/discussions)
+- On Gitter: [nodeschool/organizers](https://gitter.im/nodeschool/organizers)
 
 Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for more details on how to send a great PR.
 
