@@ -3,8 +3,8 @@
   "location": "Auckland",
   "country": "NZ",
   "region": "South Pacific",
-  "organizers": ["ram-manthry"],
-  "website": "",
+  "organizers": ["jladuval", "kevnz", "ram-manthry"],
+  "website": "http://nodeschool.io/auckland/",
   "twitter": "",
   "repo": "http://github.com/nodeschool/auckland"
 }
