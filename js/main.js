@@ -5,9 +5,6 @@ back.addEventListener('click', function (ev) {
   window.location.hash = '#';
 });
 
-var boxContainer = document.querySelector('.boxes');
-// boxContainer.parentNode.insertBefore(back, boxContainer);
-
 var boxes = [].slice.call(document.querySelectorAll('.box'));
 boxes.forEach(function (box) {
   box.addEventListener('click', function (ev) {
