@@ -1,10 +1,3 @@
-var back = document.createElement('button');
-back.appendChild(document.createTextNode('Back'));
-back.id = 'back';
-back.addEventListener('click', function (ev) {
-  window.location.hash = '#';
-});
-
 var boxes = [].slice.call(document.querySelectorAll('.box'));
 boxes.forEach(function (box) {
   box.addEventListener('click', function (ev) {
@@ -46,7 +39,6 @@ function handleHashChange() {
 
 function showIndex() {
   showAll();
-  back.classList.remove('show');
 }
 
 function showItemByUrl(frag) {
@@ -55,7 +47,6 @@ function showItemByUrl(frag) {
     hideAll();
     el.style.display = 'block';
     el.classList.remove('small');
-    back.classList.add('show');
   }
 }
 
