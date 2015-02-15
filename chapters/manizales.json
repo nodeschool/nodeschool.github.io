@@ -1,0 +1,10 @@
+{
+  "name": "Manizales NodeSchool",
+  "location": "Manizales",
+  "country": "CO",
+  "region": "Latin America",
+  "organizers": [
+    "gmauricio"
+  ],
+  "repo": "http://github.com/nodeschool/manizales"
+}
