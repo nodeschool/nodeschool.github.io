@@ -674,6 +674,19 @@
           "website": "http://nodeschool.io/santamarta/",
           "twitter": "",
           "repo": "http://github.com/nodeschool/santamarta"
+        },
+        {
+          "name": "NodeSchool Costa Rica ",
+          "location": "San José",
+          "country": "CRI",
+          "region": "Latin America",
+          "organizers": [
+            "gaboesquivel",
+            "kevinblanco"
+          ],
+          "website": "http://meetup.com/costaricajs",
+          "twitter": "costaricajs",
+          "repo": "http://github.com/nodeschool/costarica"
         }
       ]
     },
