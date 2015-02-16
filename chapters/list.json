@@ -1,5 +1,5 @@
 {
-  "total": 77,
+  "total": 79,
   "regions": [
     {
       "region": "Africa",
@@ -563,7 +563,7 @@
     },
     {
       "region": "Latin America",
-      "count": 8,
+      "count": 10,
       "chapters": [
         {
           "name": "Belo Horizonte NodeSchool",
@@ -617,6 +617,16 @@
           "website": "http://nodeschool.io/florianopolis",
           "twitter": "nodeschoolFLN",
           "repo": "http://github.com/nodeschool/florianopolis"
+        },
+        {
+          "name": "Manizales NodeSchool",
+          "location": "Manizales",
+          "country": "CO",
+          "region": "Latin America",
+          "organizers": [
+            "gmauricio"
+          ],
+          "repo": "http://github.com/nodeschool/manizales"
         },
         {
           "name": "Mexico City NodeSchool",
