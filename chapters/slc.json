@@ -1,0 +1,10 @@
+{
+  "name": "Salt Lake City Nodeschool",
+  "location": "Salt Lake City, Utah",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["majgis", "ryanswapp", "joeycozza"],
+  "website": "http://www.meetup.com/Utah-Node-Ninjas",
+  "twitter": "utahnodeninjas",
+  "repo": "https://github.com/Utah-Node-Ninjas"
+}
