@@ -63,6 +63,7 @@
   "workshopper-learnyounode": "Node.jsの基本: 非同期 I/Oやhttp。",
   "workshopper-javascripting": "開発経験がない人のためのJavaScriptの基本コースです。",
   "workshopper-gitit": "GitやGitHubの基本。",
+  "workshopper-how-to-npm": "npmの使い方と作り方を学ぶ。",
   "workshopper-streamadventure": "ストリームを",
   "workshopper-streamadventure2": "を使って構成する方法を学ぶ。",
   "workshopper-functionaljavascript": "EcmaScript 5の基本的な関数型プログラミングを勉強。",
