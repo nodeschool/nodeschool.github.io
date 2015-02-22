@@ -89,7 +89,7 @@ ul.nav li:hover a {color: #F7DA03; background: #333; cursor: pointer;}
 ul.nav li.current-page a {background: #333; color: #FFE51F;}
 header .full:after {content: ''; display: block; clear: both;}
 
-ul.nav-lang {list-style: none; margin: 0; padding: 5px 20px; text-align: right}
+ul.nav-lang {list-style: none; margin: 0; padding: 5px 20px; text-align: center}
 ul.nav-lang li {border: none; margin-right: none; display: inline;}
 ul.nav-lang li a {color: #333; text-decoration: none; border-color: #333;}
 ul.nav-lang li a:hover {color: #666; border-color: #666;}
