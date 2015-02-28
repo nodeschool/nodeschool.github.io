@@ -1,5 +1,5 @@
 {
-  "total": 82,
+  "total": 83,
   "regions": [
     {
       "region": "Africa",
@@ -497,6 +497,18 @@
           "repo": "http://github.com/nodeschool/oslo"
         },
         {
+          "name": "NodeSchool Paris",
+          "location": "Paris",
+          "country": "FR",
+          "region": "Europe",
+          "organizers": [
+            "tdd"
+          ],
+          "website": "http://nodeschool.io/paris/",
+          "twitter": "NodeSchoolParis",
+          "repo": "http://github.com/nodeschool/paris"
+        },
+        {
           "name": "NodeSchool Oxford",
           "location": "Oxford",
           "country": "UK",
@@ -512,18 +524,6 @@
           "website": "http://jsoxford.com/",
           "twitter": "https://twitter.com/JSOxford",
           "repo": "http://github.com/nodeschool/oxford"
-        },
-        {
-          "name": "NodeSchool Paris",
-          "location": "Paris",
-          "country": "FR",
-          "region": "Europe",
-          "organizers": [
-            "tdd"
-          ],
-          "website": "http://nodeschool.io/paris/",
-          "twitter": "NodeSchoolParis",
-          "repo": "http://github.com/nodeschool/paris"
         },
         {
           "name": "NodeSchool Silesia",
@@ -644,6 +644,16 @@
           "repo": "http://github.com/nodeschool/florianopolis"
         },
         {
+          "name": "Manizales NodeSchool",
+          "location": "Manizales",
+          "country": "CO",
+          "region": "Latin America",
+          "organizers": [
+            "gmauricio"
+          ],
+          "repo": "http://github.com/nodeschool/manizales"
+        },
+        {
           "name": "Mexico City NodeSchool",
           "location": "Mexico City",
           "country": "MX",
@@ -656,16 +666,6 @@
           "website": "http://nodeschool.io/mexicocity",
           "twitter": "",
           "repo": "http://github.com/nodeschool/mexicocity"
-        },
-        {
-          "name": "Manizales NodeSchool",
-          "location": "Manizales",
-          "country": "CO",
-          "region": "Latin America",
-          "organizers": [
-            "gmauricio"
-          ],
-          "repo": "http://github.com/nodeschool/manizales"
         },
         {
           "name": "Montevideo NodeSchool",
@@ -714,7 +714,7 @@
     },
     {
       "region": "North America",
-      "count": 26,
+      "count": 27,
       "chapters": [
         {
           "name": "NodeSchool ATL",
@@ -765,6 +765,19 @@
           "website": "http://nodeschool.io/baltimore",
           "twitter": "bmorenodeschool",
           "repo": "http://github.com/nodeschool/baltimore"
+        },
+        {
+          "name": "Boston NodeSchool",
+          "location": "Boston, MA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "jstreb",
+            "twalling"
+          ],
+          "website": "https://github.com/nodeschool/boston",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/boston"
         },
         {
           "name": "BayNode",
