@@ -1,0 +1,12 @@
+{
+  "name": "NodeSchool Medellín",
+  "location": "Medellín",
+  "country": "CO",
+  "region": "Latin America",
+  "organizers": [
+    "julianduque",
+    "edsadr",
+    "academo"
+  ],
+  "repo": "http://github.com/nodeschool/medellin"
+}
