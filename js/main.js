@@ -99,12 +99,19 @@ function upcomingEvents(data) {
   return freshies
 }
 
+function fixLatLong(entry) {
+  entry.longitude = ((Number(entry.longitude) + 180) % 360) - 180
+  entry.latitude = ((Number(entry.latitude) + 90) % 180) - 90
+}
+
 function makeMap(data) {
 
   var sorted = sortDates(data)
                 .map(setState)
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
                 .reverse()
+
+  sorted.forEach(fixLatLong)
 
   var optionsJSON = ["name", "website", "startdate", "state"]
   var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{website}}'"
