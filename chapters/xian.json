@@ -1,0 +1,10 @@
+{
+  "name": "Xi'an NodeSchool",
+  "location": "Xi'an, Shaanxi",
+  "country": "CN",
+  "region": "Asia",
+  "organizers": ["howiehu"],
+  "website": "http://nodeschool.io/xian",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/xian"
+}
