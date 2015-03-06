@@ -1,0 +1,10 @@
+{
+  "name": "Boston NodeSchool",
+  "location": "Boston, MA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["jstreb", "twalling"],
+  "website": "https://github.com/nodeschool/boston",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/boston"
+}
