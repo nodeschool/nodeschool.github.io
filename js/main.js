@@ -76,7 +76,7 @@ function sortDates(data) {
   // sort the dates
   var sorted = data
   sorted.sort(function(a,b) {
-    return a.startUTC - b.startUTC
+    return b.startUTC - a.startUTC
   })
 
   return sorted
@@ -109,7 +109,6 @@ function makeMap(data) {
   var sorted = sortDates(data)
                 .map(setState)
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
-                .reverse()
 
   sorted.forEach(fixLatLong)
 
