@@ -104,10 +104,29 @@ function fixLatLong(entry) {
   entry.latitude = ((Number(entry.latitude) + 90) % 180) - 90
 }
 
+function locationHash(lon, lat) {
+  return Math.round(lon * 5) + " x " + Math.round(lat * 5);
+}
+
+function removeSamePlace(entry) {
+  var firsts = {}
+  return function (entry) {
+    var hash = locationHash(entry.longitude, entry.latitude)
+
+    if (firsts[hash] && !entry.future) {
+      return false
+    }
+
+    firsts[hash] = true
+    return true
+  }
+}
+
 function makeMap(data) {
 
   var sorted = sortDates(data)
                 .map(setState)
+                .filter(removeSamePlace())
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
 
   sorted.forEach(fixLatLong)
