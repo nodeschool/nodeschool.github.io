@@ -76,7 +76,7 @@ function sortDates(data) {
   // sort the dates
   var sorted = data
   sorted.sort(function(a,b) {
-    return b.startUTC - a.startUTC
+    return a.startUTC - b.startUTC
   })
 
   return sorted
