@@ -593,6 +593,20 @@
           "repo": "http://github.com/nodeschool/belo-horizonte"
         },
         {
+          "name": "NodeSchool Bogotá",
+          "location": "Bogotá",
+          "country": "CO",
+          "region": "Latin America",
+          "organizers": [
+            "davsket",
+            "agar3s",
+            "kuryaki",
+            "zaccaro",
+            "buritica"
+          ],
+          "repo": "http://github.com/nodeschool/bogota"
+        },
+        {
           "name": "Buenos Aires NodeSchool",
           "location": "Buenos Aires",
           "country": "AR",
