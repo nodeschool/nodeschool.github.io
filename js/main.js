@@ -64,6 +64,7 @@ function showItemByUrl(frag) {
 
 handleHashChange();
 
+// Sorts chronologically
 function sortDates(data) {
   var today = new Date()
 
@@ -125,6 +126,7 @@ function removeSamePlace(entry) {
 function makeMap(data) {
 
   var sorted = sortDates(data)
+                .reverse()
                 .map(setState)
                 .filter(removeSamePlace())
                 .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
