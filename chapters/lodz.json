@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Lodz",
+  "location": "Lodz",
+  "country": "PL",
+  "region": "Europe",
+  "organizers": [ "adamniedzielski", "lipkap" ],
+  "website": "http://nodeschool.io/lodz",
+  "twitter": "nodeschool_lodz",
+  "gitter": "https://gitter.im/nodeschool/lodz",
+  "repo": "https://github.com/nodeschool/lodz"
+}
