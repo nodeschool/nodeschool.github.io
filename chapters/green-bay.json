@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Wisconsin",
+  "location": "Green Bay, WI",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["blakehall", "zo0o0ot"],
+  "website": "http://nodeschool.io/wisconsin",
+  "twitter": "@greenbayjs",
+  "repo": "http://github.com/nodeschool/wisconsin"
+} 
