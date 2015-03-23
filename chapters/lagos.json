@@ -1,0 +1,9 @@
+{
+  "name": "Lagos NodeSchool",
+  "location": "Lagos",
+  "country": "NG",
+  "region": "Africa",
+  "organizers": ["jasonrhodes"],
+  "website": "http://nodeschool.io/lagos",
+  "repo": "http://github.com/nodeschool/lagos"
+}
