@@ -1,0 +1,10 @@
+{
+  "name": "Helsinki NodeSchool",
+  "location": "Helsinki",
+  "country": "FI",
+  "region": "Europe",
+  "organizers": ["laurisvan", "jubilem"],
+  "website": "http://nodeschool.io/helsinki/",
+  "twitter": "helnode",
+  "repo": "https://github.com/nodeschool/helsinki"
+}
