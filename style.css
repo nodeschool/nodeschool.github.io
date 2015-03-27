@@ -15,8 +15,8 @@ p, li {line-height: 1.4em;}
 li {padding-bottom: 4px;}
 p:first-child {padding-top: 0; margin-top: 0;}
 
-a {color: #777; text-decoration: none; border-bottom: 1px solid #777;}
-a:hover {color: #333; border-color: #333;}
+a {color: #333; text-decoration: none; border-bottom: 1px solid #888;}
+a:hover {border-color: #333;}
 a.imglink {border: none; outline: none;}
 
 hr {border: 2px solid #333; margin: 0;}
@@ -156,7 +156,7 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 .term .chrome{ height:34px; padding-left:4px; border-top:0 none; border-right:0 none; border-left:0 none; }
 .term .chrome:before{ content:" "; display:inline-block; height:100%; vertical-align:middle; }
 .term .chrome .btn{ display:inline-block; vertical-align:middle; width:8px; height:8px; border-radius:100%; }
-.term .shell{ padding:10px; color:#777; }
+.term .shell{ padding:10px; color:#494949; }
 .term .workshopper{ background: #F8F0BD; padding:2px; }
 .term .workshopper code{ border:0 none; }
 .term code{ display:block; margin:12px 0; padding: 4px 10px; border-left: 8px solid #F7DA03; border-radius: 0; background:none; }
