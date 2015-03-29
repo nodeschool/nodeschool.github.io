@@ -1,0 +1,10 @@
+{
+  "name": "Shiraz NodeSchool",
+  "location": "Shiraz,Fars",
+  "country": "Iran",
+  "region": "Asia",
+  "organizers": ["ArianSotoudehMehr"],
+  "website": "http://nodeschools.ir",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/shiraz"
+}
