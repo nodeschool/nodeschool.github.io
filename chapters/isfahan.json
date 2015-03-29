@@ -1,0 +1,10 @@
+{
+  "name": "Isfahan NodeSchool",
+  "location": "Isfahan,Isfahan",
+  "country": "Iran",
+  "region": "Asia",
+  "organizers": ["ArianSotoudehMehr"],
+  "website": "http://nodeschools.ir",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/isfahan"
+}
