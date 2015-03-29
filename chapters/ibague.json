@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Ibagué",
+  "location": "Ibagué",
+  "country": "CO",
+  "region": "Latin America",
+  "organizers": ["gioyik", "yeisontapia", "pandres95", "zheref"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/ibague"
+}
