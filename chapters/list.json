@@ -1,5 +1,5 @@
 {
-  "total": 91,
+  "total": 96,
   "regions": [
     {
       "region": "Africa",
@@ -60,7 +60,7 @@
     },
     {
       "region": "Asia",
-      "count": 17,
+      "count": 22,
       "chapters": [
         {
           "name": "Pune Nodeschool",
@@ -167,6 +167,17 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/iran"
         },
+        {
+"name": "Isfahan NodeSchool",
+"location": "Isfahan,Isfahan",
+"country": "Iran",
+"region": "Asia",
+"organizers": ["ArianSotoudehMehr"],
+"website": "http://nodeschools.ir",
+"twitter": "",
+"repo": "http://github.com/nodeschool/isfahan"
+}
+        ,
         {
           "name": "Jakarta NodeSchool",
           "location": "Jakarta",
