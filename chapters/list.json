@@ -60,7 +60,7 @@
     },
     {
       "region": "Asia",
-      "count": 22,
+      "count": 16,
       "chapters": [
         {
           "name": "Pune Nodeschool",
@@ -155,17 +155,6 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/dhaka"
         },
-        {
-"name": "Isfahan NodeSchool",
-"location": "Isfahan,Isfahan",
-"country": "Iran",
-"region": "Asia",
-"organizers": ["ArianSotoudehMehr"],
-"website": "http://nodeschools.ir",
-"twitter": "",
-"repo": "http://github.com/nodeschool/isfahan"
-}
-        ,
         {
           "name": "Jakarta NodeSchool",
           "location": "Jakarta",
@@ -1182,6 +1171,22 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/vancouver"
+        }
+      ]
+    },
+        {
+      "region": "Middle East",
+      "count": 2,
+      "chapters": [
+        {
+          "name": "Isfahan NodeSchool",
+          "location": "Isfahan,Isfahan",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["ArianSotoudehMehr"],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/isfahan"
         }
       ]
     },
