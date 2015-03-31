@@ -1191,6 +1191,16 @@
           "repo": "http://github.com/nodeschool/iran"
        },   
        {
+          "name": "Karaj NodeSchool",
+          "location": "karaj",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["ArianSotoudehMehr"],
+          "website": "http://nodeschools.ir/karaj",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/karaj"
+      },
+       {
           "name": "Isfahan NodeSchool",
           "location": "Isfahan",
           "country": "Iran",
@@ -1200,6 +1210,16 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/isfahan"
        },
+       {
+          "name": "Mashhad NodeSchool",
+          "location": "Mashhad",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["ArianSotoudehMehr"],
+          "website": "http://nodeschools.ir/mashhad",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/mashhad"
+      },
        {
           "name": "Shiraz NodeSchool",
           "location": "Shiraz",
