@@ -1,5 +1,5 @@
 {
-  "total": 96,
+  "total": 92,
   "regions": [
     {
       "region": "Africa",
@@ -154,18 +154,6 @@
           "website": "http://nodeschool.io/dhaka",
           "twitter": "",
           "repo": "http://github.com/nodeschool/dhaka"
-        },
-        {
-          "name": "IRN NodeSchool",
-          "location": "Babol / Mazandaran",
-          "country": "IR",
-          "region": "Asia",
-          "organizers": [
-            "NIT"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/iran"
         },
         {
 "name": "Isfahan NodeSchool",
