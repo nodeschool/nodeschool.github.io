@@ -1,5 +1,5 @@
 {
-  "total": 92,
+  "total": 95,
   "regions": [
     {
       "region": "Africa",
@@ -1176,7 +1176,7 @@
     },
         {
       "region": "Middle East",
-      "count": 3,
+      "count": 5,
       "chapters": [
        {
           "name": "IRN NodeSchool",
@@ -1209,6 +1209,26 @@
           "website": "http://nodeschools.ir/shiraz",
           "twitter": "",
           "repo": "http://github.com/nodeschool/shiraz"
+      },
+      {
+          "name": "Tabriz NodeSchool",
+          "location": "Tabriz",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["Behrad"],
+          "website": "http://nodeschools.ir/tabriz",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/tabriz"
+      },
+     {
+          "name": "Tehran NodeSchool",
+          "location": "Tehran",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["Behrad"],
+          "website": "http://nodeschools.ir/tehran",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/tehran"
       }
       ]
     },
