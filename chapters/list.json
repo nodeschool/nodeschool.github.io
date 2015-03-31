@@ -1178,16 +1178,38 @@
       "region": "Middle East",
       "count": 2,
       "chapters": [
-        {
+       {
+          "name": "IRN NodeSchool",
+          "location": "Babol / Mazandaran",
+          "country": "IR",
+          "region": "Asia",
+          "organizers": [
+            "NIT"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/iran"
+       },   
+       {
           "name": "Isfahan NodeSchool",
-          "location": "Isfahan,Isfahan",
+          "location": "Isfahan",
           "country": "Iran",
           "region": "Middle East",
           "organizers": ["ArianSotoudehMehr"],
-          "website": "http://nodeschools.ir",
+          "website": "http://nodeschools.ir/isfahan",
           "twitter": "",
           "repo": "http://github.com/nodeschool/isfahan"
-        }
+       },
+       {
+          "name": "Isfahan NodeSchool",
+          "location": "Shiraz",
+          "country": "Iran",
+          "region": "Middle East",
+          "organizers": ["ArianSotoudehMehr"],
+          "website": "http://nodeschools.ir/shiraz",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/shiraz"
+       },
       ]
     },
     {
