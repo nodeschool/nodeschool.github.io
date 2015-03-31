@@ -1176,7 +1176,7 @@
     },
         {
       "region": "Middle East",
-      "count": 2,
+      "count": 3,
       "chapters": [
        {
           "name": "IRN NodeSchool",
@@ -1209,7 +1209,7 @@
           "website": "http://nodeschools.ir/shiraz",
           "twitter": "",
           "repo": "http://github.com/nodeschool/shiraz"
-       },
+       }
       ]
     },
     {
