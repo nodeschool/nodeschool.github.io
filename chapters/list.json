@@ -1201,7 +1201,7 @@
           "repo": "http://github.com/nodeschool/isfahan"
        },
        {
-          "name": "Isfahan NodeSchool",
+          "name": "Shiraz NodeSchool",
           "location": "Shiraz",
           "country": "Iran",
           "region": "Middle East",
@@ -1209,7 +1209,7 @@
           "website": "http://nodeschools.ir/shiraz",
           "twitter": "",
           "repo": "http://github.com/nodeschool/shiraz"
-       }
+      }
       ]
     },
     {
