@@ -1,5 +1,5 @@
 {
-  "total": 95,
+  "total": 97,
   "regions": [
     {
       "region": "Africa",
@@ -1176,13 +1176,13 @@
     },
         {
       "region": "Middle East",
-      "count": 5,
+      "count": 7,
       "chapters": [
        {
           "name": "IRN NodeSchool",
           "location": "Babol / Mazandaran",
           "country": "IR",
-          "region": "Asia",
+          "region": "Middle East",
           "organizers": [
             "NIT"
           ],
