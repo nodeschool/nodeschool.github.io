@@ -60,7 +60,7 @@
     },
     {
       "region": "Asia",
-      "count": 16,
+      "count": 15,
       "chapters": [
         {
           "name": "Pune Nodeschool",
@@ -73,19 +73,6 @@
           "website": "http://github.com/nodeschool/pune",
           "twitter": "niravfaldu",
           "repo": "http://github.com/nodeschool/pune"
-        },
-        {
-          "name": "Amman NodeSchool",
-          "location": "Amman",
-          "country": "JO",
-          "region": "Asia",
-          "organizers": [
-            "samuraik",
-            "rashad612"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/amman"
         },
         {
           "name": "NodeSchool Bali",
@@ -1176,8 +1163,21 @@
     },
         {
       "region": "Middle East",
-      "count": 7,
+      "count": 8,
       "chapters": [
+                {
+          "name": "Amman NodeSchool",
+          "location": "Amman",
+          "country": "JO",
+          "region": "Asia",
+          "organizers": [
+            "samuraik",
+            "rashad612"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/amman"
+        },
        {
           "name": "IRN NodeSchool",
           "location": "Babol / Mazandaran",
