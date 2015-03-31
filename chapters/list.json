@@ -1196,7 +1196,7 @@
           "country": "Iran",
           "region": "Middle East",
           "organizers": ["ArianSotoudehMehr"],
-          "website": "http://nodeschools.ir/karaj",
+          "website": "http://karaj.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/karaj"
       },
@@ -1206,7 +1206,7 @@
           "country": "Iran",
           "region": "Middle East",
           "organizers": ["ArianSotoudehMehr"],
-          "website": "http://nodeschools.ir/isfahan",
+          "website": "http://isfahan.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/isfahan"
        },
@@ -1216,7 +1216,7 @@
           "country": "Iran",
           "region": "Middle East",
           "organizers": ["ArianSotoudehMehr"],
-          "website": "http://nodeschools.ir/mashhad",
+          "website": "http://mashhad.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/mashhad"
       },
@@ -1226,7 +1226,7 @@
           "country": "Iran",
           "region": "Middle East",
           "organizers": ["ArianSotoudehMehr"],
-          "website": "http://nodeschools.ir/shiraz",
+          "website": "http://shiraz.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/shiraz"
       },
@@ -1235,8 +1235,8 @@
           "location": "Tabriz",
           "country": "Iran",
           "region": "Middle East",
-          "organizers": ["Behrad"],
-          "website": "http://nodeschools.ir/tabriz",
+          "organizers": ["ArianSotoudehMehr"],
+          "website": "http://tabriz.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/tabriz"
       },
@@ -1245,8 +1245,8 @@
           "location": "Tehran",
           "country": "Iran",
           "region": "Middle East",
-          "organizers": ["Behrad"],
-          "website": "http://nodeschools.ir/tehran",
+          "organizers": ["ArianSotoudehMehr,Behrad"],
+          "website": "http://tehran.nodeschools.ir",
           "twitter": "",
           "repo": "http://github.com/nodeschool/tehran"
       }
