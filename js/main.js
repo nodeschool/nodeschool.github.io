@@ -79,6 +79,13 @@ function sortDates(data) {
     return a.startUTC - b.startUTC
   })
 
+  return sorted
+}
+
+function upcomingEvents(data) {
+  var today = new Date()
+  var sorted = sortDates(data)
+
   // only upcoming events
   var freshies = []
   var todayBuffer = new Date()
@@ -89,11 +96,53 @@ function sortDates(data) {
       freshies.push(event)
   })
 
-  if (freshies.length !== 0) {
-    return freshies
-  } else return {
-    "name": "No upcoming events. Check out past events!",
-    "tickets": "events.html"
-  }
   return freshies
+}
+
+function makeMap(data) {
+
+  var sorted = sortDates(data)
+                .map(setState)
+                .map(addHexColor.bind(this, "#F7DA03", "#A09C9C"))
+                .reverse()
+
+  var optionsJSON = ["name", "tickets", "startdate", "state"]
+  var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{tickets}}'"
+    + " target='_blank'>{{name}}</a><p>"
+
+  var map = Sheetsee.loadMap("map")
+  Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
+
+  var geoJSON = Sheetsee.createGeoJSON(sorted, optionsJSON)
+  var markers = Sheetsee.addMarkerLayer(geoJSON, map, template)
+
+  markers.eachLayer(function (marker) {
+    if(marker.feature.opts.state === 'past') {
+      marker.setIcon(L.divIcon({
+              // Specify a class name we can refer to in CSS.
+              className: 'past-event',
+              // Set a markers width and height.
+              iconSize: [7, 7]
+          }))
+    }
+  })
+
+  map.setZoom(1)
+  // disable dragging on mobile/tablet because it makes it hard
+  // to scroll the page on full width-ish maps
+  if (window.innerWidth <= 768 ) map.dragging.disable()
+}
+
+function isFuture(event) {
+  return (event.startUTC > new Date())
+}
+
+function setState(event) {
+  // event should have future state if it starts later that now (duh!)
+  event.state = isFuture(event) ? "future" : "past"
+  return event
+}
+function addHexColor(futureColor, pastColor, event) {
+  event.hexcolor = isFuture(event) ? futureColor : pastColor
+  return event
 }

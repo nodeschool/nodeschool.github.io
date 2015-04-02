@@ -1,6 +1,5 @@
 /*calendar map events*/
-* { -webkit-box-sizing: border-box; }
-body { background: rgb(88,20,94); }
+#calendar * { -webkit-box-sizing: border-box; }
 
 .month-table {
   margin: 0 auto 100px;
@@ -125,6 +124,9 @@ a:hover {
   color: #333;
   border-color: #F7DA03;
   border-bottom-width: 2px;
+}
+.multi-days a {
+  color: #EEE;
 }
 .event a:hover {
   color: #F7DA03;

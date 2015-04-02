@@ -1,68 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html class="building-workshops">
   <head>
     <meta charset="utf-8">
+    <meta name="google" value="notranslate" />
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="mapbox.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nodeschool.io</title>
   </head>
   <body class="building-workshops">
-    <div class="first-photo"></div>
     <header>
         <div class="container">
           <div class="full">
-            <a href="index.html"><img class="logo" src="images/schoollines.png" width="500"></a>
+            <a href="index.html"><img class="logo" src="images/schoolhouse.svg" alt="nodeschoolhouse"></a>
             <ul class="nav">
-              <a href="events.html"><li>Events</li></a>
-              <a href="chapters.html"><li>Chapters</li></a>
-              <a href="about.html"><li>About</li></a>
-              <a href="building-workshops.html"><li>Build</li></a>
-              <a href="host.html"><li>Host</li></a>
+              <li><a href="index.html" data-i18n="menu-index">Home</a></li>
+              <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+              <li><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+              <li><a href="about.html" data-i18n="menu-about">About</a></li>
+              <li class="current-page"><a href="building-workshops.html" data-i18n="menu-building-workshops">Build</a></li>
+              <li><a href="host.html" data-i18n="menu-host">Host</a></li>
             </ul>
           </div>
         </div>
     </header>
 
-    <div class="container" style='background-color: #fff;'>
+    <div class="container" style="background-color: #fff;">
       <div class="full">
-        <h1>Building a NodeSchool Workshop</h1>
-          <p>This is a page that will explain some of the common frameworks used to build NodeSchool workshops. This is placeholder text.</p>
+        <h1 data-i18n="building-workshops-header">Building a NodeSchool Workshop</h1>
+          <p data-i18n="building-workshops-subtitle">Here are some of the common tools used to build NodeSchool workshops.</p>
       </div>
 
       <div class="container">
         <div class="third">
-          <h2>Existing Frameworks</h2>
+          <h3 data-i18n="building-workshops-title-info"><a href="https://www.npmjs.org/package/workshopper">workshopper</a></h3>
         </div>
         <div class="two-thirds">
-          <p>This is a page that will explain some of the common frameworks used to build NodeSchool workshops. This is placeholder text.</p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="third">
-          <h3>A Sub Section</h3>
-        </div>
-        <div class="two-thirds">
-          <p>This is a page that will explain some of the common frameworks used to build NodeSchool workshops. This is placeholder text.</p>
+          <p><a href="https://www.npmjs.org/package/workshopper"><code>npm install workshopper</code></a> <span data-i18n="building-workshops-info">to get a full featured nodeschool CLI workshop framework.</span></p>
         </div>
       </div>
 
       <div class="container">
         <div class="third">
-          <h3>And one More</h3>
+          <h3 data-i18n="building-workshops-title-info2"><a href="https://www.npmjs.org/package/adventure">adventure</a></h3>
         </div>
         <div class="two-thirds">
-          <p>This is a page that will explain some of the common frameworks used to build NodeSchool workshops. This is placeholder text.</p>
+          <p><a href="https://www.npmjs.org/package/adventure"><code>npm install adventure</code></a> <span data-i18n="building-workshops-info2">to get an alternative to workshopper that is lighter weight.</span></p>
         </div>
       </div>
 
+      <div class="container">
+        <div class="third">
+          <h3 data-i18n="building-workshops-title-info3">Build your own</h3>
+        </div>
+        <div class="two-thirds">
+          <p data-i18n="building-workshops-info3"><span>Don&apos;t be afraid to hack the format! E.g. if you want to write a workshop to teach CSS you may have to invent your own workshop format. For example the</span> <a href="https://www.npmjs.org/package/browser-menu">browser-menu</a> <span>module was written for the</span> <a href="https://www.npmjs.org/package/shader-school">shader-school</a> <span>workshop.</span></p>
+        </div>
+      </div>
     </div>
 
-    <div class="container" style='background-color: #fff;'>
+    <div class="container" style="background-color: #fff;">
       <footer>
         <div class="third">
           <p><strong>nodeschool.io</strong></p>
@@ -70,24 +68,27 @@
         </div>
         <div class="two-thirds">
           <ul>
-            <li><strong>Contact</strong></li>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
             <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
             <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
           </ul>
           <ul>
-            <li><strong>Contribute</strong></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank">Open an Issue</li>
-            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank">Answer a Question</a></li>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
           </ul>
           <ul>
-            <li><strong>About</strong></li>
-            <li><a href="building-workshops.html">Build a workshopper</a></li>
-            <li><a href="host.html">Host a workshop</a></li>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
           </ul>
         </div>
       </footer>
     </div>
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dependencies.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
