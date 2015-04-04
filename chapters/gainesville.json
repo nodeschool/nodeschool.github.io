@@ -1,0 +1,10 @@
+{
+  "name": "Gainesville, FL NodeSchool",
+  "location": "Gainesville, FL",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["aaronbdixon"],
+  "website": "http://gnvjs.com",
+  "twitter": "gnvjs",
+  "repo": "http://github.com/nodeschool/gainesville"
+}
