@@ -1,1 +1,10 @@
-
+{
+  "name": "Tehran NodeSchool",
+  "location": "Tehran,Tehran",
+  "country": "Iran",
+  "region": "Asia",
+  "organizers": ["ArianSotoudehMehr"],
+  "website": "http://nodeschools.ir",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/tehran"
+}

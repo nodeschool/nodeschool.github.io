@@ -1,5 +1,5 @@
 {
-  "total": 97,
+  "total": 98,
   "regions": [
     {
       "region": "Africa",
@@ -60,19 +60,20 @@
     },
     {
       "region": "Asia",
-      "count": 15,
+      "count": 23,
       "chapters": [
         {
-          "name": "Pune Nodeschool",
-          "location": "Pune",
-          "country": "IN",
+          "name": "Amman NodeSchool",
+          "location": "Amman",
+          "country": "JO",
           "region": "Asia",
           "organizers": [
-            "adroittech"
+            "samuraik",
+            "rashad612"
           ],
-          "website": "http://github.com/nodeschool/pune",
-          "twitter": "niravfaldu",
-          "repo": "http://github.com/nodeschool/pune"
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/amman"
         },
         {
           "name": "NodeSchool Bali",
@@ -143,6 +144,30 @@
           "repo": "http://github.com/nodeschool/dhaka"
         },
         {
+          "name": "IRN NodeSchool",
+          "location": "Babol / Mazandaran",
+          "country": "IR",
+          "region": "Asia",
+          "organizers": [
+            "NIT"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/iran"
+        },
+        {
+          "name": "Isfahan NodeSchool",
+          "location": "Isfahan,Isfahan",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/isfahan"
+        },
+        {
           "name": "Jakarta NodeSchool",
           "location": "Jakarta",
           "country": "ID",
@@ -168,6 +193,18 @@
           "website": "http://nodeschool.io/kanpur",
           "twitter": "",
           "repo": "http://github.com/nodeschool/kanpur"
+        },
+        {
+          "name": "Karaj NodeSchool",
+          "location": "Karaj,Alborz",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/karaj"
         },
         {
           "name": "NodeSchool Lahore",
@@ -211,6 +248,30 @@
           "repo": "http://github.com/nodeschool/osaka"
         },
         {
+          "name": "Pune Nodeschool",
+          "location": "Pune",
+          "country": "IN",
+          "region": "Asia",
+          "organizers": [
+            "adroittech"
+          ],
+          "website": "http://github.com/nodeschool/pune",
+          "twitter": "niravfaldu",
+          "repo": "http://github.com/nodeschool/pune"
+        },
+        {
+          "name": "Shiraz NodeSchool",
+          "location": "Shiraz,Fars",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/shiraz"
+        },
+        {
           "name": "Singapore NodeSchool",
           "location": "Singapore",
           "country": "SG",
@@ -235,6 +296,18 @@
           "repo": "http://github.com/nodeschool/singapore"
         },
         {
+          "name": "Tabriz NodeSchool",
+          "location": "Tabriz,Azarbaijan",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/tabriz"
+        },
+        {
           "name": "Taiwan Nodeschool",
           "location": "Taiwan",
           "region": "Asia",
@@ -246,6 +319,18 @@
           "website": "http://nodeschool.io/taiwan",
           "twitter": "",
           "repo": "https://github.com/nodeschool/taiwan"
+        },
+        {
+          "name": "Tehran NodeSchool",
+          "location": "Tehran,Tehran",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/tehran"
         },
         {
           "name": "NodeSchool Tokyo",
@@ -273,6 +358,18 @@
           "website": "http://nodeschool.io/xian",
           "twitter": "",
           "repo": "https://github.com/nodeschool/xian"
+        },
+        {
+          "name": "Yazd NodeSchool",
+          "location": "Yazd,Yazd",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/yazd"
         }
       ]
     },
@@ -457,20 +554,6 @@
           "repo": "https://github.com/nodeschool/lodz"
         },
         {
-          "name": "NodeSchool Madrid",
-          "location": "Madrid",
-          "country": "ES",
-          "region": "Europe",
-          "organizers": [
-            "alexfernandez",
-            "gootyfer",
-            "javiervelezreyes"
-          ],
-          "website": "http://nodeschool.io/madrid",
-          "twitter": "@NodeJsMadrid",
-          "repo": "http://github.com/nodeschool/madrid"
-        },
-        {
           "name": "London NodeSchool",
           "location": "London",
           "country": "UK",
@@ -484,6 +567,20 @@
           "website": "http://nodeschool.io/london",
           "twitter": "",
           "repo": "http://github.com/nodeschool/london"
+        },
+        {
+          "name": "NodeSchool Madrid",
+          "location": "Madrid",
+          "country": "ES",
+          "region": "Europe",
+          "organizers": [
+            "alexfernandez",
+            "gootyfer",
+            "javiervelezreyes"
+          ],
+          "website": "http://nodeschool.io/madrid",
+          "twitter": "@NodeJsMadrid",
+          "repo": "http://github.com/nodeschool/madrid"
         },
         {
           "name": "NodeSchool Moscow",
@@ -555,6 +652,18 @@
           "repo": "https://github.com/nodeschool/silesia"
         },
         {
+          "name": "Saint Petersburg NodeSchool",
+          "location": "Saint Petersburg",
+          "country": "RU",
+          "region": "Europe",
+          "organizers": [
+            "marinintim"
+          ],
+          "website": "http://nodeschool.io/spb",
+          "twitter": "",
+          "repo": "https://github.com/nodeschool/spb"
+        },
+        {
           "name": "Nodeschool Stavanger",
           "location": "Stavanger",
           "country": "NO",
@@ -585,18 +694,6 @@
           ],
           "website": "http://nodeschool.io/stuttgart",
           "repo": "http://github.com/nodeschool/stuttgart"
-        },
-        {
-          "name": "Saint Petersburg NodeSchool",
-          "location": "Saint Petersburg",
-          "country": "RU",
-          "region": "Europe",
-          "organizers": [
-            "marinintim"
-          ],
-          "website": "http://nodeschool.io/spb",
-          "twitter": "",
-          "repo": "https://github.com/nodeschool/spb"
         }
       ]
     },
@@ -782,7 +879,7 @@
     },
     {
       "region": "North America",
-      "count": 28,
+      "count": 29,
       "chapters": [
         {
           "name": "NodeSchool ATL",
@@ -913,6 +1010,18 @@
             "onel0p3z"
           ],
           "repo": "http://github.com/nodeschool/fort-lauderdale"
+        },
+        {
+          "name": "Gainesville, FL NodeSchool",
+          "location": "Gainesville, FL",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "aaronbdixon"
+          ],
+          "website": "http://gnvjs.com",
+          "twitter": "gnvjs",
+          "repo": "http://github.com/nodeschool/gainesville"
         },
         {
           "name": "NodeSchool Wisconsin",
@@ -1159,97 +1268,6 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/vancouver"
         }
-      ]
-    },
-        {
-      "region": "Middle East",
-      "count": 8,
-      "chapters": [
-                {
-          "name": "Amman NodeSchool",
-          "location": "Amman",
-          "country": "JO",
-          "region": "Asia",
-          "organizers": [
-            "samuraik",
-            "rashad612"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/amman"
-        },
-       {
-          "name": "IRN NodeSchool",
-          "location": "Babol / Mazandaran",
-          "country": "IR",
-          "region": "Middle East",
-          "organizers": [
-            "NIT"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/iran"
-       },   
-       {
-          "name": "Karaj NodeSchool",
-          "location": "Karaj",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr"],
-          "website": "http://karaj.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/karaj"
-      },
-       {
-          "name": "Isfahan NodeSchool",
-          "location": "Isfahan",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr"],
-          "website": "http://isfahan.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/isfahan"
-       },
-       {
-          "name": "Mashhad NodeSchool",
-          "location": "Mashhad",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr"],
-          "website": "http://mashhad.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/mashhad"
-      },
-       {
-          "name": "Shiraz NodeSchool",
-          "location": "Shiraz",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr"],
-          "website": "http://shiraz.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/shiraz"
-      },
-      {
-          "name": "Tabriz NodeSchool",
-          "location": "Tabriz",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr"],
-          "website": "http://tabriz.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/tabriz"
-      },
-     {
-          "name": "Tehran NodeSchool",
-          "location": "Tehran",
-          "country": "Iran",
-          "region": "Middle East",
-          "organizers": ["ArianSotoudehMehr,Behrad"],
-          "website": "http://tehran.nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/tehran"
-      }
       ]
     },
     {
