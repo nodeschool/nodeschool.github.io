@@ -13,7 +13,7 @@ xhr({url: 'languages/languages.json', json: true}, function (error, response, re
   
   $(document.body).on( "click", "a.switch-lang", function(e) {
     e.preventDefault()
-    var lang = $(e.target).attr('data-lang')
+    var lang = $(e.target).attr('lang')
     translateToLang(lang, languages, i18nSpecifiers)
     return false
   })
@@ -68,7 +68,7 @@ function translateHTML(lang, translation, i18nSpecifiers) {
 function createLangButton(lang, langName, selectedLang) {
   return $('<li class="nav-lang-' + lang + '">')
     .toggleClass("selected", lang === selectedLang)
-    .html(lang === selectedLang ? langName : '<a href="#" class="switch-lang" data-lang="' + lang + '">' + langName + '</a>')
+    .html(lang === selectedLang ? langName : '<a href="#" class="switch-lang" lang="' + lang + '">' + langName + '</a>')
 }
 
 function addTranslationNav(selectedLang, languages) {
