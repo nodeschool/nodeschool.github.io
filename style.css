@@ -23,15 +23,10 @@ hr {border: 2px solid #333; margin: 0;}
 
 header {color: #333; background-image: url('images/test-bg.png'); background-size: 25%; background-position: 0 -100px; z-index: -1; display: block; background-color: #FFE51F; background-blend-mode: multiply; }
 header h1 {font-size: 500%; font-weight: 900; margin-bottom: 0px; margin-top: 20px; line-height: 1;}
-header h1:hover { cursor: pointer; cursor: grabbing; cursor: -webkit-grabbing; }
-header h1 span { display: inline-block; margin: 0 -0.1em; padding: 0; overflow: hidden; width: auto; transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955); line-height: 1; }
 
 header .big-link { color: #333; font-weight: bold; border-color: #333;}
 header .big-link:hover { border-color: #777; color: #777; }
-header h1 span.apostrophe { max-width: 0px; opacity: 0;}
-header h1 span.apostrophe:before { content: "\2019";}
-header h1 span.c { }
-header h1 span.h { transition-duration: 0.2s; max-width: 100px; }
+header h1 { text-transform: uppercase; }
 
 header h3 { font-size: 1.5em; font-weight: 500; margin: 10px 0 0 0; }
 header .full { width: 47%; }
@@ -180,12 +175,6 @@ footer p {margin: 0; padding: 0;}
 footer .container {padding: 0 40px;}
 
 .hexdex img.hex {width: 240px; padding: 10px;}
-
-@media (min-width: 1366px) {
-  header h1:hover span.apostrophe { margin-right: -12px; max-width: 100px; opacity: 1; }
-  header h1:hover span.c { padding-left: 44px; margin-right: -12px; }
-  header h1:hover span.h { max-width: 0px; opacity: 0;}
-}
 
 @media (max-width: 768px) {
   .container {padding: 20px;}
