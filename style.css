@@ -211,3 +211,25 @@ footer .container {padding: 0 40px;}
   ul.inner-nav li {display: inline-block; line-height: 3em;}
   .window-pane { display: none; }
 }
+
+/* skip naviation links */
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+}
+
+a.skip:active, 
+a.skip:focus, 
+a.skip:hover {
+    left: 0; 
+    top: 0;
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
+}
