@@ -3,8 +3,8 @@ body {margin: 0; padding: 0; overflow: auto; font-family: Source Sans Pro; color
 /*#ee3c30 rgb(238, 60, 48)*/
 /*#AAA688*/
 
-h2 {font-size: 3em; margin: 10px 0;}
-h3 {font-size: 2em;}
+h1, .big-heading {font-size: 3em; margin: 10px 0;}
+h2, h3 {font-size: 2em;}
 h3 a { color: black; }
 
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px; line-height: 20px;}
@@ -108,7 +108,7 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 
 .third {width: 30%; display: inline-block; vertical-align: top; }
 .third + .third {padding-left: 30px;}
-.third p, .third h3, .third h2 {margin-top: 0; line-height: 28px;}
+.third p, .third h3, .third h4 {margin-top: 0; line-height: 28px;}
 
 .full {width: 63%; text-align: center; margin: 0 auto;}
 .full p {font-size: 26px;}
@@ -119,14 +119,14 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 .two-thirds + .third {padding-left: 30px;}
 .third + .two-thirds {padding-left: 30px;}
 
-.core-workshoppers h2,
-.elective-workshoppers h2 {font-weight: 500;}
+.core-workshoppers h3,
+.elective-workshoppers h3 {font-weight: 500; font-size: 3em; margin: 10px 0}
 
-.workshopper h3 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
-.elective-workshoppers h3 a {background: #333; color: #fff;}
-.core-workshoppers h3 a {background: #FFE51F; color: #333; }
-.elective-workshoppers h3 a:hover {background: #000; }
-.core-workshoppers h3 a:hover {background: #F7DA03;}
+.workshopper h4 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
+.elective-workshoppers h4 a {background: #333; color: #fff;}
+.core-workshoppers h4 a {background: #FFE51F; color: #333; }
+.elective-workshoppers h4 a:hover {background: #000; }
+.core-workshoppers h4 a:hover {background: #F7DA03;}
 
 .workshopper {padding-bottom: 20px;}
 .workshopper p{ min-height: 2.8em;}
@@ -177,6 +177,7 @@ footer .container {padding: 0 40px;}
 .hexdex img.hex {width: 240px; padding: 10px;}
 
 @media (max-width: 768px) {
+  h1 { font-size: 2.0em; }
   .container {padding: 20px;}
   .first-photo {background-image: none;}
   p {font-size: 1em;}
@@ -203,11 +204,11 @@ footer .container {padding: 0 40px;}
   header .full { width: 80%; }
   .full p { font-size: 16px; }
   h2 { font-size: 18px; }
-  h3 { font-size: 16px; }
+  h4 { font-size: 16px; }
   .container { padding: 20px; }
   header .container { padding: 20px; }
   .full { width: 95%; }
-  .core-workshoppers h3 a, .elective-workshoppers h3 a { font-size: 16px; }
+  .core-workshoppers h4 a, .elective-workshoppers h4 a { font-size: 16px; }
   ul.inner-nav li {display: inline-block; line-height: 3em;}
   .window-pane { display: none; }
 }

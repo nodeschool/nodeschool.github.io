@@ -88,7 +88,6 @@ function addTranslationNav(selectedLang, languages) {
 // skip navigation polyfill, partly from: http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
 $(window)
   .on('hashchange', function(event) {
-    console.log(11)
     var element = document.getElementById(location.hash.substring(1))
     if (element) {
       if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
