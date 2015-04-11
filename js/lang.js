@@ -13,7 +13,7 @@ xhr({url: 'languages/languages.json', json: true}, function (error, response, re
   
   $(document.body).on( "click", "a.switch-lang", function(e) {
     e.preventDefault()
-    var lang = $(e.target).attr('data-lang')
+    var lang = $(e.target).attr('lang')
     translateToLang(lang, languages, i18nSpecifiers)
     return false
   })
@@ -68,7 +68,7 @@ function translateHTML(lang, translation, i18nSpecifiers) {
 function createLangButton(lang, langName, selectedLang) {
   return $('<li class="nav-lang-' + lang + '">')
     .toggleClass("selected", lang === selectedLang)
-    .html(lang === selectedLang ? langName : '<a href="#" class="switch-lang" data-lang="' + lang + '">' + langName + '</a>')
+    .html(lang === selectedLang ? langName : '<a href="#" class="switch-lang" lang="' + lang + '">' + langName + '</a>')
 }
 
 function addTranslationNav(selectedLang, languages) {
@@ -80,5 +80,20 @@ function addTranslationNav(selectedLang, languages) {
   Object.keys(languages).forEach(function(key) {
     createLangButton(key, languages[key], selectedLang).appendTo(nav)
   })
-  nav.insertBefore("header > *:first-child")
+  $('header > *:first-child')
+    .before('<a class="skip" href="#main">Skip to Content</a>')
+    .before(nav)
 }
+
+// skip navigation polyfill, partly from: http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+$(window)
+  .on('hashchange', function(event) {
+    var element = document.getElementById(location.hash.substring(1))
+    if (element) {
+      if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
+        element.tabIndex = -1
+      }
+      element.focus()
+    }
+  })
+  .trigger('hashchange')

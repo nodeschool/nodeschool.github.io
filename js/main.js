@@ -134,7 +134,7 @@ function makeMap(data) {
   sorted.forEach(fixLatLong)
 
   var optionsJSON = ["name", "website", "startdate", "state"]
-  var template = "<p class='event'>{{startdate}} <a class='{{state}}' href='{{website}}'"
+  var template = "<p class='event'><time>{{startdate}}</time> <a class='{{state}}' href='{{website}}'"
     + " target='_blank'>{{name}}</a><p>"
 
   var map = Sheetsee.loadMap("map")
@@ -148,6 +148,7 @@ function makeMap(data) {
       marker.setIcon(L.divIcon({
               // Specify a class name we can refer to in CSS.
               className: 'past-event',
+        
               // Set a markers width and height.
               iconSize: [7, 7]
           }))
