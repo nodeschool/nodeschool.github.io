@@ -1,5 +1,5 @@
 {
-  "total": 98,
+  "total": 99,
   "regions": [
     {
       "region": "Africa",
@@ -375,7 +375,7 @@
     },
     {
       "region": "Europe",
-      "count": 23,
+      "count": 24,
       "chapters": [
         {
           "name": "Amsterdam NodeSchool",
@@ -694,6 +694,20 @@
           ],
           "website": "http://nodeschool.io/stuttgart",
           "repo": "http://github.com/nodeschool/stuttgart"
+        },
+        {
+          "name": "Vienna NodeSchool",
+          "location": "Vienna",
+          "country": "AT",
+          "region": "Europe",
+          "organizers": [
+            "thomaspeklak",
+            "shm",
+            "saintedlama"
+          ],
+          "website": "http://nodeschool.io/vienna",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/vienna"
         }
       ]
     },
