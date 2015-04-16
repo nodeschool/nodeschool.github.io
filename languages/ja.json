@@ -96,7 +96,6 @@
   "events-future": "開催予定",
   "events-header2": "<span id=\\\"event-count\\\">たくさん</span>のイベントが開催!!",
   "events-header3": "イベントを開催される方は<a target=\"_blank\" href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\">こちら</a>で登録をお願いします。",
-  "events-small": "If you need to edit an event you&apos;ve submitted, <a href=\"https://github.com/nodeschool/organizers/issues/new\">file an issue on nodeschool/organizers.</a>",
   "events-small": "登録したイベントを編集する必要がある場合は、<a href=\"https://github.com/nodeschool/organizers/issues/new\">nodeschool/organizers にissueを登録してください。</a>",
   "chapters-header": "定期的にNodeSchoolのイベントを開催している都市の一覧です。 チャプター別 ⬢ 六角形ロゴ の一覧は、<a href=\"hexdex.html\">hexdex</a> をご覧ください。",
   "chapters-europe": "ヨーロッパ",
