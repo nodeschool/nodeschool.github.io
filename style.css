@@ -7,6 +7,12 @@ h1, .big-heading {font-size: 3em; margin: 10px 0;}
 h2, h3 {font-size: 2em;}
 h3 a { color: black; }
 
+#international { border-top: 3px solid black; }
+#international img {
+  height: auto;
+  width: 100%;
+}
+
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px; line-height: 20px;}
 
 img {width: 100%;}
