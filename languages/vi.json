@@ -146,7 +146,7 @@
   "workshopper-shader-school": "Học cơ bản về lập trình đồ họa với GLSL shaders.",
   "workshopper-bytewiser": "Học cách thao tác với dữ liệu nhị phân (binary data) trong node.js và trình duyệt HTML5.",
   "workshopper-bug-clinic": "Học một vài công cụ, kĩ thuật mới để nâng cao kĩ năng gỡ lỗi (debug).",
-  "workshopper-browserify-adventure": "Sử dụng các mô-đun npm và require() như lập trình với node trên trình duyệt với browserify.",
+  "workshopper-browserify-adventure": "Sử dụng các mô-đun của Nodejs trên trình duyệt với browserify.",
   "workshopper-introtowebgl": "Làm quen với three.js và WebGL.",
   "workshopper-count-to-6": "Học cách sử dụng một vài tính năng mới của ES6, phiên bản tiếp theo của JavaScript.",
   "workshopper-kick-off-koa": "Cơ bản về Koa, thế hệ framework web tiếp theo cho Node.js.",
