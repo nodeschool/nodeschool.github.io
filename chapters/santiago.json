@@ -1,0 +1,10 @@
+{
+  "name": "Santiago NodeSchool",
+  "location": "Santiago",
+  "country": "CL",
+  "region": "South America",
+  "organizers": ["forres","noderscl","maetschl","josev55"],
+  "website": "www.noders.cl",
+  "twitter": "noderscl",
+  "repo": "http://github.com/nodeschool/Santiago"
+}
