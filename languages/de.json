@@ -145,5 +145,7 @@
   "workshopper-lololodash": "Lerne Lo-Dash (einem Fork von underscore) für den Umgang mit Objekten und Arrays!",
   "workshopper-learnyoucouchdb": "Lerne CouchDB kennen – die Datenbank mit Web-Technologien im Kern",
   "workshopper-learnuv": "Lerne libuv kennen, die Bibliothek, die unter der Haube von Node.JS steckt.",
-  "workshopper-test-anything": "Lerne deinen Code zu testen"
+  "workshopper-test-anything": "Lerne deinen Code zu testen",
+  "banner-international-day": "Internationaler Tag",
+  "banner-international-day-date": "Samstag, 23. Mai 2015"
 }
