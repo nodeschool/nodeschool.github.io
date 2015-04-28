@@ -156,5 +156,8 @@
   "host-recommendation-list-5": "会場のWifiやネットワークが足りるかどうか不安であれば、オフライン策も用意したほうがいいでしょう。",
   "host-recommendation-list-6": "必要であれば、現地の開発会社にWifi、飲み物、食べ物、会場などについてサポートをお願いしてみましょう。",
   "host-reports-header": "過去のイベントの記事",
-  "host-reports-info": "以前に開催されたイベントの詳細なレポート記事をリストします。開催形式や進行管理の参考にしてください。"
+  "host-reports-info": "以前に開催されたイベントの詳細なレポート記事をリストします。開催形式や進行管理の参考にしてください。",
+  "hexdex-h1": "Hexdex",
+  "hexdex-header": "<a href=\"chapters.html\">NodeSchoolのチャプター</a>の六角形アイコンの一覧です。",
+  "hexdex-make-logo": "<a href=\"https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker\">このテンプレート</a>を使ってあなたのチャプターのものを作成してください。"
 }
