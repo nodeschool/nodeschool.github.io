@@ -11,6 +11,7 @@ h3 a { color: black; }
   border-top: 3px solid black; 
   background-image: url(/images/international-day-bg.jpg);
   background-position: center;
+  background-size: cover;
   text-align: center;
   padding-bottom: 4em;
   text-shadow: 1px 1px 10px #333333;
