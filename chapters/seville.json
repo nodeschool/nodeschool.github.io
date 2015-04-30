@@ -1,0 +1,8 @@
+{
+	"name": "NodeSchool Sevilla",
+	"location": "Seville",
+	"country": "ES",
+	"region": "Europe",
+	"organizers": ["beltran-rubo"],
+	"repo": "http://github.com/nodeschool/seville"
+}
