@@ -1,0 +1,9 @@
+{
+  "name": "Wroclaw NodeSchool",
+  "location": "Wroclaw, Dolnoslaskie",
+  "country": "PL",
+  "region": "Europe",
+  "organizers": ["grabbou"],
+  "website": "http://nodeschool.io/wroclaw",
+  "repo": "http://github.com/nodeschool/wroclaw"
+}
