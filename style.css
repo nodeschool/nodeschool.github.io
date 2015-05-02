@@ -7,8 +7,8 @@ h1, .big-heading {font-size: 3em; margin: 10px 0;}
 h2, h3 {font-size: 2em;}
 h3 a { color: black; }
 
-#international { 
-  border-top: 3px solid black; 
+#international {
+  border-top: 3px solid black;
   background-image: url(/images/international-day-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -136,6 +136,10 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 .half {width: 45%; display: inline-block; vertical-align: top;}
 .half + .half {padding: 0 20px;}
 
+.centered.half { margin-right: 25%; margin-left: 25%;}
+.centered.third { margin-right: 33%; margin-left: 33%;}
+.centered.two-thirds { margin-right: 16.5%; margin-left: 16.5%;}
+
 .third {width: 30%; display: inline-block; vertical-align: top; }
 .third + .third {padding-left: 30px;}
 .third p, .third h3, .third h4 {margin-top: 0; line-height: 28px;}
@@ -233,8 +237,9 @@ footer .container {padding: 0 40px;}
   .container {padding: 20px;}
   .first-photo {background-image: none;}
   p {font-size: 1em;}
-  .third, .two-thirds, .full {width: 100%;}
+  .third, .two-thirds, .full, .half {width: 100%; }
   .two-thirds + .third, .third + .third, .third + .two-thirds {padding-left: 0;}
+  .half, .two-thirds { margin-left: 0 !important; margin-right: 0 !important; }
   header .container {padding: 40px 20px;}
   header .full { width: 80%; }
   header img {width: 100%; padding: 0;}
@@ -263,12 +268,76 @@ footer .container {padding: 0 40px;}
     background-color: white;
 }
 
-a.skip:active, 
-a.skip:focus, 
+a.skip:active,
+a.skip:focus,
 a.skip:hover {
-    left: 0; 
+    left: 0;
     top: 0;
-    width: auto; 
-    height: auto; 
-    overflow: visible; 
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+
+.mentoring-intro-quote {
+  font-size: 20px;
+  font-style: italic;
+  position: relative;
+}
+
+.mentoring-intro-quote::before {
+  content: "“";
+  position: absolute;
+  left: -0.6em;
+  font-size: 5em;
+  top: -0.3em;
+}
+
+@media only screen and (min-width : 768px) {
+  .mentoring-intro-quote::before {
+    font-size: 10em;
+  }
+}
+
+
+.mentoring-header-full-width {
+  background-image: url('images/mentoring-by-oleharland-cropped.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+
+  position: relative;
+}
+
+.mentoring-headline-container {
+  position: absolute;
+  /*bottom: 0em;*/
+
+  background-color: rgba(00,00,00,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.mentoring-headline-container .container {
+  height: 100%;
+  /*width: 100%;*/
+  position: relative;
+}
+
+
+
+.mentoring-headline {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 94%;
+  text-align: center;
+}
+
+@media only screen and (min-width : 1366px) {
+  .mentoring-headline {
+    bottom: 5em;
+  }
 }
