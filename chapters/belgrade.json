@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Belgrade",
+  "location": "Belgrade",
+  "country": "RS",
+  "region": "Europe",
+  "organizers": ["stojanovic", "aysbg", "simalexan"],
+  "website": "http://nodeschool.io/belgrade",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/belgrade"
+}
