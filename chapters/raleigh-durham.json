@@ -1,0 +1,10 @@
+{
+  "name": "Raleigh-Durham NodeSchool",
+  "location": "Raleigh-Durham, NC",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["brianpmarks","jbelmont"],
+  "website": "http://nodeschool.io/raleigh-durham",
+  "twitter": "rdunodeschool",
+  "repo": "http://github.com/nodeschool/raleigh-durham"
+}
