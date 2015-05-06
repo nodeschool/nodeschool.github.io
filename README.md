@@ -31,7 +31,7 @@ If you've added a new local chapter, don't forget to run `npm build` before subm
 
 ## Translations
 
-If you would like to translate the nodeschool site into another language please make a pull request adding `languages/<language code>.json`.
+If you would like to translate the NodeSchool site into another language please make a pull request adding `languages/<language code>.json`.
 
 To generate a new language file template automatically, run the following commands inside a clone of this repository:
 
@@ -44,16 +44,28 @@ This will prompt you to enter a language code and will generate your language fi
 
 When picking your language code, please use the correct code from the first column of this spreadsheet: http://en.wikiversity.org/wiki/ISO_639-1_language_matrix
 
-The way translations are implemented is using 100% client-side javascript. When the page is loaded the users browser locale is detected (using [browser-locale](http://npmjs.org/browser-locale)) and a XHR request is made to the `languages` folder to try and fetch a JSON translation file for that locale. First we check for the full 5 character locale file (e.g. `en-us`) and if that doesn't exist we fallback to the 2 character version (`en`) and if that doesn't exist we just do nothing and show the default English version.
+The way translations are implemented is using 100% client-side JavaScript. When the page is loaded the users browser locale is detected (using [browser-locale](http://npmjs.org/browser-locale)) and a XHR request is made to the `languages` folder to try and fetch a JSON translation file for that locale. First we check for the full 5 character locale file (e.g. `en-us`) and if that doesn't exist we fallback to the 2 character version (`en`) and if that doesn't exist we just do nothing and show the default English version.
 
 Translation files are a mapping of translations IDs to the translated strings. There is a separate file called `languages/selectors.json` which maps CSS selectors in markup to the translation IDs.
 
 The good things about this approach:
 
 - The site remains a static site. This means that contributing to the site is really easy as the entire site is just flat HTML, CSS, JS and JSON files
-- When PRs get merged they are immediately deployed live to GitHub pages. This makes maintainence really nice as there is no manual deploy step.
+- When PRs get merged they are immediately deployed live to GitHub pages. This makes maintenance really nice as there is no manual deploy step.
 
 The drawbacks of this approach:
 
 - Only the English (default) version is indexed by search engines
 - The English version briefly appears on page loads before the translated version is swapped in
+
+### Update Translations
+
+Are you not sure what translations is missing? Don't worry! :)
+Just run this command:
+
+```
+npm install
+npm run untranslated-list
+```
+
+You will find untranslated IDs in `languages/xx.untranslated.json`.

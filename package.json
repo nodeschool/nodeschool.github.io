@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node ./scripts/compile-chapters.js && browserify -r xhr -r browser-locale -r mustache > js/dependencies.js",
     "language": "node ./scripts/generate_lang.js",
+    "untranslated-list": "node ./scripts/generate_untranslated_lang.js",
     "validate-html": "node ./scripts/validate_html",
     "start": "http-server",
     "deploy": "sh ./scripts/deploy.sh"
