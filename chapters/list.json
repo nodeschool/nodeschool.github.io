@@ -1,5 +1,5 @@
 {
-  "total": 107,
+  "total": 108,
   "regions": [
     {
       "region": "Africa",
@@ -63,6 +63,18 @@
       "count": 25,
       "chapters": [
         {
+          "name": "Pune Nodeschool",
+          "location": "Pune",
+          "country": "IN",
+          "region": "Asia",
+          "organizers": [
+            "adroittech"
+          ],
+          "website": "http://github.com/nodeschool/pune",
+          "twitter": "niravfaldu",
+          "repo": "http://github.com/nodeschool/pune"
+        },
+        {
           "name": "Amman NodeSchool",
           "location": "Amman",
           "country": "JO",
@@ -74,18 +86,6 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/amman"
-        },
-        {
-          "name": "Pune Nodeschool",
-          "location": "Pune",
-          "country": "IN",
-          "region": "Asia",
-          "organizers": [
-            "adroittech"
-          ],
-          "website": "http://github.com/nodeschool/pune",
-          "twitter": "niravfaldu",
-          "repo": "http://github.com/nodeschool/pune"
         },
         {
           "name": "NodeSchool Bali",
@@ -968,7 +968,7 @@
     },
     {
       "region": "North America",
-      "count": 30,
+      "count": 31,
       "chapters": [
         {
           "name": "NodeSchool ATL",
@@ -1276,6 +1276,17 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/portland-me",
           "other": "http://www.meetup.com/Portland-Maine-Nodeschool"
+        },
+        {
+          "name": "NodeSchool SLO",
+          "location": "San Luis Obispo, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "ecwyne"
+          ],
+          "website": "http://nodeschool.io/san-luis-obispo/",
+          "repo": "http://github.com/nodeschool/san-luis-obispo"
         },
         {
           "name": "NodeSchool SF",
