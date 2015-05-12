@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Reno",
+  "location": "Reno, NV",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["colinloretz", "hmudesign", "w1zeman1p"],
+  "website": "http://nodeschool.io/reno/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/reno"
+}
