@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Seoul",
+  "location": "Seoul",
+  "country": "KR",
+  "region": "Asia",
+  "organizers": ["xarus01"],
+  "website": "http://nodeschool.io/seoul/",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/seoul",
+  "gitter": "https://gitter.im/nodeschool/nodeschool/seoul"
+}
