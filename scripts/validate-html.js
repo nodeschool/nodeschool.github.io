@@ -4,7 +4,7 @@
 var fs = require('fs');
 var cheerio = require('cheerio');
 var afterAll = require('after-all');
-var path = require('path')
+var path = require('path');
 
 validateDirectory(path.join(__dirname, '..'))
 

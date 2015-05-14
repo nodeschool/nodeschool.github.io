@@ -4,11 +4,15 @@
   "description": "nodeschool.io webpage",
   "main": "index.js",
   "scripts": {
-    "build": "node ./scripts/compile-chapters.js && browserify -r xhr -r browser-locale -r mustache > js/dependencies.js",
-    "language": "node ./scripts/generate_lang.js",
-    "untranslated-list": "node ./scripts/generate_untranslated_lang.js",
-    "validate-html": "node ./scripts/validate_html",
-    "start": "http-server",
+    "build": "npm run build-chapters -- $P; npm run build-dependencies; npm run build-copy -- $P; npm run build-html -- $P",
+    "build-copy": "./scripts/build-copy.js $$",
+    "build-html": "./scripts/build-html.js $$",
+    "build-chapters": "./scripts/build-chapters.js $$",
+    "build-dependencies": "browserify -r xhr -r browser-locale -r mustache > js/dependencies.js",
+    "generate-language": "./scripts/generate-lang.js",
+    "generate-untranslated-list": "./scripts/generate-untranslated-list.js",
+    "validate-html": "./scripts/validate-html.js",
+    "start": "mkdir -p .build; env WATCH=true P=$$ npm run build && live-server .build",
     "deploy": "sh ./scripts/deploy.sh"
   },
   "repository": {
@@ -23,16 +27,22 @@
   "homepage": "https://github.com/nodeschool/nodeschool.github.io",
   "dependencies": {
     "browser-locale": "^1.0.0",
-    "xhr": "^1.16.1",
-    "mustache": "^0.8.2"
+    "is-running": "^1.0.5",
+    "mustache": "^0.8.2",
+    "xhr": "^1.16.1"
   },
   "devDependencies": {
     "after-all": "^2.0.1",
+    "async": "^0.9.0",
     "browserify": "^6.2.0",
     "cheerio": "^0.17.0",
     "cheerio-eq": "^1.0.0",
-    "http-server": "^0.7.2",
-    "read": "^1.0.5",
-    "glob": "^4.0.6"
+    "gaze": "^0.5.1",
+    "glob": "^5.0.6",
+    "jsdom": "^3.1.2",
+    "live-server": "^0.7.1",
+    "mkdirp": "^0.5.1",
+    "posix": "^2.0.1",
+    "read": "^1.0.5"
   }
 }

@@ -1,5 +1,7 @@
-var fs = require('fs')
-  , glob = require('glob');
+#!/usr/bin/env node
+const Fs = require('fs')
+const cmdwatcher = require('./util/cmdwatcher')
+const mkdirp = require('mkdirp')
 
 function groupByValue(list, grouper, groupName) {
   var grouped = {}
@@ -32,10 +34,10 @@ function sortedGroupByValue(list, grouper, groupName) {
 
 var chapters = [];
 
-glob('./chapters/!(list).json', function (err, files) {
-
+cmdwatcher('build-chapters'
+  , './chapters/!(list).json', function (files) {
   files.forEach(function (f) {
-    fs.readFile(f, function (err, buf) {
+    Fs.readFile(f, function (err, buf) {
       if (err) {
         return console.error(err);
       }
@@ -52,7 +54,6 @@ glob('./chapters/!(list).json', function (err, files) {
       }
     });
   });
-
 });
 
 function writeChapters(chapters) {
@@ -60,7 +61,8 @@ function writeChapters(chapters) {
     total: chapters.length,
     regions: sortedGroupByValue(chapters, 'region', 'chapters') 
   };
-  fs.writeFile('./chapters/list.json', JSON.stringify(data, null, 2), function (err) {
+  mkdirp.sync('.build/chapters')
+  Fs.writeFile('.build/chapters/list.json', JSON.stringify(data, null, 2), function (err) {
     if (err) console.error(err);
   });
 }
