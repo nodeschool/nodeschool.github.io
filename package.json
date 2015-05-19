@@ -8,7 +8,7 @@
     "build-copy": "./scripts/build-copy.js $$",
     "build-html": "./scripts/build-html.js $$",
     "build-chapters": "./scripts/build-chapters.js $$",
-    "build-dependencies": "browserify -r xhr -r mustache > .build/js/dependencies.js",
+    "build-dependencies": "mkdir -p .build/js; browserify -r xhr -r mustache > .build/js/dependencies.js",
     "generate-language": "./scripts/generate-lang.js",
     "generate-untranslated-list": "./scripts/generate-untranslated-list.js",
     "validate-html": "./scripts/validate-html.js",
