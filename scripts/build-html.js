@@ -96,6 +96,8 @@ cmdwatcher('build-html'
 		}
 		translations['en'] = original
 
+		var html = dom.querySelector('html')
+
 		var nav = addTranslationNav(dom, file, languages)
 
 		Object.keys(languages).forEach(function (lang) {
@@ -103,6 +105,8 @@ cmdwatcher('build-html'
 			  , outputPath = Path.join('.build/', (lang === 'en' ? '' : lang + '/'), file)
 			  , outputDir = Path.dirname(outputPath)
 			  , output
+			html.setAttributeNode(dom.createAttribute('lang'))
+			html.attributes.lang.value = lang
 			if (list) {
 				try {
 					for (var i = 0; i < list.length; i++) {
