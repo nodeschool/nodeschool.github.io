@@ -1,0 +1,404 @@
+<!DOCTYPE html><html class="index" lang="id"><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/mapbox.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeSchool</title>
+  <link rel="alternate" href="/ru/" hreflang="ru"><link rel="alternate" href="/pt-br/" hreflang="pt-br"><link rel="alternate" href="/pt-pt/" hreflang="pt-pt"><link rel="alternate" href="/fi/" hreflang="fi"><link rel="alternate" href="/sv/" hreflang="sv"><link rel="alternate" href="/ko/" hreflang="ko"><link rel="alternate" href="/ja/" hreflang="ja"><link rel="alternate" href="/uk/" hreflang="uk"><link rel="alternate" href="/zh-tw/" hreflang="zh-tw"><link rel="alternate" href="/zh-cn/" hreflang="zh-cn"><link rel="alternate" href="/pl/" hreflang="pl"><link rel="alternate" href="/tr/" hreflang="tr"><link rel="alternate" href="/vi/" hreflang="vi"><link rel="alternate" href="/" hreflang="en"><link rel="alternate" href="/de/" hreflang="de"><link rel="alternate" href="/es/" hreflang="es"><link rel="alternate" href="/fr-fr/" hreflang="fr-fr"></head>
+  <body>
+    <script type="text/javascript">
+      (function (doc, nav, ls) {
+        if (!ls || ls.getItem('firstRedirect')) return
+
+        ls.setItem('firstRedirect', true)
+
+        function getLinks() {
+          var nodes = doc.querySelectorAll('link[rel=alternate][hreflang]')
+            , langLinks = {}
+          for (var i=0; i < nodes.length; i++) {
+            var attrs = nodes[i].attributes
+            langLinks[attrs.hreflang.nodeValue] = attrs.href.nodeValue
+          }
+          return langLinks
+        }
+
+        var lang = (
+                   ls.getItem('lang')
+                || (nav.languages && nav.languages[0])
+                || nav.userLanguage
+                || nav.language
+                || 'en-US'
+            ).toLowerCase()
+          , docLang = doc.querySelector("html").attributes.lang.nodeValue
+          , langLinks = getLinks()
+
+        var langLink = langLinks[lang] || langLinks[lang.substr(0,2)] || langLinks['en']
+
+        if (langLink)
+          doc.location.href = langLink
+
+      })(document, navigator, localStorage)
+    </script>
+    <header>
+      <a class="skip" href="#main">Skip to Content</a><ul class="nav-lang"><li class="nav-lang-idselected">Bahasa Indonesia</li><li class="nav-lang-de"><a href="/de/" class="switch-lang" lang="de">Deutsch</a></li><li class="nav-lang-en"><a href="/" class="switch-lang" lang="en">English</a></li><li class="nav-lang-es"><a href="/es/" class="switch-lang" lang="es">Español</a></li><li class="nav-lang-fr-fr"><a href="/fr-fr/" class="switch-lang" lang="fr-fr">Français</a></li><li class="nav-lang-pl"><a href="/pl/" class="switch-lang" lang="pl">Polski</a></li><li class="nav-lang-pt-br"><a href="/pt-br/" class="switch-lang" lang="pt-br">Português (Brasil)</a></li><li class="nav-lang-pt-pt"><a href="/pt-pt/" class="switch-lang" lang="pt-pt">Português (Europeu)</a></li><li class="nav-lang-fi"><a href="/fi/" class="switch-lang" lang="fi">Suomi</a></li><li class="nav-lang-sv"><a href="/sv/" class="switch-lang" lang="sv">Svenska</a></li><li class="nav-lang-vi"><a href="/vi/" class="switch-lang" lang="vi">Tiếng Việt</a></li><li class="nav-lang-tr"><a href="/tr/" class="switch-lang" lang="tr">Türkçe</a></li><li class="nav-lang-ru"><a href="/ru/" class="switch-lang" lang="ru">Русский</a></li><li class="nav-lang-uk"><a href="/uk/" class="switch-lang" lang="uk">Українською</a></li><li class="nav-lang-ja"><a href="/ja/" class="switch-lang" lang="ja">日本語</a></li><li class="nav-lang-zh-tw"><a href="/zh-tw/" class="switch-lang" lang="zh-tw">正體中文</a></li><li class="nav-lang-zh-cn"><a href="/zh-cn/" class="switch-lang" lang="zh-cn">简体中文</a></li><li class="nav-lang-ko"><a href="/ko/" class="switch-lang" lang="ko">한국어</a></li></ul><div class="container">
+        <div class="full">
+          <img src="/images/schoolhouse.svg" alt="nodeschool logo">
+          <h1 class="name">nodeschool</h1>
+          <p class="subtitle" data-i18n="index-header-top">Pelatihan berbasis Open Source yang mengajarkan ketrampilan web software. Selenggarakan workshop atau bergabung dengan workshop di sekitar anda.</p>
+          <nav role="navigation">
+            <ul class="nav">
+              <li><a href="#workshoppers" data-i18n="menu-tutorials">Tutorial</a></li>
+              <li><a href="events.html" data-i18n="menu-events">Event</a></li>
+              <li><a href="chapters.html" data-i18n="menu-chapters">Cabang</a></li>
+              <li><a href="about.html" data-i18n="menu-about">About</a></li>
+              <li><a href="building-workshops.html" data-i18n="menu-building-workshops">Membangun</a></li>
+              <li><a href="host.html" data-i18n="menu-host">Penyelenggara</a></li>
+            </ul>
+          </nav>
+          <p data-i18n="index-header-bottom">Ayo, mulai dengan memasang satu dari empat <a class="big-link" href="#workshopper-list">workshop inti</a> atau berlangganan gratis <a class="big-link" href="https://tinyletter.com/nodeschool" target="_blank">email newsletter</a> kami.</p>
+        </div>
+      </div>
+    </header>
+    <div role="banner" id="international">
+      <a href="/international-day">
+        <img src="/images/international-day-logo.png" alt="International Day Logo">
+      </a>
+      <h3 data-i18n="banner-international-day">International Day</h3>
+      <time datetime="2015-05-23" data-i18n="banner-international-day-date">Saturday, May 23, 2015</time>
+    </div>
+    <div id="main" name="main" role="main">
+    <section>
+    <div class="container workshop-header" style="background-color: #fff;">
+      <div class="full">
+        <h2 class="big-heading" data-i18n="index-workshop-header">Workshop</h2>
+        <p data-i18n="index-workshop-info">Workshop ini adalah pelatihan yang diadakan oleh perorangan, biasanya gratis, materi workshopper digunakan sebagai kurikulum, dan ada mentor yang akan membantu menyelesaikan tantangan.</p>
+        <nav>
+          <ul class="inner-nav">
+            <li><a href="host.html" data-i18n="index-workshop-links-host">Menyelenggarakan Event Sendiri</a></li>
+            <li><a href="events.html" data-i18n="index-workshop-links-events">Lihat Semua Event</a></li>
+            <li><a href="host.html#writeups" data-i18n="index-workshop-links-writeups">Hasil Event Terdahulu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container workshops" style="background-color: #fff;">
+      <div class="third" aria-hidden="true">
+        <div id="map"></div>
+      </div>
+
+      <div class="third upcoming-workshoppers">
+        <h4 data-i18n="index-upcoming-header">Workshop Yang Akan Datang</h4>
+        <div id="upcoming-workshops">
+          <div class="loading" data-i18n="index-upcoming-loading">Memproses...</div>
+          <div class="empty">
+            <span data-i18n="index-upcoming-no-events">Tidak ada event baru. Check out</span> <a href="events.html" data-i18n="index-upcoming-past-events">event lalu</a><span data-i18n="index-upcoming-past-events2">!</span>
+          </div>
+          <div class="success">
+            <ul></ul>
+            <p><a href="events.html" class="all-events" data-i18n="index-upcoming-all-events">Lihat semua event</a>.</p>
+          </div>
+          <div class="error" data-i18n="index-upcoming-error">Tidak dapat menampilkan event, maaf!</div>
+        </div>
+      </div>
+
+      <div class="third anyone-can-host">
+        <h4 data-i18n="index-host-header">Siapapun bisa menjadi host</h4>
+        <p id="event-count"><span data-i18n="index-host-past">Sampai saat ini telah tercatat sebanyak </span> <strong class="cnt">?</strong> <span data-i18n="index-host-past2">event!</span></p>
+        <p><span data-i18n="index-host-want-to-host">NodeSchool adalah pelatihan yang tersebar, berbasis open source dan di jalankan oleh sukarelawan. Ingin menjadi tuan rumah?</span> <a href="host.html" data-i18n="index-host-want-to-host2">Tips dan materi</a> <span data-i18n="index-host-want-to-host3">tentang petunjuk pelaksanaan teknis.</span></p>
+      </div>
+    </div>
+  </section>
+
+    <section>
+    <div id="workshoppers">
+      <div class="container">
+        <div class="full">
+          <h2 class="big-heading" data-i18n="index-workshopper-header">Materi Tutorial</h2>
+          <p data-i18n="index-workshopper-info">Workshopper adalah nama yang dipakai untuk materi pembelajaran open source yang diselenggarakan oleh NodeSchool. Seluruh materi pembelajaran terpadu secara otomatis (anda tidak perlu menghadiri acara pelatihan untuk melakukan satu) dan umumnya dilakukan secara offline.</p>
+          <nav>
+            <ul class="inner-nav">
+              <li><a href="#workshopper-list" data-i18n="index-workshopper-list-view">Tampilkan Daftar Tutorial</a></li>
+              <li><a href="https://github.com/nodeschool/discussions/issues/new" data-i18n="index-workshopper-list-problem">Silahkan Tanya Bila Buntu</a></li>
+              <li><a href="https://github.com/nodeschool/discussions" data-i18n="index-workshopper-list-faq">Jawab Pertanyaan</a></li>
+              <li><a href="building-workshops.html" data-i18n="index-workshopper-list-host">Membuat Workshop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <code>npm install -g learnyounode</code>
+              <code>learnyounode</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <div class="workshopper">
+                <code>» HELLO WORLD</code>
+                <code>» BABY STEPS</code>
+                <code>» MY FIRST I/O!</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div id="get-going">
+            <h3 data-i18n="index-get-going-header">Selanjutnya —</h3>
+            <p><span data-i18n="index-get-going-info">Pastikan</span> <a href="http://nodejs.org">Node.js</a> <span data-i18n="index-get-going-info2">telah ter-install di komputer anda sebelum memulai.
+ Kemudian gunakan</span> <a href="http://npmjs.org">npm</a> <span data-i18n="index-get-going-info3">(ter-install bersamaan dengan Node) untuk meng-install setiap
+    module dengan menggunakan command di bawah ini. Setelah ter-install,
+    ketik nama workshopper untuk mengaktifkannya.</span></p>
+            <p><span data-i18n="index-get-going-editor">Pastikan juga</span> <strong data-i18n="index-get-going-editor2">Text Editor</strong><span data-i18n="index-get-going-editor3"> telah terinstall. Jika belum, anda bisa gunakan beberapa alternatif text editor sebagai berikut:</span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/2">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://macromates.com/download">Textmate</a><span data-i18n="index-get-going-editor6">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">.</span></p>
+          </div>
+        </div>
+      </div>
+    </div></section>
+
+    <div class="window-pane"><span class="caption">NodeConf, 2014</span></div>
+
+      <div id="workshopper-list" class="container core-workshoppers" style="background-color: #fff;">
+        <div class="third">
+          <h3 data-i18n="index-workshoppers-core-header">Inti</h3>
+          <p data-i18n="index-workshoppers-core-info">Materi workshopper ini mempunyai fokus pada keterampilan dasar yang dibutuhkan dalam pembelajaran Node.js.</p>
+          <p><span data-i18n="index-workshoppers-core-link-pre">Terjebak? Silahkan tanya di</span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-core-link-text">grup diskusi</a><span data-i18n="index-workshoppers-core-link-post">.</span></p>
+        </div>
+        <div class="third">
+          <div id="javascripting" class="workshopper">
+            <h4><a href="https://www.github.com/sethvincent/javascripting" target="_blank">javascripting</a></h4>
+            <p data-i18n="workshopper-javascripting">Belajar dasar pemrograman JavaScript. Pengalaman pemrograman tidak dibutuhkan.</p>
+            <code>npm install -g javascripting</code>
+          </div>
+          <div id="gitit" class="workshopper">
+            <h4><a href="https://www.github.com/jlord/git-it" target="_blank">git-it</a></h4>
+            <p data-i18n="workshopper-gitit">Belajar Git and GitHub dasar.</p>
+            <code>npm install -g git-it</code>
+          </div>
+        </div>
+        <div class="third">
+          <div id="learnyounode" class="workshopper">
+            <h4><a href="https://www.github.com/workshopper/learnyounode" target="_blank">learnyounode</a></h4>
+            <p data-i18n="workshopper-learnyounode">Belajar konsep dasar node.js: asynchronous i/o, http.</p>
+            <code data-i18n="workshopper-learnyounode-command">npm install -g learnyounode</code>
+          </div>
+          <div id="how-to-npm" class="workshopper">
+            <h4><a href="https://github.com/npm/how-to-npm" target="_blank">How to npm</a></h4>
+            <p data-i18n="workshopper-how-to-npm">Learn how to use and create npm modules.</p>
+            <code>npm install -g how-to-npm</code>
+          </div>
+          <div id="streamadventure" class="workshopper">
+            <h4><a href="https://www.github.com/substack/stream-adventure" target="_blank">stream-adventure</a></h4>
+            <p><span data-i18n="workshopper-streamadventure">Belajar menulis kode interface streaming dengan</span><code>.pipe()</code><span data-i18n="workshopper-streamadventure2">.</span></p>
+            <code>npm install -g stream-adventure</code>
+          </div>
+        </div>
+      </div>
+
+    <div class="container elective-workshoppers" style="background-color: #fff;">
+      <div class="third">
+        <h3 data-i18n="index-workshoppers-elective-header">Pilihan</h3>
+        <p data-i18n="index-workshoppers-elective-info">Materi workshopper tentang library-library yang terkenal atau gaya kode (code style) dalam Node.js.</p>
+        <p><span data-i18n="index-workshoppers-elective-link-pre">Terjebak? Silahkan tanya di</span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-elective-link-text">grup diskusi</a><span data-i18n="index-workshoppers-elective-link-post">.</span></p>
+      </div>
+      <div class="third">
+        <div id="functionaljavascript" class="workshopper">
+          <h4><a href="https://github.com/timoxley/functional-javascript-workshop" target="_blank">Functional Javascript</a></h4>
+          <p data-i18n="workshopper-functionaljavascript">Belajar fitur pemrograman fungsional dasar JavaScript di vanilla ES5.</p>
+          <code>npm install -g functional-javascript-workshop</code>
+        </div>
+        <div id="levelmeup" class="workshopper">
+          <h4><a href="https://github.com/workshopper/levelmeup" target="_blank">Level Me Up Scotty!</a></h4>
+          <p data-i18n="workshopper-levelmeup">Belajar menggunakan leveldb, sebuah <em>database</em> berbasis key/value memakai vibrant package.</p>
+          <code>npm install -g levelmeup</code>
+        </div>
+        <div id="expressworks" class="workshopper">
+          <h4><a href="https://github.com/azat-co/expressworks" target="_blank">ExpressWorks</a></h4>
+          <p data-i18n="workshopper-expressworks">Belajar dasar-dasar framework Express.js.</p>
+          <code>npm install -g expressworks</code>
+        </div>
+        <div id="makemehapi" class="workshopper">
+          <h4><a href="https://github.com/spumko/makemehapi" target="_blank">Make Me Hapi</a></h4>
+          <p data-i18n="workshopper-makemehapi">Belajar tentang hapi.js melalui serangkaian tantangan.</p>
+          <code>npm install -g makemehapi</code>
+        </div>
+        <div id="promise-it-wont-hurt" class="workshopper">
+          <h4><a href="https://github.com/stevekane/promise-it-wont-hurt" target="_blank">Promise It Won't Hurt</a></h4>
+          <p data-i18n="workshopper-promise-it-wont-hurt">Belajar menggunakan promises di dalam JavaScript untuk menangani operasi async.</p>
+          <code>npm install -g promise-it-wont-hurt</code>
+        </div>
+        <div id="async-you" class="workshopper">
+          <h4><a href="https://github.com/bulkan/async-you" target="_blank">Async You</a></h4>
+          <p data-i18n="workshopper-async-you">Belajar menggunakan async package.</p>
+          <code>npm install -g async-you</code>
+        </div>
+        <div id="nodebot-workshop" class="workshopper">
+          <h4><a href="https://github.com/tableflip/nodebot-workshop" target="_blank">NodeBot Workshop</a></h4>
+          <p data-i18n="workshopper-nodebot-workshop">Membuat robot menggunakan API johnny-five.</p>
+          <code>npm install -g nodebot-workshop</code>
+        </div>
+        <div id="goingnative" class="workshopper">
+          <h4><a href="https://github.com/workshopper/goingnative" target="_blank">Going Native</a></h4>
+          <p data-i18n="workshopper-goingnative">Mengeskplorasi Node.js dari bagian bawah: native C++ add-ons.</p>
+          <code>npm install -g goingnative</code>
+        </div>
+        <div id="planetproto" class="workshopper">
+          <h4><a href="https://github.com/sporto/planetproto" target="_blank">Planet Proto</a></h4>
+          <p data-i18n="workshopper-planetproto">Memahami Prototyping dalam JavaScript</p>
+          <code>npm install -g planetproto</code>
+        </div>
+        <div id="webgl-workshop" class="workshopper">
+          <h4><a href="https://github.com/stackgl/webgl-workshop" target="_blank">WebGL Workshop</a></h4>
+          <p data-i18n="workshopper-webgl-workshop">Belajar dasar-dasar WebGL dalam skala kecil, manageable chunks.</p>
+          <code>npm install -g webgl-workshop</code>
+        </div>
+        <div id="test-anything" class="workshopper">
+          <h4><a href="https://github.com/finnp/test-anything" target="_blank">Test Anything</a></h4>
+          <p data-i18n="workshopper-test-anything">Learn to test your code</p>
+          <code>npm install -g test-anything</code>
+        </div>
+        <div id="tower-of-babel" class="workshopper">
+          <h4><a href="https://github.com/yosuke-furukawa/tower-of-babel" target="_blank">Tower of babel</a></h4>
+          <p data-i18n="workshopper-tower-of-babel">Show you through a series of exercises that introduce you to ES6 features.</p>
+          <code>npm install tower-of-babel -g</code>
+        </div>
+        
+      </div>
+
+      <div class="third">
+        <div id="shader-school" class="workshopper">
+          <h4><a href="https://github.com/gl-modules/shader-school" target="_blank">Shader School</a></h4>
+          <p data-i18n="workshopper-shader-school">Belajar dasar-dasar pemrograman grafis menggunakan GLSL shaders.</p>
+          <code>npm install -g shader-school</code>
+        </div>
+        <div id="bytewiser" class="workshopper">
+          <h4><a href="https://www.github.com/maxogden/bytewiser" target="_blank">Bytewiser</a></h4>
+          <p data-i18n="workshopper-bytewiser">Belajar cara memanipulasi data biner di node.js dan browser HTML5.</p>
+          <code>npm install -g bytewiser</code>
+        </div>
+        <div id="bug-clinic" class="workshopper">
+          <h4><a href="https://github.com/othiym23/bug-clinic" target="_blank">Bug Clinic</a></h4>
+          <p data-i18n="workshopper-bug-clinic">Belajar beberapa alat and teknik baru untuk meningkatkan keterampilan <em>debugging</em> anda.</p>
+          <code>npm install -g bug-clinic</code>
+        </div>
+        <div id="browserify-adventure" class="workshopper">
+          <h4><a href="https://github.com/substack/browserify-adventure" target="_blank">Browserify Adventure</a></h4>
+          <p data-i18n="workshopper-browserify-adventure">Menggunakan npm modules dan node-style require() di browser menggunakan browserify.</p>
+          <code>npm install -g browserify-adventure</code>
+        </div>
+        <div id="introtowebgl" class="workshopper">
+          <h4><a href="https://github.com/alexmackey/IntroToWebGLWithThreeJS" target="_blank">Intro to WebGL</a></h4>
+          <p data-i18n="workshopper-introtowebgl">Mencoba three.js dan WebGL.</p>
+          <code>npm install -g introtowebgl</code>
+        </div>
+        <div id="count-to-6" class="workshopper">
+          <h4><a href="https://github.com/domenic/count-to-6" target="_blank">Count to 6</a></h4>
+          <p data-i18n="workshopper-count-to-6">Belajar cara menggunakan beberapa fitur di ES6, versi berikutnya dari JavaScript.</p>
+          <code>npm install -g count-to-6</code>
+        </div>
+        <div id="kick-off-koa" class="workshopper">
+          <h4><a href="https://github.com/koajs/kick-off-koa" target="_blank">Kick off Koa</a></h4>
+          <p data-i18n="workshopper-kick-off-koa">Mencoba Koa framework, kerangka web generasi terbaru untuk Node.js.</p>
+          <code>npm install -g kick-off-koa</code>
+        </div>
+        <div id="lololodash" class="workshopper">
+          <h4><a href="https://github.com/mdunisch/lololodash" target="_blank">LololoDash</a></h4>
+          <p data-i18n="workshopper-lololodash">Belajar Lo-Dash (fork of underscore) untuk menangani array and object dengan mudah!</p>
+          <code>npm install -g lololodash</code>
+        </div>
+        <div id="learnyoucouchdb" class="workshopper">
+          <h4><a href="https://github.com/robertkowalski/learnyoucouchdb" target="_blank">learnyoucouchdb</a></h4>
+          <p data-i18n="workshopper-learnyoucouchdb">Belajar tentang CouchDB - database yang sepenuhnya telah disesuakan dengan teknologi web</p>
+          <code>npm install -g learnyoucouchdb</code>
+        </div>
+        <div id="learnuv" class="workshopper">
+          <h4><a href="https://github.com/thlorenz/learnuv" target="_blank">learnuv</a></h4>
+          <p data-i18n="workshopper-learnuv">Belajar uv untuk bersenang-senang dan mendapat keuntungan, yaitu workshop tentang library-library pendukung Node.js secara mandiri dan terpadu.</p>
+          <code>git clone https://github.com/thlorenz/learnuv.git &amp;&amp; cd learnuv &amp;&amp; npm install</code>
+        </div>
+        <div id="learn-generators" class="workshopper">
+          <h4><a href="https://github.com/isRuslan/learn-generators" target="_blank">Learn Generators</a></h4>
+          <p data-i18n="workshopper-learn-generators">An Intro to JavaScript ES6 Generators.</p>
+          <code>npm install -g learn-generators</code>
+        </div>
+        <div id="learnyoureact" class="workshopper">
+          <h4><a href="https://github.com/tako-black/learnyoureact" target="_blank">learnyoureact</a></h4>
+          <p data-i18n="workshopper-learnyoureact">Let's learn React.js and server side rendering!</p>
+          <code>npm install -g learnyoureact</code>
+        </div>
+        <div id="perfschool" class="workshopper">
+          <h4><a href="https://github.com/bevacqua/perfschool" target="_blank">perfschool</a></h4>
+          <p data-i18n="workshopper-perfschool">Find your way through the web performance optimization maze!</p>
+          <code>npm install -g perfschool</code>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small><span>Photos by</span> <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a><span></span></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Kontak</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Berkontribusi</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Membuka Isu Baru</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Menjawab Pertanyaan</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">Tentang NodeSchool</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Membuat Tutorial</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Menjadi Tuan Rumah Workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      {{#rows}}
+        <li>{{startdate}} <a href="{{website}}">{{name}}</a></li>
+      {{/rows}}
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tabletop.js"></script>
+    <script type="text/javascript" src="/js/sheetsee.js"></script>
+    <script type="text/javascript" src="/js/table.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/dependencies.js"></script>
+
+    <script>
+      !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
+      (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
+      l=c.getElementsByTagName(O)[0];o.src='//www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(o,l)}(window,document,'ga','script');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+    </script>
+  
+
+</div></body></html>

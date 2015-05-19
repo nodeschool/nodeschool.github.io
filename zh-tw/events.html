@@ -1,0 +1,109 @@
+<!DOCTYPE html><html class="events" lang="zh-tw"><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/mapbox.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/events.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeSchool - Past and Future Events</title>
+  <link rel="alternate" href="/zh-cn/events.html" hreflang="zh-cn"><link rel="alternate" href="/pl/events.html" hreflang="pl"><link rel="alternate" href="/tr/events.html" hreflang="tr"><link rel="alternate" href="/vi/events.html" hreflang="vi"><link rel="alternate" href="/events.html" hreflang="en"><link rel="alternate" href="/de/events.html" hreflang="de"><link rel="alternate" href="/es/events.html" hreflang="es"><link rel="alternate" href="/fr-fr/events.html" hreflang="fr-fr"><link rel="alternate" href="/id/events.html" hreflang="id"><link rel="alternate" href="/ru/events.html" hreflang="ru"><link rel="alternate" href="/pt-br/events.html" hreflang="pt-br"><link rel="alternate" href="/pt-pt/events.html" hreflang="pt-pt"><link rel="alternate" href="/fi/events.html" hreflang="fi"><link rel="alternate" href="/sv/events.html" hreflang="sv"><link rel="alternate" href="/ko/events.html" hreflang="ko"><link rel="alternate" href="/ja/events.html" hreflang="ja"><link rel="alternate" href="/uk/events.html" hreflang="uk"></head>
+  <body class="events">
+    <header>
+      <a class="skip" href="#main">Skip to Content</a><ul class="nav-lang"><li class="nav-lang-id"><a href="/id/events.html" class="switch-lang" lang="id">Bahasa Indonesia</a></li><li class="nav-lang-de"><a href="/de/events.html" class="switch-lang" lang="de">Deutsch</a></li><li class="nav-lang-en"><a href="/events.html" class="switch-lang" lang="en">English</a></li><li class="nav-lang-es"><a href="/es/events.html" class="switch-lang" lang="es">Español</a></li><li class="nav-lang-fr-fr"><a href="/fr-fr/events.html" class="switch-lang" lang="fr-fr">Français</a></li><li class="nav-lang-pl"><a href="/pl/events.html" class="switch-lang" lang="pl">Polski</a></li><li class="nav-lang-pt-br"><a href="/pt-br/events.html" class="switch-lang" lang="pt-br">Português (Brasil)</a></li><li class="nav-lang-pt-pt"><a href="/pt-pt/events.html" class="switch-lang" lang="pt-pt">Português (Europeu)</a></li><li class="nav-lang-fi"><a href="/fi/events.html" class="switch-lang" lang="fi">Suomi</a></li><li class="nav-lang-sv"><a href="/sv/events.html" class="switch-lang" lang="sv">Svenska</a></li><li class="nav-lang-vi"><a href="/vi/events.html" class="switch-lang" lang="vi">Tiếng Việt</a></li><li class="nav-lang-tr"><a href="/tr/events.html" class="switch-lang" lang="tr">Türkçe</a></li><li class="nav-lang-ru"><a href="/ru/events.html" class="switch-lang" lang="ru">Русский</a></li><li class="nav-lang-uk"><a href="/uk/events.html" class="switch-lang" lang="uk">Українською</a></li><li class="nav-lang-ja"><a href="/ja/events.html" class="switch-lang" lang="ja">日本語</a></li><li class="nav-lang-zh-twselected">正體中文</li><li class="nav-lang-zh-cn"><a href="/zh-cn/events.html" class="switch-lang" lang="zh-cn">简体中文</a></li><li class="nav-lang-ko"><a href="/ko/events.html" class="switch-lang" lang="ko">한국어</a></li></ul><div class="container">
+        <div class="full">
+          <a href="index.html"><img class="logo" src="/images/schoolhouse.svg" alt="nodeschoolhouse"></a>
+          <ul class="nav">
+            <li><a href="index.html" data-i18n="menu-index">首頁</a></li>
+            <li class="current-page"><a href="events.html" data-i18n="menu-events">活動</a></li>
+            <li><a href="chapters.html" data-i18n="menu-chapters">各地籌辦單位</a></li>
+            <li><a href="about.html" data-i18n="menu-about">關於</a></li>
+            <li><a href="building-workshops.html" data-i18n="menu-building-workshops">建立課程</a></li>
+            <li><a href="host.html" data-i18n="menu-host">籌辦活動</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main" name="main" role="main">
+    <div class="container workshops" style="background-color: #fff;">
+      <div class="full">
+        <h1 data-i18n="events-header">從過去到現在，以及即將舉行的 NodeSchool 活動</h1><br><br>
+        <div aria-hidden="true" id="map"></div>
+        <div class="key">
+          <span class="key-past" data-i18n="events-past">已經結束的活動</span>
+          <span class="key-future" data-i18n="events-future">即將舉行的活動</span>
+        </div>
+      </div>
+      <br><br>
+      <div class="full">
+        <p data-i18n="events-header2">至今已舉辦了 <span id="event-count">77</span> 場活動！</p>
+        <p data-i18n="events-header3">如果你正在籌劃 NodeSchool 活動，可以填寫此<a target="_blank" href="https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm">表單</a>，將你的活動加入到我們的網站上。</p>
+        <small data-i18n="events-small">If you need to edit an event you've submitted, <a href="https://github.com/nodeschool/organizers/issues/new">file an issue on nodeschool/organizers.</a></small>
+      </div>
+    </div>
+
+    <div id="calendar">
+      <div class="container" style="background-color: #fff;">
+        <div class="full">
+          <h2 class="big-heading" data-i18n="calendar-h1">Calendar</h2>
+          <br><br>
+          <div id="calendar-goes-here"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">聯繫方法</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">貢獻方法</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">建立一個 Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">回答一個問題</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">關於</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">建立一個課程</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">籌辦一個活動</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      <ul>
+        {{#rows}}
+          <li>{{startdate}} <a href="{{website}}">{{name}}</a></li>
+        {{/rows}}
+          <li><a href="events.html">See all events</a></li>
+      </ul>
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tabletop.js"></script>
+    <script type="text/javascript" src="/js/sheetsee.js"></script>
+    <script type="text/javascript" src="/js/table.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/events.js"></script>
+    <script type="text/javascript" src="/js/dependencies.js"></script>
+
+    <script>
+      !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
+      (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
+      l=c.getElementsByTagName(O)[0];o.src='//www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(o,l)}(window,document,'ga','script');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+    </script>
+  
+
+</body></html>

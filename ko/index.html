@@ -1,0 +1,401 @@
+<!DOCTYPE html><html class="index" lang="ko"><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/mapbox.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeSchool</title>
+  <link rel="alternate" href="/ja/" hreflang="ja"><link rel="alternate" href="/uk/" hreflang="uk"><link rel="alternate" href="/zh-tw/" hreflang="zh-tw"><link rel="alternate" href="/zh-cn/" hreflang="zh-cn"><link rel="alternate" href="/pl/" hreflang="pl"><link rel="alternate" href="/tr/" hreflang="tr"><link rel="alternate" href="/vi/" hreflang="vi"><link rel="alternate" href="/" hreflang="en"><link rel="alternate" href="/de/" hreflang="de"><link rel="alternate" href="/es/" hreflang="es"><link rel="alternate" href="/fr-fr/" hreflang="fr-fr"><link rel="alternate" href="/id/" hreflang="id"><link rel="alternate" href="/ru/" hreflang="ru"><link rel="alternate" href="/pt-br/" hreflang="pt-br"><link rel="alternate" href="/pt-pt/" hreflang="pt-pt"><link rel="alternate" href="/fi/" hreflang="fi"><link rel="alternate" href="/sv/" hreflang="sv"></head>
+  <body>
+    <script type="text/javascript">
+      (function (doc, nav, ls) {
+        if (!ls || ls.getItem('firstRedirect')) return
+
+        ls.setItem('firstRedirect', true)
+
+        function getLinks() {
+          var nodes = doc.querySelectorAll('link[rel=alternate][hreflang]')
+            , langLinks = {}
+          for (var i=0; i < nodes.length; i++) {
+            var attrs = nodes[i].attributes
+            langLinks[attrs.hreflang.nodeValue] = attrs.href.nodeValue
+          }
+          return langLinks
+        }
+
+        var lang = (
+                   ls.getItem('lang')
+                || (nav.languages && nav.languages[0])
+                || nav.userLanguage
+                || nav.language
+                || 'en-US'
+            ).toLowerCase()
+          , docLang = doc.querySelector("html").attributes.lang.nodeValue
+          , langLinks = getLinks()
+
+        var langLink = langLinks[lang] || langLinks[lang.substr(0,2)] || langLinks['en']
+
+        if (langLink)
+          doc.location.href = langLink
+
+      })(document, navigator, localStorage)
+    </script>
+    <header>
+      <a class="skip" href="#main">Skip to Content</a><ul class="nav-lang"><li class="nav-lang-id"><a href="/id/" class="switch-lang" lang="id">Bahasa Indonesia</a></li><li class="nav-lang-de"><a href="/de/" class="switch-lang" lang="de">Deutsch</a></li><li class="nav-lang-en"><a href="/" class="switch-lang" lang="en">English</a></li><li class="nav-lang-es"><a href="/es/" class="switch-lang" lang="es">Español</a></li><li class="nav-lang-fr-fr"><a href="/fr-fr/" class="switch-lang" lang="fr-fr">Français</a></li><li class="nav-lang-pl"><a href="/pl/" class="switch-lang" lang="pl">Polski</a></li><li class="nav-lang-pt-br"><a href="/pt-br/" class="switch-lang" lang="pt-br">Português (Brasil)</a></li><li class="nav-lang-pt-pt"><a href="/pt-pt/" class="switch-lang" lang="pt-pt">Português (Europeu)</a></li><li class="nav-lang-fi"><a href="/fi/" class="switch-lang" lang="fi">Suomi</a></li><li class="nav-lang-sv"><a href="/sv/" class="switch-lang" lang="sv">Svenska</a></li><li class="nav-lang-vi"><a href="/vi/" class="switch-lang" lang="vi">Tiếng Việt</a></li><li class="nav-lang-tr"><a href="/tr/" class="switch-lang" lang="tr">Türkçe</a></li><li class="nav-lang-ru"><a href="/ru/" class="switch-lang" lang="ru">Русский</a></li><li class="nav-lang-uk"><a href="/uk/" class="switch-lang" lang="uk">Українською</a></li><li class="nav-lang-ja"><a href="/ja/" class="switch-lang" lang="ja">日本語</a></li><li class="nav-lang-zh-tw"><a href="/zh-tw/" class="switch-lang" lang="zh-tw">正體中文</a></li><li class="nav-lang-zh-cn"><a href="/zh-cn/" class="switch-lang" lang="zh-cn">简体中文</a></li><li class="nav-lang-koselected">한국어</li></ul><div class="container">
+        <div class="full">
+          <img src="/images/schoolhouse.svg" alt="nodeschool logo">
+          <h1 class="name">nodeschool</h1>
+          <p class="subtitle" data-i18n="index-header-top">터미널에서 실행하는 노드(Node)로 <br>공부하실 수 있는 오픈소스 워크숍입니다. <br>스스로 공부하시거나 가까운 워크숍을 방문해 보세요.</p>
+          <nav role="navigation">
+            <ul class="nav">
+              <li><a href="#workshoppers" data-i18n="menu-tutorials">튜토리얼</a></li>
+              <li><a href="events.html" data-i18n="menu-events">이벤트</a></li>
+              <li><a href="chapters.html" data-i18n="menu-chapters">챕터</a></li>
+              <li><a href="about.html" data-i18n="menu-about">About</a></li>
+              <li><a href="building-workshops.html" data-i18n="menu-building-workshops">만들기</a></li>
+              <li><a href="host.html" data-i18n="menu-host">호스트</a></li>
+            </ul>
+          </nav>
+          <p data-i18n="index-header-bottom"><a class="big-link" href="#workshopper-list">기본적인 워크숍</a>을 설치해 바로 시작하거나,<br>무료 <a class="big-link" href="https://tinyletter.com/nodeschool" target="_blank">이메일 뉴스레터</a>를 구독하세요.</p>
+        </div>
+      </div>
+    </header>
+    <div role="banner" id="international">
+      <a href="/international-day">
+        <img src="/images/international-day-logo.png" alt="International Day Logo">
+      </a>
+      <h3 data-i18n="banner-international-day">International Day</h3>
+      <time datetime="2015-05-23" data-i18n="banner-international-day-date">2015년 5월 23일</time>
+    </div>
+    <div id="main" name="main" role="main">
+    <section>
+    <div class="container workshop-header" style="background-color: #fff;">
+      <div class="full">
+        <h2 class="big-heading" data-i18n="index-workshop-header">워크숍</h2>
+        <p data-i18n="index-workshop-info">직접 멘토가 워크숍을 운영하는 곳입니다. (보통 무료) 워크쇼퍼들은 배우시는 분들을 위한 멘토와 커리큘럼을 보유하고 있습니다.</p>
+        <nav>
+          <ul class="inner-nav">
+            <li><a href="host.html" data-i18n="index-workshop-links-host">호스트 되기</a></li>
+            <li><a href="events.html" data-i18n="index-workshop-links-events">모든 이벤트 보기</a></li>
+            <li><a href="host.html#writeups" data-i18n="index-workshop-links-writeups">지난 이벤트의 기록</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container workshops" style="background-color: #fff;">
+      <div class="third" aria-hidden="true">
+        <div id="map"></div>
+      </div>
+
+      <div class="third upcoming-workshoppers">
+        <h4 data-i18n="index-upcoming-header">예정된 워크숍</h4>
+        <div id="upcoming-workshops">
+          <div class="loading" data-i18n="index-upcoming-loading">불러오는 중...</div>
+          <div class="empty">
+            <span data-i18n="index-upcoming-no-events">예정된 이벤트가 없습니다.</span> <a href="events.html" data-i18n="index-upcoming-past-events">지난 이벤트</a><span data-i18n="index-upcoming-past-events2">!</span>
+          </div>
+          <div class="success">
+            <ul></ul>
+            <p><a href="events.html" class="all-events" data-i18n="index-upcoming-all-events">모든 이벤트 보기</a>.</p>
+          </div>
+          <div class="error" data-i18n="index-upcoming-error">죄송합니다. 이벤트를 불러올 수 없습니다</div>
+        </div>
+      </div>
+
+      <div class="third anyone-can-host">
+        <h4 data-i18n="index-host-header">누구나 주최할 수 있습니다</h4>
+        <p id="event-count"><span data-i18n="index-host-past">지금까지 모두 </span> <strong class="cnt">?</strong> <span data-i18n="index-host-past2">건의 이벤트가 있었습니다!</span></p>
+        <p><span data-i18n="index-host-want-to-host">NodeSchool은 자치적인 오픈소스와 자원봉사로 이루어 집니다. 이벤트를 개최하고 싶으세요?</span> <a href="host.html" data-i18n="index-host-want-to-host2">자료와 팁</a> <span data-i18n="index-host-want-to-host3">을 참고하세요.</span></p>
+      </div>
+    </div>
+  </section>
+
+    <section>
+    <div id="workshoppers">
+      <div class="container">
+        <div class="full">
+          <h2 class="big-heading" data-i18n="index-workshopper-header">워크쇼퍼</h2>
+          <p data-i18n="index-workshopper-info">워크쇼퍼는 NodeSchool에서 진행하는 오픈소스 레슨의 모듈의 이름입니다. 모든 것이 스스로 배우도록 되어 있으며 (워크숍에 꼭 가실 필요는 없습니다.) 대부분 오프라인에서 동작합니다.</p>
+          <nav>
+            <ul class="inner-nav">
+              <li><a href="#workshopper-list" data-i18n="index-workshopper-list-view">워크쇼퍼 보기</a></li>
+              <li><a href="https://github.com/nodeschool/discussions/issues/new" data-i18n="index-workshopper-list-problem">문제가 있으면 질문하세요</a></li>
+              <li><a href="https://github.com/nodeschool/discussions" data-i18n="index-workshopper-list-faq">질문에 대한 답</a></li>
+              <li><a href="building-workshops.html" data-i18n="index-workshopper-list-host">워크숍 만들기</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <code>npm install -g learnyounode</code>
+              <code>learnyounode</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <div class="workshopper">
+                <code>» HELLO WORLD</code>
+                <code>» BABY STEPS</code>
+                <code>» MY FIRST I/O!</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div id="get-going">
+            <h3 data-i18n="index-get-going-header">시작하세요 —</h3>
+            <p><span data-i18n="index-get-going-info">먼저 </span> <a href="http://nodejs.org">Node.js</a> <span data-i18n="index-get-going-info2">가 필요합니다. 다음에는 </span> <a href="http://npmjs.org">npm</a> <span data-i18n="index-get-going-info3">(Node.js와 같이 설치되는)을 사용하여 모듈 이름 아래에 적혀있는 명령을 실행해서 설치하세요. 설치 하신 후에는 워크쇼퍼의 이름으로 바로 실행하실 수 있습니다.</span></p>
+            <p><span data-i18n="index-get-going-editor">코드 편집은 우수한 </span> <strong data-i18n="index-get-going-editor2">텍스트 편집기</strong><span data-i18n="index-get-going-editor3">를 사용하시면 편리합니다. 아직 없는 경우 </span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/2">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://macromates.com/download">Textmate</a><span data-i18n="index-get-going-editor6">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">를 추천해 드립니다.</span></p>
+          </div>
+        </div>
+      </div>
+    </div></section>
+
+    <div class="window-pane"><span class="caption">NodeConf, 2014</span></div>
+
+      <div id="workshopper-list" class="container core-workshoppers" style="background-color: #fff;">
+        <div class="third">
+          <h3 data-i18n="index-workshoppers-core-header">핵심</h3>
+          <p data-i18n="index-workshoppers-core-info">이 워크쇼퍼는 Node.js로 작업하는 주요 기술에 초점을 둡니다.</p>
+          <p><span data-i18n="index-workshoppers-core-link-pre">문제가 생기셨나요? 이곳에서 문의하세요 &gt; </span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-core-link-text">토론</a><span data-i18n="index-workshoppers-core-link-post"></span></p>
+        </div>
+        <div class="third">
+          <div id="javascripting" class="workshopper">
+            <h4><a href="https://www.github.com/sethvincent/javascripting" target="_blank">javascripting</a></h4>
+            <p data-i18n="workshopper-javascripting">자바스크립트의 기본을 배우세요. 프로그래밍을 해보지 않으셔도 좋습니다.</p>
+            <code>npm install -g javascripting</code>
+          </div>
+          <div id="gitit" class="workshopper">
+            <h4><a href="https://www.github.com/jlord/git-it" target="_blank">git-it</a></h4>
+            <p data-i18n="workshopper-gitit">깃(Git)과 깃허브(GitHub)의 기본에 대해서 배우세요.</p>
+            <code>npm install -g git-it</code>
+          </div>
+        </div>
+        <div class="third">
+          <div id="learnyounode" class="workshopper">
+            <h4><a href="https://www.github.com/workshopper/learnyounode" target="_blank">learnyounode</a></h4>
+            <p data-i18n="workshopper-learnyounode">노드(node)의 기본을 배우세요. : 비동기(asynchronous) I/O, http.</p>
+            <code data-i18n="workshopper-learnyounode-command">npm install -g learnyounode</code>
+          </div>
+          <div id="how-to-npm" class="workshopper">
+            <h4><a href="https://github.com/npm/how-to-npm" target="_blank">How to npm</a></h4>
+            <p data-i18n="workshopper-how-to-npm">npm의 사용법과 작성법을 배우세요.</p>
+            <code>npm install -g how-to-npm</code>
+          </div>
+          <div id="streamadventure" class="workshopper">
+            <h4><a href="https://www.github.com/substack/stream-adventure" target="_blank">stream-adventure</a></h4>
+            <p><span data-i18n="workshopper-streamadventure">스트리밍 환경을 구성하는 법을 배우세요.</span><code>.pipe()</code><span data-i18n="workshopper-streamadventure2"></span></p>
+            <code>npm install -g stream-adventure</code>
+          </div>
+        </div>
+      </div>
+
+    <div class="container elective-workshoppers" style="background-color: #fff;">
+      <div class="third">
+        <h3 data-i18n="index-workshoppers-elective-header">추천</h3>
+        <p data-i18n="index-workshoppers-elective-info">유명한 라이브러리와 Node.js 스타일의 워크쇼퍼들</p>
+        <p><span data-i18n="index-workshoppers-elective-link-pre">문제가 생기셨나요? 이곳에서 문의하세요 &gt; </span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-elective-link-text">토론</a><span data-i18n="index-workshoppers-elective-link-post"></span></p>
+      </div>
+      <div class="third">
+        <div id="functionaljavascript" class="workshopper">
+          <h4><a href="https://github.com/timoxley/functional-javascript-workshop" target="_blank">Functional Javascript</a></h4>
+          <p data-i18n="workshopper-functionaljavascript">vanilla ES5(자바스크립트 표준)를 활용한 함수 프로그래밍의 기초를 배우세요.</p>
+          <code>npm install -g functional-javascript-workshop</code>
+        </div>
+        <div id="levelmeup" class="workshopper">
+          <h4><a href="https://github.com/workshopper/levelmeup" target="_blank">Level Me Up Scotty!</a></h4>
+          <p data-i18n="workshopper-levelmeup">leveldb 사용법을 배우세요. leveldb는 간단한 NoSQL(key/value) DB입니다.</p>
+          <code>npm install -g levelmeup</code>
+        </div>
+        <div id="expressworks" class="workshopper">
+          <h4><a href="https://github.com/azat-co/expressworks" target="_blank">ExpressWorks</a></h4>
+          <p data-i18n="workshopper-expressworks">Express.js 프레임워크의 기본에 대해서 배웁니다.</p>
+          <code>npm install -g expressworks</code>
+        </div>
+        <div id="makemehapi" class="workshopper">
+          <h4><a href="https://github.com/spumko/makemehapi" target="_blank">Make Me Hapi</a></h4>
+          <p data-i18n="workshopper-makemehapi">여러가지 과제를 통해 hapi 프레임워크에 대해서 배웁니다.</p>
+          <code>npm install -g makemehapi</code>
+        </div>
+        <div id="promise-it-wont-hurt" class="workshopper">
+          <h4><a href="https://github.com/stevekane/promise-it-wont-hurt" target="_blank">Promise It Won't Hurt</a></h4>
+          <p data-i18n="workshopper-promise-it-wont-hurt">비동기 구현을 위해 자바스크립트에서 프라미스(Promises) 패턴을 사용하는 법을 배우세요.</p>
+          <code>npm install -g promise-it-wont-hurt</code>
+        </div>
+        <div id="async-you" class="workshopper">
+          <h4><a href="https://github.com/bulkan/async-you" target="_blank">Async You</a></h4>
+          <p data-i18n="workshopper-async-you">Async 패키지 사용법에 대해서 배우세요.</p>
+          <code>npm install -g async-you</code>
+        </div>
+        <div id="nodebot-workshop" class="workshopper">
+          <h4><a href="https://github.com/tableflip/nodebot-workshop" target="_blank">NodeBot Workshop</a></h4>
+          <p data-i18n="workshopper-nodebot-workshop">johnny-five api를 활용하여 로봇을 만드세요.</p>
+          <code>npm install -g nodebot-workshop</code>
+        </div>
+        <div id="goingnative" class="workshopper">
+          <h4><a href="https://github.com/workshopper/goingnative" target="_blank">Going Native</a></h4>
+          <p data-i18n="workshopper-goingnative">Node.js의 깊은 곳을 탐험하세요: 네이티브 C++ 애드온.</p>
+          <code>npm install -g goingnative</code>
+        </div>
+        <div id="planetproto" class="workshopper">
+          <h4><a href="https://github.com/sporto/planetproto" target="_blank">Planet Proto</a></h4>
+          <p data-i18n="workshopper-planetproto">자바스크립트 프로토타입 이해하기.</p>
+          <code>npm install -g planetproto</code>
+        </div>
+        <div id="webgl-workshop" class="workshopper">
+          <h4><a href="https://github.com/stackgl/webgl-workshop" target="_blank">WebGL Workshop</a></h4>
+          <p data-i18n="workshopper-webgl-workshop">three.js와 WebGL을 시작해 봅시다.</p>
+          <code>npm install -g webgl-workshop</code>
+        </div>
+        <div id="test-anything" class="workshopper">
+          <h4><a href="https://github.com/finnp/test-anything" target="_blank">Test Anything</a></h4>
+          <p data-i18n="workshopper-test-anything">코드를 테스트하는 방법을 배웁시다.</p>
+          <code>npm install -g test-anything</code>
+        </div>
+        <div id="tower-of-babel" class="workshopper">
+          <h4><a href="https://github.com/yosuke-furukawa/tower-of-babel" target="_blank">Tower of babel</a></h4>
+          <p data-i18n="workshopper-tower-of-babel">연습문제를 통해 ES6의 기능을 소개합니다.</p>
+          <code>npm install tower-of-babel -g</code>
+        </div>
+        
+      </div>
+
+      <div class="third">
+        <div id="shader-school" class="workshopper">
+          <h4><a href="https://github.com/gl-modules/shader-school" target="_blank">Shader School</a></h4>
+          <p data-i18n="workshopper-shader-school">GLSL shaders을 활용한 그래픽 프로그래밍의 기본을 배우세요.</p>
+          <code>npm install -g shader-school</code>
+        </div>
+        <div id="bytewiser" class="workshopper">
+          <h4><a href="https://www.github.com/maxogden/bytewiser" target="_blank">Bytewiser</a></h4>
+          <p data-i18n="workshopper-bytewiser">Node.js와 HTML5 지원 브라우저에서 바이너리(binary) 데이터를 다루는 방법을 배우세요.</p>
+          <code>npm install -g bytewiser</code>
+        </div>
+        <div id="bug-clinic" class="workshopper">
+          <h4><a href="https://github.com/othiym23/bug-clinic" target="_blank">Bug Clinic</a></h4>
+          <p data-i18n="workshopper-bug-clinic">디버깅 기술을 향상 시켜줄 몇 가지 새로운 도구들과 기술에 대해서 배우세요.</p>
+          <code>npm install -g bug-clinic</code>
+        </div>
+        <div id="browserify-adventure" class="workshopper">
+          <h4><a href="https://github.com/substack/browserify-adventure" target="_blank">Browserify Adventure</a></h4>
+          <p data-i18n="workshopper-browserify-adventure">browserify 패키지를 활용한 npm 모듈과 노드 스타일의 require() 에 대해서 배우세요.</p>
+          <code>npm install -g browserify-adventure</code>
+        </div>
+        <div id="introtowebgl" class="workshopper">
+          <h4><a href="https://github.com/alexmackey/IntroToWebGLWithThreeJS" target="_blank">Intro to WebGL</a></h4>
+          <p data-i18n="workshopper-introtowebgl">three.js 와 WebGL 로 시작하세요.</p>
+          <code>npm install -g introtowebgl</code>
+        </div>
+        <div id="count-to-6" class="workshopper">
+          <h4><a href="https://github.com/domenic/count-to-6" target="_blank">Count to 6</a></h4>
+          <p data-i18n="workshopper-count-to-6">자바스크립트의 미래에 대해서 몇 가지 기능을 살펴보고 배우세요.(ES6)</p>
+          <code>npm install -g count-to-6</code>
+        </div>
+        <div id="kick-off-koa" class="workshopper">
+          <h4><a href="https://github.com/koajs/kick-off-koa" target="_blank">Kick off Koa</a></h4>
+          <p data-i18n="workshopper-kick-off-koa">Node.js의 차세대 웹프레임워크인 Koa로 시작하세요.</p>
+          <code>npm install -g kick-off-koa</code>
+        </div>
+        <div id="lololodash" class="workshopper">
+          <h4><a href="https://github.com/mdunisch/lololodash" target="_blank">LololoDash</a></h4>
+          <p data-i18n="workshopper-lololodash">배열과 오브젝트를 간단하게 다루게 해주는 Lo-Dash를 배우세요.</p>
+          <code>npm install -g lololodash</code>
+        </div>
+        <div id="learnyoucouchdb" class="workshopper">
+          <h4><a href="https://github.com/robertkowalski/learnyoucouchdb" target="_blank">learnyoucouchdb</a></h4>
+          <p data-i18n="workshopper-learnyoucouchdb">웹만으로도 제어 가능한 데이터베이스인 CouchDB에 대해 배워봅시다.</p>
+          <code>npm install -g learnyoucouchdb</code>
+        </div>
+        <div id="learnuv" class="workshopper">
+          <h4><a href="https://github.com/thlorenz/learnuv" target="_blank">learnuv</a></h4>
+          <p data-i18n="workshopper-learnuv">즐겁고 유익한 uv를 배우세요. Node.js를 구성하는 라이브러리를 자습할 수 있는 워크숍입니다.</p>
+          <code>git clone https://github.com/thlorenz/learnuv.git &amp;&amp; cd learnuv &amp;&amp; npm install</code>
+        </div>
+        <div id="learn-generators" class="workshopper">
+          <h4><a href="https://github.com/isRuslan/learn-generators" target="_blank">Learn Generators</a></h4>
+          <p data-i18n="workshopper-learn-generators">ECMAScript6 Generator를 소개합니다.</p>
+          <code>npm install -g learn-generators</code>
+        </div>
+        <div id="learnyoureact" class="workshopper">
+          <h4><a href="https://github.com/tako-black/learnyoureact" target="_blank">learnyoureact</a></h4>
+          <p data-i18n="workshopper-learnyoureact">React.js와 서버 사이드 렌더링을 배웁시다!</p>
+          <code>npm install -g learnyoureact</code>
+        </div>
+        <div id="perfschool" class="workshopper">
+          <h4><a href="https://github.com/bevacqua/perfschool" target="_blank">perfschool</a></h4>
+          <p data-i18n="workshopper-perfschool">웹 성능 최적화의 미로에서 길을 찾아보세요!</p>
+          <code>npm install -g perfschool</code>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small><span>Photos by</span> <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a><span></span></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">연락처</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">기여하기</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">이슈 만들기</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">질문에 답하기</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">워크쇼퍼 만들기</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">워크숍 개최하기</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      {{#rows}}
+        <li>{{startdate}} <a href="{{website}}">{{name}}</a></li>
+      {{/rows}}
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tabletop.js"></script>
+    <script type="text/javascript" src="/js/sheetsee.js"></script>
+    <script type="text/javascript" src="/js/table.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/dependencies.js"></script>
+
+    <script>
+      !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
+      (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
+      l=c.getElementsByTagName(O)[0];o.src='//www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(o,l)}(window,document,'ga','script');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+    </script>
+  
+
+</div></body></html>
