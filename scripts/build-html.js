@@ -23,20 +23,50 @@ function createSkipButton(dom) {
 }
 
 function addTranslationNav(dom, file, languages) {
+	var items = [];
   var nav = dom.createElement('ul')
   nav.className = "nav-lang"
 
   Object.keys(languages).sort(function (a, b) {
   	return languages[a] > languages[b] ? 1 : -1
   }).forEach(function(lang) {
-    nav.appendChild(createLangButton(dom, file, lang, languages[lang]))
+  	var button = createLangButton(dom, file, lang, languages[lang])
+  	items.push(button.firstChild)
+    nav.appendChild(button)
   })
   var node = dom.querySelector('header > *:first-child')
   if (node) {
   	node.parentNode.insertBefore(createSkipButton(dom), node)	
   	node.parentNode.insertBefore(nav, node)
   }
-  return nav
+  return items
+}
+
+function createLanguageLink(dom, href, locale) {
+  var link = dom.createElement('link')
+  link.setAttribute('rel', 'alternate')
+  link.setAttribute('href', href)
+  link.setAttribute('hreflang', locale)
+  return link
+}
+
+function addLanguageLinks(dom, file, locales) {
+  var head = dom.querySelector('head')
+  return Object.keys(locales).map(function (locale) {
+		var link = createLanguageLink(dom, (locale != 'en' ? '/' + locale : '') + '/' + (file === 'index.html' ? '' : file), locale)
+		head.appendChild(link)
+		return link
+  })
+}
+
+function getNodeByLanguage(nodes, lang) {
+	for (var i = 0; i < nodes.length; i++) {
+		var node = nodes[i]
+		var attr = (node.attributes.lang || node.attributes.hreflang)
+		if (attr.nodeValue === lang) {
+			return node
+		}
+	}
 }
 
 cmdwatcher('build-html'
@@ -97,7 +127,7 @@ cmdwatcher('build-html'
 		translations['en'] = original
 
 		var html = dom.querySelector('html')
-
+		var localeLinks = addLanguageLinks(dom, file, languages)
 		var nav = addTranslationNav(dom, file, languages)
 
 		Object.keys(languages).forEach(function (lang) {
@@ -105,8 +135,7 @@ cmdwatcher('build-html'
 			  , outputPath = Path.join('.build/', (lang === 'en' ? '' : lang + '/'), file)
 			  , outputDir = Path.dirname(outputPath)
 			  , output
-			html.setAttributeNode(dom.createAttribute('lang'))
-			html.attributes.lang.value = lang
+			html.setAttribute('lang', lang)
 			if (list) {
 				try {
 					for (var i = 0; i < list.length; i++) {
@@ -115,21 +144,19 @@ cmdwatcher('build-html'
 						var newValue = translation[key]
 						node.innerHTML = typeof newValue === 'string' ? newValue : original[key] 
 					}
-					var langButton;
-					for (var i = 0; i < nav.childNodes.length; i++) {
-						var node = nav.childNodes[i]
-						if (node.firstChild.attributes.lang.nodeValue === lang) {
-							langButton = node
-							break
-						}
-					}
+					
+					var langButton = getNodeByLanguage(nav, lang).parentNode;
+					var langLink = getNodeByLanguage(localeLinks, lang)
 					var _className = langButton.className
 					var _html = langButton.innerHTML
+					var _linkParent = langLink.parentNode
+					_linkParent.removeChild(langLink)
 					langButton.className += 'selected'
 					langButton.innerHTML = languages[lang]
 					output = jsdom.serializeDocument(dom)
 					langButton.className = _className
 					langButton.innerHTML = _html
+					_linkParent.appendChild(langLink)
 				} catch (e) {
 					return console.log('Couldn\'t process the %s [lang %s]:\n%s', file, lang, e)
 				}
