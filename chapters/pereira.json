@@ -1,0 +1,14 @@
+{
+  "name": "NodeSchool Pereira",
+  "location": "Pereira",
+  "country": "CO",
+  "region": "Latin America",
+  "organizers": [
+    "cronopio",
+    "pin3da",
+    "jhonber"
+  ],
+  "repo": "http://github.com/nodeschool/pereira",
+  "website": "http://nodeschool.io/pereira",
+  "twitter": "PereiraJS_"
+}

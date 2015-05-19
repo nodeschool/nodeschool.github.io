@@ -1,0 +1,11 @@
+{
+  "name": "Bristol NodeSchool",
+  "location": "Bristol",
+  "country": "UK",
+  "region": "Europe",
+  "organizers": ["permadesign", "fiznool", "katjad"],
+  "website": "http://nodeschool.io/bristol",
+  "twitter": "",
+  "gitter": "https://gitter.im/nodeschool/bristol",
+  "repo": "http://github.com/nodeschool/bristol"
+}

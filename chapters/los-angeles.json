@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool: LA Edition",
+  "location": "Los Angeles, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["jxson", "emkay"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/los-angeles"
+}

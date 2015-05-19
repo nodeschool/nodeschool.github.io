@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool NYC",
+  "location": "New York, NY",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["hackygolucky", "brianloveswords", "toolness", "hsin421"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/nyc"
+}

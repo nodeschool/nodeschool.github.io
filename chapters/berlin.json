@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Berlin",
+  "location": "Berlin",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["finnp", "stryju", "johannhof"],
+  "website": "http://nodeschool.io/berlin",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/berlin"
+}

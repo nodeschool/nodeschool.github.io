@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Wellington",
+  "location": "Wellington",
+  "country": "NZ",
+  "region": "South Pacific",
+  "organizers": ["vimto", "chilts"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/wellington"
+}

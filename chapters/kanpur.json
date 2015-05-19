@@ -1,0 +1,10 @@
+{
+	"name": "NodeSchool Kanpur",
+	"location": "Kanpur",
+	"country": "IN",
+	"region": "Asia",
+	"organizers": ["abdulqabiz"],
+	"website": "http://nodeschool.io/kanpur",
+	"twitter": "",
+	"repo": "http://github.com/nodeschool/kanpur"
+}

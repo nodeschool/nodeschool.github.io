@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hanoi",
+  "location": "Hanoi",
+  "country": "VN",
+  "region": "Asia",
+  "organizers": ["hainh", "dominhhai"],
+  "website": "http://nodeschool.io/hanoi",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/hanoi"
+}

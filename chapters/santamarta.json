@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Santa Marta",
+  "location": "Santa Marta",
+  "country": "CO",
+  "region": "Latin America",
+  "organizers": ["pedroromn", "gengue"],
+  "website": "http://nodeschool.io/santamarta/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/santamarta"
+}

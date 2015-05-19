@@ -1,0 +1,10 @@
+{
+  "name": "Amsterdam NodeSchool",
+  "location": "Amsterdam",
+  "country": "NL",
+  "region": "Europe",
+  "organizers": ["hughsk", "yoshuawuyts", "mmalecki", "hatchan"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/amsterdam"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Lisbon NodeSchool",
+  "location": "Lisbon",
+  "country": "PT",
+  "region": "Europe",
+  "organizers": ["diasdavid"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/lisbon"
+}

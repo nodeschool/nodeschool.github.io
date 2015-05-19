@@ -1,0 +1,10 @@
+{
+  "name": "Bangalore NodeSchool",
+  "location": "Bangalore",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["abyv", "somesh123", "somsharan"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/bangalore"
+}

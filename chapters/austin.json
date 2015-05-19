@@ -1,0 +1,10 @@
+{
+  "name": "Austin NodeSchool",
+  "location": "Austin, TX",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["stefanmve"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/austin"
+}

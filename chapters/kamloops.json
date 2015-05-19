@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Kamloops",
+  "location": "Kamloops, BC",
+  "country": "CA",
+  "region": "North America",
+  "organizers": ["jonotron", "chadfawcett", "chrisfosterelli"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/kamloops"
+}

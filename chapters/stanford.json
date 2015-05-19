@@ -1,0 +1,10 @@
+{
+  "name": "Stanford University NodeSchool",
+  "location": "Stanford, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["feross", "jhiesey", "abi"],
+  "website": "",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/stanford"
+}

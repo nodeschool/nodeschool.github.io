@@ -1,0 +1,10 @@
+{
+  "name": "Montevideo NodeSchool",
+  "location": "Montevideo",
+  "country": "UY",
+  "region": "Latin America",
+  "organizers": ["pdjota", "pricco", "mprunell"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/montevideo"
+}

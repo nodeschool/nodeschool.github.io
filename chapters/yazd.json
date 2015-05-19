@@ -1,0 +1,10 @@
+{
+  "name": "Yazd NodeSchool",
+  "location": "Yazd,Yazd",
+  "country": "Iran",
+  "region": "Asia",
+  "organizers": ["ArianSotoudehMehr"],
+  "website": "http://nodeschools.ir",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/yazd"
+}

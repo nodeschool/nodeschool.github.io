@@ -1,0 +1,10 @@
+{
+  "name": "Dublin NodeSchool",
+  "location": "Dublin",
+  "country": "IE",
+  "region": "Europe",
+  "organizers": ["no9", "johnbrett", "jasonmarah", "johnbrett", "akohli", "davecocoa", "lorcanmcdonald", "gangleri"],
+  "website": "http://nodeschool.io/dublin",
+  "twitter": "@nodeschooldub",
+  "repo": "http://github.com/nodeschool/dublin"
+}

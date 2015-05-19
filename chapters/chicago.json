@@ -1,0 +1,10 @@
+{
+  "name": "Chicago NodeSchool",
+  "location": "Chicago, IL",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["azizali"],
+  "website": "http://nodeschool.io/chicago",
+  "twitter": "@heyaziz",
+  "repo": "http://github.com/nodeschool/chicago"
+} 

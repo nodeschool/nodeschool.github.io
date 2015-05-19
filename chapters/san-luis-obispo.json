@@ -1,0 +1,9 @@
+{
+  "name": "NodeSchool SLO",
+  "location": "San Luis Obispo, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["ecwyne"],
+  "website": "http://nodeschool.io/san-luis-obispo/",
+  "repo": "http://github.com/nodeschool/san-luis-obispo"
+}

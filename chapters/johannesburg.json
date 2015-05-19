@@ -1,0 +1,10 @@
+{
+  "name": "Johannesburg NodeSchool",
+  "location": "Johannesburg",
+  "country": "ZA",
+  "region": "Africa",
+  "organizers": ["StevenMcD", "johannds"],
+  "website": "http://nodeschool.io/johannesburg",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/johannesburg"
+}

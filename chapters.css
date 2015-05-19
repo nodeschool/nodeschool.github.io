@@ -1,0 +1,28 @@
+.chapter-list  ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.chapter-list li {
+  margin: 5px;
+  width: 250px;
+  border-radius: 3px;
+  padding-bottom: 0px;
+  display: inline-block;
+  border: 2px solid #333;
+  -webkit-transition: background-color 300ms, border 500ms;
+  transition: background-color 300ms, border 500ms;
+}
+
+.chapter-list a {
+  color: black;
+  padding: 6px;
+  display: block;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.chapter-list li:hover {
+  background-color: #FFE51F;
+  border: 2px solid #FFE51F;
+}

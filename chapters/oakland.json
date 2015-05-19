@@ -1,0 +1,10 @@
+{
+  "name": "Oakland NodeSchool",
+  "location": "Oakland, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["maxogden"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/oakland"
+}

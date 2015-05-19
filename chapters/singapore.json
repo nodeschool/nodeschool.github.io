@@ -1,0 +1,10 @@
+{
+  "name": "Singapore NodeSchool",
+  "location": "Singapore",
+  "country": "SG",
+  "region": "Asia",
+  "organizers": ["timoxley", "weilu", "renettarenula", "hongkheng", "soareschen", "vissree", "apraditya", "shioju", "danielmahadi", "eihan", "yzdong", "andrewabogado", "sayanee"],
+  "website": "http://nodeschool.io/singapore",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/singapore"
+}

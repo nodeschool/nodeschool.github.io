@@ -1,0 +1,12 @@
+{
+  "name": "NodeSchool Miami",
+  "location": "Miami, FL",
+  "country": "US",
+  "region": "North America",
+  "organizers": [
+    "khalifenizar",
+    "dambalah",
+    "onel0p3z"
+  ],
+  "repo": "http://github.com/nodeschool/miami"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Auckland NodeSchool",
+  "location": "Auckland",
+  "country": "NZ",
+  "region": "South Pacific",
+  "organizers": ["jladuval", "kevnz", "ram-manthry"],
+  "website": "http://nodeschool.io/auckland/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/auckland"
+}

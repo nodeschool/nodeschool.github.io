@@ -1,0 +1,10 @@
+{
+  "name": "Vienna NodeSchool",
+  "location": "Vienna",
+  "country": "AT",
+  "region": "Europe",
+  "organizers": ["thomaspeklak", "shm", "saintedlama"],
+  "website": "http://nodeschool.io/vienna",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/vienna"
+}

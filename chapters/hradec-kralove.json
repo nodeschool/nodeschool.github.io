@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hradec Králové",
+  "location": "Hradec Králové",
+  "country": "CZ",
+  "region": "Europe",
+  "organizers": ["bajtos"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/hradec-kralove"
+}

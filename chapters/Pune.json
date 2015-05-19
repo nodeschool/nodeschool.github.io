@@ -1,0 +1,10 @@
+{
+  "name": "Pune Nodeschool",
+  "location": "Pune",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["adroittech"],
+  "website": "http://github.com/nodeschool/pune",
+  "twitter": "niravfaldu",
+  "repo": "http://github.com/nodeschool/pune"
+}

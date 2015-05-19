@@ -1,0 +1,10 @@
+{
+  "name": "Western Massachusetts NodeSchool",
+  "location": "Western Massachusetts",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["Sequoia", "a-pasquale"],
+  "website": "http://nodeschool.io/western-mass/",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/western-mass"
+}

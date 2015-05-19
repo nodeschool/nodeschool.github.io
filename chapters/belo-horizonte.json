@@ -1,0 +1,10 @@
+{
+  "name": "Belo Horizonte NodeSchool",
+  "location": "Belo Horizonte",
+  "country": "BR",
+  "region": "Latin America",
+  "organizers": ["paulohp", "obetomuniz", "victorferraz", "erickbelfy"],
+  "website": "http://nodeschool.io/belo-horizonte",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/belo-horizonte"
+}

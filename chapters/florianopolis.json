@@ -1,0 +1,10 @@
+{
+  "name": "Florianópolis NodeSchool",
+  "location": "Florianópolis, SC",
+  "country": "BR",
+  "region": "Latin America",
+  "organizers": ["conrado"],
+  "website": "http://nodeschool.io/florianopolis",
+  "twitter": "nodeschoolFLN",
+  "repo": "http://github.com/nodeschool/florianopolis"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Cairo",
+  "location": "Cairo",
+  "country": "EG",
+  "region": "Africa",
+  "organizers": ["ahmdrefat", "Azzurrio"],
+  "website": "http://nodeschool.io/cairo",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/cairo"
+}

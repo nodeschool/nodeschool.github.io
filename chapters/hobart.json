@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hobart",
+  "location": "Hobart",
+  "country": "AU",
+  "region": "South Pacific",
+  "organizers": ["joshgillies", "jonnyscholes", "timheap", "MalucoMarinero"],
+  "website": "http://nodeschool.io/hobart",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/hobart"
+}

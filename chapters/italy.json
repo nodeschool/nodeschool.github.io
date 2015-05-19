@@ -1,0 +1,9 @@
+{
+  "name": "NodeSchool Italy",
+  "location": "Italy",
+  "region": "Europe",
+  "organizers": ["matteocollina", "MarcoPiraccini"],
+  "website": "http://nodeschool.io/italy",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/italy"
+}

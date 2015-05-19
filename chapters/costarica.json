@@ -1,0 +1,12 @@
+ {
+  "name": "NodeSchool Costa Rica ",
+  "location": "San José",
+  "country": "CRI",
+  "region": "Latin America",
+  "organizers": [
+    "gaboesquivel"
+  ],
+  "website": "http://meetup.com/costaricajs",
+  "twitter": "costaricajs",
+  "repo": "http://github.com/nodeschool/costarica"
+}
