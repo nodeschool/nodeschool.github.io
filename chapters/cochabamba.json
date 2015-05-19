@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Cochabamba",
+  "location": "Cochabamba, BO",
+  "country": "BO",
+  "region": "Latin America",
+  "organizers": ["chitopolo", "aquilardo"],
+  "website": "http://www.boliviajs.com",
+  "twitter": "https://www.twitter.com/BoliviaJS",
+  "repo": "http://github.com/nodeschool/Cochabamba"
+}
