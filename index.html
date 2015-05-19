@@ -26,11 +26,13 @@
           return langLinks
         }
 
-        var lang = (ls.getItem('lang') || (
-                nav.languages
-              ? nav.languages[0]
-              : (nav.userLanguage || nav.language)
-            ) || 'en-US').toLowerCase()
+        var lang = (
+                   ls.getItem('lang')
+                || (nav.languages && nav.languages[0])
+                || nav.userLanguage
+                || nav.language
+                || 'en-US'
+            ).toLowerCase()
           , docLang = doc.querySelector("html").attributes.lang.nodeValue
           , langLinks = getLinks()
 
