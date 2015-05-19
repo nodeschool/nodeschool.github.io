@@ -21,8 +21,3 @@ git checkout master
 git add . --force
 git commit -m "Automatic deployment of $(git rev-parse HEAD)"
 git push origin master
-
-#npm run build
-#git add chapters
-#git commit -m "Compiled chapter list"
-#git push origin master
