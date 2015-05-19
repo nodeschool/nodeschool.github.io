@@ -8,7 +8,7 @@
     "build-copy": "./scripts/build-copy.js $$",
     "build-html": "./scripts/build-html.js $$",
     "build-chapters": "./scripts/build-chapters.js $$",
-    "build-dependencies": "browserify -r xhr -r browser-locale -r mustache > .build/js/dependencies.js",
+    "build-dependencies": "browserify -r xhr -r mustache > .build/js/dependencies.js",
     "generate-language": "./scripts/generate-lang.js",
     "generate-untranslated-list": "./scripts/generate-untranslated-list.js",
     "validate-html": "./scripts/validate-html.js",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/nodeschool/nodeschool.github.io",
   "dependencies": {
-    "browser-locale": "^1.0.0",
     "is-running": "^1.0.5",
     "mustache": "^0.8.2",
     "xhr": "^1.16.1"
