@@ -3,7 +3,7 @@
   "location": "Manchester, NH",
   "country": "US",
   "region": "North America",
-  "organizers": ["AlabamaMike, antishow, swinter2"],
+  "organizers": ["AlabamaMike", "antishow", "swinter2"],
   "website": "http://nodeschool.io/manchester",
   "twitter": "nodemanchvegas",
   "repo": "http://github.com/nodeschool/manchester"
