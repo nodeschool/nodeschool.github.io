@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Zagreb",
+  "location": "Zagreb",
+  "country": "HR",
+  "region": "Europe",
+  "organizers": ["shime", "dinodsaurus"],
+  "website": "http://nodeschool.io/zagreb",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/zagreb"
+}
