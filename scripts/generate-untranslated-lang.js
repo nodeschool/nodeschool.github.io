@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var getStrings = require('./get-i18n-list');
+var getStrings = require('./util/get-i18n-list');
 var fs = require('fs');
 var read = require('read');
 var path = require('path');

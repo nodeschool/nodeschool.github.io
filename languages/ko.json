@@ -139,6 +139,8 @@
   "building-workshops-info3C": "을 위해 만들어졌습니다.",
   "host-header": "NodeSchool 이벤트를 개최하세요",
   "host-info": "NodeSchool은 전적으로 커뮤니티 지향적이고 100% 오픈소스로 운영됩니다. 이는 누구나 NodeSchool의 모든 자료를 사용하거나 이벤트를 개최할 수 있음을 의미합니다.",
+  "host-info-wiki": "세계 챕터 개최자의 경험을 공유하기 위한 <a href=\"https://github.com/nodeschool/organizers/wiki\">개최자 위키</a>를 만들었습니다.",
+  "host-info-wiki-link": "챕터를 만들기, 성공적인 이벤트 운영, 지역 NodeSchool 커뮤니티 만들기에 관한 정보를 <a href=\"https://github.com/nodeschool/organizers/wiki\">위키</a>에서 확인하세요!",
   "host-chapter-header": "먼저, 챕터를 생성하세요",
   "host-chapter-info": "먼저 ",
   "host-chapter-info2": "설정 후에는 아래에 있는 첫 이벤트를 위한 자료를 참고 하시면 됩니다.",

@@ -10,7 +10,7 @@
     "build-chapters": "./scripts/build-chapters.js $$",
     "build-dependencies": "mkdir -p .build/js; browserify -r xhr -r mustache > .build/js/dependencies.js",
     "generate-language": "./scripts/generate-lang.js",
-    "generate-untranslated-list": "./scripts/generate-untranslated-list.js",
+    "generate-untranslated-lang": "./scripts/generate-untranslated-lang.js",
     "validate-html": "./scripts/validate-html.js",
     "start": "mkdir -p .build; env WATCH=true P=$$ npm run build && live-server .build",
     "deploy": "sh ./scripts/deploy.sh"

@@ -65,7 +65,7 @@ Just run this command:
 
 ```
 npm install
-npm run untranslated-list
+npm run untranslated-lang
 ```
 
 You will find untranslated IDs in `languages/xx.untranslated.json`.
