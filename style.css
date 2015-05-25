@@ -7,36 +7,6 @@ h1, .big-heading {font-size: 3em; margin: 10px 0;}
 h2, h3 {font-size: 2em;}
 h3 a { color: black; }
 
-#international {
-  border-top: 3px solid black;
-  background-image: url(/images/international-day-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding-bottom: 4em;
-  text-shadow: 1px 1px 10px #333333;
-}
-#international img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  margin-bottom: -1.5em;
-}
-#international h3 {
-  font-size: 3em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#international time {
-  font-size: 1.5em;
-  font-weight: 100;
-}
-#international h3, time {
-  color: white;
-  font-family: Helvetica, Arial, "sans-serif"
-}
-
 code {font-family: Source Code Pro; font-size: 12px; background: #fafafa; border-radius: 3px; padding: 3px 5px; line-height: 20px;}
 
 img {width: 100%;}
@@ -227,9 +197,6 @@ footer .container {padding: 0 40px;}
   .core-workshoppers h4 a, .elective-workshoppers h4 a { font-size: 16px; }
   ul.inner-nav li {display: inline-block; line-height: 3em;}
   .window-pane { display: none; }
-  #international img {
-    width: 30%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -251,9 +218,6 @@ footer .container {padding: 0 40px;}
   footer ul {width: 100%;}
   footer ul + ul {padding-left: 0;}
   footer li a {font-size: 14px;}
-  #international img {
-    width: 70%;
-  }
 }
 
 /* skip naviation links */
