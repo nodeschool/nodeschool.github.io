@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hong Kong",
+  "location": "Hong Kong",
+  "country": "HK",
+  "region": "Asia",
+  "organizers": ["neilnand", "rowlandwatkins", "hitchcott"],
+  "website": "http://www.meetup.com/HK-Web-Developers/",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/hong-kong"
+}
