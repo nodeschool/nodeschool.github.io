@@ -30,10 +30,8 @@ function writeCount(count) {
 }
 
 // init google analytics tracking events for clicks on workshop external links
-$('#workshopper-list, .elective-workshoppers')
-  // assuming current layout (first .third used for info)
-  .find('.third:not(:eq(0))')
-  .on('click', 'a', function (e) {
+$('.js-workshop-link')
+  .on('click', function (e) {
     // assuming github.com/username/workshopper
     var workshopperId = $(this).attr('href').split('/').slice(-1)[0];
     ga('send', 'event', 'workshopper', 'click', workshopperId);
