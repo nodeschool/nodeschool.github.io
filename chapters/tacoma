@@ -1,0 +1,11 @@
+{
+    "name": "Tacoma NodeSchool",
+    "location": "Tacoma, WA",
+    "country": "US",
+    "region": "North America",
+    "organizers": [
+        "NorthDecoder"
+    ],
+    "website": "http://nodeschool.io/tacoma",
+    "repo": "http://github.com/nodeschool/tacoma"
+}
