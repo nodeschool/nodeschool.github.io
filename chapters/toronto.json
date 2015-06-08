@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Toronto",
+  "location": "Toronto",
+  "country": "CA",
+  "region": "North America",
+  "organizers": ["rmillr", "darcyclarke", "richgilbank", "jeffjewiss", "brenna", "andrewdamelio", "tessalt"],
+  "website": "http://nodeschool.io/toronto",
+  "twitter": "https://twitter.com/nodeschoolto",
+  "repo": "http://github.com/nodeschool/toronto"
+}
