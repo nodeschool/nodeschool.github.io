@@ -1,0 +1,10 @@
+{
+  "name": "Cincinnati NodeSchool",
+  "location": "Cincinnati, OH",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["fiveisprime", "jackboberg", "Tzmanics"],
+  "website": "https://github.com/nodeschool/cincinnati",
+  "twitter": "CincyNodeSchool",
+  "repo": "http://github.com/nodeschool/cincinnati"
+}
