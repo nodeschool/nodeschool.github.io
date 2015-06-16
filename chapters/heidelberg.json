@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Heidelberg",
+  "location": "Heidelberg",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["martensms", "iUsemws"],
+  "website": "http://nodeschool.io/heidelberg",
+  "twitter": "https://twitter.com/nodeschoolhd",
+  "repo": "http://github.com/nodeschool/heidelberg"
+}
