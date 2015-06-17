@@ -1,0 +1,10 @@
+{
+  "name": "Anchorage NodeSchool",
+  "location": "Anchorage, AK",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["thejones"],
+  "website": "http://nodeschool.io/anchorage",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/anchorage"
+}
