@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Ho Chi Minh - Saigon",
+  "location": "Ho Chi Minh - Saigon",
+  "country": "VN",
+  "region": "Asia",
+  "organizers": ["okaiji", "fw1065"],
+  "website": "http://nodeschool.io/hcmc-saigon",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/hcmc-saigon"
+}
