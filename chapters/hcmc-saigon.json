@@ -5,6 +5,6 @@
   "region": "Asia",
   "organizers": ["okaiji", "fw1065"],
   "website": "http://nodeschool.io/hcmc-saigon",
-  "twitter": "",
+  "twitter": ["@InnovQ", "@invisible_info"],
   "repo": "https://github.com/nodeschool/hcmc-saigon"
 }
