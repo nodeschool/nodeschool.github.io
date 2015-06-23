@@ -37,7 +37,7 @@ To generate a new language file template automatically, run the following comman
 
 ```
 npm install
-npm run language
+npm run generate-language
 ```
 
 This will prompt you to enter a language code and will generate your language file in the `languages/` folder with English placeholder text. Now just translate each line. You should also add your language to the `languages/languages.json` list.
@@ -65,7 +65,7 @@ Just run this command:
 
 ```
 npm install
-npm run untranslated-lang
+npm run generate-untranslated-lang
 ```
 
 You will find untranslated IDs in `languages/xx.untranslated.json`.
