@@ -178,7 +178,7 @@
   "mentoring-list-not-expected-1": "Berbicara di depan group.",
   "mentoring-list-not-expected-2": "Menyiapkan seluruh materi belajar beserta solusinya.",
   "mentoring-list-not-expected-3": "Mempunyai jawaban untuk setiap pertanyaan.",
-  "mentoring-still-unsure": "<h2 data-i18n=\"mentoring-still-unsure-headline\">Masihkah anda ragu bisa melakukannya?</h2>\n          <p data-i18n=\"mentoring-still-unsure-part1\">\n            Just try out some of the <a href=\"/#workshopper-list\">core workshoppers</a>.\n          </p>",
+  "mentoring-still-unsure": "<h2 data-i18n=\"mentoring-still-unsure-headline\">Masihkah anda ragu bisa melakukannya?</h2>\n          <p data-i18n=\"mentoring-still-unsure-part1\">\n            Silahkan coba beberapa <a href=\"/#workshopper-list\">materi-materi workshop inti</a>.\n          </p>",
   "mentoring-still-unsure-headline": "Masihkah anda ragu bisa melakukannya?",
   "mentoring-still-unsure-part1": "Silahkan coba beberapa <a href=\"/#workshopper-list\">materi-materi workshop inti</a>."
 }
