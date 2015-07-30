@@ -1,0 +1,9 @@
+{
+  "name": "NodeSchool Strasbourg",
+  "location": "Strasbourg",
+  "country": "FR",
+  "region": "Europe",
+  "organizers": ["jsebfranck"],
+  "website": "http://nodeschool.io/strasbourg/",
+  "repo": "http://github.com/nodeschool/strasbourg"
+}
