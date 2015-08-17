@@ -12,7 +12,12 @@ BUILD_FOLDER=".build"
 rm -rf "$BUILD_FOLDER"
 
 # Checkout the current repo
-git clone -b master git@github.com:nodeschool/nodeschool.github.io.git .build
+if [[ -z $GITHUB_PERSONAL_ACCESS_TOKEN ]]
+then
+  git clone -b master git@github.com:nodeschool/nodeschool.github.io.git .build
+else
+  git clone -b master https://$GITHUB_USER:$GITHUB_PERSONAL_ACCESS_TOKEN@github.com/nodeschool/nodeschool.github.io.git .build
+fi
 
 npm run build
 
