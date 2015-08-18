@@ -1,0 +1,9 @@
+{
+  "name": "NodeSchool - Glendora Javascript",
+  "location": "Glendora, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["uptownhr"],
+  "website": "http://nodeschool.io/glendora",
+  "repo": "http://github.com/nodeschool/glendora"
+}
