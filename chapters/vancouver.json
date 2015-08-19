@@ -3,8 +3,7 @@
   "location": "Vancouver, BC",
   "country": "CA",
   "region": "North America",
-  "organizers": ["sintaxi", "notmatt", "afabbro"],
-  "website": "",
-  "twitter": "",
+  "organizers": ["sintaxi", "notmatt", "afabbro", "lvivier", "gyaresu"],
+  "website": "http://nodeschool.io/vancouver/",
   "repo": "http://github.com/nodeschool/vancouver"
 }
