@@ -138,7 +138,7 @@ function makeMap(data) {
     + " target='_blank'>{{name}}</a><p>"
 
   var map = Sheetsee.loadMap("map")
-  Sheetsee.addTileLayer(map, 'examples.map-20v6611k')
+  Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
 
   var geoJSON = Sheetsee.createGeoJSON(sorted, optionsJSON)
   var markers = Sheetsee.addMarkerLayer(geoJSON, map, template)
@@ -148,7 +148,7 @@ function makeMap(data) {
       marker.setIcon(L.divIcon({
               // Specify a class name we can refer to in CSS.
               className: 'past-event',
-        
+
               // Set a markers width and height.
               iconSize: [7, 7]
           }))
