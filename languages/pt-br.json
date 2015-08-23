@@ -158,5 +158,21 @@
   "host-recommendation-list-5": "Se você não tem certeza de que o local escolhido tem capacidade suficiente de WiFi, tenha um plano B (por exemplo, pen drives)",
   "host-recommendation-list-6": "Se preciso, converse com empresas de software local e similares, pedindo doações de espaço, WiFi, comidas e bebidas",
   "host-reports-header": "Resumos de eventos anteriores",
-  "host-reports-info": "Aqui você encontra resumos mais detalhados de eventos NodeSchool passados, para ter uma idéia de formato e de como as coisas andaram"
+  "host-reports-info": "Aqui você encontra resumos mais detalhados de eventos NodeSchool passados, para ter uma idéia de formato e de como as coisas andaram",
+  "mentoring-header": "Mentorando em um evento NodeSchool",
+  "mentoring-intro-quote": "<p>Os mentores basicamente ficam passeando pela sala durante o evento em busca de pessoas que estão com dificuldades em realizar os exercícios, e os ajudam a vencerem estas dificuldades. Muitos estudantes tem vergonha de fazerem perguntas, por isto é importante aproximar-se e oferecer ajuda.</p> — <cite><a href=\"https://github.com/nodeschool/nodeschool.github.io/issues/15\" target=\"_blank\">Max Ogden</a></cite>",
+  "mentoring-intro-part1": "Então um organizador lhe pediu para mentorar em um evento NodeSchool, mas você não tem certeza do que precisará fazer ou se irá conseguir? Não se preocupe. :)",
+  "mentoring-intro-part2": "Em primeiro lugar, se você foi convidado a mentorar, é porque provavelmente já tem algum tempo de experiência com JS e Node. Os estudantes irão fazer perguntas que você já faz no passado.",
+  "mentoring-intro-part3": "Segundo, não tem problema nenhum em não saber a solução de todas as perguntas. Muito além de conhecimento em JavaScript, os estudantes poderão aprender algo mais sobre você: como descobrir algo que você não sabe.",
+  "mentoring-list-expected-headline": "O que será esperado de você?",
+  "mentoring-list-expected-1": "Mostrar aos estudantes que programar não é um bicho de sete cabeças, e pode ser muito divertido!",
+  "mentoring-list-expected-2": "Manter um ambiente amigável e otimista.",
+  "mentoring-list-expected-3": "Motivar e encorajar os estudantes.",
+  "mentoring-list-not-expected-headline": "O que <em>não</em> é esperado de você?",
+  "mentoring-list-not-expected-1": "Falar na frente do grupo.",
+  "mentoring-list-not-expected-2": "Preparar todos os materiais de estudo e suas soluções.",
+  "mentoring-list-not-expected-3": "Ter respostas para todas as perguntas.",
+  "mentoring-still-unsure": "<h2 data-i18n=\"mentoring-still-unsure-headline\">Ainda não tem certeza se você iŕa conseguir?</h2><p data-i18n=\"mentoring-still-unsure-part1\">Tente fazer alguns dos <a href=\"/#workshopper-list\">workshops fundamentais</a>.</p>",
+  "mentoring-still-unsure-headline": "Ainda não tem certeza se você iŕa conseguir?",
+  "mentoring-still-unsure-part1": "Tente fazer alguns dos <a href=\"/#workshopper-list\">workshops fundamentais</a>."
 }
