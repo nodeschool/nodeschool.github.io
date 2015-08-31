@@ -1,0 +1,10 @@
+{
+  "name": "Munich NodeSchool",
+  "location": "Munich",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["meaku", "jhnns", "sbat", "flootr", "matthaias"],
+  "website": "http://nodeschool.io/munich",
+  "twitter": "nodeschoolmuc",
+  "repo": "http://github.com/nodeschool/munich"
+}
