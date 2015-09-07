@@ -1,0 +1,9 @@
+{
+  "name": "Córdoba NodeSchool",
+  "location": "Córdoba",
+  "country": "AR",
+  "region": "Latin America",
+  "organizers": ["avilaton"],
+  "website": "http://nodeschool.io/cordoba",
+  "repo": "http://github.com/nodeschool/cordoba"
+}
