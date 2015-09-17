@@ -99,6 +99,7 @@
   "workshopper-learnyoumongo": "MongoDBとNode.jsを始めましょう。",
   "workshopper-regex-adventure": "正規表現で文字列のパースをしてみましょう。",
   "workshopper-torrential": "P2P を用いたシンプルな BitTorrent ネットワークを作るレッスンです。",
+  "workshopper-learn-sass": "SASSの基礎を学びましょう。",
   "events-header": "NodeSchool Events <br>開催予定または終了したイベント情報",
   "events-past": "開催終了",
   "events-future": "開催予定",
