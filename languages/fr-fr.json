@@ -147,5 +147,6 @@
   "workshopper-kick-off-koa": "Débutez avec Koa, la prochaine génération de framework Web pour Node.js.",
   "workshopper-lololodash": "Apprenez Lo-Dash (fork d'underscore) pour gérer les tableaux et les objets simples !",
   "workshopper-learnyoucouchdb": "Apprenez tout de CouchDB - La base de données qui épouse complètement le Web",
-  "workshopper-learnuv": "Apprenez uv pour en tirer avantage ou juste pour le fun, un workshop orienté vers la bibliothèque qui boost Node.js."
+  "workshopper-learnuv": "Apprenez uv pour en tirer avantage ou juste pour le fun, un workshop orienté vers la bibliothèque qui boost Node.js.",
+  "workshopper-thinking-in-react": "Apprenez la philosophie de React en construisant une interface de zéro."
 }
