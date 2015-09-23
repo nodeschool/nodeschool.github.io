@@ -1,0 +1,10 @@
+{
+  "name": "Barcelona NodeSchool",
+  "location": "Barcelona",
+  "country": "ES",
+  "region": "Europe",
+  "organizers": ["patrickheneise"],
+  "website": "http://nodeschool.io/barcelona/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/barcelona"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Cleveland NodeSchool",
+  "location": "Cleveland, OH",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["kmckee", "kwpeters"],
+  "website": "http://nodeschool.io/cleveland",
+  "twitter": "nodeSchoolCLE",
+  "repo": "http://github.com/nodeschool/cleveland"
+}

@@ -25,10 +25,6 @@ npm start
 
 These are in the `/images` directory, feel free to use for your events. In `images/make-a-sticker` there is a template for making a sticker too. Woop.
 
-## Adding a Chapter
-
-If you've added a new local chapter, don't forget to run `npm build` before submitting your pull request so all the appropriate json files are updated.
-
 ## Translations
 
 If you would like to translate the NodeSchool site into another language please make a pull request adding `languages/<language code>.json`.
