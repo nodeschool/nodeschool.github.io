@@ -3,7 +3,7 @@
   "location": "Munich",
   "country": "DE",
   "region": "Europe",
-  "organizers": ["meaku", "jhnns", "sbat", "flootr", "matthaias"],
+  "organizers": ["meaku", "jhnns", "sbat", "flootr", "matthaias", "topa"],
   "website": "http://nodeschool.io/munich",
   "twitter": "nodeschoolmuc",
   "repo": "http://github.com/nodeschool/munich"

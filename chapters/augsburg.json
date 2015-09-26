@@ -3,7 +3,7 @@
   "location": "Augsburg",
   "country": "DE",
   "region": "Europe",
-  "organizers": ["meaku", "jhnns", "sbat", "flootr", "matthaias"],
+  "organizers": ["meaku", "jhnns", "sbat", "flootr", "matthaias", "topa"],
   "website": "http://nodeschool.io/augsburg",
   "twitter": "NodeschoolAugs",
   "repo": "http://github.com/nodeschool/augsburg"
