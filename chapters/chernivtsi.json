@@ -1,0 +1,10 @@
+{
+  "name": "Chernivtsi NodeSchool",
+  "location": "Chernivtsi",
+  "country": "UA",
+  "region": "Europe",
+  "organizers": ["denysdovhan"],
+  "website": "",
+  "twitter": "denysdovhan",
+  "repo": "http://github.com/nodeschool/chernivtsi"
+}
