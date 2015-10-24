@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Perth",
+  "location": "Perth",
+  "country": "AU",
+  "region": "South Pacific",
+  "organizers": ["nii236", "miqid"],
+  "website": "http://nodeschool.io/perth",
+  "repo": "https://github.com/nodeschool/perth",
+  "gitter": "https://gitter.im/nodeschool/perth"
+}
