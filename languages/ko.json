@@ -101,6 +101,7 @@
   "workshopper-learnyoumongo": "MongoDB와 Node.js를 시작하세요.",
   "workshopper-regex-adventure": "정규 표현식으로 구문 분석을 해봅시다.",
   "workshopper-torrential": "간단한 p2p 비트토렌트 네트워크를 만드는 법을 가르치는 강좌입니다.",
+  "workshopper-thinking-in-react": "React의 철학을 UI 기초부터 만들어보며 배워봅시다.",
   "events-header": "NodeSchool의 과거와 미래의 이벤트",
   "events-past": "이전에 개최한 곳",
   "events-future": "앞으로 개최할 곳",
