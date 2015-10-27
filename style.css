@@ -124,7 +124,7 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 .third + .two-thirds {padding-left: 30px;}
 
 .core-workshoppers h3,
-.elective-workshoppers h3 {font-weight: 500; font-size: 3em; margin: 10px 0}
+.elective-workshoppers h3 {font-weight: 500; font-size: 3em; margin: 10px 0; line-height:56px;}
 
 .workshopper h4 a { border-radius: 3px; font-size: 20px; padding: 6px 10px; font-family: Source Code Pro; font-weight: 500; text-decoration: none; display: block; border: none;}
 .elective-workshoppers h4 a {background: #333; color: #fff;}
