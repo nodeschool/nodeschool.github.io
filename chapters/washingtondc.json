@@ -4,7 +4,7 @@
   "country": "US",
   "region": "North America",
   "organizers": ["robbiethegeek", "joshfinnie", "JuanCaicedo", "danpaz"],
-  "website": "",
+  "website": "http://nodeschool.io/washingtondc/",
   "twitter": "NodeSchoolDC",
   "repo": "http://github.com/nodeschool/washingtondc"
 }
