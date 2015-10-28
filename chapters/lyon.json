@@ -1,0 +1,9 @@
+{
+  "name": "Lyon NodeSchool",
+  "location": "Lyon",
+  "country": "FR",
+  "region": "Europe",
+  "organizers": ["maxlath"],
+  "website": "http://nodeschool.io/lyon",
+  "repo": "http://github.com/nodeschool/lyon"
+}
