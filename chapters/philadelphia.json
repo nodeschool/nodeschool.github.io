@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Philadelphia",
+  "location": "Philadelphia, PA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["adobley"],
+  "website": "http://nodeschool.io/philadelphia",
+  "twitter": "nodeschoolphl",
+  "repo": "http://github.com/nodeschool/philadelphia"
+}
