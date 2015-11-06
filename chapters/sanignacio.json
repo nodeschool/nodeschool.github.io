@@ -1,0 +1,10 @@
+{
+  "name": "San Ignacio NodeSchool",
+  "location": "San Ignacio",
+  "country": "PY",
+  "region": "Latin America",
+  "organizers": ["matiasinsaurralde", "luchobenitez", "carloscarvallo"],
+  "website": "http://nodeschool.io/sanignacio",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/sanignacio"
+}
