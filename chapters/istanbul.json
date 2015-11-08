@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Istanbul",
+  "location": "Turkey",
+  "country": "TR",
+  "region": "Europe",
+  "organizers": ["arifcakiroglu", "ekinsigic", "oguzhancolak"],
+  "website": "http://nodeschool.io/istabnul",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/istanbul"
+}
