@@ -7,6 +7,9 @@
   padding: 5px;
   position: relative;
 }
+.month-table-wrapper{
+  overflow: auto;
+}
 
 /*.month-table:before, .month-table:after {
   content: "";
