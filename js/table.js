@@ -95,14 +95,15 @@ function generateMonthTable( date ) {
   var eventMonthName = monthNames[date.getMonth()]
   var monthTable     = $('<table cellspacing=0 class="month-table" data-month="' + date.getFullYear() + "-"  + eventMonthName + '" id="month-' + date.getMonth() + '"></table>')
   var monthTableBody = monthTable.append('<tbody>')
+  var monthTableWrapper = $('<div class="month-table-wrapper">').append(monthTable)
   // var today          = new Date()
   var endOfToday     = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 00, 00, 00)
   var firstDay       = new Date(date.getFullYear(), date.getMonth(), 1)
   var numberOfDays   = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()
   var weekDayNumber  = firstDay.getDay()
 
-  $('#calendar-goes-here').append(monthTable)
-  monthTable.before('<h3 data-month="' + date.getFullYear() + '-' + eventMonthName + '">' + eventMonthName + ' ' + date.getFullYear() + '</h3>')
+  $('#calendar-goes-here').append(monthTableWrapper)
+  monthTableWrapper.before('<h3 data-month="' + date.getFullYear() + '-' + eventMonthName + '">' + eventMonthName + ' ' + date.getFullYear() + '</h3>')
 
   // Add month calendar header
   monthTableBody.append('<tr class="header"></tr>')
