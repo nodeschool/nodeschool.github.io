@@ -1,0 +1,10 @@
+{
+  "name": "Rio de Janeiro NodeSchool",
+  "location": "Rio de Janeiro, RJ",
+  "country": "BR",
+  "region": "Latin America",
+  "organizers": ["milesibastos"],
+  "website": "http://nodeschool.io/rio",
+  "gitter": "https://gitter.im/nodeschool/rio",
+  "repo": "http://github.com/nodeschool/rio"
+}
