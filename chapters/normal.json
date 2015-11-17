@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Normal",
+  "location": "Normal, IL",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["BrainBacon", "codysherman", "shwnstrmn"],
+  "website": "http://nodeschool.io/normal",
+  "twitter": "NodeNormal",
+  "repo": "http://github.com/nodeschool/normal"
+}
