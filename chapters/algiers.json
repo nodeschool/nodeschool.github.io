@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Algiers",
+  "location": "Algiers",
+  "country": "DZ",
+  "region": "Africa",
+  "organizers": ["ismnoiet"],
+  "website": "http://nodeschool.io/algiers",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/algiers"
+}
