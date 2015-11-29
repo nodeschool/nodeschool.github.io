@@ -101,6 +101,8 @@
   "workshopper-torrential": "P2P を用いたシンプルな BitTorrent ネットワークを作るレッスンです。",
   "workshopper-learn-sass": "SASSの基礎を学びましょう。",
   "workshopper-thinking-in-react": "UIをゼロから構築することでReactの考え方を学びましょう。",
+  "workshopper-pattern-lab-workshop": "Pattern Labの基礎について学びましょう。",
+  "workshopper-node-debug-school": "プロダクションでNode.jsのアプリケーションを効率的にデバッグするために、プログラムがなぜ死んだか調査する際のデバッグをSmartOSで行う方法を学びましょう。",
   "events-header": "NodeSchool Events <br>開催予定または終了したイベント情報",
   "events-past": "開催終了",
   "events-future": "開催予定",
