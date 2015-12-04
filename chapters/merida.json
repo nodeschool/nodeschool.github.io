@@ -1,0 +1,10 @@
+{
+  "name": "Mexico City NodeSchool",
+  "location": "Mexico City",
+  "country": "MX",
+  "region": "Latin America",
+  "organizers": ["javikin", "juankuquintana", "ieldanr"],
+  "website": "http://nodeschool.io/merida",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/merida"
+}
