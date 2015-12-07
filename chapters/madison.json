@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Madison",
+  "location": "Madison, WI",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["jthoms1"],
+  "website": "http://nodeschool.io/madison/",
+  "twitter": "nodeschoolmsn",
+  "repo": "http://github.com/nodeschool/madison"
+}
