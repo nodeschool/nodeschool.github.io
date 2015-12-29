@@ -1,0 +1,10 @@
+{
+  "name": "Belfast NodeSchool",
+  "location": "Belfast",
+  "country": "UK",
+  "region": "Europe",
+  "organizers": ["gangleri", "lanazwart", "ablair08", "chrisfowler"],
+  "website": "http://nodeschool.io/belfast",
+  "twitter": "@nodeschoolbel",
+  "repo": "http://github.com/nodeschool/belfast"
+}
