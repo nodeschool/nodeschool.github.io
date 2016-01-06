@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const glob = require('glob')
-const posix = require('posix')
 const isRunning = require('is-running')
 const spawn = require('child_process').spawn
 const fs = require('fs')
