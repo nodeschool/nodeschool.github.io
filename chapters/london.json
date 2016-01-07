@@ -3,7 +3,7 @@
   "location": "London",
   "country": "UK",
   "region": "Europe",
-  "organizers": ["iancrowther", "olizilla", "alanshaw", "orliesaurus"],
+  "organizers": ["iancrowther", "olizilla", "alanshaw", "orliesaurus", "ezodude"],
   "website": "http://nodeschool.io/london",
   "twitter": "",
   "repo": "http://github.com/nodeschool/london"
