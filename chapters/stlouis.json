@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool STL",
+  "location": "St. Louis, MO",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["robbennet"],
+  "website": "http://nodeschool.io/stlouis",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/stlouis"
+}
