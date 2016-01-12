@@ -1,0 +1,9 @@
+{
+  "name": "PairColumbus NodeSchool",
+  "location": "Columbus, OH",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["jbobo"],
+  "website": "http://nodeschool.io/columbus",
+  "repo": "http://github.com/nodeschool/columbus"
+}
