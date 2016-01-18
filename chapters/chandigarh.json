@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Chandigarh",
+  "location": "Chandigarh",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["nsena"],
+  "website": "http://nodeschool.io/chandigarh",
+  "twitter": "nodeschoolchd",
+  "repo": "http://github.com/nodeschool/chandigarh"
+}
