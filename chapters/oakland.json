@@ -3,8 +3,8 @@
   "location": "Oakland, CA",
   "country": "US",
   "region": "North America",
-  "organizers": ["maxogden"],
-  "website": "",
-  "twitter": "",
+  "organizers": ["fauntleroy"],
+  "website": "http://nodeschool.io/oakland/",
+  "twitter": "nodeschooloak",
   "repo": "http://github.com/nodeschool/oakland"
 }
