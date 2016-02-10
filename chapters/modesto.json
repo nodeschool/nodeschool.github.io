@@ -1,0 +1,10 @@
+{
+  "name": "Modesto NodeSchool",
+  "location": "Modesto, CA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["joshterrill", "nbunney"],
+  "website": "http://nodeschool.io/modesto",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/modesto"
+}
