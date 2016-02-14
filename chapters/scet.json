@@ -1,0 +1,10 @@
+{
+  "name": "SCET NodeSchool",
+  "location": "Sarvajanik College of Engineering and Technology, Surat",
+  "country": "IN",
+  "region": "Gujarat",
+  "organizers": ["harshjv"],
+  "website": "",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/scet"
+}
