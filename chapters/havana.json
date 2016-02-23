@@ -1,0 +1,10 @@
+{
+  "name": "Havana NodeSchool",
+  "location": "Havana",
+  "country": "CU",
+  "region": "Latin America",
+  "organizers": ["phinfonet","elMor3no", "olemis","robertkowalski","aurium"],
+  "website": "http://nodeschool.io/havana",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/havana"
+}
