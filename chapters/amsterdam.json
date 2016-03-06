@@ -1,10 +1,10 @@
 {
-  "name": "Amsterdam NodeSchool",
+  "name": "NodeSchool Amsterdam",
   "location": "Amsterdam",
   "country": "NL",
   "region": "Europe",
   "organizers": ["jpwesselink", "rickheere", "stefanmirck", "codeflyer"],
-  "website": "",
-  "twitter": "",
+  "website": "http://github.com/nodeschool/amsterdam",
+  "twitter": "NodeSchoolAMS",
   "repo": "http://github.com/nodeschool/amsterdam"
 }
