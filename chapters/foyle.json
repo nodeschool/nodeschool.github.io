@@ -1,0 +1,10 @@
+{
+  "name": "Foyle NodeSchool",
+  "location": "Derry/Londonderry",
+  "country": "UK",
+  "region": "Europe",
+  "organizers": ["sjmerrigan", "kieranheg", "vquigley", "CahalKearney", "gangleri", "diarmaidm"],
+  "website": "http://nodeschool.io/foyle-valley",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/foyle-valley"
+}
