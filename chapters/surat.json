@@ -1,0 +1,10 @@
+{
+  "name": "Surat NodeSchool",
+  "location": "Surat, GJ",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["harshjv", "Akshay-Jain01"],
+  "website": "",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/surat"
+}
