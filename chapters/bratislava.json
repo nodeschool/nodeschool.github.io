@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Bratislava",
+  "location": "Bratislava",
+  "country": "SK",
+  "region": "Europe",
+  "organizers": ["yangwao"],
+  "website": "http://nodeschool.io/bratislava",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/bratislava"
+}
