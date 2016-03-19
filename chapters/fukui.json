@@ -1,0 +1,9 @@
+{
+  "name": "Fukui NodeSchool",
+  "location": "Fukui",
+  "country": "JP",
+  "region": "Asia",
+  "organizers": ["fossamagna"],
+  "website": "http://nodeschool.io/fukui",
+  "repo": "http://github.com/nodeschool/fukui"
+}
