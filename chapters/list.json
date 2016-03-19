@@ -101,6 +101,18 @@
           "repo": "http://github.com/nodeschool/amman"
         },
         {
+          "name": "NodeSchool Bali",
+          "location": "Bali",
+          "country": "ID",
+          "region": "Asia",
+          "organizers": [
+            "LaughingSun"
+          ],
+          "website": "http://nodeschool.io/bali",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/bali"
+        },
+        {
           "name": "Bangalore NodeSchool",
           "location": "Bangalore",
           "country": "IN",
@@ -113,18 +125,6 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/bangalore"
-        },
-        {
-          "name": "NodeSchool Bali",
-          "location": "Bali",
-          "country": "ID",
-          "region": "Asia",
-          "organizers": [
-            "LaughingSun"
-          ],
-          "website": "http://nodeschool.io/bali",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/bali"
         },
         {
           "name": "NodeSchool Cebu",
@@ -140,18 +140,6 @@
           "repo": "http://github.com/nodeschool/cebu"
         },
         {
-          "name": "Chennai NodeSchool",
-          "location": "Chennai",
-          "country": "IN",
-          "region": "Asia",
-          "organizers": [
-            "vikene"
-          ],
-          "website": "http://nodeschool.io/chennai",
-          "twitter": "chn_nodeschool",
-          "repo": "http://github.com/nodeschool/chennai"
-        },
-        {
           "name": "NodeSchool Chandigarh",
           "location": "Chandigarh",
           "country": "IN",
@@ -162,6 +150,18 @@
           "website": "http://nodeschool.io/chandigarh",
           "twitter": "nodeschoolchd",
           "repo": "http://github.com/nodeschool/chandigarh"
+        },
+        {
+          "name": "Chennai NodeSchool",
+          "location": "Chennai",
+          "country": "IN",
+          "region": "Asia",
+          "organizers": [
+            "vikene"
+          ],
+          "website": "http://nodeschool.io/chennai",
+          "twitter": "chn_nodeschool",
+          "repo": "http://github.com/nodeschool/chennai"
         },
         {
           "name": "NodeSchool Chiang Mai",
@@ -397,18 +397,6 @@
           "repo": "http://github.com/nodeschool/pune"
         },
         {
-          "name": "Shiraz NodeSchool",
-          "location": "Shiraz,Fars",
-          "country": "Iran",
-          "region": "Asia",
-          "organizers": [
-            "ArianSotoudehMehr"
-          ],
-          "website": "http://nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/shiraz"
-        },
-        {
           "name": "NodeSchool Seoul",
           "location": "Seoul",
           "country": "KR",
@@ -420,6 +408,18 @@
           "twitter": "",
           "repo": "https://github.com/nodeschool/seoul",
           "gitter": "https://gitter.im/nodeschool/nodeschool/seoul"
+        },
+        {
+          "name": "Shiraz NodeSchool",
+          "location": "Shiraz,Fars",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/shiraz"
         },
         {
           "name": "Singapore NodeSchool",
@@ -459,18 +459,6 @@
           "repo": "https://github.com/nodeschool/surat"
         },
         {
-          "name": "Tabriz NodeSchool",
-          "location": "Tabriz,Azarbaijan",
-          "country": "Iran",
-          "region": "Asia",
-          "organizers": [
-            "ArianSotoudehMehr"
-          ],
-          "website": "http://nodeschools.ir",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/tabriz"
-        },
-        {
           "name": "Taiwan Nodeschool",
           "location": "Taiwan",
           "region": "Asia",
@@ -482,6 +470,18 @@
           "website": "http://nodeschool.io/taiwan",
           "twitter": "",
           "repo": "https://github.com/nodeschool/taiwan"
+        },
+        {
+          "name": "Tabriz NodeSchool",
+          "location": "Tabriz,Azarbaijan",
+          "country": "Iran",
+          "region": "Asia",
+          "organizers": [
+            "ArianSotoudehMehr"
+          ],
+          "website": "http://nodeschools.ir",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/tabriz"
         },
         {
           "name": "Tehran NodeSchool",
@@ -598,6 +598,20 @@
           "repo": "http://github.com/nodeschool/barcelona"
         },
         {
+          "name": "NodeSchool Belgrade",
+          "location": "Belgrade",
+          "country": "RS",
+          "region": "Europe",
+          "organizers": [
+            "stojanovic",
+            "aysbg",
+            "simalexan"
+          ],
+          "website": "http://nodeschool.io/belgrade",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/belgrade"
+        },
+        {
           "name": "Belfast NodeSchool",
           "location": "Belfast",
           "country": "UK",
@@ -627,18 +641,16 @@
           "repo": "http://github.com/nodeschool/berlin"
         },
         {
-          "name": "NodeSchool Belgrade",
-          "location": "Belgrade",
-          "country": "RS",
+          "name": "NodeSchool Bratislava",
+          "location": "Bratislava",
+          "country": "SK",
           "region": "Europe",
           "organizers": [
-            "stojanovic",
-            "aysbg",
-            "simalexan"
+            "yangwao"
           ],
-          "website": "http://nodeschool.io/belgrade",
+          "website": "http://nodeschool.io/bratislava",
           "twitter": "",
-          "repo": "http://github.com/nodeschool/belgrade"
+          "repo": "http://github.com/nodeschool/bratislava"
         },
         {
           "name": "Bristol NodeSchool",
@@ -654,18 +666,6 @@
           "twitter": "",
           "gitter": "https://gitter.im/nodeschool/bristol",
           "repo": "http://github.com/nodeschool/bristol"
-        },
-        {
-          "name": "NodeSchool Bratislava",
-          "location": "Bratislava",
-          "country": "SK",
-          "region": "Europe",
-          "organizers": [
-            "yangwao"
-          ],
-          "website": "http://nodeschool.io/bratislava",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/bratislava"
         },
         {
           "name": "Chernivtsi NodeSchool",
@@ -845,18 +845,6 @@
           "repo": "http://github.com/nodeschool/kyiv"
         },
         {
-          "name": "Lisbon NodeSchool",
-          "location": "Lisbon",
-          "country": "PT",
-          "region": "Europe",
-          "organizers": [
-            "diasdavid"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/lisbon"
-        },
-        {
           "name": "NodeSchool Lodz",
           "location": "Lodz",
           "country": "PL",
@@ -869,6 +857,18 @@
           "twitter": "nodeschool_lodz",
           "gitter": "https://gitter.im/nodeschool/lodz",
           "repo": "https://github.com/nodeschool/lodz"
+        },
+        {
+          "name": "Lisbon NodeSchool",
+          "location": "Lisbon",
+          "country": "PT",
+          "region": "Europe",
+          "organizers": [
+            "diasdavid"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/lisbon"
         },
         {
           "name": "London NodeSchool",
@@ -887,17 +887,6 @@
           "repo": "http://github.com/nodeschool/london"
         },
         {
-          "name": "Lyon NodeSchool",
-          "location": "Lyon",
-          "country": "FR",
-          "region": "Europe",
-          "organizers": [
-            "maxlath"
-          ],
-          "website": "http://nodeschool.io/lyon",
-          "repo": "http://github.com/nodeschool/lyon"
-        },
-        {
           "name": "NodeSchool Madrid",
           "location": "Madrid",
           "country": "ES",
@@ -910,6 +899,17 @@
           "website": "http://nodeschool.io/madrid",
           "twitter": "@NodeJsMadrid",
           "repo": "http://github.com/nodeschool/madrid"
+        },
+        {
+          "name": "Lyon NodeSchool",
+          "location": "Lyon",
+          "country": "FR",
+          "region": "Europe",
+          "organizers": [
+            "maxlath"
+          ],
+          "website": "http://nodeschool.io/lyon",
+          "repo": "http://github.com/nodeschool/lyon"
         },
         {
           "name": "NodeSchool Moscow",
@@ -942,31 +942,6 @@
           "repo": "http://github.com/nodeschool/munich"
         },
         {
-          "name": "Oslo NodeSchool",
-          "location": "Oslo",
-          "country": "NO",
-          "region": "Europe",
-          "organizers": [
-            "Andersos"
-          ],
-          "website": "http://nodeschool.io/oslo",
-          "twitter": "",
-          "gitter": "https://gitter.im/nodeschool/oslo",
-          "repo": "http://github.com/nodeschool/oslo"
-        },
-        {
-          "name": "NodeSchool Paris",
-          "location": "Paris",
-          "country": "FR",
-          "region": "Europe",
-          "organizers": [
-            "tdd"
-          ],
-          "website": "http://nodeschool.io/paris/",
-          "twitter": "NodeSchoolParis",
-          "repo": "http://github.com/nodeschool/paris"
-        },
-        {
           "name": "NodeSchool Oxford",
           "location": "Oxford",
           "country": "UK",
@@ -982,6 +957,31 @@
           "website": "http://jsoxford.com/",
           "twitter": "https://twitter.com/JSOxford",
           "repo": "http://github.com/nodeschool/oxford"
+        },
+        {
+          "name": "NodeSchool Paris",
+          "location": "Paris",
+          "country": "FR",
+          "region": "Europe",
+          "organizers": [
+            "tdd"
+          ],
+          "website": "http://nodeschool.io/paris/",
+          "twitter": "NodeSchoolParis",
+          "repo": "http://github.com/nodeschool/paris"
+        },
+        {
+          "name": "Oslo NodeSchool",
+          "location": "Oslo",
+          "country": "NO",
+          "region": "Europe",
+          "organizers": [
+            "Andersos"
+          ],
+          "website": "http://nodeschool.io/oslo",
+          "twitter": "",
+          "gitter": "https://gitter.im/nodeschool/oslo",
+          "repo": "http://github.com/nodeschool/oslo"
         },
         {
           "name": "NodeSchool Sevilla",
@@ -1177,17 +1177,6 @@
           "repo": "http://github.com/nodeschool/campinas"
         },
         {
-          "name": "Córdoba NodeSchool",
-          "location": "Córdoba",
-          "country": "AR",
-          "region": "Latin America",
-          "organizers": [
-            "avilaton"
-          ],
-          "website": "http://nodeschool.io/cordoba",
-          "repo": "http://github.com/nodeschool/cordoba"
-        },
-        {
           "name": "NodeSchool Cochabamba",
           "location": "Cochabamba, BO",
           "country": "BO",
@@ -1199,6 +1188,17 @@
           "website": "http://www.boliviajs.com",
           "twitter": "https://www.twitter.com/BoliviaJS",
           "repo": "http://github.com/nodeschool/Cochabamba"
+        },
+        {
+          "name": "Córdoba NodeSchool",
+          "location": "Córdoba",
+          "country": "AR",
+          "region": "Latin America",
+          "organizers": [
+            "avilaton"
+          ],
+          "website": "http://nodeschool.io/cordoba",
+          "repo": "http://github.com/nodeschool/cordoba"
         },
         {
           "name": "NodeSchool Costa Rica ",
@@ -1279,20 +1279,6 @@
         },
         {
           "name": "Mexico City NodeSchool",
-          "location": "Mexico City",
-          "country": "MX",
-          "region": "Latin America",
-          "organizers": [
-            "jeduan",
-            "rogr",
-            "siedrix"
-          ],
-          "website": "http://nodeschool.io/mexicocity",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/mexicocity"
-        },
-        {
-          "name": "Mexico City NodeSchool",
           "location": "Mérida",
           "country": "MX",
           "region": "Latin America",
@@ -1304,6 +1290,20 @@
           "website": "http://nodeschool.io/merida",
           "twitter": "",
           "repo": "http://github.com/nodeschool/merida"
+        },
+        {
+          "name": "Mexico City NodeSchool",
+          "location": "Mexico City",
+          "country": "MX",
+          "region": "Latin America",
+          "organizers": [
+            "jeduan",
+            "rogr",
+            "siedrix"
+          ],
+          "website": "http://nodeschool.io/mexicocity",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/mexicocity"
         },
         {
           "name": "Montevideo NodeSchool",
@@ -1362,19 +1362,6 @@
           "repo": "http://github.com/nodeschool/rio"
         },
         {
-          "name": "NodeSchool Santa Marta",
-          "location": "Santa Marta",
-          "country": "CO",
-          "region": "Latin America",
-          "organizers": [
-            "pedroromn",
-            "gengue"
-          ],
-          "website": "http://nodeschool.io/santamarta/",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/santamarta"
-        },
-        {
           "name": "San Ignacio NodeSchool",
           "location": "San Ignacio",
           "country": "PY",
@@ -1387,6 +1374,19 @@
           "website": "http://nodeschool.io/sanignacio",
           "twitter": "",
           "repo": "http://github.com/nodeschool/sanignacio"
+        },
+        {
+          "name": "NodeSchool Santa Marta",
+          "location": "Santa Marta",
+          "country": "CO",
+          "region": "Latin America",
+          "organizers": [
+            "pedroromn",
+            "gengue"
+          ],
+          "website": "http://nodeschool.io/santamarta/",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/santamarta"
         },
         {
           "name": "Santiago NodeSchool",
@@ -1569,6 +1569,20 @@
           "repo": "http://github.com/nodeschool/columbus"
         },
         {
+          "name": "NodeSchool Dallas",
+          "location": "Dallas, TX",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "prochafilho",
+            "gangstead",
+            "leongaban"
+          ],
+          "website": "http://nodeschool.io/dallas",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/dallas"
+        },
+        {
           "name": "Denver-Boulder-Ft. Collins NodeSchool",
           "location": "Denver, CO",
           "country": "US",
@@ -1582,20 +1596,6 @@
           "website": "",
           "twitter": "@nodejscolorado",
           "repo": "http://github.com/nodeschool/denver-boulder"
-        },
-        {
-          "name": "NodeSchool Dallas",
-          "location": "Dallas, TX",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "prochafilho",
-            "gangstead",
-            "leongaban"
-          ],
-          "website": "http://nodeschool.io/dallas",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/dallas"
         },
         {
           "name": "Edmonton NodeSchool",
@@ -1807,6 +1807,18 @@
           "repo": "http://github.com/nodeschool/oakland"
         },
         {
+          "name": "NodeSchool OC",
+          "location": "Orange County, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "markhuge"
+          ],
+          "website": "",
+          "twitter": "",
+          "repo": "http://github.com/nodeschool/oc"
+        },
+        {
           "name": "Orlando NodeSchool",
           "location": "Orlando, FL",
           "country": "US",
@@ -1819,18 +1831,6 @@
           "website": "",
           "twitter": "",
           "repo": "http://github.com/nodeschool/orlando"
-        },
-        {
-          "name": "NodeSchool OC",
-          "location": "Orange County, CA",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "markhuge"
-          ],
-          "website": "",
-          "twitter": "",
-          "repo": "http://github.com/nodeschool/oc"
         },
         {
           "name": "NodeSchool PDX",
@@ -1851,6 +1851,18 @@
           "repo": "http://github.com/nodeschool/pdx"
         },
         {
+          "name": "NodeSchool Philadelphia",
+          "location": "Philadelphia, PA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "adobley"
+          ],
+          "website": "http://nodeschool.io/philadelphia",
+          "twitter": "nodeschoolphl",
+          "repo": "http://github.com/nodeschool/philadelphia"
+        },
+        {
           "name": "Nodeschool Portland, ME",
           "location": "Portland, ME",
           "country": "US",
@@ -1863,18 +1875,6 @@
           "twitter": "",
           "repo": "http://github.com/nodeschool/portland-me",
           "other": "http://www.meetup.com/Portland-Maine-Nodeschool"
-        },
-        {
-          "name": "NodeSchool Philadelphia",
-          "location": "Philadelphia, PA",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "adobley"
-          ],
-          "website": "http://nodeschool.io/philadelphia",
-          "twitter": "nodeschoolphl",
-          "repo": "http://github.com/nodeschool/philadelphia"
         },
         {
           "name": "Raleigh-Durham NodeSchool",
@@ -1890,6 +1890,17 @@
           "repo": "http://github.com/nodeschool/raleigh-durham"
         },
         {
+          "name": "NodeSchool SLO",
+          "location": "San Luis Obispo, CA",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "ecwyne"
+          ],
+          "website": "http://nodeschool.io/san-luis-obispo/",
+          "repo": "http://github.com/nodeschool/san-luis-obispo"
+        },
+        {
           "name": "NodeSchool Reno",
           "location": "Reno, NV",
           "country": "US",
@@ -1902,17 +1913,6 @@
           "website": "http://nodeschool.io/reno/",
           "twitter": "",
           "repo": "http://github.com/nodeschool/reno"
-        },
-        {
-          "name": "NodeSchool SLO",
-          "location": "San Luis Obispo, CA",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "ecwyne"
-          ],
-          "website": "http://nodeschool.io/san-luis-obispo/",
-          "repo": "http://github.com/nodeschool/san-luis-obispo"
         },
         {
           "name": "NodeSchool SF",
@@ -1992,6 +1992,18 @@
           "repo": "https://github.com/nodeschool/tampa"
         },
         {
+          "name": "Utah Node Ninjas",
+          "location": "Provo, UT",
+          "country": "US",
+          "region": "North America",
+          "organizers": [
+            "therebelrobot"
+          ],
+          "website": "http://www.meetup.com/Node-Ninjas/",
+          "twitter": "",
+          "repo": "https://github.com/Utah-Node-Ninjas"
+        },
+        {
           "name": "NodeSchool Toronto",
           "location": "Toronto",
           "country": "CA",
@@ -2008,18 +2020,6 @@
           "website": "http://nodeschool.io/toronto",
           "twitter": "https://twitter.com/nodeschoolto",
           "repo": "http://github.com/nodeschool/toronto"
-        },
-        {
-          "name": "Utah Node Ninjas",
-          "location": "Provo, UT",
-          "country": "US",
-          "region": "North America",
-          "organizers": [
-            "therebelrobot"
-          ],
-          "website": "http://www.meetup.com/Node-Ninjas/",
-          "twitter": "",
-          "repo": "https://github.com/Utah-Node-Ninjas"
         },
         {
           "name": "NodeSchool Vancouver",
