@@ -4,9 +4,19 @@
   "country": "CRI",
   "region": "Latin America",
   "organizers": [
-    "gaboesquivel"
+    "gaboesquivel",
+    "yeco",
+    "laubits",
+    "brolag",
+    "stevenperez",
+    "kevinblanco",
+    "laurensortiz",
+    "jarias",
+    "rubenabix",
+    "cayasso",
+    "avenidanet"
   ],
-  "website": "http://meetup.com/costaricajs",
+  "website": "http://nodeschool.io/costarica/",
   "twitter": "costaricajs",
   "repo": "http://github.com/nodeschool/costarica"
 }
