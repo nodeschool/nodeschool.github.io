@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="start">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/mapbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeSchool - Getting Started</title>
+  </head>
+  <body class="start">
+    <header>
+      <div class="container">
+        <div class="full">
+          <a href="index.html"><img class="logo" src="/images/schoolhouse.svg" alt="nodeschoolhouse"></a>
+          <ul class="nav">
+            <li><a href="index.html" data-i18n="menu-index">Home</a></li>
+            <li class="current-page"><a href="start.html" data-i18n="menu-start">Getting Started</a></li>
+            <li><a href="index.html#workshopper-list" data-i18n="menu-tutorials">Tutorials</a></li>
+            <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+            <li><a href="about.html" data-i18n="menu-about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main" name="main" role="main">
+    <div class="container" style="background-color: #fff;">
+      <div class="full">
+        <h1 data-i18n="start-h1">Getting Started</h1>
+        <p data-i18n="start-header">Follow these simple steps to get your computer ready for running the NodeSchool chapters. Choose the instructions matching your operating system below.</p>
+        <nav>
+          <ul class="inner-nav">
+            <li><a href="#windows">Windows</a></li>
+            <li><a href="#osx">OS X</a></li>
+            <li><a href="#linux">Linux</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container" id="windows">
+        <div class="third">
+          <h3>Windows</h3>
+        </div>
+        <div class="two-thirds">
+          <h4>Node.js</h4>
+          <p>First download and install the latest version of Node.js from <a href="https://nodejs.org">nodejs.org</a>.</p>
+          <p>You will use <a href="https://www.npmjs.com">npm</a> to install each Workshopper. Npm will be installed automatically when you install Node, so you don't need to install it yourself.</p>
+          <p>You will be using the Command Prompt application in Windows to install and run the Workshoppers. To start the Command Prompt, open the Start menu, select "Run", type <code>cmd</code> in the field and hit Enter (Windows 8 users should search for and run <code>cmd.exe</code>).</p>
+          <p>The first command you should run in the Command Prompt after installing Node.js is shown below. It's just to check that everything is working as expected before you continue:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>node --version</code>
+            </div>
+          </div>
+          <p>This should output the version of Node.js that have been installed. It should show version 0.12 or above.</p>
+          <p>Next, let's check that npm is working:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>npm --version</code>
+            </div>
+          </div>
+          <p>Check that it correctly outputs a version number.</p>
+          <h4>Native Modules</h4>
+          <p>Some Workshoppers require your computer to be able to compile native modules. Check out the <a href="native-modules.html">Installing Native Modules</a> page for details if you run into problems.</p>
+          <h4>Code Editor</h4>
+          <p><span data-i18n="index-get-going-editor">You will also need a</span> <strong data-i18n="index-get-going-editor2">Text Editor</strong><span data-i18n="index-get-going-editor3">, if you don&apos;t have one already, you may want one for editing code. A few options:</span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/3">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">.</span></p>
+          <h4>Start learning</h4>
+          <p>If you completed the steps above, you are now ready <a href="index.html#workshopper-list">for your first Workshopper.</a>
+        </div>
+      </div>
+
+      <div class="container" id="osx">
+        <div class="third">
+          <h3>OS X</h3>
+        </div>
+        <div class="two-thirds">
+          <h4>Node.js</h4>
+          <p>First download and install the latest version of Node.js from <a href="https://nodejs.org">nodejs.org</a>. Don't use nvm (Node Version Manager) or similar unless you know what you are doing or are ready to use a lot of time getting things to work properly.</p>
+          <p>You will use <a href="https://www.npmjs.com">npm</a> to install each Workshopper. Npm will be installed automatically when you install Node, so you don't need to install it yourself.</p>
+          <p>You will be using the Terminal application in OS X to install and run the Workshoppers. You will find it in the sub-folder "Utilities" inside your "Applications" folder. The first command you should run in the Terminal after installing Node.js is shown below. It's just to check that everything is working as expected before you continue:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>node --version</code>
+            </div>
+          </div>
+          <p>This should output the version of Node.js that have been installed. It should show version 0.12 or above.</p>
+          <p>Next, let's check that npm is working:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>npm --version</code>
+            </div>
+          </div>
+          <p>Check that it correctly outputs a version number.</p>
+          <h4>Native Modules</h4>
+          <p>Some Workshoppers require your computer to be able to compile native modules. Check out the <a href="native-modules.html">Installing Native Modules</a> page for details if you run into problems.</p>
+          <h4>Code Editor</h4>
+          <p><span data-i18n="index-get-going-editor">You will also need a</span> <strong data-i18n="index-get-going-editor2">Text Editor</strong><span data-i18n="index-get-going-editor3">, if you don&apos;t have one already, you may want one for editing code. A few options:</span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/3">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://macromates.com/download">Textmate</a><span data-i18n="index-get-going-editor6">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">.</span></p>
+          <h4>Start learning</h4>
+          <p>If you completed the steps above, you are now ready <a href="index.html#workshopper-list">for your first Workshopper.</a>
+        </div>
+      </div>
+
+      <div class="container" id="linux">
+        <div class="third">
+          <h3>Linux</h3>
+        </div>
+        <div class="two-thirds">
+          <h4>Node.js</h4>
+          <p>First install the latest version of Node.js. We normally don't recommend using your normal package manager or nvm (Node Version Manager) - instead run the commands related to your Linux distribution below in your terminal.</p>
+          <p>You will use <a href="https://www.npmjs.com">npm</a> to install each Workshopper. Npm will be installed automatically when you install Node, so you don't need to install it yourself.</p>
+          <h5>Ubuntu</h5>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>
+                curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -<br />
+                sudo apt-get install -y nodejs
+              </code>
+            </div>
+          </div>
+          <h5>Debian</h5>
+          <p>Run the following commands as root</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>
+                curl -sL https://deb.nodesource.com/setup_0.12 | bash -<br />
+                apt-get install -y nodejs
+              </code>
+            </div>
+          </div>
+          <p>After you've installed Node.js, let's just verify that it have been installed correctly:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>node --version</code>
+            </div>
+          </div>
+          <p>This should output the version of Node.js that have been installed. It should show version 0.12.x.</p>
+          <p>Next, let's check that npm is working:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>npm --version</code>
+            </div>
+          </div>
+          <p>Check that it correctly outputs a version number.</p>
+          <h5>Troubleshooting</h5>
+          <p>If you run into issues, you might be able to find a solution in the <a href="https://github.com/nodesource/distributions">NodeSource distributions repo</a>. If you still can't get it to work, you can download and install Node.js directly from <a href="https://nodejs.org">nodejs.org</a>.</p>
+          <h4>Native Modules</h4>
+          <p>Some Workshoppers require your computer to be able to compile native modules. Check out the <a href="native-modules.html">Installing Native Modules</a> page for details if you run into problems.</p>
+          <h4>Code Editor</h4>
+          <p><span data-i18n="index-get-going-editor">You will also need a</span> <strong data-i18n="index-get-going-editor2">Text Editor</strong><span data-i18n="index-get-going-editor3">, if you don&apos;t have one already, you may want one for editing code. A few options:</span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/3">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">.</span></p>
+          <h4>Start learning</h4>
+          <p>If you completed the steps above, you are now ready <a href="index.html#workshopper-list">for your first Workshopper.</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/dependencies.js"></script>
+    <script>
+      !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
+      (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
+      l=c.getElementsByTagName(O)[0];o.src='//www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(o,l)}(window,document,'ga','script');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

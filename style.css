@@ -150,6 +150,7 @@ ul.nav-lang li.selected {text-decoration: none; color: #666;}
 .term .chrome .btn{ border:solid 2px #777;}
 .term{ display: block; border-radius: 4px; margin-bottom:10px; text-align: left; }
 .term .shell{ min-height:130px; overflow:hidden; }
+.term .shell-narrow{ min-height:auto; }
 .term .chrome{ height:34px; padding-left:4px; border-top:0 none; border-right:0 none; border-left:0 none; }
 .term .chrome:before{ content:" "; display:inline-block; height:100%; vertical-align:middle; }
 .term .chrome .btn{ display:inline-block; vertical-align:middle; width:8px; height:8px; border-radius:100%; }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="native">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/mapbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeSchool - Installing Native Modules</title>
+  </head>
+  <body class="native">
+    <header>
+      <div class="container">
+        <div class="full">
+          <a href="index.html"><img class="logo" src="/images/schoolhouse.svg" alt="nodeschoolhouse"></a>
+          <ul class="nav">
+            <li><a href="index.html" data-i18n="menu-index">Home</a></li>
+            <li><a href="start.html" data-i18n="menu-start">Getting Started</a></li>
+            <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+            <li><a href="about.html" data-i18n="menu-about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main" name="main" role="main">
+    <div class="container" style="background-color: #fff;">
+      <div class="full">
+        <h1 data-i18n="native-h1">Installing Native Modules</h1>
+        <p data-i18n="native-header">Some npm modules require native dependencies to be compiled when they are being installed (a.k.a. "native modules"). This guide will help you prepare your system for compiling native modules.</p>
+        <nav>
+          <ul class="inner-nav">
+            <li><a href="#windows">Windows</a></li>
+            <li><a href="#osx">OS X</a></li>
+            <li><a href="#linux">Linux</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container" id="windows">
+        <div class="third">
+          <h3>Windows</h3>
+        </div>
+        <div class="two-thirds">
+          <p>You need to install Microsoft Visual Studio</p>
+        </div>
+      </div>
+
+      <div class="container" id="osx">
+        <div class="third">
+          <h3>OS X</h3>
+        </div>
+        <div class="two-thirds">
+          <p>You will need the Command Line Tool package from Apple to be able to compile and install native modules. As of OS X 10.9 (Mavericks, Yosemite, El Capitan and newer) just run the command below which will guide you through installing the Command Line Tool package:</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>xcode-select --install</code>
+            </div>
+          </div>
+          <p>If you have an earlier version of OS X, check out <a href="http://osxdaily.com/2012/07/06/install-gcc-without-xcode-in-mac-os-x/">this guide</a> instead.</p>
+        </div>
+      </div>
+
+      <div class="container" id="linux">
+        <div class="third">
+          <h3>Linux</h3>
+        </div>
+        <div class="two-thirds">
+          <p>You will need the <code>build-essential</code> package to be able to compile native modules. Follow the guide for your Linux distribution below to install it:</p>
+          <h4>Ubuntu</h4>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>sudo apt-get install -y build-essential</code>
+            </div>
+          </div>
+          <h4>Debian</h4>
+          <p>Run the following command as root</p>
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell shell-narrow">
+              <code>apt-get install -y build-essential</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/dependencies.js"></script>
+    <script>
+      !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
+      (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
+      l=c.getElementsByTagName(O)[0];o.src='//www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(o,l)}(window,document,'ga','script');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
