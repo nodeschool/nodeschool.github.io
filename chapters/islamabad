@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Islamabad",
+  "location": "Islamabad",
+  "country": "PK",
+  "region": "Asia",
+  "organizers": ["raheelkhokhar"],
+  "website": "http://nodeschool.io/islamabad",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/islamabad"
+}
