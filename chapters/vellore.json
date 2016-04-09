@@ -1,0 +1,10 @@
+{
+  "name": "Vellore NodeSchool",
+  "location": "Vellore",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["nikhil-kasukurthi"],
+  "website": "",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/vellore"
+}

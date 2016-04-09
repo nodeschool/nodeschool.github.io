@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Hermosillo",
+  "location": "Hermosillo, Son",
+  "country": "MX",
+  "region": "Latin America",
+  "organizers": ["dayrachiu", "jrsalgado", "keogh", "abrahamhinojo"],
+  "website": "http://nodeschool.io/hermosillo",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/hermosillo"
+}

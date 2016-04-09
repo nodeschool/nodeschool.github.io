@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Bangkok",
+  "location": "Bangkok",
+  "country": "TH",
+  "region": "Asia",
+  "organizers": ["jjmax75"],
+  "website": "http://nodeschool.io/bangkok",
+  "repo": "http://github.com/nodeschool/bangkok",
+  "gitter": "https://gitter.im/nodeschool/bangkok",
+  "facebook": "https://www.facebook.com/groups/NodeSchoolBangkok/"
+}
