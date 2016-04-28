@@ -1,0 +1,13 @@
+{
+  "name": "NodeSchool Montréal",
+  "location": "Montréal",
+  "country": "CA",
+  "region": "North America",
+  "organizers": [
+    "pcuci",
+    "David-Ro"
+  ],
+  "website": "http://nodeschool.io/montreal",
+  "twitter": "https://twitter.com/NodeSchoolMTL",
+  "repo": "http://github.com/nodeschool/montreal"
+}
