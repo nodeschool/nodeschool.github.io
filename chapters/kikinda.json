@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Kikinda",
+  "location": "Kikinda",
+  "country": "RS",
+  "region": "Europe",
+  "organizers": ["marxo", "filipboskov"],
+  "website": "http://nodeschool.io/kikinda",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/kikinda"
+}
