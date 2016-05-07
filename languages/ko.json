@@ -207,5 +207,5 @@
   "mentoring-list-not-expected-3": "모든 질문에 대답하기.",
   "mentoring-still-unsure-headline": "아직 할 수 있을지 잘 모르시겠나요?",
   "mentoring-still-unsure-part1": "그냥 <a href=\"/#workshopper-list\">핵심 워크쇼퍼</a>를 해보세요.",
-  "mentoring-still-unsure": "<h2 data-i18n=\"mentoring-still-unsure-headline\">아직 할 수 있을지 확신이 서지 않은가요?</h2>\n          <p data-i18n=\"mentoring-still-unsure-part1\">\n            그냥 <a href=\"/#workshopper-list\">핵심 워크숍</a>의 몇 가지를 시도해보세요.\n          </p>"
+  "mentoring-still-unsure": "<h2 data-i18n=\"mentoring-still-unsure-headline\">아직 할 수 있을지 확신이 서지 않나요?</h2>\n          <p data-i18n=\"mentoring-still-unsure-part1\">\n            그냥 <a href=\"/#workshopper-list\">핵심 워크숍</a>의 몇 가지를 시도해보세요.\n          </p>"
 }
