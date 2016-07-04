@@ -1,0 +1,10 @@
+{
+  "name": "Kolkata NodeSchool",
+  "location": "Kolkata",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["koustuvsinha"],
+  "website": "http://nodeschool.io/kolkata",
+  "twitter": "nodeschoolkol",
+  "repo": "http://github.com/nodeschool/kolkata"
+}
