@@ -1,0 +1,9 @@
+{
+  "name": "Tabasco NodeSchool",
+  "location": "Villahermosa, Tabasco",
+  "country": "MX",
+  "region": "North America",
+  "organizers": ["gartox", "kimvex", "rafaecheve"],
+  "website": "http://nodeschool.io/tabasco",
+  "repo": "http://github.com/nodeschool/tabasco"
+}
