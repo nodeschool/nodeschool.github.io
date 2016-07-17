@@ -3,8 +3,8 @@
   "location": "Bainbridge Island, WA",
   "country": "US",
   "region": "North America",
-  "organizers": ["awaterma", "crtr0", "twleung"],
-  "website": "",
-  "twitter": "",
+  "organizers": ["awaterma", "tylermoeller", "flagoworld"],
+  "website": "http://nodeschool.io/bainbridge",
+  "twitter": "https://twitter.com/island_js",
   "repo": "http://github.com/nodeschool/bainbridge"
 }
