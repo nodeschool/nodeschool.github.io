@@ -135,15 +135,5 @@
   "host-attend-header": "Primeiro, cria um capítulo",
   "host-attend-info": null,
   "host-attend-info2": null,
-  "host-attend-link": null,
-  "host-recommendation-header": null,
-  "host-recommendation-info": "Em primeiro lugar, deves criar um Capítulo NodeSchool. Assim que estiver concluído, procura em baixo por recursos sobre organizar o teu primeiro evento. Esta página é vagamente baseada na discussão Queres organizar um evento?.",
-  "host-recommendation-list-1": null,
-  "host-recommendation-list-2": null,
-  "host-recommendation-list-3": null,
-  "host-recommendation-list-4": null,
-  "host-recommendation-list-5": null,
-  "host-recommendation-list-6": null,
-  "host-reports-header": "Adiciona o teu evento!",
-  "host-reports-info": "Se estás a organizar um evento NodeSchool, adiciona-o a este site preenchendo este formulário"
+  "host-attend-link": null
 }

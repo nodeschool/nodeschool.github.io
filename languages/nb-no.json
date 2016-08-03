@@ -152,15 +152,5 @@
   "host-attend-header": "Først, lag en avdelinger",
   "host-attend-info": null,
   "host-attend-info2": null,
-  "host-attend-link": null,
-  "host-recommendation-header": null,
-  "host-recommendation-info": "Først må du sette opp en ny NodeSchool avdeling. Når det er klart, se litt lengre ned etter hjelperessurser om hvordan du arrangerer ditt første event. Denne siden er basert på diskusjonen 'Want to run an event?'",
-  "host-recommendation-list-1": null,
-  "host-recommendation-list-2": null,
-  "host-recommendation-list-3": null,
-  "host-recommendation-list-4": null,
-  "host-recommendation-list-5": null,
-  "host-recommendation-list-6": null,
-  "host-reports-header": "Legg til ditt arrangement!",
-  "host-reports-info": "Om du organiserer en NodeSchool, legg det til på denne siten ved å fylle ut dette skjemaet."
+  "host-attend-link": null
 }

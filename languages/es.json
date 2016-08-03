@@ -137,15 +137,5 @@
   "host-attend-header": "Primero, crea un capítulo",
   "host-attend-info": null,
   "host-attend-info2": null,
-  "host-attend-link": null,
-  "host-recommendation-header": null,
-  "host-recommendation-info": "Primero deberías crear un nuevo capítulo NodeSchool. Una vez realizado busca abajo recursos acerca de organizar tu primer evento. Esta página está basada en la discusión ¿Quieres realizar un evento?.",
-  "host-recommendation-list-1": null,
-  "host-recommendation-list-2": null,
-  "host-recommendation-list-3": null,
-  "host-recommendation-list-4": null,
-  "host-recommendation-list-5": null,
-  "host-recommendation-list-6": null,
-  "host-event-header": "¡Agrega tu evento!",
-  "host-event-info": "<span>Si estás organizando un evento NodeSchool, agrégalo a este sitio completando este</span> <a href='https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm' target='_blank'>formulario</a><span>.</span>"
+  "host-attend-link": null
 }

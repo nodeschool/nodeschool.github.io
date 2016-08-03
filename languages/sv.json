@@ -133,15 +133,5 @@
   "host-attend-header": "Först, skapa en sektion",
   "host-attend-info": null,
   "host-attend-info2": null,
-  "host-attend-link": null,
-  "host-recommendation-header": null,
-  "host-recommendation-info": "Först så måste du sätta upp en ny NodeSchool sektion. När det sen är klart se då lite längre ned efter hjälpresurser om hur du anordnar ditt första evenemang. Den här sidan är löst baserad på diskussionen Want to run an event?",
-  "host-recommendation-list-1": null,
-  "host-recommendation-list-2": null,
-  "host-recommendation-list-3": null,
-  "host-recommendation-list-4": null,
-  "host-recommendation-list-5": null,
-  "host-recommendation-list-6": null,
-  "host-reports-header": "Lägg till ditt event!",
-  "host-reports-info": "Om du organiserar ett NodeSchool event, lägg då till det här på sajten genom att fylla i detta formulär."
+  "host-attend-link": null
 }

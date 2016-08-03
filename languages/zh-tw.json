@@ -121,15 +121,5 @@
   "host-attend-header": "加入你的活動訊息！",
   "host-attend-info": "當你正在籌辦新的 NodeSchool 活動，請以英文填寫『",
   "host-attend-info2": "』以在網站上加入你的活動訊息。",
-  "host-attend-link": "表格",
-  "host-recommendation-header": "籌辦活動的建議",
-  "host-recommendation-info": "即使 NodeSchool 在辦活動上不去干涉活動籌辦者太多，並給予很多空間和自由發揮的彈性，但從過去經驗，我們仍然整裡出一些有用的建議，讓籌辦者可以參考：",
-  "host-recommendation-list-1": "導師與學生的比例最好約為 1:5 或是有更充足的導師人數。",
-  "host-recommendation-list-2": "若參與人數有增加，要在當天活動前以 email 通知參加者。",
-  "host-recommendation-list-3": "與更多不同背景的潛在族群接觸，並鼓勵他們多多參與活動。",
-  "host-recommendation-list-4": "為你的活動建立規範，以提供一個安全且令人安心的環境。",
-  "host-recommendation-list-5": "如果你不確定你的活動場地有完善的 Wifi 環境，可以考慮採用離線方案。（如：隨身碟）",
-  "host-recommendation-list-6": "如果需要，可以尋求一些當地軟體公司贊助場地、Wifi、食物和飲料。",
-  "host-reports-header": "過去的活動記錄",
-  "host-reports-info": "你可以參考一些前人的活動記錄，然後思考一下你的活動怎麼辦會更好。"
+  "host-attend-link": "表格"
 }
