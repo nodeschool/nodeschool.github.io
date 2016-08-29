@@ -1,0 +1,10 @@
+{
+  "name": "Gurgaon NodeSchool",
+  "location": "Gurgaon, IN",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["kishorsharma", "vickydlion", "ManvendraSK"],
+  "website": "http://nodeschool.io/gurgaon",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/gurgaon"
+}
