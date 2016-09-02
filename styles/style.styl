@@ -258,43 +258,43 @@ ul {
         padding: 6px 8px;
       }
     }
+  }
 
-    &.nav-lang {
-      list-style: none;
-      margin: 0;
-      padding: 5px 20px;
-      text-align: right;
+  &.nav-lang {
+    list-style: none;
+    margin: 0;
+    padding: 5px 20px;
+    text-align: right;
 
-      li {
-        border: none;
-        margin-right: 0;
-        display: inline-block;
+    li {
+      border: none;
+      margin-right: 0;
+      display: inline-block;
 
-        &:after {
-          content: "|";
-          margin-right: 5px;
-          margin-left: 5px;
-        }
+      &:after {
+        content: "|";
+        margin-right: 5px;
+        margin-left: 5px;
+      }
 
-        &:last-child:after {
-          content: none;
-          color: $mineshaftGray;
-        }
+      &:last-child:after {
+        content: none;
+        color: $mineshaftGray;
+      }
 
-        &.selected {
-          text-decoration: none;
+      &.selected {
+        text-decoration: none;
+        color: darken($gray, 25%);
+      }
+
+      a {
+        color: $mineshaftGray;
+        text-decoration: none;
+        border-color: $mineshaftGray;
+
+        &:hover {
           color: darken($gray, 25%);
-        }
-
-        a {
-          color: $mineshaftGray;
-          text-decoration: none;
-          border-color: $mineshaftGray;
-
-          &:hover {
-            color: darken($gray, 25%);
-            border-color: darken($gray, 25%);
-          }
+          border-color: darken($gray, 25%);
         }
       }
     }
