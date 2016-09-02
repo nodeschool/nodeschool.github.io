@@ -746,42 +746,157 @@ a.skip {
 }
 
 @media only screen and (max-width : 1366px) {
-  h1, .big-heading { font-size: 2.0em}
-  .get-started code { font-size: 12px; }
-  header img { height: 75px; }
-  header h1 { font-size: 2.0em; margin-top: 0; }
-  header .subtitle { margin: 0 auto 20px; width: 75%; }
-  header .full { width: 80%; }
-  .full p { font-size: 16px; }
-  h2 { font-size: 18px; }
-  h4 { font-size: 16px; }
-  .container { padding: 20px; }
-  header .container { padding: 20px; }
-  .full { width: 95%; }
-  .core-workshoppers h4 a, .elective-workshoppers h4 a { font-size: 16px; }
-  /*ul.inner-nav li {display: inline-block; line-height: 3em;}*/
-  .window-pane { display: none; }
+  h1,
+  .big-heading {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.125em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .get-started code {
+    font-size: 12px;
+  }
+
+  header {
+    img {
+      height: 75px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .subtitle {
+      margin: 0 auto 20px;
+      width: 75%;
+    }
+
+    .full {
+      width: 80%;
+    }
+  }
+
+  .full p {
+    font-size: 1rem;
+  }
+
+
+  .container {
+    padding: 20px;
+  }
+
+  .full {
+    width: 95%;
+  }
+
+  .core-workshoppers h4 a,
+  .elective-workshoppers h4 a {
+    font-size: 1em;
+  }
+
+  .window-pane {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.0em; }
-  .container {padding: 5px;}
-  .first-photo {background-image: none;}
-  p {font-size: 1em;}
-  .third, .two-thirds, .full, .half {width: 100%; }
-  .two-thirds + .third, .third + .third, .third + .two-thirds {padding-left: 0;}
-  .half, .two-thirds { margin-left: 0 !important; margin-right: 0 !important; }
-  header .container {padding: 40px 20px;}
-  header .full { width: 80%; }
-  header img {width: 100%; padding: 0;}
-  header h1 { font-size: 2.5em; margin-top: 0; }
-  header h1 span {margin: 0 -3.8px;}
-  header p {font-size: 1em; }
-  #map {margin: 0; padding: 0; width: 100%;}
-  .window-pane {background-position: 0 0; height: 200px;}
-  footer ul {width: 100%;}
-  footer ul + ul {padding-left: 0;}
-  footer li a {font-size: 14px;}
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .first-photo {
+    background-image: none;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .full,
+  .half,
+  .third,
+  .two-thirds  {
+    width: 100%;
+  }
+
+  .third + .third,
+  .third + .two-thirds,
+  .two-thirds + .third {
+    padding-left: 0;}
+
+  .half,
+  .two-thirds {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  header {
+    .container {
+      padding: 40px 20px;
+    }
+
+    .full {
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+
+      span {
+        margin: 0 -3.8px;
+      }
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  #map {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .window-pane {
+    background-position: 0 0;
+    height: 200px;
+  }
+
+  footer {
+    ul {
+      width: 100%;
+
+      + ul {
+        padding-left: 0;
+      }
+    }
+
+    li a {
+      font-size: 0.875rem;
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) {
