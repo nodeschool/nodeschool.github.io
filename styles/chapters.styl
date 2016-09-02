@@ -1,28 +1,31 @@
-.chapter-list  ul {
-  list-style: none;
-  padding-left: 0px;
-}
+@import 'settings/*'
 
-.chapter-list li {
-  margin: 5px;
-  width: 250px;
-  border-radius: 3px;
-  padding-bottom: 0px;
-  display: inline-block;
-  border: 2px solid #333;
-  -webkit-transition: background-color 300ms, border 500ms;
-  transition: background-color 300ms, border 500ms;
-}
+.chapter-list {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-.chapter-list a {
-  color: black;
-  padding: 6px;
-  display: block;
-  border-bottom: none;
-  text-decoration: none;
-}
+  li {
+    width: 250px;
+    margin: 5px;
+    padding-bottom: 0;
+    border: 2px solid $mineshaftGray;
+    border-radius: 3px;
+    display: inline-block;
+    transition: background-color 300ms, border 500ms;
 
-.chapter-list li:hover {
-  background-color: #FFE51F;
-  border: 2px solid #FFE51F;
+    &:hover {
+      background-color: $broomYellow;
+      border: 2px solid $broomYellow;
+    }
+  }
+
+  a {
+    display: block;
+    color: $black;
+    padding: 6px;
+    border-bottom: none;
+    text-decoration: none;
+  }
 }
