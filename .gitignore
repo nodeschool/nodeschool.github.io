@@ -3,3 +3,7 @@
 .build*
 _site
 node_modules
+
+# Ignore generated CSS files and sourcemaps since they no longer represent src code
+/*.css
+/*.css.map

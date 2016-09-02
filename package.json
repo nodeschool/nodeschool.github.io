@@ -9,6 +9,7 @@
     "build-html": "node ./scripts/build-html.js $$",
     "build-chapters": "node ./scripts/build-chapters.js $$",
     "build-dependencies": "bash ./scripts/build-dependencies.sh $$",
+    "generate-css": "bash ./scripts/generate-css.sh",
     "generate-language": "node ./scripts/generate-lang.js",
     "generate-untranslated-lang": "node ./scripts/generate-untranslated-lang.js",
     "validate-html": "node ./scripts/validate-html.js",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "after-all": "^2.0.1",
+    "autoprefixer-stylus": "^0.9.4",
     "browserify": "^12.0.1",
     "cheerio": "^0.19.0",
     "gaze": "^0.5.1",
@@ -39,6 +41,7 @@
     "jsdom": "^7.1.0",
     "live-server": "^0.9.0",
     "mkdirp": "^0.5.1",
-    "read": "^1.0.5"
+    "read": "^1.0.5",
+    "stylus": "^0.54.5"
   }
 }

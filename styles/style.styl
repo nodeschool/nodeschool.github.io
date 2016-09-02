@@ -1,0 +1,912 @@
+@import 'settings/*'
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: Source Sans Pro, sans-serif;
+  color: $mineshaftGray;
+}
+
+h1,
+.big-heading {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+h2,
+h3 {
+  font-size: 2em;
+}
+
+h3 a {
+  color: $black;
+}
+
+code {
+  font-family: Source Code Pro, monospace;
+  font-size: 0.75rem;
+  background: darken($white, 2%);
+  border-radius: 3px;
+  padding: 3px 5px;
+  line-height: 20px;
+}
+
+img { width: 100%; }
+
+p {
+  line-height: 1.4;
+
+  &:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+li {
+  padding-bottom: 4px;
+  line-height: 1.4;
+}
+
+a {
+  color: $mineshaftGray;
+  text-decoration: none;
+  border-bottom: 1px solid $gray;
+
+  &:hover {
+    border-color: $mineshaftGray;
+  }
+
+  &.imglink {
+    border: none;
+    outline: none;
+  }
+}
+
+hr {
+  border: 2px solid $mineshaftGray;
+  margin: 0;
+}
+
+header {
+  display: block;
+  color: $mineshaftGray;
+  background-image: url('images/test-bg.png');
+  background-size: 25%;
+  background-position: 0 -100px;
+  background-color: $broomYellow;
+  background-blend-mode: multiply;
+  z-index: -1;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  img  {
+    width: 400px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-right: 20px;
+  }
+
+  p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .big-link {
+    color: $mineshaftGray;
+    border-color: $mineshaftGray;
+    font-weight: bold;
+
+    &:hover {
+      border-color: darken($gray, 12%);
+      color: darken($gray, 12%);
+    }
+  }
+
+  .container {
+    padding: 100px 40px;
+  }
+
+  .full {
+    width: 47%;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .nav a {
+    color: $mineshaftGray;
+    border-color: $white;
+    border: none;}
+
+  .subtitle {
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.events header .container,
+.about header .container,
+.host header .container,
+.building-workshops header .container,
+.chapters header .container {
+  padding: 20px;
+}
+
+.events .logo,
+.about .logo,
+.host .logo,
+.building-workshops .logo,
+.chapters .logo {
+  padding: 15px 0;
+}
+
+.container {
+  clear: both;
+  padding: 60px 40px;
+}
+
+.get-started {
+  code {
+    font-size: 1.5rem;
+    background: $white;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.window-pane {
+  width: 100%;
+  height: 400px;
+  background-image: url('images/hero3.jpg');
+  background-position: 0 -200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.caption {
+  color: $white;
+  font-size: 0.6875rem; // 11px/16px
+  padding: 40px;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.other-photo {
+  position: fixed;
+  width: 100%;
+  height: 200%;
+  display: block;
+  background-image: url('images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 600px;
+  z-index: -1;
+}
+
+ul {
+  &.inner-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      background-color: $schoolbusYellow;
+      color: $mineshaftGray;
+      order: none;
+      padding: 8px 12px;
+      border-radius: 3px;
+
+      &:hover {
+        color: $white;
+        background-color: $mineshaftGray;
+      }
+    }
+
+    li {
+      margin-right: 6px;
+      margin-left: 6px;
+      display: inline-block;
+      line-height: 3;
+    }
+  }
+
+  &.nav {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    color: $mineshaftGray;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+    li {
+      display: inline-block;
+      font-size: 1rem;
+      margin: 0 5px 5px;
+      padding: 0;
+      border: 2px solid $mineshaftGray;
+      border-radius: 3px;
+
+      &:hover a {
+        color: $schoolbusYellow;
+        background: $mineshaftGray;
+        cursor: pointer;
+      }
+
+      &.current-page a {
+        background: $mineshaftGray;
+        color: $broomYellow;
+      }
+
+      a {
+        display: inline-block;
+        padding: 6px 8px;
+      }
+    }
+  }
+
+  &.nav-lang {
+    list-style: none;
+    margin: 0;
+    padding: 5px 20px;
+    text-align: right;
+
+    li {
+      border: none;
+      margin-right: 0;
+      display: inline-block;
+
+      &:after {
+        content: "|";
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+      &:last-child:after {
+        content: none;
+        color: $mineshaftGray;
+      }
+
+      &.selected {
+        text-decoration: none;
+        color: darken($gray, 25%);
+      }
+
+      a {
+        color: $mineshaftGray;
+        text-decoration: none;
+        border-color: $mineshaftGray;
+
+        &:hover {
+          color: darken($gray, 25%);
+          border-color: darken($gray, 25%);
+        }
+      }
+    }
+  }
+}
+
+span.no-break { display:inline-block; }
+
+#map {
+  width: 100%;
+  min-height: 375px;
+  background: $galleryGray;
+
+  .past-event {
+    border-radius: 50%;
+    background: lighten($gray, 19%);
+    border: 2px solid lighten($nobelGray, 24%);
+  }
+}
+
+.key {
+  padding: 8px 0;
+
+  span {
+    padding-right: 12px;
+  }
+
+  &-future::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: $schoolbusYellow;
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+
+  &-past::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: $dustyGray;
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+}
+
+.events #map {
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-container {
+  a {
+    font-family: Source Sans Pro, sans-serif;
+    color: $mineshaftGray;
+  }
+
+  .leaflet-control-attribution a {
+    border: none;
+  }
+}
+
+.half {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+
+  + .half {
+    padding: 0 20px;
+  }
+}
+
+.centered {
+  &.half {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+  &.third {
+    margin-right: 33%;
+    margin-left: 33%;
+  }
+
+  &.two-thirds {
+    margin-right: 16.5%;
+    margin-left: 16.5%;
+  }
+}
+
+.third {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+
+  + .third {
+    padding-left: 30px;
+  }
+
+  + .two-thirds {
+    padding-left: 30px;
+  }
+
+  h3,
+  h4,
+  p {
+    margin-top: 0;
+    line-height: 1.75;
+  }
+}
+
+.full {
+  width: 63%;
+  text-align: center;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.625rem; // 26px / 16px
+  }
+}
+
+
+#calendar .full,
+.events .workshops .full {
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.two-thirds {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+
+  + .third {
+    padding-left: 30px;
+  }
+}
+
+.core-workshoppers h3,
+.elective-workshoppers h3 {
+  font-weight: 500;
+  font-size: 3em;
+  margin: 10px 0;
+  line-height: 3.5; // 56px / 16px
+}
+
+.workshopper {
+  padding-bottom: 20px;
+
+  h4 a {
+    border-radius: 3px;
+    font-size: 1.25rem;
+    padding: 6px 10px;
+    font-family: Source Code Pro, monospace;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    border: none;
+  }
+
+  p {
+    min-height: 2.8em;
+  }
+}
+
+.elective-workshoppers h4 a {
+  background: $mineshaftGray;
+  color: $white;
+
+  &:hover {
+    background: $black;
+  }
+}
+
+.core-workshoppers h4 a {
+  background: $broomYellow;
+  color: $mineshaftGray;
+
+  &:hover {
+    background: $schoolbusYellow;
+  }
+}
+
+
+#workshoppers {
+  background-color: darken($white, 3%);
+  z-index: 99;
+}
+
+#upcoming-workshops {
+  margin-bottom: 15px;
+
+  &.empty,
+  &.error,
+  &.success {
+    > div.loading {
+      display: none;
+    }
+  }
+
+  &.empty {
+    > div.empty {
+      display block;
+    }
+  }
+
+  &.error {
+    > div.error {
+      display block;
+    }
+  }
+
+  &.success {
+    > div.success {
+      display block;
+    }
+  }
+
+  > div {
+    display: none;
+
+    &.loading {
+      display: block;
+    }
+  }
+
+  ul {
+    margin: 0;
+  }
+}
+
+.term {
+  display: block;
+  border-radius: 4px;
+  margin-bottom:10px;
+  text-align: left;
+  border: 2px solid darken($gray, 12%);
+
+  &.max {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+  }
+
+  &.min {
+    position: absolute;
+    bottom: 0;
+
+    .shell {
+      min-height: 0;
+      height: 0;
+      padding: 0;
+    }
+
+    .chrome {
+      border: 0;
+    }
+  }
+
+  .chrome {
+    height: 34px;
+    padding-left: 4px;
+    border-bottom: 2px solid darken($gray, 12%);
+
+    &:before {
+      content: " ";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .btn {
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      border: 2px solid darken($gray, 12%);
+      border-radius: 100%;
+
+      &:hover {
+        border-color: $lighten($black, 25%);
+      }
+
+      &.close:hover {
+        background: $red;
+      }
+
+      &.max:hover {
+        background: $green;
+      }
+
+      &.min:hover {
+        background: $schoolbusYellow;
+      }
+    }
+  }
+
+  .shell {
+    min-height: 130px;
+    color: lighten($mineshaftGray, 11%);
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .workshopper {
+    background: $givryYellow;
+    padding: 2px;
+
+    code {
+      border: 0;
+    }
+  }
+
+  code {
+    display: block;
+    margin: 12px 0;
+    padding: 4px 10px;
+    border-left: 8px solid $schoolbusYellow;
+    border-radius: 0;
+    background: none;
+  }
+}
+
+
+footer {
+  border-top: 3px solid $mineshaftGray;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: $mineshaftGray;
+  padding-top: 20px;
+
+  a {
+    border: none;
+  }
+
+  li a {
+    font-size: 0.875rem; // 14px / 16px
+    text-decoration: none;
+    border: none;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  strong {
+    line-height: 2;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding-right: 60px;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+    + ul {
+      padding-left: 80px;
+    }
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+}
+
+.hexdex img.hex {
+  width: 240px;
+  padding: 10px;
+}
+
+/* skip naviation links */
+a.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  background-color: $white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+
+.mentoring {
+  &-header-full-width {
+    background-image: url('images/mentoring-by-oleharland-cropped.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+  }
+
+  &-headline {
+    color: $white;
+    font-size: 2em;
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    width: 94%;
+    text-align: center;
+
+    &-container {
+      position: absolute;
+
+      background-color: rgba($black, 0.6);
+      width: 100%;
+      height: 100%;
+
+      .container {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  &-intro-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    position: relative;
+
+    &::before {
+      content: "“";
+      position: absolute;
+      left: -0.6em;
+      font-size: 5em;
+      top: -0.3em;
+    }
+  }
+}
+
+@media only screen and (max-width : 1366px) {
+  h1,
+  .big-heading {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.125em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .get-started code {
+    font-size: 12px;
+  }
+
+  header {
+    img {
+      height: 75px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .subtitle {
+      margin: 0 auto 20px;
+      width: 75%;
+    }
+
+    .full {
+      width: 80%;
+    }
+  }
+
+  .full p {
+    font-size: 1rem;
+  }
+
+
+  .container {
+    padding: 20px;
+  }
+
+  .full {
+    width: 95%;
+  }
+
+  .core-workshoppers h4 a,
+  .elective-workshoppers h4 a {
+    font-size: 1em;
+  }
+
+  .window-pane {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .first-photo {
+    background-image: none;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .full,
+  .half,
+  .third,
+  .two-thirds  {
+    width: 100%;
+  }
+
+  .third + .third,
+  .third + .two-thirds,
+  .two-thirds + .third {
+    padding-left: 0;}
+
+  .half,
+  .two-thirds {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  header {
+    .container {
+      padding: 40px 20px;
+    }
+
+    .full {
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+
+      span {
+        margin: 0 -3.8px;
+      }
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  #map {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .window-pane {
+    background-position: 0 0;
+    height: 200px;
+  }
+
+  footer {
+    ul {
+      width: 100%;
+
+      + ul {
+        padding-left: 0;
+      }
+    }
+
+    li a {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .mentoring-intro-quote::before {
+    font-size: 10em;
+  }
+}
+
+@media only screen and (min-width : 1366px) {
+  .mentoring-headline {
+    bottom: 5em;
+  }
+}

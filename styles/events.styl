@@ -1,0 +1,120 @@
+@import 'settings/*'
+
+/*calendar map events*/
+#calendar * { -webkit-box-sizing: border-box; }
+
+.month-table {
+  margin: 0 auto 100px;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+
+  &-menuitem {
+    font-size: 12px;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 10px 10px;
+    background: $mineshaftGray;
+    padding: 7px 15px;
+    color: $galleryGray;
+    position: relative;
+    border-radius: 3px;
+
+    &.active {
+      background: $schoolbusYellow;
+      color: $mineshaftGray;
+    }
+
+    &:hover {
+      color: $mineshaftGray;
+      background-color: $schoolbusYellow;
+    }
+  }
+
+  &-wrapper{
+    overflow: auto;
+  }
+
+  td {
+    width: 160px;
+    vertical-align: top;
+  }
+
+  .empty {
+    background: repeating-linear-gradient(0, $nobelGray 0, $nobelGray 1px, transparent 1px, transparent 5px);
+    background-size: 1px 5px;
+  }
+}
+
+.header td {
+  padding: 10px;
+  border-bottom: 1px solid $mineshaftGray;
+}
+
+.days td {
+  padding-top: 2px;
+  height: 100px;
+  border-bottom: 1px solid $mineshaftGray;
+}
+
+a {
+  color: $mineshaftGray;
+
+  &:hover {
+    color: $confettiYellow;
+  }
+}
+
+.today .day {
+  background: $schoolbusYellow;
+  color: $mineshaftGray;
+  border-radius: 3px;
+}
+
+.event {
+  white-space: nowrap;
+  padding: 2px 6px;
+  height: 23px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+   a {
+    color: $mineshaftGray;
+    border-color: $schoolbusYellow;
+    border-bottom-width: 2px;
+
+    &:hover {
+      color: $schoolbusYellow;
+    }
+  }
+}
+
+.day {
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.following-days a { font-size: 0; }
+
+.multi-days {
+  background: #000;
+  margin-left: -2px;
+  margin-right: -2px;
+
+  a {
+    color: $galleryGray;
+  }
+}
+
+.no-event { color: $nobelGray; }
+
+.past .event a {
+  color: $nobelGray;
+  border-color: $nobelGray;
+}
+
+/* Map */

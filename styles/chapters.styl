@@ -1,0 +1,31 @@
+@import 'settings/*'
+
+.chapter-list {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    width: 250px;
+    margin: 5px;
+    padding-bottom: 0;
+    border: 2px solid $mineshaftGray;
+    border-radius: 3px;
+    display: inline-block;
+    transition: background-color 300ms, border 500ms;
+
+    &:hover {
+      background-color: $broomYellow;
+      border: 2px solid $broomYellow;
+    }
+  }
+
+  a {
+    display: block;
+    color: $black;
+    padding: 6px;
+    border-bottom: none;
+    text-decoration: none;
+  }
+}
