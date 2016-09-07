@@ -10,7 +10,7 @@ Please fork it and send us improvements! Read our [CONTRIBUTING.md](CONTRIBUTING
 
 We ask that you make pull requests because changes to this repository will get deployed onto the live production site immediately and it's best if you get feedback on your pull request first before it goes live.
 
-## Running the app locally
+## Running the entire app locally
 
 This is a static site with a build step, simply run `npm start`:
 
@@ -18,6 +18,48 @@ This is a static site with a build step, simply run `npm start`:
 npm install
 npm start
 ```
+
+## Installing and running workshop modules
+
+Please refer to the [nodeschool site](http://nodeschool.io/#workshoppers) for detailed instructions. In short, there two ways to install the workshop modules :
+
+- **Globally** (easiest)
+
+	`npm install -g module_name`
+
+	This  will make the module available globaly in your `$PATH`. Just run it by  calling it. **For example :**
+
+	`npm install -g javascripting` **(installs it)**
+
+	![install module](/images/readme-images/install_module.png?raw=true)
+
+
+	`javascripting` **(runs it)**
+
+	![run module](/images/readme-images/run_module.png?raw=true)
+
+	*Depending on your system configuration you may neeed administrator priviliges to install `npm packages` globally.*
+	
+	 *In which case just run the previous command with `sudo`.
+	` sudo npm install -g module_name`.*
+
+- **Custom directory** (a bit more configuration)
+
+If you would like to keep all the node_school workshop modules inside a custom directory while you work through them. **Using our previous example :**
+
+```
+~ mkdir -p node_school
+cp node_school
+npm install javascripting 
+```
+
+From within the `node_school` directory now run `node_modules/learnyounode/bin/javasripting` to start it. 
+
+This is because you need to run the executable from within the directory itself since it's not available globally in your `$PATH`
+
+Please refer to this [discussion](https://github.com/nodeschool/discussions/issues/1869) for more info.
+
+
 
 ## Stickers, Badges and whatnots
 
