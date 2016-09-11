@@ -19,41 +19,43 @@ npm install
 npm start
 ```
 
-## Installing and running workshop modules
+## Installing and running individual nodeschool workshop packages
 
-Please refer to the [nodeschool site](http://nodeschool.io/#workshoppers) for detailed instructions. In short, there two ways to install the workshop modules :
+Please refer to the [nodeschool site](http://nodeschool.io/#workshoppers) for detailed instructions. In short, there are two ways to install the workshop modules :
 
 - **Globally** (easiest)
 
-	`npm install -g module_name`
+	Depending on the npm version, `npm packages` get installed in different routes. To have access to them globally. Do 
+	
+	`npm install -global package_name` or 	`npm install -g package_name`
+	
+	If you get a  `permission denied` **error**. Run the previous command with `sudo`.
 
-	This  will make the module available globaly in your `$PATH`. Just run it by  calling it. **For example :**
+	`sudo npm install -g package_name`
+
+	Now just run it by simply calling it. **For example :**
 
 	`npm install -g javascripting` **(installs it)**
 
-	![install module](/images/readme-images/install_module.png?raw=true)
+	![install_module](/images/readme-images/install_module.png?raw=true)
 
 
 	`javascripting` **(runs it)**
 
-	![run module](/images/readme-images/run_module.png?raw=true)
-
-	*Depending on your system configuration you may neeed administrator priviliges to install `npm packages` globally.*
-	
-	 *In which case just run the previous command with `sudo`.
-	` sudo npm install -g module_name`.*
+	![run_module](/images/readme-images/run_module.png?raw=true)
+`
 
 - **Custom directory** (a bit more configuration)
 
-If you would like to keep all the node_school workshop modules inside a custom directory while you work through them. **Using our previous example :**
+If you would like to keep all the node_school workshop packages inside a custom directory while you work through them. **Using our previous example :**
 
 ```
 ~ mkdir -p node_school
-cp node_school
+cd node_school
 npm install javascripting 
 ```
 
-From within the `node_school` directory now run `node_modules/learnyounode/bin/javasripting` to start it. 
+From within the `node_school` directory now run `node_modules/learnyounode/bin/javascripting` to start it. 
 
 This is because you need to run the executable from within the directory itself since it's not available globally in your `$PATH`
 
