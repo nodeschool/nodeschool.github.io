@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Oulu",
+  "location": "Oulu",
+  "country": "FI",
+  "region": "Europe",
+  "organizers": ["thibaudcolas"],
+  "website": "http://nodeschool.io/oulu",
+  "twitter": "",
+  "repo": "https://github.com/nodeschool/oulu"
+}
