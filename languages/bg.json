@@ -44,7 +44,7 @@
   "events-header": "Минали и бъдещи NodeSchool събития",
   "events-past": "Минали",
   "events-future": "Бъдещи",
-  "events-header2": "Има <strong><span id=\"event-count\">много</span></strong> събития!",
+  "events-header2": "Има <strong><span id=\"event-count\"></span></strong> събития!",
   "events-header3": "Ако организираш NodeSchool събитие, добави го на сайта попълвайки <a href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\" target=\"_blank\">този формуляр</a>.",
   "events-small": "Ако трябва да редактираш публикувано събитие, <a href=\"https://github.com/nodeschool/organizers/issues/new\">докладвай проблем на nodeschool/organizers.</a>",
   "calendar-h1": "Календар",
