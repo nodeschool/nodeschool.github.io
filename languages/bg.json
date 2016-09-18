@@ -35,7 +35,7 @@
   "building-workshops-subtitle": "Ето някои от популярните инструменти, които се използват за направата на NodeSchool работилници.",
   "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">Упражнение</a>",
   "building-workshops-info": "за да вземеш напълно функционален NodeSchool framework за създаване упражнение с CLI.",
-  "building-workshops-title-info2": "<a href=\"https://www.npmjs.org/package/adventure\">приключение</a>",
+  "building-workshops-title-info2": "<a href=\"https://www.npmjs.org/package/adventure\">Приключение</a>",
   "building-workshops-info2": "за да вземеш алтернатива на workshopper, която е по-лека.",
   "building-workshops-title-info3": "Направи свое",
   "building-workshops-info3": "Не се притеснавай да правиш промени по формата! Например, ако искаш да напишеш уъркшоп за да преподаваш CSS, можеш да изобретиш свой собствен формат на уъркшопа. Например: ",
