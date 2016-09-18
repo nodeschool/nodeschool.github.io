@@ -31,7 +31,7 @@
   "hexdex-h1": "Hexdex",
   "hexdex-header": "Индекс от шестоъгълници за <a href=\"chapters.html\">NodeSchool представителства</a>.",
   "hexdex-make-logo": "Направи твое местно представителство като започнеш с <a href=\"https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker\">този темплейт</a>.",
-  "building-workshops-header": "Създаване на NodeSchool уъркшоп",
+  "building-workshops-header": "Създаване на NodeSchool работилница",
   "building-workshops-subtitle": "Ето няколко от популярните инструменти, които се използват за направата на NodeSchool уъркшопи.",
   "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">workshopper</a>",
   "building-workshops-info": "за да вземеш напълно функционална nodeschool рамка за създаване уъркшоп с CLI.",
