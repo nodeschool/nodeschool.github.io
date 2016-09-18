@@ -130,7 +130,7 @@
   "workshopper-currying": "Научете концепциите на т.нар currying и направете функции от този тип в JavaScript.",
   "workshopper-bacon-love": "Научете концепциите за функционално и реактивно програмиране с библиотеката Bacon.js.",
   "workshopper-shader-school": "Научете основите на графичното програмиране с GLSL shaders.",
-  "workshopper-bytewiser": "Научи как да манипулираш бинарни данни в node.js и браузъри с поддръжка на HTML5.",
+  "workshopper-bytewiser": "Научете как да манипулираш бинарни данни в node.js и браузъри с поддръжка на HTML5.",
   "workshopper-bug-clinic": "Научи нови инструменти и техники за подобряване на уменията ти за дебъгване.",
   "workshopper-browserify-adventure": "Използвай модули от npm и require() стил от node в браузъра с browserify.",
   "workshopper-introtowebgl": "Започни да ползваш three.js и WebGL.",
