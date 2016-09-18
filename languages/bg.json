@@ -30,7 +30,7 @@
   "footer-about-host": "Организирай работилница",
   "hexdex-h1": "Hexdex",
   "hexdex-header": "Списък с <a href=\"chapters.html\">клонове на NodeSchool клонове</a>, изобразени чрез шестоъгълници.",
-  "hexdex-make-logo": "Направи един и за своя клон, като използваш <a href=\"https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker\">този темплейт</a>.",
+  "hexdex-make-logo": "Направете един и за своя клон, като използвате <a href=\"https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker\">този темплейт</a>.",
   "building-workshops-header": "Създаване на NodeSchool работилница",
   "building-workshops-subtitle": "Ето няколко от популярните инструменти, които се използват за направата на NodeSchool уъркшопи.",
   "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">workshopper</a>",
