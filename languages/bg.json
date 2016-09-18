@@ -116,7 +116,7 @@
   "workshopper-promise-it-wont-hurt": "Научете как да използвате т.нар promise структура за справяне с асинхронни операции в JavaScript.",
   "workshopper-async-you": "Научете се да използвате модула async.",
   "workshopper-nodebot-workshop": "Направете роботи с johnny-five api.",
-  "workshopper-goingnative": "Изучаване на Node.js отвъртре: C++ добавки.",
+  "workshopper-goingnative": "Изучаване на Node.js отвътре: C++ добавки.",
   "workshopper-planetproto": "Разбиране на JavaScript Prototypes",
   "workshopper-webgl-workshop": "Научи основите на WebGL с малки, реалистични стъпки.",
   "workshopper-esnext-generation": "Въведение в ES6 Iterators, употребата им, и каква е връзката им с Generators.",
