@@ -33,7 +33,7 @@
   "hexdex-make-logo": "Направете един и за своя клон, като използвате <a href=\"https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker\">този темплейт</a>.",
   "building-workshops-header": "Създаване на NodeSchool работилница",
   "building-workshops-subtitle": "Ето някои от популярните инструменти, които се използват за направата на NodeSchool работилници.",
-  "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">workshopper</a>",
+  "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">Упражнение</a>",
   "building-workshops-info": "за да вземеш напълно функционална nodeschool рамка за създаване уъркшоп с CLI.",
   "building-workshops-title-info2": "<a href=\"https://www.npmjs.org/package/adventure\">приключение</a>",
   "building-workshops-info2": "за да вземеш алтернатива на workshopper, която е по-лека.",
