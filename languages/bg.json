@@ -46,7 +46,7 @@
   "events-future": "Бъдещи",
   "events-header2": "Има <strong><span id=\"event-count\"></span></strong> събития!",
   "events-header3": "Ако организирате NodeSchool събитие, добавете го на сайта, попълвайки <a href=\"https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm\" target=\"_blank\">този формуляр</a>.",
-  "events-small": "Ако трябва да редактираш публикувано събитие, <a href=\"https://github.com/nodeschool/organizers/issues/new\">докладвай проблем на nodeschool/organizers.</a>",
+  "events-small": "Ако трябва да редактирате вече публикувано събитие, <a href=\"https://github.com/nodeschool/organizers/issues/new\">пишете ни в хранилището nodeschool/organizers.</a>",
   "calendar-h1": "Календар",
   "index-header-top": "Уъркшопи, които те обучават на софтуерни умения за уеб. Можеш да ги правиш сам или на някое събитие близо до теб.",
   "menu-tutorials": "Уроци",
