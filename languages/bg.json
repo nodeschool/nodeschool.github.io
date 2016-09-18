@@ -114,7 +114,7 @@
   "workshopper-expressworks": "Научете основите на Express.js.",
   "workshopper-makemehapi": "Научете всичко за hapi чрез поредица от предизвикателства.",
   "workshopper-promise-it-wont-hurt": "Научете как да използвате т.нар promise структура за справяне с асинхронни операции в JavaScript.",
-  "workshopper-async-you": "Научи се да ползваш модула async.",
+  "workshopper-async-you": "Научете се да използвате модула async.",
   "workshopper-nodebot-workshop": "Направи роботи с johnny-five api.",
   "workshopper-goingnative": "Изучаване на Node.js отвъртре: C++ добавки.",
   "workshopper-planetproto": "Разбиране на JavaScript Prototypes",
