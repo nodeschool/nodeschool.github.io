@@ -98,7 +98,7 @@
   "workshopper-gitit": "Научете основите на Git и GitHub.",
   "workshopper-scope-chains-closures": "Научете детайли за Scope, Scope Chains, Closures, и Garbage Collection.",
   "workshopper-elementary-electron": "Създайте десктоп приложение използвайки Node и Chromium с Electron",
-  "workshopper-learnyounode": "Научи основите на node: асинхронно програмиране, http протокол.",
+  "workshopper-learnyounode": "Научете основите на node: асинхронно програмиране, http протокол.",
   "workshopper-learnyounode-command": "npm install -g learnyounode",
   "workshopper-how-to-npm": "Научи как да използваш и създаваш npm модули.",
   "workshopper-streamadventure": "Научи как композираш streaming interfaces с",
