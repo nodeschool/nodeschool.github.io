@@ -132,7 +132,7 @@
   "workshopper-shader-school": "Научете основите на графичното програмиране с GLSL shaders.",
   "workshopper-bytewiser": "Научете как да манипулирате бинарни данни в node.js и браузери с поддръжка на HTML5.",
   "workshopper-bug-clinic": "Научете нови инструменти и техники, с които да подобрите уменията си за дебъгване.",
-  "workshopper-browserify-adventure": "Използвай модули от npm и require() стил от node в браузъра с browserify.",
+  "workshopper-browserify-adventure": "Използвайте npm модули и node стила require() в браузъра с browserify.",
   "workshopper-introtowebgl": "Започни да ползваш three.js и WebGL.",
   "workshopper-count-to-6": "Научи приложението на новите функционалности на ES6, следващата версия на JavaScript.",
   "workshopper-kick-off-koa": "Основи на Koa, следващо поколение уеб фреймуърк с Node.js.",
