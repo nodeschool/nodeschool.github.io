@@ -48,18 +48,18 @@
       <footer>
         <div class="third">
           <p><strong>nodeschool.io</strong></p>
-          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank" rel="noreferrer noopener">Matthew Bergman</a></small>
         </div>
         <div class="two-thirds">
           <ul>
             <li><strong data-i18n="footer-contact-header">Kontakt</strong></li>
-            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
-            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank" rel="noreferrer noopener">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank" rel="noreferrer noopener">gh/nodeschool</a></li>
           </ul>
           <ul>
             <li><strong data-i18n="footer-contribute-header">Medverka</strong></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Rapportera ett problem</a></li>
-            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Svara på en fråga</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" rel="noreferrer noopener" data-i18n="footer-contribute-question">Rapportera ett problem</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" rel="noreferrer noopener" data-i18n="footer-contribute-answer">Svara på en fråga</a></li>
           </ul>
           <ul>
             <li><strong data-i18n="footer-about-header">Om oss</strong></li>
@@ -79,10 +79,10 @@
       {{#chapters}}
         <li class="chapter">
         {{#website}}
-        <a target="_blank" href="{{website}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
+        <a target="_blank" rel="noreferrer noopener" href="{{website}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         {{^website}}
-        <a target="_blank" href="{{repo}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
+        <a target="_blank" rel="noreferrer noopener" href="{{repo}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         </li>
       {{/chapters}}
