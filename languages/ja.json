@@ -110,6 +110,8 @@
   "workshopper-node-debug-school": "プロダクションでNode.jsのアプリケーションを効率的にデバッグするために、プログラムがなぜ死んだか調査する際のデバッグをSmartOSで行う方法を学びましょう。",
   "workshopper-currying": "カリー化の概念とJavaScriptでの関数のカリー化の作り方を学びましょう。",
   "workshopper-seneca-in-practice": "マイクロサービスのツールキッドであるSenecaJsをどのように活用するか学びましょう。",
+  "workshopper-bacon-love": "Bacon.jsライブラリを使って関数型とリアクティブプログラミングのコンセプトを学びましょう。",
+  "workshopper-less-is-more": "LESS CSS preprocessorの基礎を学びましょう。",
   "events-header": "NodeSchool Events <br>開催予定または終了したイベント情報",
   "events-past": "開催終了",
   "events-future": "開催予定",
