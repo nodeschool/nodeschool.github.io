@@ -1,0 +1,10 @@
+{
+  "name": "Sorocaba NodeSchool",
+  "location": "Sorocaba",
+  "country": "BR",
+  "region": "Latin America",
+  "organizers": ["rectius"],
+  "website": "http://nodeschool.io/sorocaba/",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/sorocaba"
+}
