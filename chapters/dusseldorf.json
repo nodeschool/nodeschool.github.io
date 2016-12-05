@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Düsseldorf",
+  "location": "Düsseldorf, NRW",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["fene", "cilice"],
+  "website": "http://nodeschool.io/dusseldorf",
+  "twitter": "nodeschooldus",
+  "repo": "http://github.com/nodeschool/dusseldorf"
+}
