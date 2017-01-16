@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Schiphol",
+  "location": "Amsterdam - Schiphol",
+  "country": "NL",
+  "region": "Europe",
+  "organizers": ["jpwesselink", "rickheere", "anthonybregamoendir", "stefanmirck"],
+  "website": "https://nodeschool.io/schiphol/",
+  "twitter": "NodeSchoolSPL",
+  "repo": "https://nodeschool.io/schiphol/"
+}
