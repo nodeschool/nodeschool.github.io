@@ -1,0 +1,10 @@
+{
+  "name": "Medan NodeSchool",
+  "location": "Medan",
+  "country": "ID",
+  "region": "Asia",
+  "organizers": ["sastranababan", "totokgilak", "padlian"],
+  "website": "http://nodeschool.io/medan",
+  "twitter": "https://twitter.com/medanjs",
+  "repo": "http://github.com/nodeschool/medanjs"
+}
