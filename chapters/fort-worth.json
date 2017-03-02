@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Fort Worth",
+  "location": "Fort Worth, TX",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["hodorswit", "givingforwardmegan", "beneventofrank"],
+  "website": "http://nodeschool.io/fort-worth",
+  "twitter": "nodeschoolftw",
+  "repo": "http://github.com/nodeschool/fort-worth"
+}
