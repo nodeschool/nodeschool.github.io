@@ -114,6 +114,8 @@
   "workshopper-seneca-in-practice": "マイクロサービスのツールキッドであるSenecaJsをどのように活用するか学びましょう。",
   "workshopper-bacon-love": "Bacon.jsライブラリを使って関数型とリアクティブプログラミングのコンセプトを学びましょう。",
   "workshopper-less-is-more": "LESS CSS preprocessorの基礎を学びましょう。",
+  "workshopper-js-best-practices": "JavaScript のベストプラクティスを学びましょう。",
+  "workshopper-innersourceadventure": "InnerSource を用いたソフトウェア開発を学びましょう。",
   "events-header": "NodeSchool Events <br>開催予定または終了したイベント情報",
   "events-past": "開催終了",
   "events-future": "開催予定",
