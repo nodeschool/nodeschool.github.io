@@ -1,0 +1,10 @@
+{
+  "name": "Sylhet NodeSchool",
+  "location": "Sylhet",
+  "country": "BD",
+  "region": "Asia",
+  "organizers": ["hashemirafsan","getanwar"],
+  "website": "http://nodeschool.io/sylhet",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/sylhet"
+}
