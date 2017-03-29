@@ -120,7 +120,7 @@
   "workshopper-levelmeup": "Lerne leveldb kennen, ein simpler Key/Value-Store mit lebhaften Ökosystem.",
   "workshopper-expressworks": "Lerne die Grundlagen des Express.js Frameworks.",
   "workshopper-makemehapi": "Lerne alles über hapi anhand einer Serie von Aufgaben.",
-  "workshopper-promise-it-wont-hurt": "Lerne den Umgang mit Promises in JavaScript für asynchrone Oerationen.",
+  "workshopper-promise-it-wont-hurt": "Lerne den Umgang mit Promises in JavaScript für asynchrone Operationen.",
   "workshopper-async-you": "Lerne wie man das async Modul einsetzt.",
   "workshopper-nodebot-workshop": "Baue Roboter mit der Johnny-Five API.",
   "workshopper-goingnative": "Node.js von unten: Native C++ Add-Ons.",
