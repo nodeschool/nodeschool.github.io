@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Luanda",
+  "location": "Luanda",
+  "country": "AO",
+  "region": "Africa",
+  "organizers": ["quindai, flowck"],
+  "website": "https://ti.to/quindai/nodeschool-luanda",
+  "twitter": "@rquindai",
+  "repo": "https://github.com/nodeschool/luanda"
+}
