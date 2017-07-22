@@ -3,7 +3,7 @@
   "location": "Utrecht",
   "country": "NL",
   "region": "Europe",
-  "organizers": ["fritzvd"],
+  "organizers": ["GeorgeSapkin","RamonGebben","toddmerrill"],
   "website": "http://nodeschool.io/utrecht/",
   "twitter": "",
   "repo": "http://github.com/nodeschool/utrecht"
