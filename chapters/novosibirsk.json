@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Novosibirsk",
+  "location": "Novosibirsk",
+  "country": "RU",
+  "region": "Europe",
+  "organizers": ["ekaragodin"],
+  "website": "https://nodeschool.io/novosibirsk/",
+  "twitter": "https://twitter.com/nodeschool_nsk",
+  "repo": "https://github.com/nodeschool/novosibirsk"
+}
