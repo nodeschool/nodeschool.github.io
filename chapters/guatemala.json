@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Guatemala",
+  "location": "Guatemala City",
+  "country": "GT",
+  "region": "Latin America",
+  "organizers": ["delaguilaluis", "milsosa", "osukaa"],
+  "website": "http://nodeschool.io/guatemala/",
+  "twitter": "nodeschoolgt",
+  "repo": "http://github.com/nodeschool/guatemala"
+}
