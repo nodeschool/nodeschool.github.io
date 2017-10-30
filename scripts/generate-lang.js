@@ -5,7 +5,7 @@ var fs = require('fs')
 var read = require('read')
 var path = require('path')
 
-read({prompt: 'What language code do you want to generate? (e.g. en-US):'}, function(err, language) {
+read({prompt: 'What language code do you want to generate? (e.g. en):'}, function(err, language) {
   if (!language) {
     console.log('Usage:\nnpm run language [language-code]');
     process.exit(1);
