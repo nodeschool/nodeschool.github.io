@@ -23,7 +23,7 @@ function createSkipButton(dom) {
 }
 
 function addTranslationNav(dom, file, languages) {
-	var items = [];
+	var items = []
   var nav = dom.createElement('ul')
   nav.className = "nav-lang"
 
@@ -36,7 +36,7 @@ function addTranslationNav(dom, file, languages) {
   })
   var node = dom.querySelector('header > *:first-child')
   if (node) {
-  	node.parentNode.insertBefore(createSkipButton(dom), node)	
+  	node.parentNode.insertBefore(createSkipButton(dom), node)
   	node.parentNode.insertBefore(nav, node)
   }
   return items
@@ -60,7 +60,7 @@ function addLanguageLinks(dom, file, locales) {
 }
 
 function getNodeByLanguage(nodes, lang) {
-	for (var i = 0; i < nodes.length; i++) {
+	for (var i = 0 i < nodes.length i++) {
 		var node = nodes[i]
 		var attr = (node.attributes.lang || node.attributes.hreflang)
 		if (attr.nodeValue === lang) {
@@ -118,7 +118,7 @@ cmdwatcher('build-html'
 		var list = dom.querySelectorAll('[data-i18n]')
 		if (list) {
 			original = {}
-			for (var i = 0; i < list.length; i++) {
+			for (var i = 0 i < list.length i++) {
 				var node = list[i]
 				var key = node.attributes['data-i18n'].value
 				original[key] = node.innerHTML
@@ -138,14 +138,14 @@ cmdwatcher('build-html'
 			html.setAttribute('lang', lang)
 			if (list) {
 				try {
-					for (var i = 0; i < list.length; i++) {
+					for (var i = 0 i < list.length i++) {
 						var node = list[i]
 						var key = node.attributes['data-i18n'].value
 						var newValue = translation[key]
-						node.innerHTML = typeof newValue === 'string' ? newValue : original[key] 
+						node.innerHTML = typeof newValue === 'string' ? newValue : original[key]
 					}
-					
-					var langButton = getNodeByLanguage(nav, lang).parentNode;
+
+					var langButton = getNodeByLanguage(nav, lang).parentNode
 					var langLink = getNodeByLanguage(localeLinks, lang)
 					var _className = langButton.className
 					var _html = langButton.innerHTML
@@ -164,15 +164,15 @@ cmdwatcher('build-html'
 				output = raw
 			}
 			try {
-				mkdirp.sync(outputDir);
+				mkdirp.sync(outputDir)
 			} catch (e) {
 				return console.log('Error trying to create directory %s for %s [lang %s]:\n%s', outputDir, outputPath, lang, e)
 			}
 			try {
-				Fs.writeFileSync(outputPath, output)	
+				Fs.writeFileSync(outputPath, output)
 			} catch (e) {
 				return console.log('Couldn\'t write %s -> %s [lang %s]:\n%s', file, outputPath, lang, e)
 			}
-		});
+		})
 	})
 })

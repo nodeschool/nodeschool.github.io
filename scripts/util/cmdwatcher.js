@@ -21,18 +21,18 @@ module.exports = function (name, inputPattern, watchPattern, processor) {
 					return console.log(err)
 				}
 				processor(files)
-			})		
+			})
 		})
 	}
 	if (process.argv[2] === 'background') {
 		console.log('starting background process')
 		setInterval(function () {
 			try {
-				var running = isRunning(+process.argv[3]);
+				var running = isRunning(+process.argv[3])
 				if (!running) {
 					console.log("closing building")
 					process.exit()
-				}	
+				}
 			} catch(e) {
 				console.log(e)
 			}
@@ -48,7 +48,7 @@ module.exports = function (name, inputPattern, watchPattern, processor) {
 				}
 				watcher.on('all', function (evt, file) {
 					if (evt !== 'deleted') {
-						processor([file]);
+						processor([file])
 					} // Maybe we should delete the generated files?
 				})
 				settingsWatcher.on('all', processAll)
