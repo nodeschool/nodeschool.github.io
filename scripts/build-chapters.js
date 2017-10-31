@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp')
 function groupByValue(list, grouper, groupName) {
   var grouped = {}
   groupName = groupName || 'items'
-  for (var i = 0 i < list.length i++) {
+  for (var i = 0; i < list.length; i++) {
     var key = list[i][grouper]
     if (typeof grouped[key] !== "object" || typeof grouped[key].push !== "function") {
       grouped[key] = []
