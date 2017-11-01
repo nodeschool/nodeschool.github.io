@@ -6,9 +6,10 @@ const jsdom = require('jsdom')
 const mkdirp = require('mkdirp')
 const cmdwatcher = require('./util/cmdwatcher')
 const LANGS = Path.join(__dirname, '../languages/languages.json')
+const FOOTER = Path.join(__dirname, '../footer.html')
 
 function createLangButton(dom, file, lang, langName) {
-  var li = dom.createElement('li')
+var li = dom.createElement('li')
   li.className = 'nav-lang-' + lang
   li.innerHTML = '<a href="/' + (lang === 'en' ? '' : lang + '/') + (file === 'index.html' ? '' : file) + '" class="switch-lang" lang="' + lang + '">' + langName + '</a>'
   return li
@@ -125,6 +126,12 @@ cmdwatcher('build-html'
 			}
 		}
 		translations['en'] = original
+
+		var footer = dom.querySelector('footer')
+		if(footer) {
+			var footerHtml = Fs.readFileSync(FOOTER, 'utf8')
+			footer.innerHTML = footerHtml
+		}
 
 		var html = dom.querySelector('html')
 		var localeLinks = addLanguageLinks(dom, file, languages)
