@@ -116,6 +116,12 @@ cmdwatcher('build-html'
 			return console.log('Error while domify %s:\n%s', file, e)
 		}
 
+		var footer = dom.querySelector('footer')
+		if(footer) {
+			var footerHtml = Fs.readFileSync(FOOTER, 'utf8')
+			footer.innerHTML = footerHtml
+		}
+		
 		var list = dom.querySelectorAll('[data-i18n]')
 		if (list) {
 			original = {}
@@ -126,12 +132,6 @@ cmdwatcher('build-html'
 			}
 		}
 		translations['en'] = original
-
-		var footer = dom.querySelector('footer')
-		if(footer) {
-			var footerHtml = Fs.readFileSync(FOOTER, 'utf8')
-			footer.innerHTML = footerHtml
-		}
 
 		var html = dom.querySelector('html')
 		var localeLinks = addLanguageLinks(dom, file, languages)
