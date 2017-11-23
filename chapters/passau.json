@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Passau",
+  "location": "Passau",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["huberv", "otmarjatsch"],
+  "website": "https://nodeschool.io/passau/",
+  "twitter": "NodeSchoolPassau",
+  "repo": "http://github.com/nodeschool/passau"
+}
