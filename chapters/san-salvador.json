@@ -1,0 +1,9 @@
+{
+  "name": "San Salvador NodeSchool",
+  "location": "San Salvador, SV",
+  "country": "SV",
+  "region": "Latin America",
+  "organizers": ["ricardoerl", "dr-martin", "GaryTowers"],
+  "website": "https://nodeschool.io/san-salvador/",
+  "repo": "https://github.com/nodeschool/san-salvador"
+}
