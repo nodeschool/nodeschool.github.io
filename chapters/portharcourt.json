@@ -3,7 +3,7 @@
     "location": "Rivers, PHC",
     "country": "NG",
     "region": "Africa",
-    "organizers": ["codeekage"],
+    "organizers": ["codeekage", "codehkage"],
     "website": "http://nodeschool.io/portharcourt",
     "twitter": "portharcourtnodeschool",
     "repo": "http://github.com/nodeschool/portharcourt"
