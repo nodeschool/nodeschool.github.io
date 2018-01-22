@@ -1,0 +1,10 @@
+{
+    "name": "PortHarcourt NodeSchool",
+    "location": "Rivers, PHC",
+    "country": "NG",
+    "region": "Africa",
+    "organizers": ["codeekage", "deelesisuanu", "chuqdennis"],
+    "website": "http://nodeschool.io/portharcourt",
+    "twitter": "portharcourtnodeschool",
+    "repo": "http://github.com/nodeschool/portharcourt"
+}
