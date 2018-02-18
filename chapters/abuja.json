@@ -1,0 +1,10 @@
+{
+    "name": "Abuja NodeSchool",
+    "location": "Abuja, FCT",
+    "country": "NG",
+    "region": "Africa",
+    "organizers": ["inidaname", "ldbraun", "devamaz"],
+    "website": "http://nodeschool.io/abuja",
+    "twitter": "NodeSchoolAbuja",
+    "repo": "http://github.com/nodeschool/abuja"
+}
