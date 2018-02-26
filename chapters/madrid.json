@@ -3,8 +3,8 @@
 	"location": "Madrid",
 	"country": "ES",
 	"region": "Europe",
-	"organizers": ["alexfernandez","gootyfer", "javiervelezreyes"],
+	"organizers": ["alexfernandez", "carlosazaustre", "gootyfer", "javiervelezreyes"],
 	"website": "http://nodeschool.io/madrid",
-	"twitter": "@NodeJsMadrid",
+	"twitter": "@nodeschoolmad",
 	"repo": "http://github.com/nodeschool/madrid"
 }
