@@ -1,0 +1,10 @@
+{
+  "name": "Kano NodeSchool",
+  "location": "Kano, Nigeria",
+  "country": "NG",
+  "region": "Africa",
+  "organizers": ["timtech4u", "amazingneotech", "25ambat"],
+  "website": "http://nodeschool.io/kano",
+  "twitter": "kanonodeschool",
+  "repo": "http://github.com/nodeschool/kano"
+}
