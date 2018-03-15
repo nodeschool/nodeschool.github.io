@@ -1,0 +1,10 @@
+{
+  "name": "Ilorin NodeSchool",
+  "location": "Ilorin, Kwara",
+  "country": "Nigeria",
+  "region": "Africa",
+  "organizers": ["jalasem", "kenkarmah", "jattoabdul"],
+  "website": "http://nodeschool.io/ilorin",
+  "twitter": "ilorinnodeschool",
+  "repo": "http://github.com/nodeschool/ilorin"
+}
