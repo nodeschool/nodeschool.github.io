@@ -1,0 +1,10 @@
+{
+    "name": "NodeSchool MK",
+    "location": "Milton Keynes, UK",
+    "country": "UK",
+    "region": "Europe",
+    "organizers": ["edieblu"],
+    "website": "https://nodeschool.io/miltonkeynes/",
+    "twitter": "GirlsCodeMK",
+    "repo": "http://github.com/nodeschool/baltimore"
+  }
