@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/events.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+	<link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/sunny/jquery-ui.css'>
+	<link rel="stylesheet" href="/js/fullcalendar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NodeSchool - Past and Future Events</title>
   </head>
@@ -44,12 +46,12 @@
       </div>
     </div>
 
-    <div id="calendar">
+    <div>
       <div class="container" style="background-color: #fff;">
         <div class="full">
           <h2 class="big-heading" data-i18n="calendar-h1">Calendar</h2>
           <br><br>
-          <div id="calendar-goes-here"></div>
+          <div id="calendar"></div>
         </div>
       </div>
     </div>
@@ -76,6 +78,55 @@
     <script type="text/javascript" src="/js/main.js"></script>
     <script type="text/javascript" src="/js/events.js"></script>
     <script type="text/javascript" src="/js/dependencies.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+  	<script type="text/javascript" src="/js/moment.min.js"></script>
+  	<script type="text/javascript" src="/js/fullcalendar.js"></script>
+    <script type="text/javascript" src="/js/readEvents.js"></script>
+
+  	<script>
+  			$(document).ready(function() {
+
+  		  // page is now ready, initialize the calendar...
+
+  		  $('#calendar').fullCalendar({
+  		  themeSystem: 'jquery-ui',
+  			header:{
+  			  left:   '',
+  			  center: 'title',
+  			  right:  'today prevYear,prev,next,nextYear'
+  			},
+  			fixedWeekCount: false,
+  			eventLimit: true, // allow "more" link when too many events,
+			events: events(), //accepts an array of Event Objects
+  			eventColor: 'gray'
+  		  })
+
+        //It returns an array of Event Objects
+  		  function events() {
+  				var events = [
+  				 {
+  				   title  : 'event1',
+  				   start  : '2018-04-05',
+  				   url    : 'https://www.example.com/'
+  				 },
+  				 {
+  				   title  : 'event2',
+  				   start  : '2018-04-05',
+  				   end    : '2018-04-07',
+  				   url    : 'https://www.example.com/'
+  				 },
+  				 {
+  				   title  : 'event3',
+  				   start  : '2018-04-09',
+  				   url    : 'https://www.example.com/'
+  				 }
+  			   ];
+  				return events;
+  			 }
+
+  		});
+  	</script>
 
     <script>
       !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
