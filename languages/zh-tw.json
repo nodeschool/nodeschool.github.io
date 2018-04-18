@@ -106,6 +106,7 @@
   "about-info": "除了冷到不行的南極洲之外，我們在世界上每個大陸都有 NodeSchool 的分支活動，而且任何人都可以籌辦 NodeSchool 的活動。為了社群發展，我們也將試著去整合所有有用的資訊、設計執行方針以及收集想法，使得活動能更有趣且熱鬧。更多資訊，可以參考我們的『<a href=\"host.html\">舉辦活動</a>』頁面",
   "about-info2": "NodeSchool 使用 Github 去組織社群，所以與我們取得聯繫的最好方法，就是透過『<a href=\"https://github.com/nodeschool/organizers/issues\">organizers repository</a>』，你完全可以在這開一個新的 issue 與社群的管理者們溝通，並得到回應。在 NodeSchool 社群裡，使用 Github 當做溝通管道，遠比直接使用 e-mail 來得更好。",
   "about-info3": "你可以在『<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">episode 55</a>』的 NodeUp podcast 節目中，聽到 Mikeal Rogers、Max Ogden 和其他社群朋友討論 NodeSchool。此外，從巴爾的摩來的講者 Jason Rhodes 也在 Cascadia JS 2014 活動，討論 NodeSchool 計畫的運作。",
+  "about-info4": "NodeSchool 組織者必須遵循組織者 github存儲庫中，列出的行為準則。 \n 每個 NodeSchool 章節，都有負責自己章節的行為準則。\n    如果您對某一章的行為準則存在疑問，您可以在關聯的github存儲庫中打開一個問題。",
   "building-workshops-header": "建立一個 NodeSchool 工作坊教學課程",
   "building-workshops-subtitle": "這裡是一些常用的工具，能幫助你建立教學課程。",
   "building-workshops-info": " - 取得全功能的 nodeschool 命令列工作坊課程開發框架",
