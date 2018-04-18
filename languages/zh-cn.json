@@ -150,6 +150,7 @@
   "building-workshops-info3C": "课程所设计出来，它使用浏览器打造出一个特殊的 3D 绘图验证和预览界面。",
   "host-header": "筹办活动",
   "host-info": "NodeSchool 完全由社区维护，而且百分之百开源，任何人都可以使用 NodeSchool 的教材并举办活动。",
+  "host-info-cost": "我们期望活动主办方不以营利为目的（免费或低成本），并且活动应该有开放的会员制度（以免个人\"掌控\"整个活动）。",
   "host-info-wiki": "我们创建了 <a href=\"https://github.com/nodeschool/organizers/wiki\">组织者 Wiki</a>，其中包含了所有来自世界各地组织者所总结的相关信息和帮助。",
   "host-info-wiki-link": "查看 <a href=\"https://github.com/nodeschool/organizers/wiki\"> wiki</a> 来获取关于如何成功地举办一个活动以及如何建立一个当地 NodeSchool 社区的信息。"
 }
