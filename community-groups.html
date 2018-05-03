@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/chapters.css">
+    <link rel="stylesheet" href="/community-groups.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/mapbox.css">
@@ -18,8 +18,8 @@
           <ul class="nav">
             <li><a href="index.html" data-i18n="menu-index">Home</a></li>
             <li><a href="events.html" data-i18n="menu-events">Events</a></li>
-            <li class="current-page"><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
-            <li><a href="community-groups.html" data-i18n="menu-community-groups">Community Groups</a></li>
+            <li><a href="chapters.html" data-i18n="menu-chapters">Chapters</a></li>
+            <li class="current-page"><a href="community-groups.html" data-i18n="menu-community-groups">Community Groups</a></li>
             <li><a href="about.html" data-i18n="menu-about">About</a></li>
             <li><a href="building-workshops.html" data-i18n="menu-building-workshops">Build</a></li>
             <li><a href="host.html" data-i18n="menu-host">Host</a></li>
@@ -48,7 +48,27 @@
     </div>
     <div class="container" style="background-color: #fff;">
       <footer>
-        <!-- content in footer.html added by build-html.js -->
+        <div class="third">
+          <p><strong>nodeschool.io</strong></p>
+          <small>Photos by <a href="https://www.flickr.com/photos/matthewbergman" target="_blank">Matthew Bergman</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
+            <li><a href="https://twitter.com/nodeschool" target="_blank">t/@nodeschool</a></li>
+            <li><a href="https://github.com/nodeschool" target="_blank">gh/nodeschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
+          </ul>
+        </div>
       </footer>
     </div>
 
@@ -61,10 +81,10 @@
       {{#chapters}}
         <li class="chapter">
         {{#website}}
-        <a target="_blank" rel="noreferrer noopener" href="{{website}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
+        <a target="_blank" href="{{website}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         {{^website}}
-        <a target="_blank" rel="noreferrer noopener" href="{{repo}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
+        <a target="_blank" href="{{repo}}">{{location}}{{#country}}, {{country}}{{/country}}</a>
         {{/website}}
         </li>
       {{/chapters}}
