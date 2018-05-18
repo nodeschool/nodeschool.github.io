@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/events.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+	  <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/sunny/jquery-ui.css'>
+  	<link rel="stylesheet" href="/styles/fullcalendar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NodeSchool - Past and Future Events</title>
   </head>
@@ -49,7 +51,7 @@
         <div class="full">
           <h2 class="big-heading" data-i18n="calendar-h1">Calendar</h2>
           <br><br>
-          <div id="calendar-goes-here"></div>
+          <div id="eventCalendar"></div>
         </div>
       </div>
     </div>
@@ -70,6 +72,7 @@
     </script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
     <script type="text/javascript" src="/js/tabletop.js"></script>
     <script type="text/javascript" src="/js/sheetsee.js"></script>
     <script type="text/javascript" src="/js/table.js"></script>
@@ -77,6 +80,8 @@
     <script type="text/javascript" src="/js/events.js"></script>
     <script type="text/javascript" src="/js/dependencies.js"></script>
 
+  	<script type="text/javascript" src="/js/fullcalendar.js"></script>
+    <script type="text/javascript" src="/js/eventCalendar.js"></script>
     <script>
       !function(s,c,h,O,o,l){s.GoogleAnalyticsObject=h;s[h]||(s[h]=function(){
       (s[h].q=s[h].q||[]).push(arguments)});s[h].l=+new Date;o=c.createElement(O);
