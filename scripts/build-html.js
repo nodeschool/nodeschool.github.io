@@ -61,7 +61,8 @@ function addLanguageLinks(dom, file, locales) {
 }
 
 function getNodeByLanguage(nodes, lang) {
-	for (var i = 0; i < nodes.length; i++) {
+	var nodesLength = nodes.length;
+	for (var i = 0; i < nodesLength; i++) {
 		var node = nodes[i]
 		var attr = (node.attributes.lang || node.attributes.hreflang)
 		if (attr.nodeValue === lang) {
@@ -125,7 +126,8 @@ cmdwatcher('build-html'
 		var list = dom.querySelectorAll('[data-i18n]')
 		if (list) {
 			original = {}
-			for (var i = 0; i < list.length; i++) {
+			var listLength = list.length;
+			for (var i = 0; i < listLength; i++) {
 				var node = list[i]
 				var key = node.attributes['data-i18n'].value
 				original[key] = node.innerHTML
@@ -145,7 +147,8 @@ cmdwatcher('build-html'
 			html.setAttribute('lang', lang)
 			if (list) {
 				try {
-					for (var i = 0; i < list.length; i++) {
+					var listLength2 = list.length;
+					for (var i = 0; i < listLength2; i++) {
 						var node = list[i]
 						var key = node.attributes['data-i18n'].value
 						var newValue = translation[key]
