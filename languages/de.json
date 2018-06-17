@@ -47,7 +47,7 @@
   "building-workshops-title-info": "<a href=\"https://www.npmjs.org/package/workshopper\">workshopper</a>",
   "building-workshops-info": "ein Framework for Workshop-CLIs mit allem was dazu gehört.",
   "building-workshops-title-info2": "<a href=\"https://www.npmjs.org/package/adventure\">adventure</a>",
-  "building-workshops-info2": "als leigchtgewichtigere Alternative zu workshopper.",
+  "building-workshops-info2": "als leichtgewichtigere Alternative zu workshopper.",
   "building-workshops-title-info3": "Mach dein eigenes Ding",
   "building-workshops-info3": "<span>Hab keine Scheu davor Änderungen am Format an sich vorzunehmen! Wenn du z.B. einen CSS-Workshop erstellen möchtest, musst du ggf. dein eigenes Workshop-Format erfinden. Das</span> <a href=\"https://www.npmjs.org/package/browser-menu\">browser-menu</a> <span>Modul beispielsweise wurde für den</span> <a href=\"https://www.npmjs.org/package/shader-school\">shader-school</a> <span>Workshop geschrieben.</span>",
   "host-header": "Ein NodeSchool-Event ausrichten",
