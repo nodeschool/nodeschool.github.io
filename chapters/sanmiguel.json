@@ -1,0 +1,9 @@
+{
+  "name": "Node School San Miguel",
+  "location": "San Miguel, El Salvador",
+  "country": "SV",
+  "region": "Latin America",
+  "organizers": ["d3portillo", "moudev"],
+  "website": "https://nodeschool.io/sanmiguel",
+  "repo": "https://github.com/nodeschool/sanmiguel"
+}
