@@ -1,0 +1,10 @@
+{
+  "name": "New Orleans NodeSchool",
+  "location": "New Orleans, LA",
+  "country": "US",
+  "region": "North America",
+  "organizers": ["dtdimart"],
+  "website": "http://nodeschool.io/nola",
+  "twitter": "@nodeschool_nola",
+  "repo": "http://github.com/nodeschool/nola"
+}
