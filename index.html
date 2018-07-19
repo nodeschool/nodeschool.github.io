@@ -27,7 +27,8 @@
         function getLinks() {
           var nodes = doc.querySelectorAll('link[rel=alternate][hreflang]')
             , langLinks = {}
-          for (var i=0; i < nodes.length; i++) {
+          var nodesLength = nodes.length;
+          for (var i=0; i < nodesLength; i++) {
             var attrs = nodes[i].attributes
             langLinks[attrs.hreflang.nodeValue] = attrs.href.nodeValue
           }
