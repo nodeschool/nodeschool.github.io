@@ -3,8 +3,11 @@
   "location": "St. Louis, MO",
   "country": "US",
   "region": "North America",
-  "organizers": ["robbennet"],
+  "organizers": [
+    "robbennet"
+  ],
   "website": "http://nodeschool.io/stlouis",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/stlouis"
+  "repo": "http://github.com/nodeschool/stlouis",
+  "image": "nodeschool-stlouis.svg"
 }

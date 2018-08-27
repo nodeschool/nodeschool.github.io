@@ -3,8 +3,11 @@
   "location": "Oakland, CA",
   "country": "US",
   "region": "North America",
-  "organizers": ["fauntleroy"],
+  "organizers": [
+    "fauntleroy"
+  ],
   "website": "http://nodeschool.io/oakland/",
   "twitter": "nodeschooloak",
-  "repo": "http://github.com/nodeschool/oakland"
+  "repo": "http://github.com/nodeschool/oakland",
+  "image": "nodeschool-oakland.svg"
 }

@@ -3,8 +3,11 @@
   "location": "Saint Petersburg",
   "country": "RU",
   "region": "Europe",
-  "organizers": ["marinintim"],
+  "organizers": [
+    "marinintim"
+  ],
   "website": "http://nodeschool.io/spb",
   "twitter": "",
-  "repo": "https://github.com/nodeschool/spb"
+  "repo": "https://github.com/nodeschool/spb",
+  "image": "nodeschool-spb.svg"
 }

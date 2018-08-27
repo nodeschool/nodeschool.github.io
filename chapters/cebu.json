@@ -3,7 +3,12 @@
   "location": "Cebu City",
   "country": "PH",
   "region": "Asia",
-  "organizers": ["levint", "keithics", "rollyn"],
+  "organizers": [
+    "levint",
+    "keithics",
+    "rollyn"
+  ],
   "website": "http://nodeschool.io/cebu",
-  "repo": "http://github.com/nodeschool/cebu"
+  "repo": "http://github.com/nodeschool/cebu",
+  "image": "nodeschool-cebu.svg"
 }

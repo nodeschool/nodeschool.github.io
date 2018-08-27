@@ -3,9 +3,14 @@
   "location": "Sydney",
   "country": "AU",
   "region": "South Pacific",
-  "organizers": ["rvagg", "DamonOehlman", "vitalbone"],
+  "organizers": [
+    "rvagg",
+    "DamonOehlman",
+    "vitalbone"
+  ],
   "website": "http://nodeschool.io/sydney",
   "twitter": "nodeschoolsyd",
   "gitter": "https://gitter.im/nodeschool/sydney",
-  "repo": "https://github.com/nodeschool/sydney"
+  "repo": "https://github.com/nodeschool/sydney",
+  "image": "nodeschool-sydney.png"
 }

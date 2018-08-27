@@ -3,8 +3,14 @@
   "location": "Amsterdam",
   "country": "NL",
   "region": "Europe",
-  "organizers": ["jpwesselink", "rickheere", "stefanmirck", "codeflyer"],
+  "organizers": [
+    "jpwesselink",
+    "rickheere",
+    "stefanmirck",
+    "codeflyer"
+  ],
   "website": "http://github.com/nodeschool/amsterdam",
   "twitter": "NodeSchoolAMS",
-  "repo": "http://github.com/nodeschool/amsterdam"
+  "repo": "http://github.com/nodeschool/amsterdam",
+  "image": "nodeschool-amsterdam.svg"
 }

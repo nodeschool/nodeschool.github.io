@@ -8,5 +8,6 @@
     "edsadr",
     "academo"
   ],
-  "repo": "http://github.com/nodeschool/medellin"
+  "repo": "http://github.com/nodeschool/medellin",
+  "image": "nodeschool-medellin.png"
 }

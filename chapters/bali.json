@@ -3,8 +3,11 @@
   "location": "Bali",
   "country": "ID",
   "region": "Asia",
-  "organizers": ["LaughingSun"],
+  "organizers": [
+    "LaughingSun"
+  ],
   "website": "http://nodeschool.io/bali",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/bali"
+  "repo": "http://github.com/nodeschool/bali",
+  "image": "nodeschool-bali-sticker.png"
 }

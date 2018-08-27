@@ -3,8 +3,14 @@
   "location": "Washington, DC",
   "country": "US",
   "region": "North America",
-  "organizers": ["robbiethegeek", "joshfinnie", "JuanCaicedo", "danpaz"],
+  "organizers": [
+    "robbiethegeek",
+    "joshfinnie",
+    "JuanCaicedo",
+    "danpaz"
+  ],
   "website": "http://nodeschool.io/washingtondc/",
   "twitter": "NodeSchoolDC",
-  "repo": "http://github.com/nodeschool/washingtondc"
+  "repo": "http://github.com/nodeschool/washingtondc",
+  "image": "nodeschool-washingtondc.svg"
 }

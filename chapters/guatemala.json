@@ -3,8 +3,13 @@
   "location": "Guatemala City",
   "country": "GT",
   "region": "Latin America",
-  "organizers": ["delaguilaluis", "milsosa", "osukaa"],
+  "organizers": [
+    "delaguilaluis",
+    "milsosa",
+    "osukaa"
+  ],
   "website": "http://nodeschool.io/guatemala/",
   "twitter": "nodeschoolgt",
-  "repo": "http://github.com/nodeschool/guatemala"
+  "repo": "http://github.com/nodeschool/guatemala",
+  "image": "nodeschool-guatemala.svg"
 }

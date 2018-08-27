@@ -3,8 +3,11 @@
   "location": "Kyiv",
   "country": "UA",
   "region": "Europe",
-  "organizers": ["suchov"],
+  "organizers": [
+    "suchov"
+  ],
   "website": "https://nodeschool.io/kyiv/",
   "twitter": "nodeschool_kiev",
-  "repo": "http://github.com/nodeschool/kyiv"
+  "repo": "http://github.com/nodeschool/kyiv",
+  "image": "nodeschool-kyiv.png"
 }

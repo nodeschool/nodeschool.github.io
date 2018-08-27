@@ -3,8 +3,14 @@
   "location": "Vancouver, BC",
   "country": "CA",
   "region": "North America",
-  "organizers": ["lvivier", "gyaresu", "qard", "chowdhurian"],
+  "organizers": [
+    "lvivier",
+    "gyaresu",
+    "qard",
+    "chowdhurian"
+  ],
   "website": "http://nodeschool.io/vancouver/",
   "repo": "http://github.com/nodeschool/vancouver",
+  "image": "nodeschool-vancouver.svg",
   "twitter": "nodeschoolyvr"
 }

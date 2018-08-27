@@ -5,5 +5,6 @@
   "region": "Asia",
   "organizers": ["RichardLitt"],
   "website": "http://nodeschool.io/chiang-mai",
-  "repo": "http://github.com/nodeschool/chiang-mai"
+  "repo": "http://github.com/nodeschool/chiang-mai",
+  "image":"nodeschool-chiangmai.png"
 }

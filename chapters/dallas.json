@@ -3,8 +3,13 @@
   "location": "Dallas, TX",
   "country": "US",
   "region": "North America",
-  "organizers": ["prochafilho", "gangstead", "leongaban"],
+  "organizers": [
+    "prochafilho",
+    "gangstead",
+    "leongaban"
+  ],
   "website": "http://nodeschool.io/dallas",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/dallas"
+  "repo": "http://github.com/nodeschool/dallas",
+  "image": "nodeschool-dallas.svg"
 }

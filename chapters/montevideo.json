@@ -3,8 +3,13 @@
   "location": "Montevideo",
   "country": "UY",
   "region": "Latin America",
-  "organizers": ["pdjota", "pricco", "mprunell"],
+  "organizers": [
+    "pdjota",
+    "pricco",
+    "mprunell"
+  ],
   "website": "",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/montevideo"
+  "repo": "http://github.com/nodeschool/montevideo",
+  "image": "nodeschool-montevideo.png"
 }

@@ -3,6 +3,9 @@
 	"location": "Seville",
 	"country": "ES",
 	"region": "Europe",
-	"organizers": ["beltran-rubo"],
-	"repo": "http://github.com/nodeschool/seville"
+	"organizers": [
+		"beltran-rubo"
+	],
+	"repo": "http://github.com/nodeschool/seville",
+	"image": "nodeschool-seville.png"
 }

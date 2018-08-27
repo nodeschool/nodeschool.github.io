@@ -3,8 +3,12 @@
   "location": "Cleveland, OH",
   "country": "US",
   "region": "North America",
-  "organizers": ["kmckee", "kwpeters"],
+  "organizers": [
+    "kmckee",
+    "kwpeters"
+  ],
   "website": "http://nodeschool.io/cleveland",
   "twitter": "nodeSchoolCLE",
-  "repo": "http://github.com/nodeschool/cleveland"
+  "repo": "http://github.com/nodeschool/cleveland",
+  "image": "nodeschool-cleveland.png"
 }

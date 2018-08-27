@@ -3,8 +3,11 @@
   "location": "Lisbon",
   "country": "PT",
   "region": "Europe",
-  "organizers": ["diasdavid"],
+  "organizers": [
+    "diasdavid"
+  ],
   "website": "",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/lisbon"
+  "repo": "http://github.com/nodeschool/lisbon",
+  "image": "nodeschool-lisbon.png"
 }

@@ -3,8 +3,14 @@
   "location": "Hermosillo, Son",
   "country": "MX",
   "region": "Latin America",
-  "organizers": ["dayrachiu", "jrsalgado", "keogh", "abrahamhinojo"],
+  "organizers": [
+    "dayrachiu",
+    "jrsalgado",
+    "keogh",
+    "abrahamhinojo"
+  ],
   "website": "http://nodeschool.io/hermosillo",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/hermosillo"
+  "repo": "http://github.com/nodeschool/hermosillo",
+  "image": "nodeschool-hermosillo.svg"
 }

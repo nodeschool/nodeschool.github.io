@@ -3,8 +3,12 @@
   "location": "Los Angeles, CA",
   "country": "US",
   "region": "North America",
-  "organizers": ["jxson", "emkay"],
+  "organizers": [
+    "jxson",
+    "emkay"
+  ],
   "website": "http://nodeschool.io/los-angeles",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/los-angeles"
+  "repo": "http://github.com/nodeschool/los-angeles",
+  "image": "nodeschool-losangeles.png"
 }

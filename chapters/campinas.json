@@ -3,8 +3,13 @@
   "location": "Campinas, SP",
   "country": "BR",
   "region": "Latin America",
-  "organizers": ["fmoliveira", "MiattoRocha", "edersonnascimento"],
+  "organizers": [
+    "fmoliveira",
+    "MiattoRocha",
+    "edersonnascimento"
+  ],
   "website": "http://nodeschool.io/campinas",
   "twitter": "nodeschoolcps",
-  "repo": "http://github.com/nodeschool/campinas"
+  "repo": "http://github.com/nodeschool/campinas",
+  "image": "nodeschool-campinas.svg"
 }
