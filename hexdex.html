@@ -228,7 +228,7 @@
               <ul>
               {{#chapters}}
                   {{#image}}
-                  <li class="chapter" style="width: 300px;height:350px;text-align: center;vertical-align:top;">
+                  <li class="chapter" style="width: 270px;height:350px;text-align: center;vertical-align:top;">
                   <a target="_blank" rel="noreferrer noopener" href="{{website}}" class="imglink" title="{{location}}">
                   <img class="hex" src="/images/{{image}}" alt="{{location}} Hexagon" />
                   {{location}}{{#country}}, {{country}}{{/country}}
@@ -262,7 +262,7 @@
       $(".chapter-list")
         .find("h2")
         .each(
-          function (x) {
+          function () {
             var conteo = $(this).parent().find("li").length;
             $(this).html($(this).html() + " (" + conteo + ")");
             console.log($(this).html());
