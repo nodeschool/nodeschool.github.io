@@ -3,8 +3,11 @@
   "location": "Xi'an, Shaanxi",
   "country": "CN",
   "region": "Asia",
-  "organizers": ["howiehu"],
+  "organizers": [
+    "howiehu"
+  ],
   "website": "http://nodeschool.io/xian",
   "twitter": "",
-  "repo": "https://github.com/nodeschool/xian"
+  "repo": "https://github.com/nodeschool/xian",
+  "image": "nodeschool-xian.svg"
 }

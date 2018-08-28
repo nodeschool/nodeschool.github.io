@@ -3,8 +3,13 @@
   "location": "Berlin",
   "country": "DE",
   "region": "Europe",
-  "organizers": ["finnp", "stryju", "johannhof"],
+  "organizers": [
+    "finnp",
+    "stryju",
+    "johannhof"
+  ],
   "website": "http://nodeschool.io/berlin",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/berlin"
+  "repo": "http://github.com/nodeschool/berlin",
+  "image": "nodeschool-berlin.png"
 }

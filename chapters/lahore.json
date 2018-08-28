@@ -3,8 +3,12 @@
   "location": "Lahore",
   "country": "PK",
   "region": "Asia",
-  "organizers": ["usmantahirr", "sheharyarn"],
+  "organizers": [
+    "usmantahirr",
+    "sheharyarn"
+  ],
   "website": "http://nodeschool.io/lahore",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/lahore"
+  "repo": "http://github.com/nodeschool/lahore",
+  "image": "nodeschool-lahore.png"
 }

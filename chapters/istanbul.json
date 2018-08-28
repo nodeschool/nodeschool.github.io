@@ -3,8 +3,13 @@
   "location": "Istanbul",
   "country": "TR",
   "region": "Europe",
-  "organizers": ["arifcakiroglu", "yasinaydin", "huseyinbabal"],
+  "organizers": [
+    "arifcakiroglu",
+    "yasinaydin",
+    "huseyinbabal"
+  ],
   "website": "http://nodeschool.io/istanbul",
   "twitter": "https://twitter.com/NodeSchool_Ist",
-  "repo": "http://github.com/nodeschool/istanbul"
+  "repo": "http://github.com/nodeschool/istanbul",
+  "image": "nodeschool-istanbul.svg"
 }

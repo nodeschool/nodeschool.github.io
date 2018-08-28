@@ -3,8 +3,16 @@
   "location": "New York, NY",
   "country": "US",
   "region": "North America",
-  "organizers": ["hackygolucky", "brianloveswords", "toolness", "hsin421", "acingraham", "gautamarora"],
+  "organizers": [
+    "hackygolucky",
+    "brianloveswords",
+    "toolness",
+    "hsin421",
+    "acingraham",
+    "gautamarora"
+  ],
   "website": "http://nodeschool.io/nyc",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/nyc"
+  "repo": "http://github.com/nodeschool/nyc",
+  "image": "nodeschool-nyc.svg"
 }

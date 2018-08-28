@@ -3,8 +3,20 @@
   "location": "Stavanger",
   "country": "NO",
   "region": "Europe",
-  "organizers": ["asbjornenge", "megatrond", "olavgg", "olekjormo", "persille", "joargp", "resurge", "jmyrland", "frodeanonsen", "VirtueMe"],
+  "organizers": [
+    "asbjornenge",
+    "megatrond",
+    "olavgg",
+    "olekjormo",
+    "persille",
+    "joargp",
+    "resurge",
+    "jmyrland",
+    "frodeanonsen",
+    "VirtueMe"
+  ],
   "website": "http://nodeschool.io/stavanger",
   "twitter": "",
-  "repo": "https://github.com/nodeschool/stavanger"
+  "repo": "https://github.com/nodeschool/stavanger",
+  "image": "nodeschool-stavanger.png"
 }

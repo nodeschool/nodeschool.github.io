@@ -3,8 +3,11 @@
   "location": "Hamburg",
   "country": "DE",
   "region": "Europe",
-  "organizers": ["greelgorke"],
+  "organizers": [
+    "greelgorke"
+  ],
   "website": "http://nodeschool.io/hamburg",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/hamburg"
+  "repo": "http://github.com/nodeschool/hamburg",
+  "image": "nodeschool-ham.svg"
 }

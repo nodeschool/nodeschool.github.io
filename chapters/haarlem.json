@@ -3,8 +3,14 @@
   "location": "Haarlem",
   "country": "NL",
   "region": "Europe",
-  "organizers": ["rickheere", "jpwesselink", "codeflyer", "stefanmirck"],
+  "organizers": [
+    "rickheere",
+    "jpwesselink",
+    "codeflyer",
+    "stefanmirck"
+  ],
   "website": "http://nodeschool.io/haarlem",
   "twitter": "",
-  "repo": "https://github.com/nodeschool/haarlem"
+  "repo": "https://github.com/nodeschool/haarlem",
+  "image": "nodeschool-haarlem.svg"
 }

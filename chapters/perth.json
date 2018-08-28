@@ -3,8 +3,12 @@
   "location": "Perth",
   "country": "AU",
   "region": "South Pacific",
-  "organizers": ["nii236", "miqid"],
+  "organizers": [
+    "nii236",
+    "miqid"
+  ],
   "website": "http://nodeschool.io/perth",
   "repo": "https://github.com/nodeschool/perth",
+  "image": "nodeschool-perth.svg",
   "gitter": "https://gitter.im/nodeschool/perth"
 }

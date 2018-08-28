@@ -9,5 +9,6 @@
   ],
   "website": "http://nodeschool.io/montreal",
   "twitter": "https://twitter.com/NodeSchoolMTL",
-  "repo": "http://github.com/nodeschool/montreal"
+  "repo": "http://github.com/nodeschool/montreal",
+  "image": "nodeschool-montreal.svg"
 }

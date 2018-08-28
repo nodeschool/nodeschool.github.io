@@ -3,7 +3,11 @@
   "location": "Lima",
   "country": "PE",
   "region": "Latin America",
-  "organizers": ["ogsilvaa", "gmvxtm"],
+  "organizers": [
+    "ogsilvaa",
+    "gmvxtm"
+  ],
   "website": "http://nodeschool.io/lima",
-  "repo": "http://github.com/nodeschool/lima"
+  "repo": "http://github.com/nodeschool/lima",
+  "image": "nodeschool-lima.svg"
 }

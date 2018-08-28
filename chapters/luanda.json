@@ -3,8 +3,11 @@
   "location": "Luanda",
   "country": "AO",
   "region": "Africa",
-  "organizers": ["quindai, flowck"],
+  "organizers": [
+    "quindai, flowck"
+  ],
   "website": "https://ti.to/quindai/nodeschool-luanda",
   "twitter": "@rquindai",
-  "repo": "https://github.com/nodeschool/luanda"
+  "repo": "https://github.com/nodeschool/luanda",
+  "image": "nodeschool-luanda.png"
 }

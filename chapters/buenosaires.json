@@ -3,8 +3,11 @@
   "location": "Buenos Aires",
   "country": "AR",
   "region": "Latin America",
-  "organizers": ["a0viedo"],
+  "organizers": [
+    "a0viedo"
+  ],
   "website": "http://nodeschool.io/buenosaires",
   "twitter": "nodeschoolba",
-  "repo": "http://github.com/nodeschool/buenosaires"
+  "repo": "http://github.com/nodeschool/buenosaires",
+  "image": "nodeschool-buenos-aires.svg"
 }

@@ -3,8 +3,13 @@
   "location": "Mexico City",
   "country": "MX",
   "region": "Latin America",
-  "organizers": ["jeduan", "rogr", "siedrix"],
+  "organizers": [
+    "jeduan",
+    "rogr",
+    "siedrix"
+  ],
   "website": "http://nodeschool.io/mexicocity",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/mexicocity"
+  "repo": "http://github.com/nodeschool/mexicocity",
+  "image": "nodeschool-mexicocity.svg"
 }

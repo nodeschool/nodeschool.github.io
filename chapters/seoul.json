@@ -3,9 +3,12 @@
   "location": "Seoul",
   "country": "KR",
   "region": "Asia",
-  "organizers": ["xarus01"],
+  "organizers": [
+    "xarus01"
+  ],
   "website": "http://nodeschool.io/seoul/",
   "twitter": "",
   "repo": "https://github.com/nodeschool/seoul",
+  "image": "nodeschool-seoul.png",
   "gitter": "https://gitter.im/nodeschool/nodeschool/seoul"
 }

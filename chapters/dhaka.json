@@ -3,8 +3,14 @@
   "location": "Dhaka",
   "country": "BD",
   "region": "Asia",
-  "organizers": ["az7arul", "zhdzmn", "riyadhalnur", "ishtiaque23"],
+  "organizers": [
+    "az7arul",
+    "zhdzmn",
+    "riyadhalnur",
+    "ishtiaque23"
+  ],
   "website": "http://nodeschool.io/dhaka",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/dhaka"
+  "repo": "http://github.com/nodeschool/dhaka",
+  "image": "nodeschool-dhaka.png"
 }
