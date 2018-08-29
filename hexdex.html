@@ -228,7 +228,7 @@
               <ul>
               {{#chapters}}
                   {{#image}}
-                  <li class="chapter" style="width: 270px;height:350px;text-align: center;vertical-align:top;">
+                  <li class="chapter badge">
                   <a target="_blank" rel="noreferrer noopener" href="{{website}}" class="imglink" title="{{location}}">
                   <img class="hex" src="/images/{{image}}" alt="{{location}} Hexagon" />
                   {{location}}{{#country}}, {{country}}{{/country}}
@@ -265,7 +265,6 @@
           function () {
             var conteo = $(this).parent().find("li").length;
             $(this).html($(this).html() + " (" + conteo + ")");
-            console.log($(this).html());
           }
         );
     }
