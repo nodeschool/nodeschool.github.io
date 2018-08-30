@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/chapters.css">
+  <link rel="stylesheet" href="/hexdex.css">
   <link rel="shortcut icon" href="/favicon.ico">
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/mapbox.css">
@@ -223,24 +223,23 @@
         <div class="two-thirds">
           <script id="tmpl-chapter-list" type="text/html">
           {{#regions}}
-          <div class="chapter-list {{region}}">
-              <h2>{{region}}</h2>
-              <ul>
+          <div class="chapter-badges-list">
+            <h2>{{region}} ({{chaptersWithImages}})</h2>
+            <ul class="badges-grid">
               {{#chapters}}
-                  {{#image}}
-                  <li class="chapter badge">
-                  <a target="_blank" rel="noreferrer noopener" href="{{website}}" class="imglink" title="{{location}}">
-                  <img class="hex" src="/images/{{image}}" alt="{{location}} Hexagon" />
-                  {{location}}{{#country}}, {{country}}{{/country}}
-                        </a>
-                      </li>
-                  {{/image}}
+                {{#image}}
+                  <li class="badge">
+                    <a target="_blank" rel="noreferrer noopener" href="{{website}}" class="imglink" title="{{location}}">
+                      <img class="hex" src="/images/{{image}}" alt="{{location}} Hexagon"></img>
+                      <span>{{location}}{{#country}}, {{country}}{{/country}}</span>
+                    </a>
+                  </li>
+                {{/image}} 
               {{/chapters}}
-              </ul>
+            </ul>
           </div>
           {{/regions}}
           </script>
-
         </div>
       </div>
     </div>
@@ -255,10 +254,6 @@
   <script type="text/javascript" src="/js/dependencies.js"></script>
   <script type="text/javascript" src="/js/chapters.js"></script>
   <script>
-    $(document).ready(function () {
-      setTimeout("cant()", 100);
-    });
-    
     !function (s, c, h, O, o, l) {
       s.GoogleAnalyticsObject = h; s[h] || (s[h] = function () {
         (s[h].q = s[h].q || []).push(arguments)

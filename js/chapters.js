@@ -18,14 +18,3 @@ function loadChapters() {
     $("#chapter-list").html(Mustache.render(template, JSON.parse(body)))
   })
 }
-
-var cant = function () {
-  $(".chapter-list")
-    .find("h2")
-    .each(
-      function () {
-        var cont = $(this).parent().find("li").length;
-        $(this).html($(this).html() + " (" + cont + ")");
-      }
-    );
-}

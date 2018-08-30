@@ -58,9 +58,13 @@ cmdwatcher('build-chapters'
 })
 
 function writeChapters(chapters) {
+  var regions = sortedGroupByValue(chapters, 'region', 'chapters')
+  for (const region of regions) {
+    region.chaptersWithImages = region.chapters.filter(chapter => Boolean(chapter.image)).length
+  }
   data = {
     total: chapters.length,
-    regions: sortedGroupByValue(chapters, 'region', 'chapters')
+    regions: regions
   }
   mkdirp.sync('.build/chapters')
   Fs.writeFile('.build/chapters/list.json', JSON.stringify(data, null, 2), function (err) {

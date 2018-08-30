@@ -8,3 +8,4 @@ stylus -u autoprefixer-stylus -c -m ./styles/chapters.styl -o ./chapters.css
 stylus -u autoprefixer-stylus -c -m ./styles/events.styl -o ./events.css
 stylus -u autoprefixer-stylus -c -m ./styles/mapbox.styl -o ./mapbox.css
 stylus -u autoprefixer-stylus -c -m ./styles/style.styl -o ./style.css
+stylus -u autoprefixer-stylus -c -m ./styles/hexdex.styl -o ./hexdex.css

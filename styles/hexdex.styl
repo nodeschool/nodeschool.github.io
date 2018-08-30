@@ -1,0 +1,51 @@
+@import 'settings/*';
+
+.chapter-badges-list {
+  padding-bottom: 1rem;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+
+  li {
+    width: 250px;
+    margin: 5px;
+    padding-bottom: 0;
+    display: inline-block;
+    transition: background-color 300ms, border 500ms;
+  }
+
+  & .badge {
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    width: 270px;
+    height: 350px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: top;
+
+    & .imglink {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      & img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+&.imglink {
+  border: none;
+  outline: none;
+}
