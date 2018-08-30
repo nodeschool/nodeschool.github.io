@@ -256,18 +256,9 @@
   <script type="text/javascript" src="/js/chapters.js"></script>
   <script>
     $(document).ready(function () {
-      setTimeout("cantidad()", 100);
+      setTimeout("cant()", 100);
     });
-    var cantidad = function () {
-      $(".chapter-list")
-        .find("h2")
-        .each(
-          function () {
-            var conteo = $(this).parent().find("li").length;
-            $(this).html($(this).html() + " (" + conteo + ")");
-          }
-        );
-    }
+    
     !function (s, c, h, O, o, l) {
       s.GoogleAnalyticsObject = h; s[h] || (s[h] = function () {
         (s[h].q = s[h].q || []).push(arguments)
