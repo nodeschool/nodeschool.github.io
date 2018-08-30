@@ -32,7 +32,8 @@
         <br>
         <p data-i18n="hexdex-header">An index of the hexagons for <a href="chapters.html">NodeSchool chapters</a>.</p>
         <p data-i18n="hexdex-make-logo">Make one for your chapter by starting with <a href="https://github.com/nodeschool/nodeschool.github.io/tree/master/images/make-a-sticker">this
-            template</a>.</p>
+            template
+          </a>.</p>
       </div>
       <div class="full">
         <div id="chapter-list">
@@ -46,7 +47,7 @@
               <ul>
               {{#chapters}}
                   {{#image}}
-                  <li class="chapter" style="width: 275px;text-align: center;">
+                  <li class="chapter badge">
                   <a target="_blank" rel="noreferrer noopener" href="{{website}}" class="imglink" title="{{location}}">
                   <img class="hex" src="/images/{{image}}" alt="{{location}} Hexagon" />
                   {{location}}{{#country}}, {{country}}{{/country}}
@@ -92,10 +93,14 @@
   <script type="text/javascript" src="/js/dependencies.js"></script>
   <script type="text/javascript" src="/js/chapters.js"></script>
   <script>
+    $(document).ready(function () {
+      setTimeout("cant()", 100);
+    });
+    
     !function (s, c, h, O, o, l) {
-    s.GoogleAnalyticsObject = h; s[h] || (s[h] = function () {
-      (s[h].q = s[h].q || []).push(arguments)
-    }); s[h].l = +new Date; o = c.createElement(O);
+      s.GoogleAnalyticsObject = h; s[h] || (s[h] = function () {
+        (s[h].q = s[h].q || []).push(arguments)
+      }); s[h].l = +new Date; o = c.createElement(O);
       l = c.getElementsByTagName(O)[0]; o.src = '//www.google-analytics.com/analytics.js';
       l.parentNode.insertBefore(o, l)
     }(window, document, 'ga', 'script');
