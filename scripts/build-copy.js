@@ -28,7 +28,7 @@ function process(file) {
 }
 
 cmdwatcher('build-copy'
-	     , ['!(node_modules)/**/*.@(png|jpg|svg|css|gif|ico)','*.@(png|jpg|svg|css|gif|ico)', 'js/*', 'CNAME']
+	     , ['!(node_modules)/**/*.@(png|jpg|svg|css|gif|ico)','*.@(png|jpg|svg|css|gif|ico|map)', 'js/*', 'CNAME']
 	     , function processFiles(files)
 {
 	files.forEach(process)
