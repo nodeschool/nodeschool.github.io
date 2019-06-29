@@ -7,3 +7,8 @@ node_modules
 # Ignore generated CSS files and sourcemaps since they no longer represent src code
 /*.css
 /*.css.map
+
+
+# Ignore Yarn / Npm Locks ..
+package-lock.json
+yarn.lock
