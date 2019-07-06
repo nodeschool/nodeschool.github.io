@@ -20,6 +20,8 @@
   "about-info2": "Nous utilisons GitHub pour organiser NodeSchool. Le meilleur endroit pour nous contacter est le <a href=\"https://github.com/nodeschool/organizers/issues\">dépôt des organisateurs</a>. Vous pouvez créer une nouvelle <i>issue</i> sur le dépôt pour informer les organisateurs qui pourront y répondre. Cette méthode est bien meilleure que de les contacter directement e-mail.",
   "about-header-talk-title": "Écouter et voir les conférences",
   "about-info3": "Dans l'<a href=\"https://archive.org/details/NodeUp55\" target=\"_blank\">épisode 55</a> du podcast NodeUp, Mikeal Rogers, Max Ogden et d'autres membres de la communauté parlent des NodeSchools. A &quot;Cascadia JS 2014&quot; Jason Rhodes, de Baltimore, <a href=\"https://www.youtube.com/watch?v=XsmvTnOLwhk\" target=\"_blank\">parle du fonctionnement des NodeSchools</a>.",
+  "code-of-conduct":"code de conduite",
+  "about-info4":"Les organisateurs de NodeSchool doivent suivre le code de conduite décrit dans <a href=\"https://github.com/nodeschool/organizers/blob/master/code_of_conduct.md\" target=\"_blank\">le dépôt des organisateurs</a>.Chaque chapitre de NodeSchool est responsable de la mise à jour de son propre code de conduite. Si vous avez des questions sur le code de conduite d'un chapitre, vous pouvez ouvrir un issue dans leur dépôt github associé.",
   "footer-contact-header": "Contact",
   "footer-contribute-header": "Contribuer",
   "footer-contribute-question": "Ouvrir une Issue",
