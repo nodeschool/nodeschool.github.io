@@ -1,0 +1,10 @@
+{
+  "name": "NodeSchool Indore",
+  "location": "Indore, Madhya Pradesh",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["mishuvs", "harshmandalgi"],
+  "website": "https://www.hacksoc.in",
+  "twitter": "hack_soc",
+  "repo": "https://github.com/nodeschool/indore"
+}
