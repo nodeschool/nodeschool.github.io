@@ -12,7 +12,13 @@ We ask that you make pull requests because changes to this repository will get d
 
 ## Running the entire app locally
 
-This is a static site with a build step, simply run `npm start`:
+This is a static site with a build step. The build step uses a [GitHub Personnal Access Token](https://github.com/settings/tokens) that you need to generate and put in a .env file. **Actually you don't need to configure any authorization on this access token**, it just serves the purpose of unleashing the GitHub API Rate Limit.
+
+```
+cp .env.example .env
+// then put your GitHub Personnal Access Token in the .env file
+```
+After that, simply run `npm start`:
 
 ```
 npm install
@@ -25,10 +31,10 @@ Please refer to the [nodeschool site](http://nodeschool.io/#workshoppers) for de
 
 - **Globally** (easiest)
 
-	Depending on the npm version, `npm packages` get installed in different routes. To have access to them globally. Do 
-	
+	Depending on the npm version, `npm packages` get installed in different routes. To have access to them globally. Do
+
 	`npm install -global package_name` or 	`npm install -g package_name`
-	
+
 	If you get a  `permission denied` **error**. Run the previous command with `sudo`.
 
 	`sudo npm install -g package_name`
@@ -52,10 +58,10 @@ If you would like to keep all the node_school workshop packages inside a custom 
 ```
 ~ mkdir -p node_school
 cd node_school
-npm install javascripting 
+npm install javascripting
 ```
 
-From within the `node_school` directory now run `node_modules/learnyounode/bin/javascripting` to start it. 
+From within the `node_school` directory now run `node_modules/learnyounode/bin/javascripting` to start it.
 
 This is because you need to run the executable from within the directory itself since it's not available globally in your `$PATH`
 

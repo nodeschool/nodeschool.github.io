@@ -15,21 +15,21 @@ function process(file) {
 	var output = Path.join('.build', file)
 	mkdirp.sync(Path.dirname(output))
 	Fs.createReadStream(file)
-	  .pipe(
-	  	Fs.createWriteStream(output)
-	  	  .on('end', function () {
-	  	  	delete processing[file]
-	  	  	if (waiting[file]) {
-	  	  		delete waiting[file]
-	  	  		process(file)
-	  	  	}
-	  	  })
-	  )
+		.pipe(
+			Fs.createWriteStream(output)
+				.on('end', function () {
+					delete processing[file]
+					if (waiting[file]) {
+						delete waiting[file]
+						process(file)
+					}
+				})
+		)
 }
 
 cmdwatcher('build-copy'
-	     , ['!(node_modules)/**/*.@(png|jpg|svg|css|gif|ico)','*.@(png|jpg|svg|css|gif|ico)', 'js/*', 'CNAME']
-	     , function processFiles(files)
+			 , ['!(node_modules)/**/*.@(png|jpg|svg|css|gif|ico)','*.@(png|jpg|svg|css|gif|ico|map)', 'js/*', 'CNAME']
+			 , function processFiles(files)
 {
 	files.forEach(process)
 })
