@@ -1,0 +1,10 @@
+{
+  "name": "Coimbatore Nodeschool",
+  "location": "Coimbatore",
+  "country": "IN",
+  "region": "Asia",
+  "organizers": ["madhusona"],
+  "website": "http://github.com/nodeschool/coimbatore",
+  "twitter": "madhusona",
+  "repo": "http://github.com/nodeschool/coimbatore"
+}
