@@ -1,0 +1,19 @@
+# Pull base image.
+FROM ubuntu
+
+# Update image
+RUN apt-get update
+
+# Install Node.js
+RUN apt-get install --yes curl
+RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install --yes nodejs
+
+# Bundle app source
+COPY . /usr/src/app
+
+# Install app dependencies
+RUN cd /usr/src/app; npm install && npm audit fix
+
+# These commands unlike RUN (they are carried out in the construction of the container) are run when the container
+CMD ["npm", "start"]
