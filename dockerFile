@@ -1,9 +1,6 @@
 # Pull base image.
 FROM ubuntu
 
-# Set the working directory to /usr/src/app
-WORKDIR /usr/src/app
-
 # Update image
 RUN apt-get update
 
@@ -12,11 +9,18 @@ RUN apt-get install --yes curl
 RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install --yes nodejs
 
-# Bundle app source
-COPY . /usr/src/app
+# Set the working directory to /usr/src/app
+WORKDIR /usr/src/app
 
 # Install app dependencies
-RUN cd /usr/src/app; npm install && npm audit fix
+# A wildcard is used to ensure both package.json AND package-lock.json are copied where available (npm@5+)
+COPY package*.json ./
+
+# Bundle app source
+COPY . ./
+
+# Install app dependencies
+RUN npm install && npm audit fix
 
 # These commands unlike RUN (they are carried out in the construction of the container) are run when the container
 CMD ["npm", "start"]
