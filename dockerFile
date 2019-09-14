@@ -1,6 +1,9 @@
 # Pull base image.
 FROM ubuntu
 
+# Set the working directory to /usr/src/app
+WORKDIR /usr/src/app
+
 # Update image
 RUN apt-get update
 
