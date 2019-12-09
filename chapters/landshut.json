@@ -4,7 +4,7 @@
   "country": "DE",
   "region": "Europe",
   "organizers": ["DanielHilpoltsteiner", "WanielDeiss"],
-  "website": "http://nodeschool.io/landshut",
+  "website": "https://nodeschool.io/landshut",
   "twitter": "",
-  "repo": "http://github.com/nodeschool/landshut"
+  "repo": "https://github.com/nodeschool/landshut"
 }
