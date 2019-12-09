@@ -1,0 +1,10 @@
+{
+  "name": "Landshut NodeSchool",
+  "location": "Landshut",
+  "country": "DE",
+  "region": "Europe",
+  "organizers": ["DanielHilpoltsteiner", "WanielDeiss"],
+  "website": "http://nodeschool.io/landshut",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/landshut"
+}
