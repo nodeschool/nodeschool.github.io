@@ -1,0 +1,11 @@
+{
+  "name": "NodeSchool Nairobi",
+  "location": "Nairobi",
+  "country": "KE",
+  "region": "Africa",
+  "organizers": ["antosan", "danielotieno", "denpalrius", "jenniekibiri", "profnandaa", "sammyloto", "victor-chweya"],
+  "website": "https://nodeschool.io/nairobi/",
+  "twitter": "nodeschoolnrb",
+  "repo": "https://github.com/nodeschool/nairobi",
+  "image": "nodeschool-nairobi.png"
+}
