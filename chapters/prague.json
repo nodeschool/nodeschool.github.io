@@ -1,0 +1,13 @@
+{
+  "name": "NodeSchool Prague",
+  "location": "Prague",
+  "country": "CZ",
+  "region": "Europe",
+  "organizers": [
+    "quibusus"
+  ],
+  "website": "https://twitter.com/nodeschoolcz",
+  "twitter": "",
+  "repo": "http://github.com/nodeschool/prague",
+  "image": "nodeschool-prague.svg"
+}
