@@ -138,7 +138,7 @@ function makeMap(data) {
     + " target='_blank'>{{name}}</a><p>"
 
   var map = Sheetsee.loadMap("map")
-  Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
+  Sheetsee.addStyleLayer(map, 'mapbox://styles/mapbox/light-v10')
 
   var geoJSON = Sheetsee.createGeoJSON(sorted, optionsJSON)
   var markers = Sheetsee.addMarkerLayer(geoJSON, map, template)

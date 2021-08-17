@@ -9991,8 +9991,8 @@ module.exports.loadMap = function(mapDiv) {
   return map
 }
 
-module.exports.addTileLayer = function(map, tileLayer) {
-  var layer = L.mapbox.tileLayer(tileLayer)
+module.exports.addStyleLayer = function(map, styleURL) {
+  var layer = L.mapbox.styleLayer(styleURL)
   layer.addTo(map)
 }
 
