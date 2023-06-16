@@ -70,6 +70,8 @@
   "workshopper-gitit": "Aprenda o básico sobre Git e GitHub.",
   "workshopper-streamadventure": "Aprenda a compor interfaces utilizando",
   "workshopper-streamadventure2": ".",
+  "workshopper-how-to-markdown": "Aprenda como começar a usar Markdown &#x2014; uma linguagem de marcação leve e com sintaxe de formatação de texto simple.",
+  "workshopper-learnyouhtml": "Aprenda como criar sua primeira pagina web.",
   "workshopper-scope-chains-closures": "Aprenda os detalhes de Scope, Scope Chains, Closures e Garbage Collection.",
   "workshopper-elementary-electron": "Faça uma aplicação desktop usando Node e Chromium com Electron",
   "workshopper-functionaljavascript": "Aprenda as características fundamentais da programação funcional em Javascript e vanilla ES5.",
